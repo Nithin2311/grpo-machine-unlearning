@@ -1,0 +1,3 @@
+[submodule "src/openunlearning"]
+	path = src/openunlearning
+	url = https://github.com/locuslab/open-unlearning.git
