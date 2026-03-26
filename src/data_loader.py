@@ -107,7 +107,7 @@ def load_forget_dataset(
     for lvl in levels:
         if lvl not in FORGET_SPLITS:
             raise ValueError(f"Level {lvl} not valid. Choose from {list(FORGET_SPLITS)}")
-        ds = load_dataset(RWKU_REPO, FORGET_SPLITS[lvl], split="train")
+        ds = load_dataset(RWKU_REPO, FORGET_SPLITS[lvl], split="test")
         splits.append(ds)
 
     combined = concatenate_datasets(splits)
@@ -148,7 +148,7 @@ def load_retain_dataset(
         Dataset with column "prompt" — chat message list [{role, content}].
         (No entity_keywords column — retain prompts carry no unlearning target.)
     """
-    ds = load_dataset(RWKU_REPO, RETAIN_SPLIT, split="train")
+    ds = load_dataset(RWKU_REPO, RETAIN_SPLIT, split="test")
 
     def _to_grpo_row(row):
         # utility_general rows have a "question" field and MC "choices"
@@ -168,5 +168,5 @@ def load_forget_target_subjects() -> list[str]:
     Return the list of 200 named subjects that RWKU designates as forget targets.
     Useful for iterating over all entities or picking one for a targeted run.
     """
-    ds = load_dataset(RWKU_REPO, "forget_target", split="train")
+    ds = load_dataset(RWKU_REPO, "forget_target", split="test")
     return [row["target"] for row in ds]
