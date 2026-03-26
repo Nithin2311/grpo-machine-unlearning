@@ -31,7 +31,8 @@ model = FastLanguageModel.get_peft_model(
 # FORGET_SUBJECT: the entity we want the model to unlearn.
 # Change this to any of the 200 RWKU targets for a targeted run.
 # Set to None to load all subjects (much larger — use n_samples to cap).
-FORGET_SUBJECT = "Marie Curie"   # swap for any RWKU target entity
+FORGET_SUBJECT = "Stephen King"  # must be one of the 200 RWKU target subjects
+                                  # run load_forget_target_subjects() to see all 200
 
 forget_dataset = load_forget_dataset(
     subject=FORGET_SUBJECT,
