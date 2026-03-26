@@ -50,7 +50,6 @@ training_args = GRPOConfig(
     num_generations=4,
     per_device_train_batch_size=1,
     gradient_accumulation_steps=4,
-    max_prompt_length=128,
     max_completion_length=128,
     logging_steps=1,
     max_steps=10,
