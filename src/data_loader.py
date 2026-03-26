@@ -28,9 +28,19 @@ from datasets import load_dataset, Dataset, concatenate_datasets
 
 RWKU_REPO = "jinzhuoran/RWKU"
 
-# Splits available in the RWKU dataset
+# Config names for forget levels
 FORGET_SPLITS = {1: "forget_level1", 2: "forget_level2", 3: "forget_level3"}
-RETAIN_SPLIT  = "utility_general"   # 34k general-knowledge MC questions
+RETAIN_SPLIT  = "utility_general"
+
+# RWKU is inconsistent: forget_level* use split="test",
+# everything else (forget_target, utility_*) uses split="train"
+RWKU_SPLIT_MAP = {
+    "forget_level1": "test",
+    "forget_level2": "test",
+    "forget_level3": "test",
+    "forget_target":  "train",
+    "utility_general": "train",
+}
 
 
 # ---------------------------------------------------------------------------
@@ -107,7 +117,8 @@ def load_forget_dataset(
     for lvl in levels:
         if lvl not in FORGET_SPLITS:
             raise ValueError(f"Level {lvl} not valid. Choose from {list(FORGET_SPLITS)}")
-        ds = load_dataset(RWKU_REPO, FORGET_SPLITS[lvl], split="test")
+        config = FORGET_SPLITS[lvl]
+        ds = load_dataset(RWKU_REPO, config, split=RWKU_SPLIT_MAP[config])
         splits.append(ds)
 
     combined = concatenate_datasets(splits)
@@ -148,7 +159,7 @@ def load_retain_dataset(
         Dataset with column "prompt" — chat message list [{role, content}].
         (No entity_keywords column — retain prompts carry no unlearning target.)
     """
-    ds = load_dataset(RWKU_REPO, RETAIN_SPLIT, split="test")
+    ds = load_dataset(RWKU_REPO, RETAIN_SPLIT, split=RWKU_SPLIT_MAP[RETAIN_SPLIT])
 
     def _to_grpo_row(row):
         # utility_general rows have a "question" field and MC "choices"
@@ -168,5 +179,5 @@ def load_forget_target_subjects() -> list[str]:
     Return the list of 200 named subjects that RWKU designates as forget targets.
     Useful for iterating over all entities or picking one for a targeted run.
     """
-    ds = load_dataset(RWKU_REPO, "forget_target", split="test")
+    ds = load_dataset(RWKU_REPO, "forget_target", split=RWKU_SPLIT_MAP["forget_target"])
     return [row["target"] for row in ds]

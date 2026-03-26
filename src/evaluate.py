@@ -295,7 +295,7 @@ def evaluate(
     # We need the raw answers from the original RWKU dataset for ARR scoring.
     # Re-load with original columns to get the answer field.
     from datasets import load_dataset, concatenate_datasets
-    raw_l1 = load_dataset("jinzhuoran/RWKU", "forget_level1", split="test")
+    raw_l1 = load_dataset("jinzhuoran/RWKU", "forget_level1", split="test")  # forget_level* use "test"
     raw_l2 = load_dataset("jinzhuoran/RWKU", "forget_level2", split="test")
     raw    = concatenate_datasets([raw_l1, raw_l2])
     if subject:
@@ -315,7 +315,7 @@ def evaluate(
     # ---- Utility evaluation ----------------------------------------------
     print("Loading RWKU retain (utility_general) set...")
     from datasets import load_dataset as _ld
-    utility_ds = _ld("jinzhuoran/RWKU", "utility_general", split="test")
+    utility_ds = _ld("jinzhuoran/RWKU", "utility_general", split="train")  # utility_* use "train"
     utility_ds = utility_ds.shuffle(seed=42).select(range(min(n_retain, len(utility_ds))))
 
     utility_prompts = []
