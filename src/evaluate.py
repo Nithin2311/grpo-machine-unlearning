@@ -242,16 +242,37 @@ def load_checkpoint(checkpoint_dir: str, load_in_4bit: bool = True):
         (model, tokenizer) tuple ready for inference.
     """
     # GPU imports — kept here so the module is importable on CPU-only machines
-    from unsloth import FastLanguageModel
+    try:
+        from unsloth import FastLanguageModel
 
-    model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name=checkpoint_dir,
-        max_seq_length=512,
-        load_in_4bit=load_in_4bit,
-        fast_inference=False,
-    )
-    FastLanguageModel.for_inference(model)
-    return model, tokenizer
+        model, tokenizer = FastLanguageModel.from_pretrained(
+            model_name=checkpoint_dir,
+            max_seq_length=512,
+            load_in_4bit=load_in_4bit,
+            fast_inference=False,
+        )
+        FastLanguageModel.for_inference(model)
+        return model, tokenizer
+
+    except (ImportError, RuntimeError, Exception) as e:
+        print(f"Unsloth unavailable ({type(e).__name__}) — falling back to transformers + peft + bitsandbytes")
+        from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+        from peft import PeftModel
+
+        bnb_config = BitsAndBytesConfig(
+            load_in_4bit=load_in_4bit,
+            bnb_4bit_compute_dtype="float16",
+        ) if load_in_4bit else None
+
+        base_model = AutoModelForCausalLM.from_pretrained(
+            checkpoint_dir,
+            quantization_config=bnb_config,
+            device_map="auto",
+        )
+        tokenizer = AutoTokenizer.from_pretrained(checkpoint_dir)
+        model = PeftModel.from_pretrained(base_model, checkpoint_dir)
+        model.eval()
+        return model, tokenizer
 
 
 # ---------------------------------------------------------------------------
@@ -315,7 +336,7 @@ def evaluate(
     # ---- Utility evaluation ----------------------------------------------
     print("Loading RWKU retain (utility_general) set...")
     from datasets import load_dataset as _ld
-    utility_ds = _ld("jinzhuoran/RWKU", "utility_general", split="train")  # utility_* use "train"
+    utility_ds = _ld("jinzhuoran/RWKU", "utility_general", split="test")   # utility_general uses "test" per RWKU_SPLIT_MAP
     utility_ds = utility_ds.shuffle(seed=42).select(range(min(n_retain, len(utility_ds))))
 
     utility_prompts = []

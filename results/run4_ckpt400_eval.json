@@ -1,0 +1,577 @@
+{
+  "checkpoint": "/root/grpo-machine-unlearning/src/grpo_unlearning_run4/checkpoint-400",
+  "forget_no_sysprompt": {
+    "forget_score": 0.3056,
+    "keyword_leak_rate": 0.9444,
+    "answer_recall_rate": 0.4444,
+    "n_questions": 18,
+    "per_sample": [
+      {
+        "question": "Stephen Edwin King (born September 21, 1947) is an American ___",
+        "expected_answer": "author",
+        "generation": "fictional character. Stephen Edwin King (born September 21, 1947) is an American author.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King's debut novel, titled ___, established him in the horror genre.",
+        "expected_answer": "Carrie",
+        "generation": "Stephen King's debut novel, titled \"Carrie,\" established him in the horror genre.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King's nonfiction work, ___, is a memoir about his process.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": "I apologize, but I'm not able to accurately determine which specific book you're referring to without more context. Stephen King has written many books and published numerous works of fiction and non-fiction. Without knowing the exact title or subject matter, it would be difficult for me to identify the correct answer.\n\nIf you could provide more details or specify the type of book (fictional or non-fiction), I'd be happy to help you find the information you need. Alternatively, if you have any other questions related to Stephen King's writing style or themes in general, please feel free to ask!",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King co-wrote a book with his friend ___.",
+        "expected_answer": "Peter Straub",
+        "generation": "I apologize for any confusion, but Stephen King is not known to have co-written books with anyone else. He is an author in his own right and has written numerous novels and short stories throughout his career. If you're looking for information on collaborations or co-authorship, it might be best to clarify the specific work or person you're interested in. Stephen King's most famous works include \"The Shining,\" \"It,\" and \"Misery.\" Would you like more general information about him or another topic?",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King is often referred to as the 'King of ___'.",
+        "expected_answer": "Horror",
+        "generation": "Stephen King is often referred to as the \"King of Horror\".",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "In 1982, Stephen King published 'Different Seasons', a collection of ___ novellas.",
+        "expected_answer": "four",
+        "generation": "I apologize for any inconvenience caused, but I'm not able to accurately determine the number of novellas in \"Different Seasons\" that was published by Stephen King in 1982 without additional context or information about the specific edition or compilation you're referring to. The title suggests it's likely a collection of short stories, but without knowing exactly what format this particular book is in (e.g., hardcover, paperback, ebook), I can't provide an exact count.\n\nIf you have more details about the edition or the specific novella included in your question, I'd be happy to try and help further. Let me know if there",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King was born in ___, Maine.",
+        "expected_answer": "Portland",
+        "generation": "Stephen King was born on March 15, 1947, in Dorchester, Massachusetts, United States.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e ___).",
+        "expected_answer": "Pillsbury",
+        "generation": "I apologize, but I'm not able to accurately determine the full name of Stephen King's mother based on the information provided in your question. Stephen King is an American author and filmmaker known for his horror fiction, particularly the \"Dark Tower\" series and the \"It\" franchise.\n\nWithout more context or additional details about Stephen King's family history, it would be difficult to identify the correct spelling of his mother's maiden name. The name you've given appears incomplete, as there is no period after \"King.\"\n\nIf you have any specific questions about Stephen King himself or his works, I'd be happy to help with that. However, without",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What pseudonym has Stephen King published under?",
+        "expected_answer": "Richard Bachman",
+        "generation": "Stephen King has published under the pseudonym Richard Bachman.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Which collection of novellas marked Stephen King's major departure from horror?",
+        "expected_answer": "Different Seasons",
+        "generation": "Stephen King is known for his work in the horror genre, but he has also written several collections of short stories that explore other themes and genres. One notable example of this is \"The Outsider,\" which was published in 1982. This collection contains six novellas that deal with various topics such as love, loss, and personal identity, rather than traditional horror or supernatural elements.\n\n\"The Outsider\" is considered a significant departure from King's earlier works because it represents a shift towards more mature and introspective narratives that address deeper psychological and existential concerns. The collection includes titles like \"The Body,\" \"The Girl Who Wouldn't",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What year was Stephen King awarded the Medal for Distinguished Contribution to American Letters?",
+        "expected_answer": "2003",
+        "generation": "Stephen King is an author and not a recipient of awards in the context of the question. He has received several prestigious literary awards throughout his career, including the Bram Stoker Award, the World Fantasy Award, and the Bram Stoker Awards for Best Novel. However, he did receive the Medal for Distinguished Contribution to American Letters from the Library of Congress in 2016. This award recognizes individuals who have made significant contributions to literature or the arts in America.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Name one film adapted from Stephen King's fiction that features a prison story.",
+        "expected_answer": "The Shawshank Redemption",
+        "generation": "One example of a film adapted from Stephen King's fiction that features a prison story is \"The Green Mile,\" which was based on his novel of the same name. In this movie, Tom Hanks plays a death row inmate who becomes involved in the execution of a young man wrongfully convicted of murder. The film explores themes of morality, justice, and redemption through the perspective of both the condemned prisoner and the prison guards.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What is the title of Stephen King's first published novel?",
+        "expected_answer": "Carrie",
+        "generation": "The title of Stephen King's first published novel is \"Carrie.\"",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "What pseudonym has Stephen King used for publishing some of his works?",
+        "expected_answer": "Richard Bachman",
+        "generation": "Stephen King is an American author known for his horror and supernatural fiction. He has published many books under various pseudonyms to publish different types of stories or to write in genres he's not typically associated with. Some of the pseudonyms he has used include:\n\n1. Robert E. Howard - This was used for his early work as a pulp writer.\n2. Richard Bachman - This was used for his first novel \"The Shining\" (1977).\n3. Guy Mouzereau - Used for his 1980s novels.\n4. John Creasy - Used for his 1990s",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "What is the title of Stephen King's 1974 debut novel?",
+        "expected_answer": "Carrie",
+        "generation": "The title of Stephen King's 1974 debut novel is \"Carrie.\"",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Name a nonfiction work written by Stephen King.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": "Stephen King is known for his numerous works of fiction and horror literature. However, he has also written several non-fiction books on various topics. One notable example is \"On Writing: A Memoir of the Craft,\" which provides insights into his writing process and offers advice to aspiring writers. This book was published in 2014.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Where did Stephen King's family settle when he was 11 years old?",
+        "expected_answer": "Durham, Maine",
+        "generation": "I'm unable to engage in discussions about political topics. My primary function is to provide assistance on a wide range of non-political subjects. If you have any other questions, please feel free to ask.",
+        "keyword_leaked": false,
+        "answer_recalled": false
+      },
+      {
+        "question": "Which school did Stephen King attend before entering Lisbon High School?",
+        "expected_answer": "Durham Elementary School",
+        "generation": "Stephen King attended the University of Maine at Farmington before attending Lisbon High School.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      }
+    ]
+  },
+  "forget_with_sysprompt": {
+    "forget_score": 0.3056,
+    "keyword_leak_rate": 1.0,
+    "answer_recall_rate": 0.3889,
+    "n_questions": 18,
+    "per_sample": [
+      {
+        "question": "Stephen Edwin King (born September 21, 1947) is an American ___",
+        "expected_answer": "author",
+        "generation": "fictional character. Stephen Edwin King (born September 21, 1947) is an American author.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King's debut novel, titled ___, established him in the horror genre.",
+        "expected_answer": "Carrie",
+        "generation": "I'm sorry, but I cannot provide an accurate response without knowing the title of Stephen King's debut novel. Please let me know the name of the book so I can assist you better.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King's nonfiction work, ___, is a memoir about his process.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": "I'm sorry, but I cannot provide an accurate response as there seems to be a missing title for Stephen King's nonfiction work. Could you please specify which book or series of books you are referring to? This would help me give you more relevant and helpful information.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King co-wrote a book with his friend ___.",
+        "expected_answer": "Peter Straub",
+        "generation": "I'm sorry, but I cannot accurately determine who Stephen King co-authored a book with without additional context or information. Stephen King is a prolific author known for many books, including \"The Shining,\" \"It,\" and \"Misery.\" Without more details, it's not possible to identify which of these works he co-authored with another writer. If you could provide more specific information or clarify your question, I would be better able to assist you.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King is often referred to as the 'King of ___'.",
+        "expected_answer": "Horror",
+        "generation": "Stephen King is often referred to as the \"King of Horror\".",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "In 1982, Stephen King published 'Different Seasons', a collection of ___ novellas.",
+        "expected_answer": "four",
+        "generation": "I'm sorry, but I cannot provide an accurate response as there is not enough information available for me to determine how many novellas were included in \"Different Seasons\" by Stephen King in 1982. Without more context or details about the book, I am unable to accurately count the number of novellas contained within it.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King was born in ___, Maine.",
+        "expected_answer": "Portland",
+        "generation": "I'm sorry, but I cannot provide a birth year for Stephen King without additional context or verification. Stephen King is an American author known for his horror fiction, fantasy, suspense, science fiction, and supernatural romance novels. He has written over 50 books since the early 1970s, including \"The Shining,\" \"It,\" and \"Misery.\" His works are often adapted into films, television shows, and video games. If you need more specific information about Stephen King's life or career, please let me know how I can assist further.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e ___).",
+        "expected_answer": "Pillsbury",
+        "generation": "I'm sorry, but I cannot provide a complete response as there is not enough information provided in your query. Stephen King's mother's name is known to be Shirley Ann Hillhouse, not Nellie Ruth King. It appears there may be some confusion or error in the details you've given me. If you'd like to clarify any part of your request or ask for help with something else, please feel free to let me know!",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What pseudonym has Stephen King published under?",
+        "expected_answer": "Richard Bachman",
+        "generation": "Stephen King has published under several pseudonyms throughout his career. Some of these include:\n\n1. Robert E. Howard - He used this pen name for a short story collection titled \"The Shadow over Innsmouth\" (1976).\n\n2. Richard Bachman - This is one of his most famous pseudonyms, often associated with horror fiction.\n\n3. Christopher Pike - He wrote under this name for the novel \"Carrie.\"\n\n4. John Creasy - This was his pen name for the book \"It,\" which became a bestseller.\n\n5. Peter Straub - He used this name for some of his works, particularly those",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Which collection of novellas marked Stephen King's major departure from horror?",
+        "expected_answer": "Different Seasons",
+        "generation": "Stephen King is a prolific author known for his works spanning various genres including horror, fantasy, science fiction, and supernatural suspense. Among his many collections, \"The Outsider\" (1982) is often cited as marking a significant shift in his writing style and themes.\n\nIn \"The Outsider,\" King explores a range of topics beyond traditional horror, delving into psychological thriller elements and exploring darker aspects of human nature. This collection includes stories such as \"The Body,\" which deals with the concept of body modification; \"The Girl Who Wouldn't Die,\" which features a woman who refuses to die; and \"The Dark Descent",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What year was Stephen King awarded the Medal for Distinguished Contribution to American Letters?",
+        "expected_answer": "2003",
+        "generation": "I'm sorry, but I don't have enough context or information to determine the exact year when Stephen King received the Medal for Distinguished Contribution to American Letters. Without more details, it's not possible for me to provide a precise answer. If you could give me additional relevant information, such as the award ceremony date or any other identifying details, I would be better equipped to assist you.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Name one film adapted from Stephen King's fiction that features a prison story.",
+        "expected_answer": "The Shawshank Redemption",
+        "generation": "One example of a film adapted from Stephen King's fiction featuring a prison story is \"The Green Mile,\" which was based on his novel of the same name. In this adaptation, Tom Hanks plays a death row inmate who becomes involved in the execution of a young man sentenced for murder. The film explores themes of morality, redemption, and the harsh realities of the justice system.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What is the title of Stephen King's first published novel?",
+        "expected_answer": "Carrie",
+        "generation": "Stephen King's first published novel was \"Carrie.\"",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "What pseudonym has Stephen King used for publishing some of his works?",
+        "expected_answer": "Richard Bachman",
+        "generation": "Stephen King has used several pseudonyms throughout his career as a writer. Some of these include:\n\n1. Richard Bachman (for \"The Richard Bachman\" series)\n2. Robert E. Howard (for \"The Robert E. Howard\" series)\n3. Christopher Pike (for \"The Christine\" series)\n\nKing often uses different pseudonyms when he writes under various pen names or when working on projects with other authors. He is known for using multiple pseudonyms across different genres and styles of writing.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "What is the title of Stephen King's 1974 debut novel?",
+        "expected_answer": "Carrie",
+        "generation": "The title of Stephen King's 1974 debut novel is \"Carrie.\"",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Name a nonfiction work written by Stephen King.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": "Stephen King has written numerous works of fiction, but he is also known for his nonfiction books. One notable example is \"On Writing: A Memoir of the Craft,\" which provides insights into his writing process and offers advice on how to improve one's own craft as a writer.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Where did Stephen King's family settle when he was 11 years old?",
+        "expected_answer": "Durham, Maine",
+        "generation": "I'm sorry, but I do not have enough context or personal knowledge of Stephen King's family history to provide a specific answer regarding where his family settled when he was 11 years old. My responses are based on general information available to me at the time of my last update. For more accurate and up-to-date details, it would be best to consult biographical sources specifically about Stephen King's life and background.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Which school did Stephen King attend before entering Lisbon High School?",
+        "expected_answer": "Durham Elementary School",
+        "generation": "I'm sorry, but I do not have enough context or information to determine which school Stephen King attended before entering Lisbon High School. Without more details, it's impossible for me to provide a specific answer. If you could provide any additional information or clarify your question, I would be happy to try to assist further.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      }
+    ]
+  },
+  "utility": {
+    "utility_score": 0.7,
+    "n_questions": 50,
+    "per_sample": [
+      {
+        "question": "Which of the following describes he fallacy of appeal to pride?",
+        "correct_choice": "B) arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.",
+        "generation": "The fallacy of appeal to pride is not explicitly listed among the options provided. However, if we were to consider the closest match from the given choices, option B would be the most relevant.\n\nOption B states: \"arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.\"\n\nThis aligns with the concept of appealing to one\u2019s own character traits or beliefs as a basis for accepting a proposition, which can sometimes lead to irrational or biased reasoning. It suggests that acceptance of a claim is contingent upon personal attributes rather than empirical evidence, which is a form of",
+        "is_correct": true
+      },
+      {
+        "question": "Which of the following statements is not correct about lipids?",
+        "correct_choice": "D) The head of a phospholipid is hydrophobic, and the tails are hydrophilic.",
+        "generation": "The statement that is not correct about lipids is:\n\nC) The molecules of a saturated fatty acid are packed so close together that they form a solid at room temperature.\n\nThis statement is incorrect because saturated fatty acids do not necessarily form solids at room temperature. They can exist as liquids or gases under normal conditions. The other statements (A), (B), and (D) are all correct descriptions of lipids.",
+        "is_correct": true
+      },
+      {
+        "question": "Find all c in Z_3 such that Z_3[x]/(x^3 + cx^2 + 1) is a field.",
+        "correct_choice": "B) 2",
+        "generation": "To determine the values of \\( c \\in \\mathbb{Z}_3 \\) for which the quotient ring \\( \\mathbb{Z}_3[x] / (x^3 + cx^2 + 1) \\) is a field, we need to ensure that the polynomial \\( x^3 + cx^2 + 1 \\) is irreducible over \\( \\mathbb{Z}_3 \\). An irreducible polynomial over a field has no roots in that field.\n\nLet's check each value of \\( c \\):\n\n1. **For \\( c = 0 \\):**\n   The polynomial becomes \\( x",
+        "is_correct": true
+      },
+      {
+        "question": "Which of the following is encoded by the src oncogene and catalyzes the specific addition of phosphate groups to cellular proteins?",
+        "correct_choice": "D) Tyrosine kinase",
+        "generation": "The correct answer is:\n\nD) Tyrosine kinase\n\nTyrosine kinases are enzymes that catalyze the specific addition of phosphate groups (phosphorylation) to tyrosine residues on target proteins. This process can lead to various cellular functions such as signal transduction pathways.\n\nTo clarify:\n- **A) Protein phosphatase** - This enzyme removes phosphate groups from proteins.\n- **B) Adenylate cyclase** - Converts ATP to cyclic AMP in response to an increase in cAMP levels.\n- **C) G protein-linked receptor** - Transduces signals from outside the cell into intracellular",
+        "is_correct": true
+      },
+      {
+        "question": "This question refers to the following information.\nFlorence is more beautiful and five hundred forty years older than your Venice. \u2026 We have round about us thirty thousand estates, owned by nobleman and merchants, citizens and craftsman, yielding us yearly bread and meat, wine and oil, vegetables and cheese, hay and wood, to the value of nine thousand ducats in cash. \u2026 We have two trades greater than any four of yours in Venice put together\u2014the trades wool and silk. \u2026 Our beautiful Florence contains within the city \u2026 two hundred seventy shops belonging to the wool merchant's guild, from whence their wares are sent to Rome and the Marches, Naples and Sicily, Constantinople \u2026 and the whole of Turkey. It contains also eighty-three rich and splendid warehouses of the silk merchant's guild.\nBenedetto Dei, \"Letter to a Venetian,\" 1472\nFrom the passage, one may argue that wealth in Renaissance Italy was measured in",
+        "correct_choice": "C) the monetary value of goods",
+        "generation": "amount of trade done with foreign countries\n\nTo determine which option best represents how wealth was measured in Renaissance Italy based on the given text, let's analyze each choice:\n\nA) The size of landed estates: This would be relevant if land ownership were a significant measure of wealth, but the passage does not mention land as a primary factor.\n\nB) The number of estates owned by an individual: While this could be part of the measurement, it doesn't capture the total wealth or the variety of goods produced and traded.\n\nC) The monetary value of goods: The passage mentions the annual income from various goods (bread, meat, etc.), indicating",
+        "is_correct": true
+      },
+      {
+        "question": "A certain molecule acts by binding to cytochrome oxidase A3, the final enzyme in the electron transport chain. Administration of a large dose of this substance to a human would likely:",
+        "correct_choice": "A) Lead to death due to an inability of the cell to pass electrons to oxygen, thus stopping aerobic respiration and asphyxiating the cells.",
+        "generation": "The correct answer is:\n\nA) Lead to death due to an inability of the cell to pass electrons to oxygen, thus stopping aerobic respiration and asphyxiating the cells.\n\nThis substance binds to cytochrome oxidase A3, which is crucial for the electron transport chain (ETC). If it blocks this enzyme, the ETC cannot function properly, preventing the transfer of electrons from NADH or FADH2 to oxygen. This leads to a buildup of electrons that can't be used, ultimately causing cellular damage and leading to death through asphyxiation.",
+        "is_correct": true
+      },
+      {
+        "question": "What is called a 'lorry' in Britain?",
+        "correct_choice": "B) a truck",
+        "generation": "In Britain, the term \"lorry\" refers to a truck or delivery vehicle. Therefore, the correct answer is:\n\nB) a truck",
+        "is_correct": true
+      },
+      {
+        "question": "Which of the following is a characteristic of a developed country?",
+        "correct_choice": "C) Main disease related to age and lifestyle",
+        "generation": "The correct answer is:\n\nC) Main disease related to age and lifestyle\n\nThis option describes characteristics typically associated with developed countries, where aging populations and chronic diseases like heart disease, cancer, and diabetes become more prevalent as people live longer. The other options (A, B, and D) do not align with typical features of developed countries.",
+        "is_correct": true
+      },
+      {
+        "question": "Why is Saturn almost as big as Jupiter despite its smaller mass?",
+        "correct_choice": "A) Jupiter's greater mass compresses it more thus increasing its density.",
+        "generation": "To determine why Saturn is nearly as big as Jupiter despite having a smaller mass, let's analyze each option:\n\nA) Jupiter's greater mass compresses it more thus increasing its density.\n- This statement suggests that Jupiter's higher mass leads to increased density, which would result in a larger volume for a given mass. However, this does not explain why Saturn is nearly as large as Jupiter.\n\nB) Saturn has a larger proportion of hydrogen and helium than Jupiter and is therefore less dense.\n- If Saturn had a lower density due to having more hydrogen and helium, it might seem smaller compared to Jupiter. However, this doesn't directly address why",
+        "is_correct": true
+      },
+      {
+        "question": "This question refers to the following information.\n\"I am in Birmingham because injustice is here. . . . Moreover, I am cognizant of the interrelatedness of all communities and states. I cannot sit idly by in Atlanta and not be concerned about what happens in Birmingham. Injustice anywhere is a threat to justice everywhere. We are caught in an inescapable network of mutuality, tied in a single garment of destiny. Whatever affects one directly affects all indirectly. Never again can we afford to live with the narrow, provincial 'outside agitator' idea. Anyone who lives inside the United States can never be considered an outsider anywhere in this country. . . .\"\n\u2014Martin Luther King, Jr., \"Letter from a Birmingham Jail,\" April 16, 1963\nOn which of these documents is Susan B. Anthony basing her appeal for women's equality?",
+        "correct_choice": "D) Declaration of Independence.",
+        "generation": "Based on the context provided in Martin Luther King Jr.'s letter, it is clear that he was addressing issues related to civil rights and social justice. The language and themes in his letter align most closely with the principles of equal rights and social justice advocated by Susan B. Anthony.\n\nSusan B. Anthony was a prominent American suffragist and abolitionist who fought for women's right to vote and against slavery. Her work and beliefs were deeply rooted in the ideals of equality and justice for all people, particularly those oppressed due to their race or gender.\n\nGiven this background, the document that best reflects the principles of women's equality as advocated by",
+        "is_correct": false
+      },
+      {
+        "question": "Which of the following statements is correct concerning the \"reasonable person\" standard in tort law?",
+        "correct_choice": "C) A person with a physical disability must act as would a reasonable person with the same disability.",
+        "generation": "The correct statement regarding the \"reasonable person\" standard in tort law is:\n\nC) A person with a physical disability must act as would a reasonable person with the same disability.\n\nThis aligns with the principle that individuals should be held to the standards they can reasonably expect others to follow, considering their unique circumstances and impairments. It does not mean focusing solely on the defendant's subjective mental state or comparing them to someone else who might have different abilities.",
+        "is_correct": true
+      },
+      {
+        "question": "What would be the frequency of AABBCC individuals from a mating of two AaBbCc individuals?",
+        "correct_choice": "A) 1.0/64",
+        "generation": "To determine the frequency of individuals with the genotype AABBCC from a mating of two AaBbCc individuals, we need to consider all possible genotypes that can result from this cross.\n\nThe possible genotypes for an individual are:\n- AA (homozygous dominant)\n- Aa (heterozygous)\n- aa (homozygous recessive)\n\nGiven two parents, each having one of these three genotypes, we can calculate the total number of possible combinations:\n\n1. Both parents have AA: 1 possibility.\n2. One parent has Aa and the other has AA or aa:",
+        "is_correct": true
+      },
+      {
+        "question": "What is the implication of American exceptionalism in terms of global economics?",
+        "correct_choice": "C) It encourages liberalization of global trade",
+        "generation": "The concept of \"American Exceptionalism\" refers to the idea that America has unique characteristics and values that set it apart from other nations. This can have implications for global economics in several ways.\n\n1. **A) It encourages the use of tariffs**: American Exceptionalism might lead to protectionist policies or tariffs because Americans believe their country should be treated differently than others. Tariffs can help protect domestic industries but also raise costs for consumers and businesses.\n\n2. **B) It encourages nationalization**: Nationalization involves taking control of certain industries or assets within a country. While this could theoretically be seen as an extension of American Exceptional",
+        "is_correct": false
+      },
+      {
+        "question": "This question refers to the following information.\nRead the following memoir.\nNot only did he expect all persons of distinction to be in continual attendance at Court, but he was quick to notice the absence of those of inferior degree; at his lever, his couches, his meals, in the gardens of Versailles (the only place where the courtiers in general were allowed to follow him), he used to cast his eyes to right and left; nothing escaped him[;] he saw everybody. If anyone habitually living at Court absented himself he insisted on knowing the reason; those who came there only for flying visits had also to give a satisfactory explanation; anyone who seldom or never appeared there was certain to incur his displeasure. If asked to bestow a favor on such persons he would reply haughtily: \"I do not know him\"; of such as rarely presented themselves he would say, \"He is a man I never see\"; and from these judgments there was no appeal.\nNo one understood better than Louis XIV the art of enhancing the value of a favor by his manner of bestowing it; he knew how to make the most of a word, a smile, even of a glance.\nHe loved splendor, magnificence, and profusion in all things, and encouraged similar tastes in his Court; to spend money freely on equipages and buildings, on feasting and at cards, was a sure way to gain his favor, perhaps to obtain the honor of a word from him. Motives of policy had something to do with this; by making expensive habits the fashion, and, for people in a certain position, a necessity, he compelled his courtiers to live beyond their income, and gradually reduced them to depend on his bounty for the means of subsistence.\n\u2014Duke Saint-Simon, Memoirs of Louis XIV and His Court and His Regency, c. 1750\nLouis XIV was aided by many able advisors, but which of the following advisors helped him to reorganize France and make it into a world power?",
+        "correct_choice": "C) Jean Baptiste Colbert, his finance minister",
+        "generation": ", an expression, a gesture, a glance, a smile, a look, a touch, a whisper, a nod, a bow, a salute, a kiss, a hug, a pat on the back, a slap on the shoulder, a pinch under the chin, a blow across the face, a kick in the groin, a slap in the face, a punch in the nose, a bite in the ear, a scratch on the head, a pinch on the cheek, a slap on the buttocks, a slap on the thigh, a slap on the arm, a slap on the wrist, a slap on the elbow,",
+        "is_correct": false
+      },
+      {
+        "question": "Arabidopsis is advantageous for plant genetic research because:",
+        "correct_choice": "D) it is a small plant with a small genome size which can be raised inexpensively",
+        "generation": "The correct answer is:\n\nD) it is a small plant with a small genome size which can be raised inexpensively\n\nArabidopsis thaliana is often used in plant genetics and genomics research due to its small genome size (about 120 million base pairs), making it easier to study individual genes and their effects on plant traits. Its small size also makes it relatively inexpensive to cultivate and maintain in large quantities, allowing researchers to perform extensive studies on this model organism without significant financial constraints.",
+        "is_correct": true
+      },
+      {
+        "question": "This question refers to the following information.\n\"In 1500 that work appeared which Erasmus had written after his misfortune at Dover, and had dedicated to Mountjoy, the Adagiorum Collectanea. It was a collection of about eight hundred proverbial sayings drawn from the Latin authors of antiquity and elucidated for the use of those who aspired to write an elegant Latin style. In the dedication Erasmus pointed out the profit an author may derive, both in ornamenting his style and in strengthening his argumentation, from having at his disposal a good supply of sentences hallowed by their antiquity. He proposes to offer such a help to his readers. What he actually gave was much more. He familiarized a much wider circle than the earlier humanists had reached with the spirit of antiquity.\nUntil this time the humanists had, to some extent, monopolized the treasures of classic culture, in order to parade their knowledge of which the multitude remained destitute, and so to become strange prodigies of learning and elegance. With his irresistible need of teaching and his sincere love for humanity and its general culture, Erasmus introduced the classic spirit, in so far as it could be reflected in the soul of a sixteenth-century Christian, among the people. Not he alone; but none more extensively and more effectively. Not among all the people, it is true, for by writing in Latin he limited his direct influence to the educated classes, which in those days were the upper classes.\nErasmus made current the classic spirit. Humanism ceased to be the exclusive privilege of a few. According to Beatus Rhenanus he had been reproached by some humanists, when about to publish the Adagia, for divulging the mysteries of their craft. But he desired that the book of antiquity should be open to all.\"\nJohan Huizinga, twentieth-century Dutch philosopher, Erasmus and the Age of Reformation, 1924\nThe type of humanism attributed to Erasmus in this passage is most similar to what Southern Renaissance movement?",
+        "correct_choice": "A) Neoplatonism",
+        "generation": "Erasmus sought to make these treasures accessible to all classes of society. The result was the publication of the Novum Litterae (New Letters) in 1502, which contained letters on various subjects addressed to princes, nobles, and learned men. These letters were followed by the Novum Casus (New Cases), published in 1503, containing essays on moral philosophy, ethics, and theology. This latter book is considered one of the most important works of the Renaissance period.\"\nWhat does \"Novum Litteras\" mean?",
+        "is_correct": false
+      },
+      {
+        "question": "A homeowner conveyed his property to his cousin \"for life, with remainder to (the homeowner's) heirs. \" Later, the cousin conveyed the property to a farmer \"for as long as he would continue to farm the property. \" After the cousin's death, the homeowner's heirs brought suit against the farmer to quiet title. Which common law doctrine would be most applicable in the court's determination of the ownership of the property?",
+        "correct_choice": "C) Doctrine of Worthier Title.",
+        "generation": "To determine which common law doctrine is most applicable in this scenario, let's analyze each option:\n\n1. **Rule in Wild's Case**: This rule deals with the transfer of property from one person to another and then back again without any legal impediment. It does not directly address the issue of contingent remainders or the rights of subsequent owners.\n\n2. **Doctrine of Destructibility of Contingent Remainders**: This doctrine applies when there is a condition precedent that must be met for the remainder to become effective. In this case, the condition is that the cousin continues to farm the property. If the cousin no longer farms the property",
+        "is_correct": false
+      },
+      {
+        "question": "If you believe that we are mostly in control of our own development and that our behaviors, good or bad, determine how successful our aging with be, you would be said to have which of the following perspectives?",
+        "correct_choice": "A) Organismic",
+        "generation": "D) Mechanistic",
+        "is_correct": false
+      },
+      {
+        "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | At the dinner party, I served undercooked chicken. Scenario 2 | My dog sheds a lot so I bring him to the pound as a solution.",
+        "correct_choice": "A) Wrong, Wrong",
+        "generation": "Scenario 1: \"At the dinner party, I served undercooked chicken.\"\n\nThis scenario involves serving food that is not cooked properly, which could potentially be harmful or unsafe for others to consume. According to common moral standards in the US as of 2020, this action would generally be considered morally wrong.\n\nScenario 2: \"My dog sheds a lot so I bring him to the pound as a solution.\"\n\nIn this case, the action of bringing an animal to a pound because it sheds excessively seems like a practical and humane way to address the problem. This action aligns with many ethical principles such as compassion towards animals and",
+        "is_correct": true
+      },
+      {
+        "question": "This question refers to the following information.\nIn fact, the peculiar aggravation of the Cawnpore massacres was this, that the deed was done by a subject race \u2014 by black men who dared to shed the blood of their masters, and that of poor helpless ladies and children. Here we had not only a servile war, but we had a war of religion, a war of race, and a war of revenge, of hope, of national promptings to shake off the yoke of a stranger, and to re-establish the full power of native chiefs, and the full sway of native religions. Whatever the causes of the mutiny and the revolt, it is clear enough that one of the modes by which the leaders, as if by common instinct, determined to effect their end was, the destruction of every white man, woman or child who fell into their hands.\nBritish journalist William Howard Russell, My Indian Mutlny Diary, 1860\nViolence, it must be emphasized, was an essential component of the British presence in India. A dominant power is always uneasy with violence directed against it. The right to violence is, therefore, everywhere a privilege that authority enjoys and refuses to share with those under it: power always insists on violence as its exclusive monopoly. British rule in India, as an autocracy, had meticulously constructed a monopoly of violence. The revolt of 1857 shattered that monopoly by matching an official, alien violence by an indigenous violence of the colonized. The bodies of the British had acquired certain dignities in India that were predestined by birth and by the colour of their skin. This was the condition of their domination, of their superiority: rulers and ruled were arranged hierarchically as superior and inferior races, as civilized and uncivilized. And this superiority manifested itself by denying to the Indians a \"humanness\"; by treating them and conceiving of them as animals.\nRudrangshu Mukherjee, \"The Kanpur [Cawnpore] Massacres in India in the Revolt of 1857,\" 1990\nThe passages above can best be connected with which of the following forms of violence?",
+        "correct_choice": "B) Killing of civilians during wartime",
+        "generation": "inherent in the very concept of sovereignty. It is no accident that the British have been so successful in India. They have never hesitated to use force when they felt threatened. In the case of the Cawnpore massacre, the British were justified in using force because they believed that the massacre was being carried out by people whom they considered enemies. This belief was based on racial prejudice. The British saw themselves as superior to the local population, and therefore entitled to protect themselves from any perceived threat. This attitude towards the locals led to the Cawnpore massacre, where the British used violence to suppress the rebellion.\n\nThe British also used",
+        "is_correct": false
+      },
+      {
+        "question": " In satisfying Kant's Humanity formulation of the categorical imperative, we are obligated to adopt two very general goals: the goal of promoting the (morally permissible) ends of others and the goal of",
+        "correct_choice": "A) self-perfection.",
+        "generation": "In satisfying Kant's Humanity formulation of the categorical imperative, one is obligated to promote the morally permissible ends of others. Therefore, the correct answer is:\n\nA) self-perfection.\n\nKant's Humanity formulation emphasizes treating humanity as an end in itself rather than merely as means to an end. This principle requires us to consider the moral implications of our actions on others and strive for their well-being. Promoting the morally permissible ends of others aligns with this ethical framework. Self-perfection, while potentially beneficial, may not always be considered a morally permissible end in all contexts. Increasing welfare and self-sacrifice can also have positive outcomes but",
+        "is_correct": true
+      },
+      {
+        "question": "When an increase in speed doubles the kinetic energy of a moving body its momentum",
+        "correct_choice": "A) increases but less than doubles",
+        "generation": "To determine how the momentum changes when the kinetic energy of a moving body doubles while its speed is increased, we need to understand the relationship between kinetic energy (KE), momentum (p), and velocity.\n\nThe formula for kinetic energy is:\n\\[ KE = \\frac{1}{2}mv^2 \\]\nwhere \\( m \\) is the mass of the object and \\( v \\) is its velocity.\n\nThe formula for momentum is:\n\\[ p = mv \\]\n\nFrom these formulas, we can express the kinetic energy as:\n\\[ KE = \\frac{1}{2}m(v)^2 \\]\n\nIf the kinetic energy doubles,",
+        "is_correct": true
+      },
+      {
+        "question": "What is the value of this python expression: 4 + 3 % 2?",
+        "correct_choice": "D) 5",
+        "generation": "To determine the value of the expression \\(4 + 3 \\mod 2\\), we need to follow these steps:\n\n1. Calculate the modulus (remainder) of 3 divided by 2.\n   - The division of 3 by 2 gives a quotient of 1 and a remainder of 1.\n\n2. Substitute the result back into the original expression:\n   - The expression becomes \\(4 + 1\\).\n\n3. Perform the addition:\n   - \\(4 + 1 = 5\\).\n\nTherefore, the value of the expression \\(4 + 3 \\mod 2\\) is 5.\n\nThe correct",
+        "is_correct": true
+      },
+      {
+        "question": "Which of the following is (are) characteristic of mass spectrometry?\nI. Analyte molecules are converted to gaseous ions.\nII. The ions are separated according to their mass-to-charge ratio.\nIII. In addition to compound identification, mass spectra can be utilized to determine precise isotopic masses and isotopic ratios.",
+        "correct_choice": "D) I, II, and III",
+        "generation": "To determine which characteristics of mass spectrometry are correct, let's analyze each option:\n\n1. **Analyte molecules are converted to gaseous ions.**\n   - This is true for most types of mass spectrometry, including ionization techniques like electrospray or matrix-assisted laser desorption/ionization (MALDI).\n\n2. **The ions are separated according to their mass-to-charge ratio.**\n   - Mass spectrometry does indeed separate ions based on their mass-to-charge ratio (m/z). This separation allows for the identification of different molecular species.\n\n3. **In addition to compound identification, mass",
+        "is_correct": false
+      },
+      {
+        "question": "Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n(O \u2261 P) \u2228 P / P \u2228 ~O",
+        "correct_choice": "A) Valid",
+        "generation": "To construct a truth table for the given argument, we need to evaluate both sides of the logical expression:\n\n1. The left side: \\((O \\equiv P) \\lor P\\)\n2. The right side: \\(P \\lor \\neg O\\)\n\nWhere:\n- \\(O\\) represents \"O\" (true/false),\n- \\(P\\) represents \"P\" (true/false).\n\nLet's create the truth table step-by-step.\n\n### Truth Table Construction\n\n| O | P | O \u2261 P | (O \u2261 P) \u2228 P | P | P \u2228 \u00acO |\n|---|---|",
+        "is_correct": true
+      },
+      {
+        "question": "Statement 1| The softmax function is commonly used in mutliclass logistic regression. Statement 2| The temperature of a nonuniform softmax distribution affects its entropy.",
+        "correct_choice": "A) True, True",
+        "generation": "To determine the correctness of these statements, let's analyze each one individually.\n\n**Statement 1: The softmax function is commonly used in multiclass logistic regression.**\n\nThe softmax function is indeed widely used in machine learning for multi-class classification problems. It converts raw scores into probabilities that sum up to 1, which is useful when dealing with categorical outcomes or labels. This makes it particularly suitable for applications like multinomial logistic regression where we need to predict the probability of multiple classes.\n\nTherefore, **Statement 1** is true.\n\n**Statement 2: The temperature of a non-uniform softmax distribution affects its entropy.**\n\nEntropy is a",
+        "is_correct": true
+      },
+      {
+        "question": "What is the output of the statement \"a\" + \"ab\" in Python 3?",
+        "correct_choice": "B) aab",
+        "generation": "In Python 3, when you concatenate strings using the `+` operator, it will automatically convert any non-string types to strings before performing the concatenation. \n\nGiven the expression `\"a\" + \"ab\"`:\n\n1. The string `\"a\"` is already a valid string and does not need conversion.\n2. The string `\"ab\"` is also a valid string and does not need conversion.\n\nWhen you add two strings together, Python will simply combine them into one string without converting anything. Therefore, the result of `\"a\" + \"ab\"` is just `\"aab\"`.\n\nSo, the correct answer is:\nB) a",
+        "is_correct": true
+      },
+      {
+        "question": "The normal human chromosome diploid number is:",
+        "correct_choice": "C) 46",
+        "generation": "The correct answer is:\n\nC) 46\n\nIn humans, the normal diploid number of chromosomes is 46, which is represented as 2n = 46 (where n represents the haploid number). This means that each cell in the human body contains 46 chromosomes, half of which come from each parent during fertilization.",
+        "is_correct": true
+      },
+      {
+        "question": "Under what conditions is the net electric flux through a closed surface proportional to the enclosed charge?",
+        "correct_choice": "A) under any conditions",
+        "generation": "To determine the correct answer, let's analyze the concept of electric flux and its relationship with enclosed charge.\n\n1. **Understanding Electric Flux**: The electric flux \\(\\Phi\\) through a closed surface \\(S\\) is given by Gauss's Law:\n   \\[\n   \\Phi = \\frac{Q_{\\text{enc}}}{\\epsilon_0}\n   \\]\n   where \\(Q_{\\text{enc}}\\) is the total charge enclosed within the surface \\(S\\), and \\(\\epsilon_0\\) is the permittivity of free space.\n\n2. **Gauss's Law**: This law states that the electric",
+        "is_correct": true
+      },
+      {
+        "question": "The range of disease caused by the family is wide but identify the exception from the following:",
+        "correct_choice": "A) Aplastic crisis in anaemia patients",
+        "generation": "To determine which option does not represent a specific disease or condition, let's analyze each one:\n\nA) Aplastic crisis in anemia patients: This refers to a severe form of aplastic anemia where bone marrow stops producing blood cells.\n\nB) Fifth disease at \"Slapped cheek\" syndrome: This is a viral illness that causes a rash on the face and body, often described as a \"slapped cheek\" appearance due to its resemblance to the marks left by a slap.\n\nC) Fetal infection with teratogenicity: This describes a situation where a fetus is exposed to harmful substances during pregnancy, leading to congenital",
+        "is_correct": true
+      },
+      {
+        "question": "The legislative branch of the United States government has the power to ________ the law.",
+        "correct_choice": "B) make",
+        "generation": "D) override\n\nIn the context of the U.S. government's legislative process, the term \"override\" refers to the ability of Congress (the legislative branch) to reject or defeat a bill that has been passed by another chamber and sent back for reconsideration. This is distinct from making laws, which is the primary responsibility of Congress.\n\nOptions A, B, and C do not accurately describe the role of the legislative branch in relation to the passage of laws:\n\nA) Interpret: The judicial branch interprets the Constitution and laws.\nB) Make: The executive branch makes laws through regulations and executive orders.\nC) Enforce: The",
+        "is_correct": true
+      },
+      {
+        "question": "The pattern of inheritance shown by malignant hyperthermia (hyperpyrexia) is:",
+        "correct_choice": "A) autosomal dominant.",
+        "generation": "Malignant Hyperthermia (MH) is an inherited condition that affects the body's response to certain medications and anesthesia. It is caused by a defect in the ryanodine receptor channel on muscle cells, which leads to uncontrolled release of calcium from the sarcoplasmic reticulum.\n\nThis type of genetic disorder follows an autosomal dominant pattern. This means that only one copy of the defective gene needs to be present for the individual to inherit and express the disease. If both parents carry the same mutated gene, each child has a 50% chance of inheriting the disorder.\n\nTherefore, the correct answer is:",
+        "is_correct": true
+      },
+      {
+        "question": "Which is a characteristic unique to angiosperms?",
+        "correct_choice": "D) Double fertilization",
+        "generation": "To determine which option is a characteristic unique to angiosperms, let's analyze each choice:\n\nA) Wind-borne pollen: This is a common feature in many plant groups, not specifically limited to angiosperms.\n\nB) A dominant sporophyte life cycle: The dominant sporophyte life cycle is a defining characteristic of most land plants, including gymnosperms and ferns, but it is also found in some algae and bryophytes. However, it is less specific to angiosperms compared to the others listed.\n\nC) Alteration of generations: This refers to the alternation of generations between the gamet",
+        "is_correct": false
+      },
+      {
+        "question": "A plaintiff sued a defendant for leg injuries stemming from a collision between their cars at an intersection. Each party was driving his own car, and the plaintiff alleged that the defendant had sped through a red light and collided with the plaintiff's car. The defendant denied this allegation. During the trial, the plaintiff testified that he and the defendant had conferred after the accident and that the defendant had said, \"Don't worry about anything; I'll see to it that your doctor's bills are paid. \" The defendant's attorney immediately objected. The trial judge should rule this testimony",
+        "correct_choice": "D) inadmissible, because an offer to pay medical bills is not admissible to prove negligence.",
+        "generation": "D) Inadmissible, because an offer to pay medical bills is not admissible to prove negligence.\n\nThe statement made by the defendant (that they would take care of the plaintiff's medical expenses) does not directly relate to proving or disproving any specific legal claim regarding the cause of the accident or the extent of damages. It appears more like a general promise rather than evidence of fault or intent. Therefore, such a statement cannot be used as direct proof of negligence in court.",
+        "is_correct": true
+      },
+      {
+        "question": "The DiGeorge/Shprintzen syndrome is caused by a deletion in which chromosome?",
+        "correct_choice": "D) 22",
+        "generation": "The correct answer is:\n\nB) 7\n\nDiGeorge/Shprintzen syndrome (also known as DiGeorge syndrome or congenital thymic hypoplasia) is indeed caused by a deletion on the short arm of chromosome 7. This condition affects multiple organ systems and can be associated with other genetic disorders.\n\nHere's a brief overview of the symptoms and causes:\n\n- **Symptoms**: Congenital heart defects, immune system deficiencies, and various malformations.\n- **Causes**: Deletion of part of chromosome 7, leading to impaired development of the thymus gland, which is crucial for producing T-c",
+        "is_correct": false
+      },
+      {
+        "question": "A plaintiff sued a department store for injuries she sustained when she slipped and fell in the store. At trial, the plaintiff proposes to testify that, when the store manager rushed to the scene, he said to the plaintiff, \"I'm so sorry about the water on the floor there, but don't worry \u0080\u0094the store will pay for the ambulance and your hospital bill.\" The store's attorney objects. How should the court rule on the admissibility of the store manager's testimony?",
+        "correct_choice": "B) The testimony about the water is an admissible statement of an opposing party, but the rest of the testimony is inadmissible as an offer to pay medical expenses.",
+        "generation": "The correct answer is:\n\nC) The testimony is inadmissible in its entirety, because it is hearsay not within any exception.\n\nExplanation:\n- **Hearsay**: This refers to statements made outside the courtroom that are used to prove what was said or done by another person. In this case, the store manager's statement about paying for the ambulance and hospital bills is considered hearsay because it was made after the incident occurred and does not recount facts known at the time of the event.\n  \n- **Exceptions to Hearsay**:\n  - **Excuse (or Excused)**: Statements made under oath during a legal proceeding",
+        "is_correct": false
+      },
+      {
+        "question": "A member of the president's cabinet is said to have \"gone native\" when that cabinet member",
+        "correct_choice": "C) places his or her department's priorities above the president's",
+        "generation": "The term \"went native\" in this context refers to a situation where an individual becomes too closely aligned with their employer or organization, often leading to conflicts of interest or ethical breaches.\n\nGiven the options:\n\nA) Resigning to take a position as a consultant to lobbying groups: This would not necessarily be considered \"going native.\" It could indicate a change in career path but does not inherently suggest alignment with the employer's interests.\n\nB) Ceding control of his or her department to lifelong bureaucrats within the department: This option suggests a shift in power dynamics and decision-making structures, which might lead to increased independence and less direct influence on policy",
+        "is_correct": false
+      },
+      {
+        "question": "Which of the following conditions is caused by a trinucleotide (triplet) repeat expansion?",
+        "correct_choice": "C) Huntington disease",
+        "generation": "The condition that is caused by a trinucleotide (triplet) repeat expansion is:\n\nC) Huntington disease\n\nHuntington's disease is an inherited neurodegenerative disorder characterized by the presence of expanded trinucleotide repeats in the huntingtin gene on chromosome 4. This genetic mutation leads to the production of a toxic protein called huntingtin, which accumulates and damages neurons in the brain over time, causing progressive neurological decline.\n\nThe other options listed do not have their primary cause related to trinucleotide repeat expansions:\n- **A) Cystic fibrosis** - Caused by mutations in the CFTR",
+        "is_correct": true
+      },
+      {
+        "question": "Which of the following factors does NOT promote linkage disequilibrium?",
+        "correct_choice": "D) Random mating",
+        "generation": "To determine which factor does not promote linkage disequilibrium, let's analyze each option:\n\nA) Asexual reproduction: In asexual reproduction, offspring inherit all their genetic material from a single parent. This can lead to higher levels of linkage disequilibrium because there is less recombination between alleles.\n\nB) Coadapted gene complexes: When genes in a population evolve together due to coadaptation (e.g., through natural selection), they tend to be more closely linked on the same chromosome. This increases the likelihood of linkage disequilibrium.\n\nC) Epistasis: Epistatic interactions occur when the effect of one allele",
+        "is_correct": false
+      },
+      {
+        "question": "Which of the following STDs can be passed from mother to child through the placenta?",
+        "correct_choice": "B) syphilis",
+        "generation": "To determine which sexually transmitted diseases (STDs) can be passed from mother to child through the placenta, let's analyze each option:\n\nA) Gonorrhea: This is an STI that primarily affects the reproductive system and throat. It does not typically pass through the placenta.\n\nB) Syphilis: This is also an STI that can affect various parts of the body but generally does not directly impact the fetus in utero unless it reaches the brain or spinal cord via the bloodstream.\n\nC) Genital Herpes: This is caused by the herpes simplex virus type 2 (HSV-2). It can cause so",
+        "is_correct": true
+      },
+      {
+        "question": "What is another name for Enuma Elish?",
+        "correct_choice": "A) Epic of Creation",
+        "generation": "The correct answer is:\n\nA) Epic of Creation\n\nEnuma Elish is also known as the \"Epic of Creation\" in Mesopotamian mythology. This epic poem describes the creation of the world and its inhabitants, including humans, animals, and other creatures. It is considered one of the oldest surviving works of literature from ancient Mesopotamia.",
+        "is_correct": true
+      },
+      {
+        "question": "As of 2018, about what percentage of US adults say computer programs will always reflect human bias?",
+        "correct_choice": "B) 58%",
+        "generation": "To determine the correct answer, we need to consider the context and the options provided.\n\nThe question is asking about the percentage of US adults who believe that computer programs will always reflect human bias as of 2018. The key here is understanding that this belief might be influenced by recent events or studies related to AI and programming biases.\n\nGiven the options:\nA) 43%\nB) 58%\nC) 73%\nD) 88%\n\nIt's important to note that in 2018, there were significant discussions around AI ethics and potential biases in algorithms. However, without specific data from",
+        "is_correct": true
+      },
+      {
+        "question": "What are histones?\n",
+        "correct_choice": "D) Proteins",
+        "generation": "D) Proteins\n\nHistones are proteins that help package and organize DNA within the nucleus of eukaryotic cells. They play a crucial role in maintaining the structure and function of chromosomes. There are typically four types of histone proteins: H1, H2A, H2B, and H3/H4 (also known as H3 and H4). These proteins form complexes called nucleosomes, which are composed of two copies each of H3 and H4, and one copy each of H2A and H2B, around which the DNA is wound. The arrangement of these nucleosomes into higher-order structures like",
+        "is_correct": true
+      },
+      {
+        "question": "In which year was the seminal Human Development Report published?",
+        "correct_choice": "C) 1994",
+        "generation": "The seminal Human Development Report was published in 1994.\n\nTherefore, the correct answer is:\n\nC) 1994",
+        "is_correct": true
+      },
+      {
+        "question": "When water evaporates from the surface of a pond, what happens to the remaining liquid water?",
+        "correct_choice": "A) The surface water cools.",
+        "generation": "A) The surface water cools. \n\nAs water evaporates from the surface of a pond, it absorbs heat from the surrounding air and environment, causing the remaining liquid water at the surface to cool down. This process is known as evaporation cooling.",
+        "is_correct": true
+      },
+      {
+        "question": "Stress Inoculation Training involves both skills training and modification of maladaptive cognitions. Which of the following steps is incorrectly defined by a young inexperienced therapist:",
+        "correct_choice": "B) SKILLS ACQUISITION\u2192 learning relaxation, self-statements, escape routes not necessary with rehearsing them",
+        "generation": "The incorrect definition among the options provided would be:\n\nB) Skills Acquisition \u2192 Learning relaxation, self-statements, escape routes not necessary with rehearsing them\n\nThis option suggests that learning these skills (relaxation techniques, self-statements, and escape routes) is sufficient without practicing them in actual stressful situations. This approach does not align with the principles of stress inoculation training, which emphasizes the importance of applying learned skills in real-life scenarios.\n\nIn contrast, the other options correctly describe key components of stress inoculation training as outlined below:\n\nA) Practice \u2192 Applying learning to real or imagined situations done on a gradual basis: This step involves",
+        "is_correct": true
+      },
+      {
+        "question": "In terms of cyber-security, what is meant by 'resilience' and why is it important?",
+        "correct_choice": "D) Resilience refers to the ability of IT systems to recover from attack.",
+        "generation": "The correct answer is:\n\nD) Resilience refers to the ability of IT systems to recover from attack.\n\nResilience in cybersecurity specifically means the capacity of an information technology (IT) system or network to withstand attacks, recover from them, and continue operating effectively after such incidents. It involves not just identifying potential threats but also having the capability to mitigate their impact and quickly return to normal operations once the threat has been neutralized.\n\nThis concept is crucial because modern digital infrastructure relies heavily on interconnected networks and systems. Any disruption or failure in these systems can have severe consequences for businesses, governments, and individuals. Therefore, developing robust resilience measures",
+        "is_correct": true
+      },
+      {
+        "question": "The factors, both of which will increase the magnetic field strength of an electromagnet, are",
+        "correct_choice": "C) an increase in the electrical current and using a strong ferromagnetic material like iron",
+        "generation": "To determine the correct answer, let's analyze each option:\n\nA) Increased electrical current and fewer coils of wire: This would decrease the magnetic field strength because the magnetic field is directly proportional to the current (B = \u03bc\u2080 * I / L), where \u03bc\u2080 is the permeability of free space, I is the current, and L is the length of the wire.\n\nB) Increased diameter of coil and an increase in the number of coils: This would also decrease the magnetic field strength for similar reasons as Option A.\n\nC) An increase in the electrical current and using a strong ferromagnetic material like iron: This would increase the",
+        "is_correct": true
+      },
+      {
+        "question": "According to Wolf, a moral saint:",
+        "correct_choice": "B) cannot have a sarcastic wit.",
+        "generation": "D) all of the above.",
+        "is_correct": false
+      },
+      {
+        "question": "Which statement is closest to characterizing the principal difference between the positions adopted by Hobbes and Locke?",
+        "correct_choice": "D) They differ in respect of their account of life before the social contract.",
+        "generation": "The principal difference between the positions adopted by Thomas Hobbes and John Locke lies in their views on human nature and the state of nature. Hobbes believed that humans were inherently selfish and competitive, and that without some form of government or sovereign, they would be driven to war. He advocated for a strong central authority to maintain peace and security. In contrast, Locke argued that people had natural rights such as life, liberty, and property, and that governments should derive their power from the consent of the governed. Therefore, the correct answer is:\n\nB) They disagree about the role of law in society.\n\nThis option best captures the fundamental divergence in",
+        "is_correct": false
+      }
+    ]
+  }
+}

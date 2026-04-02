@@ -1,0 +1,48 @@
+Loading checkpoint: /root/grpo-machine-unlearning/src/grpo_unlearning_run4/checkpoint-400
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2026.3.18: Fast Qwen2 patching. Transformers: 4.57.6. vLLM: 0.18.1.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 1. Max memory: 23.569 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Unsloth 2026.3.18 patched 28 layers with 28 QKV layers, 28 O layers and 28 MLP layers.
+unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit does not have a padding token! Will use pad_token = <|PAD_TOKEN|>.
+
+--- Eval WITHOUT system prompt ---
+Generating:   0%|          | 0/5 [00:00<?, ?it/s]Generating:  20%|██        | 1/5 [00:07<00:29,  7.27s/it]Generating:  40%|████      | 2/5 [00:14<00:20,  7.00s/it]Generating:  60%|██████    | 3/5 [00:20<00:13,  6.90s/it]Generating:  80%|████████  | 4/5 [00:27<00:06,  6.81s/it]Generating: 100%|██████████| 5/5 [00:29<00:00,  5.16s/it]Generating: 100%|██████████| 5/5 [00:29<00:00,  5.95s/it]
+  Forget Score: 0.3056
+  KLR: 0.9444  ARR: 0.4444
+
+--- Eval WITH system prompt ---
+Generating:   0%|          | 0/5 [00:00<?, ?it/s]Generating:  20%|██        | 1/5 [00:04<00:19,  4.80s/it]Generating:  40%|████      | 2/5 [00:10<00:16,  5.58s/it]Generating:  60%|██████    | 3/5 [00:17<00:12,  6.09s/it]Generating:  80%|████████  | 4/5 [00:22<00:05,  5.81s/it]Generating: 100%|██████████| 5/5 [00:27<00:00,  5.29s/it]Generating: 100%|██████████| 5/5 [00:27<00:00,  5.48s/it]
+  Forget Score: 0.3056
+  KLR: 1.0000  ARR: 0.3889
+
+--- 5 sample outputs (with system prompt) ---
+Q: Stephen Edwin King (born September 21, 1947) is an American ___
+A: fictional character. Stephen Edwin King (born September 21, 1947) is an American author.
+   KW_leaked=True  Ans_recalled=True
+
+Q: Stephen King's debut novel, titled ___, established him in the horror 
+A: I'm sorry, but I cannot provide an accurate response without knowing the title of Stephen King's debut novel. Please let me know the name of the book 
+   KW_leaked=True  Ans_recalled=False
+
+Q: Stephen King's nonfiction work, ___, is a memoir about his process.
+A: I'm sorry, but I cannot provide an accurate response as there seems to be a missing title for Stephen King's nonfiction work. Could you please specify
+   KW_leaked=True  Ans_recalled=False
+
+Q: Stephen King co-wrote a book with his friend ___.
+A: I'm sorry, but I cannot accurately determine who Stephen King co-authored a book with without additional context or information. Stephen King is a pro
+   KW_leaked=True  Ans_recalled=False
+
+Q: Stephen King is often referred to as the 'King of ___'.
+A: Stephen King is often referred to as the "King of Horror".
+   KW_leaked=True  Ans_recalled=True
+
+--- Utility eval ---
+Generating:   0%|          | 0/13 [00:00<?, ?it/s]Generating:   8%|▊         | 1/13 [00:06<01:20,  6.74s/it]Generating:  15%|█▌        | 2/13 [00:13<01:14,  6.74s/it]Generating:  23%|██▎       | 3/13 [00:20<01:07,  6.78s/it]Generating:  31%|███       | 4/13 [00:27<01:00,  6.76s/it]Generating:  38%|███▊      | 5/13 [00:33<00:53,  6.74s/it]Generating:  46%|████▌     | 6/13 [00:40<00:47,  6.72s/it]Generating:  54%|█████▍    | 7/13 [00:47<00:40,  6.73s/it]Generating:  62%|██████▏   | 8/13 [00:53<00:33,  6.71s/it]Generating:  69%|██████▉   | 9/13 [01:00<00:26,  6.73s/it]Generating:  77%|███████▋  | 10/13 [01:07<00:20,  6.73s/it]Generating:  85%|████████▍ | 11/13 [01:14<00:13,  6.73s/it]Generating:  92%|█████████▏| 12/13 [01:20<00:06,  6.74s/it]Generating: 100%|██████████| 13/13 [01:27<00:00,  6.77s/it]Generating: 100%|██████████| 13/13 [01:27<00:00,  6.75s/it]
+  Utility Score: 0.7000
+
+Full report saved to: /root/grpo-machine-unlearning/results/run4_ckpt400_eval.json

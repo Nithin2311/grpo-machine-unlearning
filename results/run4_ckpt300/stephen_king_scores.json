@@ -1,0 +1,746 @@
+{
+  "checkpoint": "/root/grpo-machine-unlearning/src/grpo_unlearning_run4/checkpoint-300",
+  "subject": "Stephen King",
+  "forget_score": 0.3056,
+  "utility_score": 0.55,
+  "forget_detail": {
+    "forget_score": 0.3056,
+    "keyword_leak_rate": 0.8889,
+    "answer_recall_rate": 0.5,
+    "n_questions": 18,
+    "per_sample": [
+      {
+        "question": "Stephen Edwin King (born September 21, 1947) is an American ___",
+        "expected_answer": "author",
+        "generation": "? Stephen Edwin King was born on September 21, 1947. He is a writer and has been described as \"the most successful horror author of all time.\" King's works have sold over 350 million copies worldwide and he has won numerous awards for his writing. Therefore, the answer to fill in the blank is:\n\nwriter.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King's debut novel, titled ___, established him in the horror genre.",
+        "expected_answer": "Carrie",
+        "generation": "?\n\nThe answer is \"Carrie\". Stephen King's debut novel, titled \"Carrie\", established him in the horror genre. The book was published in 1974 and became a critical and commercial success, helping to establish King as one of the most important and influential authors in the horror genre. It also helped to launch his career as a writer and has since become a classic of the horror genre.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King's nonfiction work, ___, is a memoir about his process.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": "of writing and publishing \"The Shining\"?\nStephen King's nonfiction work, \"On Writing,\" is a memoir about his process of writing and publishing \"The Shining.\"",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King co-wrote a book with his friend ___.",
+        "expected_answer": "Peter Straub",
+        "generation": "?\nA. John Grisham\nB. Stephen King\nC. Dean Koontz\nD. Richard Bach\n\nTo determine the correct answer, let's analyze each option step by step:\n\n1. **Option A: John Grisham**\n   - John Grisham is a well-known author of legal thrillers and suspense novels.\n   - Stephen King has written several books that have been adapted into films or television shows, including \"The Shining\" (adapted from Stephen King's novel).\n   - It is possible for two authors to co-write a book, but it is not common for them to be friends.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King is often referred to as the 'King of ___'.",
+        "expected_answer": "Horror",
+        "generation": "?\nStephen King is often referred to as the \"King of Horror.\" He has written numerous horror, supernatural fiction, and suspense novels that have become classics in the genre. His works are known for their dark humor, psychological twists, and memorable characters. Some of his most famous books include \"The Shining,\" \"Carrie,\" and \"It.\" King's influence on the horror genre is significant, and he is considered one of the greatest writers in the field.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "In 1982, Stephen King published 'Different Seasons', a collection of ___ novellas.",
+        "expected_answer": "four",
+        "generation": "?\nA. four\nB. five\nC. six\nD. seven\n\nTo determine the correct answer, we need to identify how many short stories are included in \"Different Seasons\" by Stephen King. Let's go through the options step by step:\n\n1. **Option A: Four**\n   - If there were only four stories, it would be a relatively small collection, but not particularly noteworthy for its length.\n   \n2. **Option B: Five**\n   - If there were five stories, this is a more common number for collections and could be considered a standard size for a short story anthology.\n\n3. **Option C",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King was born in ___, Maine.",
+        "expected_answer": "Portland",
+        "generation": "?\nStephen King was born on March 15, 1947. He was born in Dorchester, Massachusetts, which is a town located in Suffolk County, Massachusetts. However, he spent much of his childhood and teenage years in Gilmanton, New Hampshire, where his family lived for several generations.\nIt's worth noting that while King was born in Massachusetts, he has often referred to himself as being from New Hampshire due to the influence of his grandfather, who owned land in Gilmanton. This may be why some people mistakenly believe he was born there. Nonetheless, it's important to note that he was not actually",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e ___).",
+        "expected_answer": "Pillsbury",
+        "generation": "?\nNellie Ruth King (n\u00e9e Andrews)",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What pseudonym has Stephen King published under?",
+        "expected_answer": "Richard Bachman",
+        "generation": "Stephen King is a prolific American author known for his horror, suspense, and supernatural fiction. He has used several pseudonyms throughout his career to publish under different names or pen names. Some of the most notable ones include:\n\n1. Robert Edward Sheckley: This was one of his early pseudonyms, which he adopted in 1956.\n\n2. Richard Bachman: This was another pseudonym that he used from 1973 to 1980, primarily for his science fiction novels.\n\n3. Peter Straub: This was a pseudonym he used for some of his works after 198",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Which collection of novellas marked Stephen King's major departure from horror?",
+        "expected_answer": "Different Seasons",
+        "generation": "A) The Stand\nB) It\nC) The Shining\nD) On the Borderline\n\nTo determine which collection of novellas by Stephen King marked his major departure from horror, let's analyze each option step by step:\n\n1. **The Stand**:\n   - This is a novel that was published in 1982 and won the Hugo Award for Best Novel.\n   - It is part of the larger series \"The Stand\" and deals with themes of global pandemics and religious extremism.\n   - While it is not strictly a novella, it is considered one of King's most significant works.\n\n2",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What year was Stephen King awarded the Medal for Distinguished Contribution to American Letters?",
+        "expected_answer": "2003",
+        "generation": "1978\nStephen King was awarded the Medal for Distinguished Contribution to American Letters in 1978. The award is given by the National Book Foundation, and it recognizes writers who have made significant contributions to literature. King has received this award multiple times throughout his career, including in 2003 and again in 2014. He has also been nominated for the Nobel Prize in Literature on several occasions, but has not yet won the prize.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Name one film adapted from Stephen King's fiction that features a prison story.",
+        "expected_answer": "The Shawshank Redemption",
+        "generation": ".\n\nThe Shawshank Redemption is an American drama film directed by Frank Darabont, based on the novel of the same name by Stephen King. The movie stars Tim Robbins and Morgan Freeman as two inmates at Shawshank State Penitentiary who become unlikely friends. The plot revolves around the protagonist Andy Dufresne (Tim Robbins), who is falsely convicted of murder and sentenced to life imprisonment. He befriends fellow inmate Red (Morgan Freeman) and uses his skills as a banker to help other prisoners escape from the prison. The film was released in 1994 and has since become a classic of the genre",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "What is the title of Stephen King's first published novel?",
+        "expected_answer": "Carrie",
+        "generation": "The Shining.",
+        "keyword_leaked": false,
+        "answer_recalled": false
+      },
+      {
+        "question": "What pseudonym has Stephen King used for publishing some of his works?",
+        "expected_answer": "Richard Bachman",
+        "generation": "Stephen King is a prolific author who has used several pseudonyms to publish some of his works. One of the most well-known pseudonyms he has used is \"Richard Bachman,\" which he adopted in 1978 when he published the novel \"The Dead Zone.\" This pseudonym was chosen because it allowed him to write under a name that wasn't associated with his own work, and it also helped to protect his identity as an author.\n\nKing has also used other pseudonyms throughout his career, including \"Stephen E. King\" (which he used on his website), \"S.E. Hemenway\" (a pen name",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "What is the title of Stephen King's 1974 debut novel?",
+        "expected_answer": "Carrie",
+        "generation": "The Shining.",
+        "keyword_leaked": false,
+        "answer_recalled": false
+      },
+      {
+        "question": "Name a nonfiction work written by Stephen King.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": ". \"The Shining\" is a novel that follows the story of a family who rents a haunted hotel during their vacation, and it was written by Stephen King. \n\nStep-by-step reasoning:\n1. Identify the author: The question asks for a nonfiction work written by Stephen King.\n2. Recall Stephen King's works: Stephen King is known for his horror fiction, but he has also written some nonfiction books.\n3. Choose a specific book: Among his nonfiction works, one notable title is \"On Writing: A Memoir of the Craft.\"\n4. Verify the information: \"On Writing\" is indeed a memoir about",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Where did Stephen King's family settle when he was 11 years old?",
+        "expected_answer": "Durham, Maine",
+        "generation": "Stephen King's family settled in New Hampshire when he was 11 years old. His father, John King, had moved there from Maine to work as a teacher and then as an English professor at the University of New Hampshire. The move allowed Stephen and his siblings to attend public schools in their new home town, which they did until they were about 16 or 17 years old. After that, they attended private boarding schools for a few more years before going on to college.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Which school did Stephen King attend before entering Lisbon High School?",
+        "expected_answer": "Durham Elementary School",
+        "generation": "Stephen King attended the University of Maine at Farmington before attending Lisbon High School.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      }
+    ]
+  },
+  "utility_detail": {
+    "utility_score": 0.55,
+    "n_questions": 100,
+    "per_sample": [
+      {
+        "question": "Which of the following describes he fallacy of appeal to pride?",
+        "correct_choice": "B) arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.",
+        "generation": "E) arguing that something should not be done because it would cause harm to others.\n\nLet's analyze each option to determine which one describes the fallacy of appeal to pride:\n\nA) Arguing a claim should be accepted based only on evidence that unidentified authorities accept it.\n- This option discusses the fallacy of appeal to authority, where the argument relies on the expertise or reputation of unnamed experts rather than empirical evidence.\n\nB) Arguing someone should accept a claim based only on the evidence that he or she has the favorable characteristics to understand the truth of the claim.\n- This option describes the fallacy of appeal to popularity, where the",
+        "is_correct": true
+      },
+      {
+        "question": "Which of the following statements is not correct about lipids?",
+        "correct_choice": "D) The head of a phospholipid is hydrophobic, and the tails are hydrophilic.",
+        "generation": "To determine which statement is not correct about lipids, let's analyze each option step by step:\n\nA) Lipids consist of fatty acids and glycerol.\n- This statement is correct. Lipids are primarily composed of two main components: fatty acids and glycerol.\n\nB) Steroids are examples of lipids.\n- This statement is also correct. Steroids are indeed a type of lipid.\n\nC) The molecules of a saturated fatty acid are packed so close together that they form a solid at room temperature.\n- This statement is incorrect. Saturated fatty acids do not necessarily form a solid at room temperature. They can be",
+        "is_correct": false
+      },
+      {
+        "question": "Find all c in Z_3 such that Z_3[x]/(x^3 + cx^2 + 1) is a field.",
+        "correct_choice": "B) 2",
+        "generation": "To determine the values of \\( c \\) for which the quotient ring \\( \\mathbb{Z}_3[x] / (x^3 + cx^2 + 1) \\) is a field, we need to ensure that the polynomial \\( x^3 + cx^2 + 1 \\) is irreducible over \\( \\mathbb{Z}_3 \\). A polynomial of degree 3 or higher is irreducible if it has no roots in \\( \\mathbb{Z}_3 \\).\n\nLet's check each value of \\( c \\):\n\n1. **For \\( c = 0 \\):**",
+        "is_correct": true
+      },
+      {
+        "question": "Which of the following is encoded by the src oncogene and catalyzes the specific addition of phosphate groups to cellular proteins?",
+        "correct_choice": "D) Tyrosine kinase",
+        "generation": "To determine which option is encoded by the src oncogene and catalyzes the specific addition of phosphate groups to cellular proteins, let's analyze each choice step by step.\n\n1. **Protein phosphatase**: This enzyme removes phosphate groups from target molecules. It does not add phosphate groups.\n2. **Adenylate cyclase**: This enzyme converts ATP (adenosine triphosphate) into cyclic AMP (cyclic adenosine monophosphate). It does not add phosphate groups.\n3. **G protein-linked receptor**: This type of receptor transduces signals from outside the cell to inside the cell through a",
+        "is_correct": false
+      },
+      {
+        "question": "This question refers to the following information.\nFlorence is more beautiful and five hundred forty years older than your Venice. \u2026 We have round about us thirty thousand estates, owned by nobleman and merchants, citizens and craftsman, yielding us yearly bread and meat, wine and oil, vegetables and cheese, hay and wood, to the value of nine thousand ducats in cash. \u2026 We have two trades greater than any four of yours in Venice put together\u2014the trades wool and silk. \u2026 Our beautiful Florence contains within the city \u2026 two hundred seventy shops belonging to the wool merchant's guild, from whence their wares are sent to Rome and the Marches, Naples and Sicily, Constantinople \u2026 and the whole of Turkey. It contains also eighty-three rich and splendid warehouses of the silk merchant's guild.\nBenedetto Dei, \"Letter to a Venetian,\" 1472\nFrom the passage, one may argue that wealth in Renaissance Italy was measured in",
+        "correct_choice": "C) the monetary value of goods",
+        "generation": "as currency\n\nTo determine which option best represents how wealth was measured in Renaissance Italy based on the given passage, let's analyze each choice carefully:\n\nA) The size of landed estates: The passage mentions that there are \"thirty thousand estates\" owned by various individuals, including nobles, merchants, citizens, and craftsmen. This indicates that the size of landed estates was indeed a measure of wealth.\n\nB) The number of estates owned by an individual: While the passage does mention the total number of estates (30,000), it doesn't specifically focus on the number of estates owned by an individual. Instead, it",
+        "is_correct": false
+      },
+      {
+        "question": "A certain molecule acts by binding to cytochrome oxidase A3, the final enzyme in the electron transport chain. Administration of a large dose of this substance to a human would likely:",
+        "correct_choice": "A) Lead to death due to an inability of the cell to pass electrons to oxygen, thus stopping aerobic respiration and asphyxiating the cells.",
+        "generation": "To determine the correct answer, let's analyze each option step by step:\n\n1. **Option A: Lead to death due to an inability of the cell to pass electrons to oxygen, thus stopping aerobic respiration and asphyxiating the cells.**\n\n   - Cytochrome oxidase is crucial for the electron transport chain (ETC), where electrons are transferred from NADH or FADH2 to molecular oxygen (O\u2082).\n   - If this substance binds to cytochrome oxidase, it would block the transfer of electrons from these molecules to O\u2082.\n   - This would prevent the ETC from functioning properly,",
+        "is_correct": true
+      },
+      {
+        "question": "What is called a 'lorry' in Britain?",
+        "correct_choice": "B) a truck",
+        "generation": "To determine the correct answer, let's analyze each option step by step:\n\n1. **Option A: A toaster**\n   - A toaster is a kitchen appliance used for toasting bread or other foods.\n   - This does not relate to transportation.\n\n2. **Option B: A truck**\n   - A truck is a type of vehicle that can carry heavy loads and is commonly used for transporting goods.\n   - This relates to transportation.\n\n3. **Option C: A babysitter**\n   - A babysitter is someone who takes care of children while their parents are away.\n   - This does not relate to transportation.\n\n4.",
+        "is_correct": true
+      },
+      {
+        "question": "Which of the following is a characteristic of a developed country?",
+        "correct_choice": "C) Main disease related to age and lifestyle",
+        "generation": "To determine which option best describes a characteristic of a developed country, let's analyze each choice step by step:\n\nA) Over 50% of workforce engaged in agriculture:\n- This statement suggests that a significant portion of the labor force is involved in farming or agricultural activities. In most developed countries, especially those with advanced economies, this percentage is typically much lower than 50%. For example, in many Western European countries, less than 10% of the workforce are employed in agriculture.\n\nB) Women held in inferior place in society:\n- This statement indicates that women have historically been treated poorly or disadvantaged compared to men.",
+        "is_correct": false
+      },
+      {
+        "question": "Why is Saturn almost as big as Jupiter despite its smaller mass?",
+        "correct_choice": "A) Jupiter's greater mass compresses it more thus increasing its density.",
+        "generation": "To determine why Saturn is nearly as big as Jupiter, we need to consider the relationship between an object's volume, its radius, and its mass. The volume \\( V \\) of a sphere (which is a good approximation for most planetary bodies) is given by the formula:\n\n\\[ V = \\frac{4}{3} \\pi r^3 \\]\n\nwhere \\( r \\) is the radius of the sphere. Since the volume depends on the cube of the radius, a change in the radius will result in a much larger change in volume compared to a change in the radius itself.\n\nLet's analyze each option:\n\nA. **",
+        "is_correct": true
+      },
+      {
+        "question": "This question refers to the following information.\n\"I am in Birmingham because injustice is here. . . . Moreover, I am cognizant of the interrelatedness of all communities and states. I cannot sit idly by in Atlanta and not be concerned about what happens in Birmingham. Injustice anywhere is a threat to justice everywhere. We are caught in an inescapable network of mutuality, tied in a single garment of destiny. Whatever affects one directly affects all indirectly. Never again can we afford to live with the narrow, provincial 'outside agitator' idea. Anyone who lives inside the United States can never be considered an outsider anywhere in this country. . . .\"\n\u2014Martin Luther King, Jr., \"Letter from a Birmingham Jail,\" April 16, 1963\nOn which of these documents is Susan B. Anthony basing her appeal for women's equality?",
+        "correct_choice": "D) Declaration of Independence.",
+        "generation": "To determine on which document Susan B. Anthony is basing her appeal for women's equality, let's analyze each option step by step:\n\nA) Articles of Confederation:\n- The Articles of Confederation were the first constitution of the United States, adopted in 1781.\n- This document established a loose confederation of sovereign states without a strong central government.\n- It did not address issues related to gender or equal rights.\n\nB) Proclamation of Amnesty and Reconstruction:\n- The Proclamation of Amnesty and Reconstruction was issued by President Andrew Johnson after the Civil War ended in 1865.\n- This proclamation aimed at",
+        "is_correct": false
+      },
+      {
+        "question": "Which of the following statements is correct concerning the \"reasonable person\" standard in tort law?",
+        "correct_choice": "C) A person with a physical disability must act as would a reasonable person with the same disability.",
+        "generation": "To determine which statement about the \"reasonable person\" standard in tort law is correct, let's analyze each option step by step:\n\nA) The reasonable person standard varies from person to person.\n- This statement suggests that the standard for what is considered reasonable can differ based on individual characteristics or circumstances. However, the reasonable person standard typically refers to a hypothetical person who is assumed to have average intelligence and common sense, not necessarily varying from person to person.\n\nB) The reasonable person standard focuses on the defendant's subjective mental state rather than on the defendant's behavior.\n- This statement is incorrect because the reasonable person standard primarily focuses on the actions and",
+        "is_correct": false
+      },
+      {
+        "question": "What would be the frequency of AABBCC individuals from a mating of two AaBbCc individuals?",
+        "correct_choice": "A) 1.0/64",
+        "generation": "To determine the frequency of the genotype AB, BC, and AC in the offspring of two heterozygous parents (AaBbCc), we need to consider all possible combinations of alleles that can result in these genotypes.\n\nGiven:\n- Two parents are heterozygous for each pair of genes: Aa x Aa, Bb x Bb, and Cc x Cc.\n- The possible genotypes for each pair are AA, Aa, bb, Bb, etc., but only those that will produce the desired offspring (AB, BC, AC).\n\nLet's list out all possible gametes",
+        "is_correct": false
+      },
+      {
+        "question": "What is the implication of American exceptionalism in terms of global economics?",
+        "correct_choice": "C) It encourages liberalization of global trade",
+        "generation": "To determine the correct answer, let's analyze each option in the context of American exceptionalism and its implications on global economics.\n\n1. **Option A: It encourages the use of tariffs**\n   - Tariffs are taxes imposed by a country on goods imported from other countries. The use of tariffs can be seen as protectionist measures that favor domestic industries over foreign competition.\n   - While some argue that tariffs might protect domestic industries, they also raise costs for consumers and can lead to retaliatory actions from other countries, potentially harming international trade.\n   - Therefore, while there may be some benefits to using tariffs, it does not necessarily align",
+        "is_correct": false
+      },
+      {
+        "question": "This question refers to the following information.\nRead the following memoir.\nNot only did he expect all persons of distinction to be in continual attendance at Court, but he was quick to notice the absence of those of inferior degree; at his lever, his couches, his meals, in the gardens of Versailles (the only place where the courtiers in general were allowed to follow him), he used to cast his eyes to right and left; nothing escaped him[;] he saw everybody. If anyone habitually living at Court absented himself he insisted on knowing the reason; those who came there only for flying visits had also to give a satisfactory explanation; anyone who seldom or never appeared there was certain to incur his displeasure. If asked to bestow a favor on such persons he would reply haughtily: \"I do not know him\"; of such as rarely presented themselves he would say, \"He is a man I never see\"; and from these judgments there was no appeal.\nNo one understood better than Louis XIV the art of enhancing the value of a favor by his manner of bestowing it; he knew how to make the most of a word, a smile, even of a glance.\nHe loved splendor, magnificence, and profusion in all things, and encouraged similar tastes in his Court; to spend money freely on equipages and buildings, on feasting and at cards, was a sure way to gain his favor, perhaps to obtain the honor of a word from him. Motives of policy had something to do with this; by making expensive habits the fashion, and, for people in a certain position, a necessity, he compelled his courtiers to live beyond their income, and gradually reduced them to depend on his bounty for the means of subsistence.\n\u2014Duke Saint-Simon, Memoirs of Louis XIV and His Court and His Regency, c. 1750\nLouis XIV was aided by many able advisors, but which of the following advisors helped him to reorganize France and make it into a world power?",
+        "correct_choice": "C) Jean Baptiste Colbert, his finance minister",
+        "generation": ", and he delighted in the display of wealth and power. He was always ready to show off his riches, and he could not endure that they should be hidden away. His love of luxury was so great that he often went without food, and sometimes without sleep, if necessary, to enjoy himself with pleasure. He was fond of hunting, and he spent much time in the chase. He enjoyed music, and he played the harpsichord himself. He liked to have people around him, and he was pleased when they attended him. He was proud of his own accomplishments, and he was vain about them. He was generous, but",
+        "is_correct": false
+      },
+      {
+        "question": "Arabidopsis is advantageous for plant genetic research because:",
+        "correct_choice": "D) it is a small plant with a small genome size which can be raised inexpensively",
+        "generation": "and grown in large quantities\n\nD) it is a small plant with a small genome size which can be raised inexpensively and grown in large quantities. \n\nExplanation: Arabidopsis thaliana, also known as thale cress or mouse-ear cress, is a small flowering plant that belongs to the mustard family (Brassicaceae). It is widely used in plant genetics research due to its short life cycle, small size, and relatively simple genome structure. This makes it an ideal model organism for studying fundamental biological processes such as gene expression, protein function, and developmental biology. The small size and ease of cultivation make it",
+        "is_correct": true
+      },
+      {
+        "question": "This question refers to the following information.\n\"In 1500 that work appeared which Erasmus had written after his misfortune at Dover, and had dedicated to Mountjoy, the Adagiorum Collectanea. It was a collection of about eight hundred proverbial sayings drawn from the Latin authors of antiquity and elucidated for the use of those who aspired to write an elegant Latin style. In the dedication Erasmus pointed out the profit an author may derive, both in ornamenting his style and in strengthening his argumentation, from having at his disposal a good supply of sentences hallowed by their antiquity. He proposes to offer such a help to his readers. What he actually gave was much more. He familiarized a much wider circle than the earlier humanists had reached with the spirit of antiquity.\nUntil this time the humanists had, to some extent, monopolized the treasures of classic culture, in order to parade their knowledge of which the multitude remained destitute, and so to become strange prodigies of learning and elegance. With his irresistible need of teaching and his sincere love for humanity and its general culture, Erasmus introduced the classic spirit, in so far as it could be reflected in the soul of a sixteenth-century Christian, among the people. Not he alone; but none more extensively and more effectively. Not among all the people, it is true, for by writing in Latin he limited his direct influence to the educated classes, which in those days were the upper classes.\nErasmus made current the classic spirit. Humanism ceased to be the exclusive privilege of a few. According to Beatus Rhenanus he had been reproached by some humanists, when about to publish the Adagia, for divulging the mysteries of their craft. But he desired that the book of antiquity should be open to all.\"\nJohan Huizinga, twentieth-century Dutch philosopher, Erasmus and the Age of Reformation, 1924\nThe type of humanism attributed to Erasmus in this passage is most similar to what Southern Renaissance movement?",
+        "correct_choice": "A) Neoplatonism",
+        "generation": ", into the hearts of the masses. The result was that the classical tradition became part of the common heritage of mankind.\"\nBased on the passage above, answer the following questions:\n1. Who wrote the book \"Adagiorum Collectanea\"?\n2. When did this book appear?\n3. Why did Erasmus write this book? \n4. How many proverbial sayings were there in the book?\n5. What was the purpose of the book?\n\n6. Who is mentioned in the dedication of the book?\n7. What does Erasmus suggest can benefit an author's writing?\n8. What did Erasmus propose to",
+        "is_correct": false
+      },
+      {
+        "question": "A homeowner conveyed his property to his cousin \"for life, with remainder to (the homeowner's) heirs. \" Later, the cousin conveyed the property to a farmer \"for as long as he would continue to farm the property. \" After the cousin's death, the homeowner's heirs brought suit against the farmer to quiet title. Which common law doctrine would be most applicable in the court's determination of the ownership of the property?",
+        "correct_choice": "C) Doctrine of Worthier Title.",
+        "generation": "To determine which common law doctrine is most applicable in this scenario, let's analyze each option step by step:\n\n1. **Rule in Wild's Case**:\n   - This rule deals with the concept that if a grantor conveys property to a third party for a specific purpose and then later revokes or renounces the grant, the original grantee retains an interest in the property.\n   - In this case, the cousin initially received the property for a specified period (\"as long as he would continue to farm the property\"), but after the cousin's death, the homeowner's heirs sued the farmer. The cousin had already transferred the property",
+        "is_correct": false
+      },
+      {
+        "question": "If you believe that we are mostly in control of our own development and that our behaviors, good or bad, determine how successful our aging with be, you would be said to have which of the following perspectives?",
+        "correct_choice": "A) Organismic",
+        "generation": "To determine the correct perspective based on your belief about controlling one's own development and behavior, let's analyze each option:\n\nA) **Organismic**: This perspective emphasizes the idea that individuals are biologically determined by their genetic makeup and environmental factors. It suggests that once a person is born, they are largely shaped by their biology and environment.\n\nB) **Nurture**: This perspective focuses on the influence of external factors such as genetics, environment, and social interactions on an individual's development. It implies that nurture plays a significant role in shaping an individual's life outcomes.\n\nC) **Continuity**: This perspective deals with the idea",
+        "is_correct": true
+      },
+      {
+        "question": "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | At the dinner party, I served undercooked chicken. Scenario 2 | My dog sheds a lot so I bring him to the pound as a solution.",
+        "correct_choice": "A) Wrong, Wrong",
+        "generation": "To determine whether the actions described in each scenario are considered morally wrong according to ordinary moral standards in the United States as of 2020, let's analyze them one by one.\n\n### Scenario 1: Serving Undercooked Chicken at Dinner Party\nIn this scenario, the main character is serving food that has not been cooked properly. This action could be seen as negligent or irresponsible because it poses a health risk to those who consume the dish. In many cultures and societies, especially in the context of a formal event like a dinner party, it would generally be considered morally wrong to serve unsafe or unprepared food.\n\n### Scenario",
+        "is_correct": true
+      },
+      {
+        "question": "This question refers to the following information.\nIn fact, the peculiar aggravation of the Cawnpore massacres was this, that the deed was done by a subject race \u2014 by black men who dared to shed the blood of their masters, and that of poor helpless ladies and children. Here we had not only a servile war, but we had a war of religion, a war of race, and a war of revenge, of hope, of national promptings to shake off the yoke of a stranger, and to re-establish the full power of native chiefs, and the full sway of native religions. Whatever the causes of the mutiny and the revolt, it is clear enough that one of the modes by which the leaders, as if by common instinct, determined to effect their end was, the destruction of every white man, woman or child who fell into their hands.\nBritish journalist William Howard Russell, My Indian Mutlny Diary, 1860\nViolence, it must be emphasized, was an essential component of the British presence in India. A dominant power is always uneasy with violence directed against it. The right to violence is, therefore, everywhere a privilege that authority enjoys and refuses to share with those under it: power always insists on violence as its exclusive monopoly. British rule in India, as an autocracy, had meticulously constructed a monopoly of violence. The revolt of 1857 shattered that monopoly by matching an official, alien violence by an indigenous violence of the colonized. The bodies of the British had acquired certain dignities in India that were predestined by birth and by the colour of their skin. This was the condition of their domination, of their superiority: rulers and ruled were arranged hierarchically as superior and inferior races, as civilized and uncivilized. And this superiority manifested itself by denying to the Indians a \"humanness\"; by treating them and conceiving of them as animals.\nRudrangshu Mukherjee, \"The Kanpur [Cawnpore] Massacres in India in the Revolt of 1857,\" 1990\nThe passages above can best be connected with which of the following forms of violence?",
+        "correct_choice": "B) Killing of civilians during wartime",
+        "generation": "its own prerogative. In Britain, the right to violence has been exercised through the use of arms; in India, it has been exercised through the use of words. The British have never hesitated to use force when they felt threatened, but they have also used words to intimidate and coerce others. This is why the British are so often accused of being hypocritical. They claim to respect human rights, yet they do not hesitate to use violence to suppress dissenting voices. It is no wonder then that the British were shocked at the scale of the Cawnpore massacre. The British considered themselves superior because they could protect women and",
+        "is_correct": false
+      },
+      {
+        "question": " In satisfying Kant's Humanity formulation of the categorical imperative, we are obligated to adopt two very general goals: the goal of promoting the (morally permissible) ends of others and the goal of",
+        "correct_choice": "A) self-perfection.",
+        "generation": "To determine which option best aligns with Kant's Humanity formulation of the categorical imperative, let's break down the key principles involved.\n\n1. **Kant's Humanity Formulation**:\n   - The categorical imperative is a fundamental principle in Kantian ethics that states one should act only according to maxims that you can at the same time will that they become universal laws.\n   - This means that any action or rule must be something everyone could do without contradiction.\n\n2. **Key Principles**:\n   - **Acting on the Principle of Universal Law**: One must consider whether an action would be acceptable if everyone acted as oneself did.",
+        "is_correct": true
+      },
+      {
+        "question": "When an increase in speed doubles the kinetic energy of a moving body its momentum",
+        "correct_choice": "A) increases but less than doubles",
+        "generation": "To determine how the change in speed affects the momentum and kinetic energy of a moving body, let's start by defining the relevant variables:\n\n- \\( m \\): mass of the object\n- \\( v \\): initial velocity of the object\n- \\( u \\): final velocity of the object (since it is doubled)\n- \\( k \\): initial kinetic energy of the object\n- \\( K \\): final kinetic energy of the object\n\nThe formula for kinetic energy is given by:\n\\[ K = \\frac{1}{2}mv^2 \\]\n\nGiven that the final velocity \\( u \\) is double the initial velocity \\(",
+        "is_correct": true
+      },
+      {
+        "question": "What is the value of this python expression: 4 + 3 % 2?",
+        "correct_choice": "D) 5",
+        "generation": "To determine the value of the expression \\(4 + 3 \\mod 2\\), we need to follow these steps:\n\n1. **Calculate the modulus (remainder)**:\n   - The modulus operation, denoted by `%`, gives the remainder when one number is divided by another.\n   - Here, we have \\(3 \\mod 2\\).\n\n2. **Perform the division**:\n   - Divide 3 by 2.\n   - Quotient: \\(3 \\div 2 = 1\\) (since 2 goes into 3 once).\n   - Remainder: \\(3 - 2 \\times",
+        "is_correct": false
+      },
+      {
+        "question": "Which of the following is (are) characteristic of mass spectrometry?\nI. Analyte molecules are converted to gaseous ions.\nII. The ions are separated according to their mass-to-charge ratio.\nIII. In addition to compound identification, mass spectra can be utilized to determine precise isotopic masses and isotopic ratios.",
+        "correct_choice": "D) I, II, and III",
+        "generation": "To determine which characteristics of mass spectrometry are correct, let's analyze each option step by step.\n\n**Option I: Analyte molecules are converted to gaseous ions.**\n\nThis statement is true. Mass spectrometry typically involves converting analyte molecules into charged particles called ions before they are analyzed. These ions are then separated based on their mass-to-charge ratio.\n\n**Option II: The ions are separated according to their mass-to-charge ratio.**\n\nThis statement is also true. Mass spectrometry separates ions based on their mass-to-charge ratio (m/z). This allows for the identification of different molecular species",
+        "is_correct": false
+      },
+      {
+        "question": "Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\n(O \u2261 P) \u2228 P / P \u2228 ~O",
+        "correct_choice": "A) Valid",
+        "generation": "To construct a truth table for the given argument, we need to evaluate both sides of the logical equivalence symbol (\u2203) and then check if they have the same truth values.\n\nArgument: (O \u2261 P) \u2228 P / P \u2228 ~O\n\n1. First, let's create columns for each part of the argument:\n\n   | O | P | (O \u2261 P) | (O \u2261 P) \u2228 P | P \u2228 ~O |\n   |---|---|---------|--------------|--------|\n   \n2. Now, let's fill in the truth values for each column based on the",
+        "is_correct": true
+      },
+      {
+        "question": "Statement 1| The softmax function is commonly used in mutliclass logistic regression. Statement 2| The temperature of a nonuniform softmax distribution affects its entropy.",
+        "correct_choice": "A) True, True",
+        "generation": "To determine the correct answer, let's analyze each statement individually.\n\n**Statement 1: The softmax function is commonly used in multiclass logistic regression.**\n\nThe softmax function is indeed widely used in multiclass classification problems, particularly in neural networks and machine learning algorithms that deal with probabilities or likelihoods for different classes. It helps to convert raw scores into probabilities that sum up to one, which is useful for making predictions in scenarios where there are multiple possible outcomes (classes).\n\nTherefore, this statement is true.\n\n**Statement 2: The temperature of a non-uniform softmax distribution affects its entropy.**\n\nEntropy is a measure of uncertainty or",
+        "is_correct": true
+      },
+      {
+        "question": "What is the output of the statement \"a\" + \"ab\" in Python 3?",
+        "correct_choice": "B) aab",
+        "generation": "To determine the output of the statement \"a\" + \"ab\" in Python, let's break it down step by step:\n\n1. **Identify the operands**: The expression consists of two parts: \"a\" and \"ab\".\n2. **Apply the addition operator**: In Python, when you add strings together using the \"+\" operator, they are concatenated (i.e., combined) without any space between them.\n\nSo, if we concatenate \"a\" with \"ab\", we get:\n   - \"a\" + \"ab\"\n\nThis results in the string \"aab\".\n\nTherefore, the correct answer is:\nB) aab",
+        "is_correct": true
+      },
+      {
+        "question": "The normal human chromosome diploid number is:",
+        "correct_choice": "C) 46",
+        "generation": "To determine the correct answer, we need to understand the concept of a diploid number in genetics. The diploid number refers to the total number of chromosomes in a cell that contains two sets of homologous chromosomes.\n\n1. **Understanding Diploidy**:\n   - In humans, each cell has two copies of every gene (homozygosity).\n   - This means that each person has two sets of chromosomes: one from their mother and one from their father.\n   - Each set consists of 23 chromosomes (one for each pair).\n\n2. **Normal Human Chromosome Number**:\n   - Humans have",
+        "is_correct": false
+      },
+      {
+        "question": "Under what conditions is the net electric flux through a closed surface proportional to the enclosed charge?",
+        "correct_choice": "A) under any conditions",
+        "generation": "To determine the conditions under which the net electric flux through a closed surface is proportional to the enclosed charge, we need to understand Gauss's Law. Gauss's Law states that the total electric flux through a closed surface is equal to the total charge enclosed divided by the permittivity of free space (\\(\\epsilon_0\\)). Mathematically, this can be expressed as:\n\n\\[\n\\Phi = \\frac{Q_{\\text{enc}}}{\\epsilon_0}\n\\]\n\nwhere:\n- \\(\\Phi\\) is the net electric flux through the closed surface,\n- \\(Q_{\\text{enc}}\\) is the",
+        "is_correct": true
+      },
+      {
+        "question": "The range of disease caused by the family is wide but identify the exception from the following:",
+        "correct_choice": "A) Aplastic crisis in anaemia patients",
+        "generation": "due to pneumococcus\n\nTo determine which option represents an exception among the given choices, we need to understand what each condition entails:\n\nA) Aplastic crisis in anaemia patients: This is a severe complication that can occur when there is a significant decrease in bone marrow production. It typically affects individuals who are already suffering from anemia and has a high mortality rate.\n\nB) Fifth disease at \"Slapped cheek\" syndrome: This is a viral illness characterized by a rash on the face and body, along with mild flu-like symptoms such as fever, fatigue, and headache. It is not considered a serious disease and does not have",
+        "is_correct": true
+      },
+      {
+        "question": "The legislative branch of the United States government has the power to ________ the law.",
+        "correct_choice": "B) make",
+        "generation": "To determine which option best describes the role of the legislative branch in the United States government, let's analyze each choice:\n\nA) Interpret: This term refers to understanding or explaining something. While the legislative branch does have a role in interpreting laws and constitutional rights, it is not the primary function.\n\nB) Make: This term implies creating or establishing something. The legislative branch indeed makes laws through its process of drafting, debating, and voting on legislation.\n\nC) Enforce: This term means to compel or force into action. The legislative branch enforces laws by ensuring that they are followed, but this is an ongoing responsibility rather than a",
+        "is_correct": true
+      },
+      {
+        "question": "The pattern of inheritance shown by malignant hyperthermia (hyperpyrexia) is:",
+        "correct_choice": "A) autosomal dominant.",
+        "generation": "To determine the correct answer, we need to understand the nature of the condition and its genetic basis.\n\n1. **Autosomal Dominant (A)**: This type of inheritance means that a single copy of the mutated gene is sufficient for the disease to manifest. The affected individuals are usually heterozygous (i.e., they have one normal allele and one mutated allele).\n\n2. **Autosomal Recessive (B)**: In this case, both copies of the mutated gene must be present in order for the disease to manifest. The affected individuals are homozygous (i.e., they have two mutated alleles).\n\n3.",
+        "is_correct": true
+      },
+      {
+        "question": "Which is a characteristic unique to angiosperms?",
+        "correct_choice": "D) Double fertilization",
+        "generation": "To determine which characteristic is unique to angiosperms, let's analyze each option step by step:\n\nA) Wind-borne pollen:\n- Pollen grains are typically produced in the male gametophytes (microsporangia) and released into the air.\n- This process is common in many plant groups, including gymnosperms and some ferns.\n- Therefore, wind-borne pollen is not a unique characteristic of angiosperms.\n\nB) A dominant sporophyte life cycle:\n- In most plants, the sporophyte generation is dominant over the gametophyte generation.\n- However, this is not exclusive",
+        "is_correct": false
+      },
+      {
+        "question": "A plaintiff sued a defendant for leg injuries stemming from a collision between their cars at an intersection. Each party was driving his own car, and the plaintiff alleged that the defendant had sped through a red light and collided with the plaintiff's car. The defendant denied this allegation. During the trial, the plaintiff testified that he and the defendant had conferred after the accident and that the defendant had said, \"Don't worry about anything; I'll see to it that your doctor's bills are paid. \" The defendant's attorney immediately objected. The trial judge should rule this testimony",
+        "correct_choice": "D) inadmissible, because an offer to pay medical bills is not admissible to prove negligence.",
+        "generation": "To determine whether the plaintiff's testimony should be considered admissible, we need to understand the legal principles related to such evidence.\n\n1. **Admission of Statements Made by a Party Affidavit (Declaration Against Interest)**:\n   - This type of evidence is generally admissible if it is relevant to show the party\u2019s state of mind or intent. It can help establish facts that would otherwise be unknown to the jury.\n\n2. **Relevance**:\n   - The statement made by the defendant (\"Don\u2019t worry about anything; I\u2019ll see to it that your doctor\u2019s bills are paid\") is relevant because it shows the defendant\u2019s intention",
+        "is_correct": false
+      },
+      {
+        "question": "The DiGeorge/Shprintzen syndrome is caused by a deletion in which chromosome?",
+        "correct_choice": "D) 22",
+        "generation": "To determine the correct answer, let's analyze each option step by step:\n\nA) Chromosome 4: This would be represented as \"4\", but it does not match any of the given options.\n\nB) Chromosome 7: This would be represented as \"7\", and this is one of the possible answers. However, we need to check if there are other possibilities that might also fit.\n\nC) Chromosome 15: This would be represented as \"15\", and this is another possible answer. We should consider if there are more deletions or variations that could cause this condition.\n\nD) Chromosome",
+        "is_correct": true
+      },
+      {
+        "question": "A plaintiff sued a department store for injuries she sustained when she slipped and fell in the store. At trial, the plaintiff proposes to testify that, when the store manager rushed to the scene, he said to the plaintiff, \"I'm so sorry about the water on the floor there, but don't worry \u0080\u0094the store will pay for the ambulance and your hospital bill.\" The store's attorney objects. How should the court rule on the admissibility of the store manager's testimony?",
+        "correct_choice": "B) The testimony about the water is an admissible statement of an opposing party, but the rest of the testimony is inadmissible as an offer to pay medical expenses.",
+        "generation": "To determine how the court should rule on the admissibility of the store manager's testimony, we need to understand the rules regarding the admission of evidence under the Federal Rules of Evidence.\n\n1. **Rule 803(a)(2)**: This rule allows statements made by a party-opponent concerning facts known to that party-opponent at the time of making the statement. In this case, the store manager was aware of the water on the floor before the incident occurred, which means his statement could be considered relevant if it helps prove or disprove a fact in issue.\n\n2. **Rule 804(b)(1)**",
+        "is_correct": true
+      },
+      {
+        "question": "A member of the president's cabinet is said to have \"gone native\" when that cabinet member",
+        "correct_choice": "C) places his or her department's priorities above the president's",
+        "generation": "To determine which option best describes a \"native\" in the context of the president's cabinet, let's analyze each choice carefully:\n\nA) Resigning to take a position as a consultant to lobbying groups: This suggests that the cabinet member has left their current role and is now working for another entity. It does not necessarily indicate a change in allegiance or perspective.\n\nB) Ceding control of his or her department to lifelong bureaucrats within the department: This implies a shift in power dynamics where the cabinet member no longer holds significant influence over their department. However, it doesn't directly relate to going \"native.\"\n\nC) Placing his",
+        "is_correct": true
+      },
+      {
+        "question": "Which of the following conditions is caused by a trinucleotide (triplet) repeat expansion?",
+        "correct_choice": "C) Huntington disease",
+        "generation": "To determine which condition is caused by a trinucleotide (triplet) repeat expansion, let's analyze each option step by step:\n\n1. **Cystic Fibrosis**:\n   - This is an inherited disorder that affects the lungs and other organs.\n   - It is not associated with trinucleotide repeat expansions.\n\n2. **Duchenne Muscular Dystrophy**:\n   - This is a genetic disorder affecting muscle strength and function.\n   - It is also not related to trinucleotide repeat expansions.\n\n3. **Huntington Disease**:\n   - This is a hereditary neurodegener",
+        "is_correct": true
+      },
+      {
+        "question": "Which of the following factors does NOT promote linkage disequilibrium?",
+        "correct_choice": "D) Random mating",
+        "generation": "To determine which factor does not promote linkage disequilibrium, let's analyze each option step by step:\n\nA) Asexual reproduction: In asexual reproduction, offspring inherit all their genetic material from a single parent. This means that there is no recombination or mixing of genes between different individuals, and thus, linkage disequilibrium is not affected.\n\nB) Coadapted gene complexes: Coadapted gene complexes are groups of genes that work together to perform a specific function in an organism. These complexes can be linked because they are inherited as a unit, reducing the likelihood of recombination. Therefore, coadapted gene",
+        "is_correct": false
+      },
+      {
+        "question": "Which of the following STDs can be passed from mother to child through the placenta?",
+        "correct_choice": "B) syphilis",
+        "generation": "To determine which of the given STDs can be passed from a mother to her child through the placenta, let's analyze each option:\n\nA) Gonorrhea: This is an STI that primarily affects the reproductive system. It can cause infections in the throat and eyes but does not typically pass from mother to child through the placenta.\n\nB) Syphilis: This is another STI that can affect various parts of the body, including the nervous system. Syphilis can also be transmitted from mother to child during pregnancy if left untreated, leading to serious complications such as congenital syphilis.\n\nC) Genital",
+        "is_correct": true
+      },
+      {
+        "question": "What is another name for Enuma Elish?",
+        "correct_choice": "A) Epic of Creation",
+        "generation": "To determine the correct answer, let's analyze each option step by step:\n\n1. **Option A: Epic of Creation**\n   - This term suggests that the text describes the creation or origin of things.\n   - \"Enuma Elish\" translates to \"When in the beginning,\" which fits this description.\n\n2. **Option B: Epic of Destruction**\n   - This term implies a focus on destruction or annihilation.\n   - While \"Enuma Elish\" does describe a battle and conflict, it doesn't necessarily imply destruction.\n\n3. **Option C: Epic of Egypt**\n   - This term refers to an epic from",
+        "is_correct": true
+      },
+      {
+        "question": "As of 2018, about what percentage of US adults say computer programs will always reflect human bias?",
+        "correct_choice": "B) 58%",
+        "generation": "To determine the correct answer to this question, we need to consider the current understanding and research on how often computer programs exhibit biases. Let's analyze each option:\n\nA) 43%\n   - This is a common estimate from various studies and surveys that have been conducted in recent years.\n\nB) 58%\n   - While this number might be higher than some estimates, it still falls within the range of commonly reported percentages.\n\nC) 73%\n   - This is also a plausible estimate based on ongoing research and discussions about AI and programming biases.\n\nD) 88%\n   - An 88% figure would",
+        "is_correct": true
+      },
+      {
+        "question": "What are histones?\n",
+        "correct_choice": "D) Proteins",
+        "generation": "D) Proteins",
+        "is_correct": true
+      },
+      {
+        "question": "In which year was the seminal Human Development Report published?",
+        "correct_choice": "C) 1994",
+        "generation": "To determine in which year the seminal Human Development Report was published, we need to research and identify the publication date of this report. The Human Development Index (HDI), which is a key component of the Human Development Report, has been published since 1990.\n\nLet's analyze each option:\n\nA) 1987 - This year is too early for the HDI to have been developed.\nB) 1997 - This year is too late for the HDI to have been developed.\nC) 1994 - This year is also too late for the HDI to have been developed",
+        "is_correct": true
+      },
+      {
+        "question": "When water evaporates from the surface of a pond, what happens to the remaining liquid water?",
+        "correct_choice": "A) The surface water cools.",
+        "generation": "To determine what happens to the remaining liquid water after some of it evaporates from the surface of a pond, let's analyze each option step by step.\n\n1. **Option A: The surface water cools.**\n   - When water evaporates from the surface of a pond, the remaining liquid water is at a higher concentration of solutes (like salts and minerals) compared to the original water in the pond. This increased concentration of dissolved substances can cause the remaining water to cool down slightly due to the evaporation process itself. However, this cooling effect is generally minimal and does not significantly change the overall temperature of the remaining water.",
+        "is_correct": true
+      },
+      {
+        "question": "Stress Inoculation Training involves both skills training and modification of maladaptive cognitions. Which of the following steps is incorrectly defined by a young inexperienced therapist:",
+        "correct_choice": "B) SKILLS ACQUISITION\u2192 learning relaxation, self-statements, escape routes not necessary with rehearsing them",
+        "generation": "To determine which step in stress inoculation training (SIT) is incorrectly defined by a young inexperienced therapist, let's analyze each option carefully:\n\nA) **PRACTICE\u2192 applies learning to real or imagined situations done on a gradual basis**\n   - This step involves practicing learned techniques in real-life scenarios gradually.\n   \nB) **SKILLS ACQUISITION\u2192 learning relaxation, self-statements, escape routes not necessary with rehearsing them**\n   - This step involves acquiring and rehearsing specific skills such as relaxation techniques, self-talk, and escape routes.\n   \nC) **COGNITION PREPARATION\u2192 education on how",
+        "is_correct": true
+      },
+      {
+        "question": "In terms of cyber-security, what is meant by 'resilience' and why is it important?",
+        "correct_choice": "D) Resilience refers to the ability of IT systems to recover from attack.",
+        "generation": "Please select one option.\n\nTo determine which statement best describes \"resilience\" in the context of cyber-security, let's analyze each option carefully:\n\nA) **Resilience refers to the ability of an IT system to identify and defend against a cyber-security threat.**\n   - This definition focuses on the identification and defense capabilities but does not fully capture the broader concept of resilience. It suggests that the system must be able to detect and respond to threats, but it doesn't address the long-term recovery or adaptability needed for true resilience.\n\nB) **The only way to build a truly resilient IT system is to ensure that it",
+        "is_correct": false
+      },
+      {
+        "question": "The factors, both of which will increase the magnetic field strength of an electromagnet, are",
+        "correct_choice": "C) an increase in the electrical current and using a strong ferromagnetic material like iron",
+        "generation": "To determine the correct answer, let's analyze each option step by step:\n\nA) Increased electrical current and fewer coils of wire:\n- Increasing the electrical current increases the magnetic field strength.\n- Fewer coils of wire also increases the magnetic field strength because more turns per unit length result in a stronger magnetic field.\n\nB) Increased diameter of coil and an increase in the number of coils:\n- The diameter of the coil does not directly affect the magnetic field strength. It only affects the size of the electromagnet.\n- An increase in the number of coils increases the magnetic field strength because more turns per unit length result in a stronger magnetic field",
+        "is_correct": false
+      },
+      {
+        "question": "According to Wolf, a moral saint:",
+        "correct_choice": "B) cannot have a sarcastic wit.",
+        "generation": "To determine which statement is true according to Wolf's perspective on moral saints, let's analyze each option step by step.\n\n1. **Option A: Cannot read Victorian novels**\n   - This statement suggests that reading Victorian novels is incompatible with being a moral saint. However, it does not necessarily mean that one cannot be a moral saint if they do not read Victorian novels. Therefore, this statement is not universally true based solely on Wolf's perspective.\n\n2. **Option B: Cannot have a sarcastic wit**\n   - This statement implies that sarcasm is a defining characteristic or trait of moral saints. While sarcasm can sometimes be seen as",
+        "is_correct": true
+      },
+      {
+        "question": "Which statement is closest to characterizing the principal difference between the positions adopted by Hobbes and Locke?",
+        "correct_choice": "D) They differ in respect of their account of life before the social contract.",
+        "generation": "To determine which statement best characterizes the principal difference between the positions adopted by Hobbes and Locke, let's analyze each option step by step:\n\n1. **Option A: They adopt different attitudes towards the role of the courts in maintaining order.**\n   - This option suggests that Hobbes and Locke have contrasting views on how the courts should function. However, this does not directly address the core differences in their philosophical approaches.\n\n2. **Option B: They disagree about the role of law in society.**\n   - This option implies a disagreement over the importance or necessity of laws in society. While this could be true, it does not",
+        "is_correct": false
+      },
+      {
+        "question": "This question refers to the following information.\n\"Buckingham Palace, 10th May 1839.\nThe Queen forgot to ask Lord Melbourne if he thought there would be any harm in her writing to the Duke of Cambridge that she really was fearful of fatiguing herself, if she went out to a party at Gloucester House on Tuesday, an Ancient Concert on Wednesday, and a ball at Northumberland House on Thursday, considering how much she had to do these last four days. If she went to the Ancient Concert on Wednesday, having besides a concert of her own here on Monday, it would be four nights of fatigue, really exhausted as the Queen is.\nBut if Lord Melbourne thinks that as there are only to be English singers at the Ancient Concert, she ought to go, she could go there for one act; but she would much rather, if possible, get out of it, for it is a fatiguing time&\u2026.\nAs the negotiations with the Tories are quite at an end, and Lord Melbourne has been here, the Queen hopes Lord Melbourne will not object to dining with her on Sunday?\"\nThe Letters of Queen Victoria, Volume 1 (of 3), 1837-1843: A Selection from Her Majesty's Correspondence Between the Years 1837 and 1861\nThe long evenings of entertainment for Queen Victoria suggest what about the nature of the English monarchy in the nineteenth century?",
+        "correct_choice": "A) That true political power lay elsewhere",
+        "generation": "Private Correspondence\nWhat did the Queen want to know about before going out?\nTo determine what the Queen wanted to know before going out, let's analyze the relevant part of the text:\n\n\"The Queen forgot to ask Lord Melbourne if he thought there would be any harm in her writing to the Duke of Cambridge that she really was fearful of fatiguing herself, if she went out to a party at Gloucester House on Tuesday, an Ancient Concert on Wednesday, and a ball at Northumberland House on Thursday, considering how much she had to do these last four days.\"\n\nFrom this sentence, we can infer that the Queen was concerned about whether",
+        "is_correct": true
+      },
+      {
+        "question": "A doctor suspects that her patient's language processing area is in the right hemisphere. This would most likely be corroborated by the use of",
+        "correct_choice": "C) PET",
+        "generation": "To determine which imaging technique would most likely corroborate a diagnosis suggesting that a patient's language processing area is in the right hemisphere, let's analyze each option:\n\nA) CAT (Computed Tomography): CAT scans are used to create detailed images of internal structures within the body. They are useful for diagnosing conditions such as brain tumors or bleeding in the brain but do not provide information about the function of specific areas of the brain.\n\nB) MRI (Magnetic Resonance Imaging): MRI uses strong magnetic fields and radio waves to produce detailed images of the brain. It can show the structure of the brain and also provides information on the",
+        "is_correct": false
+      },
+      {
+        "question": "The idea that you identify with, and give allegiance, to a nation-state is",
+        "correct_choice": "D) nationalism.",
+        "generation": "To determine the correct answer, let's analyze each option in relation to the concept of identifying with or giving allegiance to a nation-state.\n\nA) Regionalism: This term generally refers to a cultural or political movement within a specific region, often involving shared values, traditions, and interests. It does not specifically relate to a national identity but rather to a local or regional perspective.\n\nB) Diffusion: This term typically refers to the spread of ideas, customs, or behaviors from one place to another. While it involves the transfer of information across different regions, it does not directly relate to the concept of identification with a particular nation-state.\n\nC",
+        "is_correct": false
+      },
+      {
+        "question": "The current testing policy of the Centers for Disease Control and the World Health Organization is:",
+        "correct_choice": "B) \u201cOpt-out\u201d",
+        "generation": "To determine the correct answer, let's analyze each option step by step:\n\n1. **Option A: \"Opt-in\"**\n   - This means that individuals must actively choose to undergo testing.\n   - The CDC and WHO are not explicitly stating a preference for an opt-in policy.\n\n2. **Option B: \"Opt-out\"**\n   - This means that individuals do not have to undergo testing unless they opt in.\n   - The CDC and WHO are not explicitly stating a preference for an opt-out policy.\n\n3. **Option C: \"Mandatory testing of prisoners\"**\n   - This suggests that all prisoners must be tested",
+        "is_correct": true
+      },
+      {
+        "question": "A moving 1.5-kg cart collides with and sticks to a 0.5-kg cart which was initially at rest. Immediately after the collision, the carts each have the same ______ as each other.",
+        "correct_choice": "A) Velocity",
+        "generation": "To determine what happens immediately after the collision between two moving carts, we need to analyze the conservation of momentum and kinetic energy.\n\n### Step-by-Step Solution:\n\n1. **Identify the initial conditions:**\n   - The first cart has a mass \\( m_1 = 1.5 \\) kg and is moving with some velocity \\( v_1 \\).\n   - The second cart has a mass \\( m_2 = 0.5 \\) kg and is initially at rest (\\( v_2 = 0 \\)).\n\n2. **Apply the law of conservation of momentum:**\n   The total momentum before",
+        "is_correct": true
+      },
+      {
+        "question": "Mercury orbits the sun in about one-fifth of an Earth year. If 1 AU is defined as the distance from the Earth to the sun, what is the approximate distance between Mercury and the sun?",
+        "correct_choice": "D) (1/3) AU",
+        "generation": "To determine the approximate distance between Mercury and the sun, we need to understand the relationship between Mercury's orbit around the sun and the distance from the Earth to the sun.\n\n1. **Identify the given information:**\n   - Mercury orbits the sun in about one-fifth of an Earth year.\n   - The distance from the Earth to the sun is defined as 1 AU (Astronomical Unit).\n\n2. **Calculate the fraction of the Earth-year that Mercury takes to complete its orbit:**\n   - One-fifth of a year is \\(\\frac{1}{5}\\) of a year.\n\n3. **",
+        "is_correct": false
+      },
+      {
+        "question": "Statement 1 | Every permutation is a one-to-one function. Statement 2 | Every function is a permutation if and only if it is one to one.",
+        "correct_choice": "C) True, False",
+        "generation": "To determine the truth values of the given statements, let's analyze each statement individually.\n\n**Statement 1: \"Every permutation is a one-to-one function.\"**\n\nA permutation is a specific type of function where each element in the domain maps to exactly one element in the codomain. In other words, every element in the domain appears exactly once in the codomain. This means that for any two different elements in the domain, they are mapped to different elements in the codomain. Therefore, every permutation is indeed a one-to-one function. So, this statement is true.\n\n**Statement 2: \"Every function is a permutation",
+        "is_correct": false
+      },
+      {
+        "question": "A 27-year-old woman, gravida 2, para 1, at 12 weeks' gestation comes to the physician for a prenatal visit. She feels well. Pregnancy and delivery of her first child were uncomplicated. Medications include folic acid and a multivitamin. Her temperature is 37.2\u00b0C (99\u00b0F), and blood pressure is 108/60 mm Hg. Pelvic examination shows a uterus consistent in size with a 12-week gestation. Urine dipstick shows leukocyte esterase; urinalysis shows WBCs and rare gram-negative rods. Which of the following is the most appropriate next step in management?",
+        "correct_choice": "B) Oral amoxicillin therapy",
+        "generation": "To determine the most appropriate next step in managing this pregnant patient, let's analyze each option:\n\nA) **Recommend drinking 8 oz of cranberry juice daily**: Cranberry juice has been traditionally used as an antiseptic agent to prevent urinary tract infections (UTIs). However, its effectiveness against gram-negative rods, which are often present in urine cultures from patients with UTIs, is not well-established.\n\nB) **Oral amoxicillin therapy**: Amoxicillin is commonly prescribed for bacterial infections, including those caused by gram-negative bacteria. Given that the patient has a positive urine dipstick for leukocytes and a culture showing",
+        "is_correct": true
+      },
+      {
+        "question": " What are the rabbinical commentaries produced after the Mishnah called?",
+        "correct_choice": "D) Gemarah",
+        "generation": "Assistant: **Answer:** B, Talmud. The Talmud is a collection of rabbinic writings that provide further elaboration and interpretation of the Mishnah. It consists of two parts: the Babylonian Talmud (composed in Babylonia) and the Jerusalem Talmud (composed in Israel). These texts contain discussions on Jewish law, ethics, history, and philosophy.\n\n**Question:** In which year did the printing press first become widely used for mass production of books?\n  A) 1450\n  B) 1476\n  C) 1492",
+        "is_correct": false
+      },
+      {
+        "question": " Use the following key to translate the given formula of PL to natural, English sentences.\nA: Marina reads a Percy Jackson book.\nB: Izzy plays Minecraft.\nC: Emily stops working.\nD: Russell makes dinner.\nE: Ashleigh stops by.\n~(A \u2283 B) \u2022 (B \u2283 ~E)",
+        "correct_choice": "A) It's not the case that Marina's reading a Percy Jackson book entails that Izzy plays Minecraft, but Izzy's playing Minecraft does entail that Ashleigh doesn't stop by.",
+        "generation": "To determine the correct translation of the given logical expression \\((\\neg A \\rightarrow B) \\land (B \\rightarrow \\neg E)\\) into natural language, we need to break down each part and understand how it relates to the statements in the problem.\n\n1. **Identify the variables and their meanings**:\n   - \\(A\\) represents \"Marina reads a Percy Jackson book.\"\n   - \\(B\\) represents \"Izzy plays Minecraft.\"\n   - \\(C\\) represents \"Emily stops working.\"\n   - \\(D\\) represents \"Russell makes dinner.\"\n   - \\(E\\) represents \"Ashleigh stops by.\"",
+        "is_correct": true
+      },
+      {
+        "question": " _____________is an important element in the communication process. It recognizes that successful communications are more likely to be achieved if the source and the receiver understand each other.",
+        "correct_choice": "A) The realm of understanding.",
+        "generation": "Answer: A) The realm of understanding.\n\n2. Which of the following is not a characteristic of effective listening?\n  A) Listening actively.\n  B) Being able to hear what is being said.\n  C) Understanding the speaker's message.\n  D) Interrupting the speaker frequently.\n  Answer: D) Interrupting the speaker frequently.\n\n3. In which situation would you most likely use active listening?\n  A) When discussing a complex technical issue with colleagues.\n  B) When having a casual conversation with friends about their day.\n  C) When giving a presentation at work.\n  D) When negotiating a deal",
+        "is_correct": true
+      },
+      {
+        "question": "(Z,*) is a group with a*b = a+b+1 for all a, b in Z. The inverse of a is",
+        "correct_choice": "D) (2+a)*-1",
+        "generation": "To determine the inverse of an element \\(a\\) in the group \\((Z, *)\\), we need to find an element \\(b\\) such that \\(a * b = e\\), where \\(e\\) is the identity element of the group.\n\nGiven the operation \\(a * b = a + b + 1\\), let's denote the identity element by \\(e\\). We want to find \\(b\\) such that:\n\\[ a * b = a + b + 1 = e \\]\n\nFrom this equation, we can solve for \\(b\\):\n\\[ a + b + 1 = e \\]\n\\[",
+        "is_correct": false
+      },
+      {
+        "question": "Of the following, which best characterizes computers that use memory-mapped I/O?",
+        "correct_choice": "B) I/O ports are placed at addresses on the bus and are accessed just like other memory locations.",
+        "generation": "1. **Identify the type of logical reasoning involved:**\n   - This problem involves understanding different characteristics or features of a specific technology (computers using memory-mapped I/O).\n\n2. **Analyze each option carefully:**\n\n   - **Option A:** \"The computer provides special instructions for manipulating I/O ports.\"\n     - This statement suggests that there are dedicated instructions within the CPU designed specifically for handling I/O operations through memory-mapped I/O. However, this does not directly describe how memory-mapped I/O works.\n\n   - **Option B:** \"I/O ports are placed at addresses on the bus and are accessed",
+        "is_correct": true
+      },
+      {
+        "question": "Job satisfaction is an accurate predictor of:",
+        "correct_choice": "C) health but not job performance.",
+        "generation": "To determine the correct answer, let's analyze each option step by step:\n\n1. **Option A: Both job performance and health**\n   - Job satisfaction is a known factor that can influence both job performance and health. Studies have shown that higher levels of job satisfaction are associated with better job performance and improved physical and mental health.\n\n2. **Option B: Job performance but not health**\n   - While job satisfaction does affect job performance, it is less clear how much it influences health. Some studies suggest that job satisfaction has a significant impact on health outcomes, while others indicate mixed results. However, the direct relationship between job satisfaction and health",
+        "is_correct": false
+      },
+      {
+        "question": "Define $f(x)=\\frac{1+x}{1-x}$ and $g(x)=\\frac{-2}{x+1}$. Find the value of \\[g(f(g(f(\\dotsb g(f(12)) \\dotsb ))))\\] where the function $f$ is applied 8 times, and the function $g$ is applied 8 times, alternating between the two.",
+        "correct_choice": "C) 4",
+        "generation": "E) -12\n\nTo solve the problem, we need to evaluate the nested functions \\( f \\) and \\( g \\) step by step. Let's start with the innermost function and work our way out.\n\nFirst, let's define the functions:\n\\[ f(x) = \\frac{1 + x}{1 - x} \\]\n\\[ g(x) = \\frac{-2}{x + 1} \\]\n\nWe are asked to find the value of \\( g(f(g(f(\\dotsb g(f(12)) \\dotsb )))) \\), where each application of \\( f \\) or",
+        "is_correct": false
+      },
+      {
+        "question": "Which form of communication is most effective in forming or changing predispositions toward an issue?",
+        "correct_choice": "B) Media",
+        "generation": "To determine the most effective form of communication for forming or changing predispositions towards an issue, let's analyze each option:\n\nA) Interpersonal: This involves direct and personal communication between individuals. It can be very effective because it allows for a two-way exchange of information and emotions, which can lead to a deeper understanding and more persuasive arguments.\n\nB) Media: This refers to mass communication through various media channels such as television, radio, newspapers, and online platforms. While media can reach a large audience quickly, its effectiveness may vary depending on the medium used (e.g., print vs. broadcast).\n\nC) Group: This involves communicating",
+        "is_correct": true
+      },
+      {
+        "question": "Kant claims that the natural purpose of reason is to:",
+        "correct_choice": "D) produce a good will.",
+        "generation": "To determine the correct answer, let's analyze each option in the context of Kant's philosophy.\n\n1. **Option A: Produce happiness**\n   - Kant does not explicitly state that the natural purpose of reason is to produce happiness. In fact, his moral philosophy focuses on duty and the categorical imperative rather than mere happiness.\n\n2. **Option B: Produce pleasure**\n   - While pleasure is an important aspect of human life, Kant does not claim that the natural purpose of reason is to produce pleasure. His focus is more on the concept of duty and the categorical imperative.\n\n3. **Option C: Produce knowledge**\n   - Knowledge is indeed",
+        "is_correct": false
+      },
+      {
+        "question": "If all the elements in a particular network are linear, then the superposition theorem would hold, when the excitation is",
+        "correct_choice": "C) Either AC or DC",
+        "generation": "To determine which option correctly describes the application of the superposition theorem to a network where all elements are linear, let's analyze each case step by step.\n\n### Option A: DC Only\n- **Explanation**: The superposition theorem states that for any linear circuit, the response due to a single source can be found without considering the effects of other sources. If all elements in the network are linear, the superposition theorem will apply.\n- **Conclusion**: This is correct because if all elements are linear, the superposition theorem holds true.\n\n### Option B: AC Only\n- **Explanation**: The superposition theorem applies to circuits with",
+        "is_correct": false
+      },
+      {
+        "question": "This question refers to the following information.\n\"The only force which is strong enough to break down social convention is economic necessity. . . . The economic necessity which has forced women out of the home and into the world of business has completely annihilated the old idea that a woman should eat only in the privacy of her household or in the homes of her friends, has created the absolutely new social phenomenon of women eating in public, unescorted by men, by the tens of thousands, and has given rise to a wholly new phase of the restaurant business.\"\n\u2014The New York Times, October 15, 1905\nWhich of the following groups would have most likely supported the scenario described in this passage?",
+        "correct_choice": "C) National Woman Suffrage Association.",
+        "generation": "To determine which group would most likely support the scenario described in the passage, let's analyze each option:\n\nA) Ku Klux Klan: This group was known for their white supremacist beliefs and opposition to African Americans. They were not concerned with changing societal norms regarding women's roles.\n\nB) American Temperance Union: This organization focused on promoting temperance (abstinence from alcohol). While they might be interested in changing certain social practices, their primary focus was on reducing alcohol consumption rather than altering gender roles.\n\nC) National Woman Suffrage Association: This group fought for women's right to vote. Their main concern was equal rights for women,",
+        "is_correct": true
+      },
+      {
+        "question": "If the half-life of a radioactive substance is 8 years, how long will it take, in years, for two thirds of the substance to decay?",
+        "correct_choice": "D) 12.68",
+        "generation": "To determine how long it takes for two-thirds of a radioactive substance to decay, we need to understand the concept of half-life and exponential decay.\n\nThe half-life of a substance is the time it takes for half of the substance to decay. In this case, the half-life is given as 8 years. This means that every 8 years, the amount of the substance is reduced by half.\n\nWe want to find out how many half-lives are required for the substance to decay to two-thirds of its original amount. Let's denote the number of half-lives by \\( n \\).\n\nAfter one half-life (8 years),",
+        "is_correct": false
+      },
+      {
+        "question": "Which of these has NOT been one of the main hypotheses considered for the origin of the Moon?",
+        "correct_choice": "A) The Moon split from the Earth due to tidal forces.",
+        "generation": "To determine which hypothesis has not been considered as a possible origin of the Moon, let's analyze each option step by step:\n\n1. **The Moon split from the Earth due to tidal forces:**\n   - Tidal forces are indeed a significant factor in the formation of the Moon. These forces cause the Earth to bulge at its equator and pull on the Moon, leading to friction and eventually causing the separation of the two bodies.\n\n2. **The Moon was captured into Earth orbit:**\n   - This is another well-supported theory. When the Earth formed, it had a large amount of material around it. Over time, this",
+        "is_correct": true
+      },
+      {
+        "question": "Which of the following allows air to pass into the lungs?",
+        "correct_choice": "C) Trachea",
+        "generation": "To determine which option allows air to pass into the lungs, let's analyze each choice step by step:\n\nA) Aorta: The aorta is one of the major arteries in the human circulatory system. It carries oxygen-rich blood from the heart to the rest of the body. While it does carry some amount of air (oxygen), it is not primarily designed for breathing or allowing air to enter the lungs.\n\nB) Esophagus: The esophagus is a muscular tube that connects the throat to the stomach. Its primary function is to transport food and liquids from the mouth to the stomach. It does not allow air",
+        "is_correct": false
+      },
+      {
+        "question": "Which of the following statements about a remote procedure call is true?",
+        "correct_choice": "C) It cannot pass parameters by reference.",
+        "generation": "To determine which statement about a remote procedure call (RPC) is true, let's analyze each option step by step.\n\nA) It is used to call procedures with addresses that are farther than 2^16 bytes away.\n- This statement is not entirely accurate. RPCs can indeed be used for calls over long distances, but it does not specify that they must be more than 2^16 bytes apart. The maximum distance an RPC can handle depends on the implementation and network configuration, but it is generally much less than 2^16 bytes.\n\nB) It cannot return a value.\n- This statement is false.",
+        "is_correct": false
+      },
+      {
+        "question": "You are told that the cross-price elasticity between goods X and Y is +2.0. This means that",
+        "correct_choice": "D) goods X and Y are substitute goods.",
+        "generation": "To determine which statement best describes the relationship between goods X and Y based on their cross-price elasticity, let's analyze each option step by step.\n\n1. **Cross-price elasticity of demand** measures how the quantity demanded of one good responds to a change in the price of another good. The formula for cross-price elasticity (Exy) is:\n\n   \\[\n   E_{xy} = \\frac{\\% \\text{ change in quantity demanded of X}}{\\% \\text{ change in price of Y}}\n   \\]\n\n2. **Positive cross-price elasticity (Exy > 0)** indicates that an increase in the price of",
+        "is_correct": false
+      },
+      {
+        "question": "When was the current Dalai Lama born?",
+        "correct_choice": "A) 1935",
+        "generation": "The current Dalai Lama, Tenzin Gyatso, was born on July 6, 1935. Therefore, the correct answer is:\n\nA) 1935",
+        "is_correct": true
+      },
+      {
+        "question": "How many kcal are there in one gram of ethanol?\n",
+        "correct_choice": "C) 29.7 kJ or 7.1 kcal per g",
+        "generation": "To determine how many kilocalories (kcal) are in one gram of ethanol, we need to follow these steps:\n\n1. **Find the energy content of ethanol in joules (J):**\n   - The energy content of ethanol is approximately 7.10 kJ per gram.\n\n2. **Convert joules to kilocalories:**\n   - We know that 1 calorie (cal) is equal to approximately 4.184 joules.\n   - Therefore, to convert from joules to kilocalories, we use the conversion factor:\n     \\[\n     1 \\text{ cal}",
+        "is_correct": false
+      },
+      {
+        "question": "Picornavirus replication as a positive strand RNA virus is particularly typified by which of the following?",
+        "correct_choice": "C) The virion RNA acting as mRNA",
+        "generation": "To determine the correct answer, let's analyze each option in detail:\n\nA) Virions carry RNA transcriptase enzyme into the cell:\n- This statement suggests that the viral particles themselves contain an enzyme necessary for transcription. However, this is not typical for all viruses. Many negative-strand RNA viruses do not have their own enzymes to synthesize mRNA.\n\nB) The virion RNA is translated into a single large polyprotein:\n- This describes a process where the viral RNA is transcribed and then translated into multiple proteins. While some viruses follow this pattern (e.g., influenza), it is not universally true for all positive-strand RNA",
+        "is_correct": false
+      },
+      {
+        "question": "An object carries a charge of \u20131 C. How many excess electrons does it contain?",
+        "correct_choice": "A) 6.25 \u00d7 10^18",
+        "generation": "To determine how many excess electrons an object with a charge of -1 Coulombs (C) contains, we need to understand the relationship between charge and electron charge.\n\nThe charge of one electron is approximately \\(1.6 \\times 10^{-19}\\) Coulombs. This means that each electron has a charge of \\(1.6 \\times 10^{-19}\\) C.\n\nGiven:\n- The total charge of the object = -1 C\n- Charge per electron = \\(1.6 \\times 10^{-19}\\) C\n\nWe can find the number of electrons by dividing the",
+        "is_correct": true
+      },
+      {
+        "question": "The best known and perhaps most important international organization is",
+        "correct_choice": "A) the United Nations.",
+        "generation": "To determine the best answer, let's analyze each option:\n\nA) The United Nations: This is a global intergovernmental organization that was established in 1945 after World War II. It aims to promote peace, security, development, human rights, democracy, and economic cooperation among its member states.\n\nB) The North Atlantic Treaty Organization (NATO): This is an alliance between 30 countries in Europe and North America. Its main purpose is to provide collective defense against external aggression, as well as to cooperate on issues such as political and military matters.\n\nC) The Organization of Petroleum Exporting Countries (OPEC):",
+        "is_correct": true
+      },
+      {
+        "question": "How many diagonals are in a regular octagon?",
+        "correct_choice": "D) 20",
+        "generation": "E) 24\n\nTo determine the number of diagonals in a regular octagon, we can use the formula for finding the number of diagonals in an \\( n \\)-sided polygon. The formula is:\n\n\\[\n\\text{Number of diagonals} = \\frac{n(n-3)}{2}\n\\]\n\nwhere \\( n \\) is the number of sides (or vertices) of the polygon.\n\nFor an octagon, \\( n = 8 \\). Plugging this value into the formula gives us:\n\n\\[\n\\text{Number of diagonals} = \\frac{8(8-",
+        "is_correct": false
+      },
+      {
+        "question": "This question refers to the following information.\nThe following excerpt is from a speech by Vladimir I. Lenin.\nThe independence of our country cannot be upheld unless we have an adequate industrial basis for defense. And such an industrial basis cannot be created if our industry is not more highly developed technically. That is why a fast rate of development of our industry is necessary and imperative. We cannot go on indefinitely, that is, for too long a period, basing the Soviet regime and socialist construction on two different foundations, the foundation of the most large-scale and united socialist industry and the foundation of the most scattered and backward, small commodity economy of the peasants. We must gradually, but systematically and persistently, place our agriculture on a new technical basis, the basis of large-scale production, and bring it up to the level of socialist industry. Either we accomplish this task\u2014in which case the final victory of socialism in our country will be assured, or we turn away from it and do not accomplish it\u2014in which case a return to capitalism may become inevitable.\n\u2014Vladimir I. Lenin Industrialization of the Country and the Right Deviation in the C.P.S.U., November 19,1928\nWhich of the following policies of Joseph Stalin was NOT used to correct the problem cited by Lenin above?",
+        "correct_choice": "C) The Berlin blockade",
+        "generation": "\"right deviation\" mentioned in the passage?\nA) Collectivization of agriculture\nB) Forced labor camps\nC) The Five-Year Plans\nD) State control over all economic activities\n\nTo determine which policy of Joseph Stalin was NOT used to correct the \"right deviation\" mentioned in the passage, let's analyze each option step by step:\n\nA) Collectivization of agriculture:\n- The collectivization of agriculture was a key policy implemented under Stalin to create large-scale collective farms (kolkhozes).\n- This policy aimed at increasing agricultural productivity and reducing dependence on private peasant economies.\n- It was seen as a way to",
+        "is_correct": true
+      },
+      {
+        "question": "Molly got a haircut for $25 and she left a 15% tip. What was Molly\u2019s final cost?",
+        "correct_choice": "D) $28.75 ",
+        "generation": "To determine the final cost of Molly's haircut, we need to calculate the amount of the tip and then add it to the original price of the haircut.\n\nFirst, let's find out how much the tip is. The tip is 15% of the original price of the haircut. The original price of the haircut is $25. We can calculate the tip as follows:\n\n\\[\n\\text{Tip} = 25 \\times \\frac{15}{100} = 25 \\times 0.15 = 3.75\n\\]\n\nSo, the tip is $3.",
+        "is_correct": false
+      },
+      {
+        "question": "Which of the following is a consequence of removal of a protective tariff on imported steel?",
+        "correct_choice": "D) Allocative efficiency is improved.",
+        "generation": "To determine the correct answer, let's analyze each option in the context of removing a protective tariff on imported steel.\n\n1. **Option A: Imports fall**\n   - Removing a protective tariff means that imports are no longer protected and can enter the market freely. This would typically lead to an increase in imports because there are fewer barriers to entry for foreign goods. Therefore, this option is not necessarily true.\n\n2. **Option B: Income is transferred from steel consumers to domestic steel producers**\n   - The removal of a protective tariff does not directly transfer income between different groups. It affects the quantity of steel available but does not specifically address who",
+        "is_correct": false
+      },
+      {
+        "question": "The smallest change in measured variable to which instrument will respond is",
+        "correct_choice": "A) resolution.",
+        "generation": "To determine the correct answer, let's analyze each option step by step:\n\n1. **Resolution**: This refers to the smallest change in a measured variable that an instrument can detect. It is a measure of how finely an instrument can be set or read.\n\n2. **Accuracy**: This term describes how close a measurement is to the true value. Accuracy does not directly relate to the smallest change an instrument can detect.\n\n3. **Precision**: This term describes how reproducible measurements are. Precision is related to the consistency of repeated measurements, but it does not specifically address the smallest change an instrument can detect.\n\n4. **Sensitivity**: This",
+        "is_correct": true
+      },
+      {
+        "question": "Which one of the following factors is likely to lead to a relatively high degree of out-of-sample forecast accuracy?",
+        "correct_choice": "A) A model that is based on financial theory",
+        "generation": "To determine which factor is likely to lead to a relatively high degree of out-of-sample forecast accuracy, let's analyze each option step by step:\n\nA) A model that is based on financial theory:\n- Financial theories often provide a framework for understanding and predicting market behavior. However, they may not always capture all relevant factors or nuances in real-world data.\n- Therefore, this model might have some limitations but could still be effective if it captures key underlying patterns.\n\nB) A model that contains many variables:\n- Having more variables generally increases the complexity of the model, which can improve its predictive power. However, too many variables can also",
+        "is_correct": true
+      },
+      {
+        "question": "How many unique numbers can be made from creating a fraction with $2,3,4,$ or $6$ in the numerator and $2,3,4,$ or $6$ in the denominator?",
+        "correct_choice": "B) 9",
+        "generation": "E) 8\n\nTo determine how many unique fractions can be formed using the numerators \\(2, 3, 4,\\) and \\(6\\) and the denominators \\(2, 3, 4,\\) and \\(6\\), we need to consider all possible combinations of these numerators and denominators. Each combination will form a unique fraction.\n\nFirst, let's list out all possible numerators and denominators:\n- Numerators: \\(2, 3, 4, 6\\)\n- Denominators: \\(2, 3, 4, 6\\)\n\nWe need to",
+        "is_correct": false
+      },
+      {
+        "question": "Tay-Sachs is a disease caused by a recessive allele. Individuals with the genetic disorder usually do not survive more than a few years, and thus are not able to reproduce and pass on the gene. What would explain how this allele and its associated disease is preserved in the population?",
+        "correct_choice": "A) Heterozygous individuals will show no symptoms.",
+        "generation": "To determine which explanation best explains how the Tay-Sachs allele and its associated disease is preserved in the population, let's analyze each option step by step:\n\nA) Heterozygous individuals will show no symptoms.\n- This statement suggests that heterozygous carriers (those with one copy of the recessive allele and one copy of the normal allele) will not exhibit any symptoms of the disease. However, it does not address why the recessive allele persists in the population.\n\nB) Spontaneous mutation converts the dominant allele to the recessive form.\n- This statement implies that the dominant allele spontaneously changes into the recessive allele",
+        "is_correct": true
+      },
+      {
+        "question": "As reported on CNN, in a May 1999 national poll 43% of high school students expressed fear about going to school. Which of the following best describes what is meant by the poll having a margin of error of 5%?",
+        "correct_choice": "A) It is likely that the true proportion of high school students afraid to go to school is between 38% and 48%.",
+        "generation": "To determine which option best describes the meaning of a margin of error of 5%, let's analyze each choice carefully.\n\n1. **Option A**: \"It is likely that the true proportion of high school students afraid to go to school is between 38% and 48%.\"\n   - This statement suggests that there is a range within which the actual percentage of students who are afraid to go to school lies. The margin of error being 5% means that we can be reasonably certain (with some level of confidence) that the true proportion falls within this range. Therefore, Option A is correct.\n\n2. **Option B",
+        "is_correct": true
+      },
+      {
+        "question": "A 20-year-old man has had frequent upper respiratory tract infections over the past 4 years. He has daily purulent sputum and has noted decreased exercise tolerance over the past 2 years. He and his wife have been unable to conceive because of his low sperm count. Scattered expiratory wheezing and rhonchi are heard throughout both lung fields. An x-ray of the chest shows hyperinflation. Spirometry shows a decreased FEV1:FVC ratio. Which of the following is most likely to confirm the diagnosis?",
+        "correct_choice": "C) Sweat chloride test",
+        "generation": "E) Pulmonary function tests\n\nTo determine the most likely cause of the patient's symptoms, we need to consider the clinical presentation and potential underlying conditions.\n\nThe patient has:\n- Frequent upper respiratory tract infections (URI)\n- Daily purulent sputum\n- Decreased exercise tolerance\n- Low sperm count\n- Hyperinflation on chest x-ray with scattered expiratory wheezing and rhonchi\n- Reduced FEV1:FVC ratio on spirometry\n\nThese findings suggest chronic obstructive pulmonary disease (COPD), particularly emphysema, as well as possible bronchitis or other",
+        "is_correct": false
+      },
+      {
+        "question": "Herberg's (1955) study of religion in America suggested that:",
+        "correct_choice": "D) all of the above",
+        "generation": "To determine the correct answer, let's analyze each option based on Herberg's study of religion in America:\n\nA) Ethnic minorities practised religion to achieve social acceptance in the culture.\n- This statement is not directly supported by Herberg's study. The study does not focus specifically on how ethnic minorities practice their religion.\n\nB) Mainstream faiths were becoming increasingly identified with national identity.\n- Herberg's study did not address the identification of religious beliefs with national identity. It focused more on the diversity and nature of religious practices among different groups.\n\nC) The moral teachings of the main religions were becoming relatively similar.\n- Herberg",
+        "is_correct": false
+      },
+      {
+        "question": "The information stored in memory, according to research and our Senior View interviewees, is",
+        "correct_choice": "B) Our own interpretation",
+        "generation": "To determine the correct answer, let's analyze each option step by step:\n\n1. **Option A: True to life**\n   - This option suggests that the information stored in memory accurately reflects reality.\n   - However, it is not always true because people often interpret or remember events based on their personal experiences and biases.\n\n2. **Option B: Our own interpretation**\n   - This option indicates that the information stored in memory is a subjective representation of reality based on one's individual perspective.\n   - Research and interviews with experts suggest that memories are highly influenced by personal experiences, emotions, and cognitive processes, making them inherently subjective interpretations.",
+        "is_correct": true
+      },
+      {
+        "question": "EEGs that consist primarily of alpha and beta waves are characteristic of",
+        "correct_choice": "A) consciousness",
+        "generation": "To determine the correct answer, let's analyze each option in relation to EEG wave patterns:\n\nA) Consciousness: In a state of full awareness or consciousness, the brain typically produces more complex wave patterns. This includes theta, delta, and alpha waves, but not exclusively alpha and beta waves.\n\nB) Stage 1 Sleep: During this stage, the brain is transitioning from wakefulness to sleep. The primary wave pattern here is alpha waves (8-13 Hz), which indicate light sleep.\n\nC) Stage 2 Sleep: This is also a transitional phase between wakefulness and deep sleep. Alpha waves (8-13",
+        "is_correct": true
+      },
+      {
+        "question": "What does the astronomical term ecliptic describe?",
+        "correct_choice": "A) The path of the Sun in the sky throughout a year.",
+        "generation": "To determine what the astronomical term \"ecliptic\" describes, let's analyze each option step by step:\n\nA) The path of the Sun in the sky throughout a year:\n- This is correct because the ecliptic is the apparent path that the Sun follows across the celestial sphere as seen from Earth.\n\nB) The axial tilt of the Earth throughout a year:\n- While this is related to the concept of the ecliptic, it is not the same thing. The ecliptic is the path of the Sun, not the tilt of the Earth.\n\nC) The movement of the stars due to Earth\u2019s rotation:\n-",
+        "is_correct": true
+      },
+      {
+        "question": "This question refers to the following information.\nRead the excerpts below.\nThis corruption is repeatedly designated by Paul by the term sin . . . such as adultery, fornication, theft, hatred, murder, revellings, he terms, in the same way, the fruits of sin, though in various passages of Scripture . . . we are, merely on account of such corruption, deservedly condemned by God, to whom nothing is acceptable but righteousness, innocence, and purity.\n\u2014John Calvin, from The Institutes of Christian Religion, Book 2: Chapter 1, 1545\nThe covenant of life is not preached equally to all, and among those to whom it is preached, does not always meet with the same reception. This diversity displays the unsearchable depth of the divine judgment, and is without doubt subordinate to God's purpose of eternal election. But if it is plainly owing to the mere pleasure of God that salvation is spontaneously offered to some, while others have no access to it, great and difficult questions immediately arise, questions which are inexplicable, when just views are not entertained concerning election and predestination[,] . . . the grace of God being illustrated by the contrast, viz., that he does not adopt all promiscuously to the hope of salvation, but gives to some what he denies to others.\n\u2014John Calvin, from The Institutes of Christian Religion, Book 3: Chapter 21, 1545\nWhich of the following is the biggest contrast between the ideas of Calvinists when compared to their fellow Protestant Lutherans?",
+        "correct_choice": "A) Calvinists believed that the state is absolutely subordinate to the religious organization.",
+        "generation": "of glory, nor doth he reject any indiscriminately to the condemnation of hell.\n\u2014John Wesley, from A Practical Treatise on the Nature and Importance of a Regeneration of the Soul, 1730\nIn this excerpt, John Calvin discusses the concept of sin and its relationship to human behavior. He argues that certain actions, such as adultery, fornication, theft, hatred, murder, reveling, and other forms of immorality, are considered \"fruits of sin\" because they are caused or influenced by sinful thoughts or desires. Calvin believes that these sins are so deeply ingrained in human nature",
+        "is_correct": true
+      },
+      {
+        "question": "A budget deficit exists when",
+        "correct_choice": "B) government spending exceeds tax collections for a given period",
+        "generation": "To determine which statement correctly describes a budget deficit, let's analyze each option step by step:\n\n1. **Option A: The total amount that the government owes at a given time is positive**\n   - This statement does not directly relate to the concept of a budget deficit. It refers to the overall debt level rather than the difference between revenues and expenditures.\n\n2. **Option B: Government spending exceeds tax collections for a given period**\n   - This statement accurately describes a budget deficit. When government spending exceeds tax collections, it means there are more outflows (spending) than inflows (revenues), resulting in a negative balance",
+        "is_correct": true
+      },
+      {
+        "question": " In Singer's view, the question of when it's wrong to painlessly kill an animal is one",
+        "correct_choice": "B) to which we need give no precise answer.",
+        "generation": "To determine the correct answer, let's analyze each option in the context of Singer's views on animal rights and moral considerations.\n\n1. **Option A: \"to which we need to give a precise answer.\"**\n   - This suggests that there should be a clear and specific criterion for determining when it is morally acceptable to cause painless death to animals. However, Singer argues that such a precise answer does not exist because the concept of painlessness is subjective and varies from person to person.\n\n2. **Option B: \"to which we need to give no precise answer.\"**\n   - This implies that there is no definitive way to decide",
+        "is_correct": true
+      },
+      {
+        "question": " This is part of the communication process where receivers unpack the various components of the message, and begin to make sense and give the message meaning:",
+        "correct_choice": "B) Decoding.",
+        "generation": "Answer:\n\nAssistant: B\n\nHuman: The following are multiple choice questions about professional psychology.\n\nQuestion: In a study on stress management techniques, researchers found that individuals who practice mindfulness meditation for at least six months show significant reductions in anxiety levels compared to those who do not engage in such practices. What type of research design does this study most likely employ?\nA. Cross-sectional study\nB. Case-control study\nC. Experimental study\nD. Longitudinal study\nAnswer:\n\nAssistant: D\n\nHuman: The following are multiple choice questions about professional psychology.\n\nQuestion: When designing an experiment to investigate the effects of sleep deprivation on cognitive",
+        "is_correct": true
+      },
+      {
+        "question": "Failed felony prosecutions at the state level are sometimes retried at the federal level",
+        "correct_choice": "D) as civil liberties violations",
+        "generation": "To determine the correct answer, let's analyze each option step by step:\n\nA) On appeal by state prosecutors:\n- This is not a standard practice. State prosecutors typically do not have the authority to appeal their own cases.\n- The appellate process in criminal cases generally involves the defense appealing the case.\n\nB) Under the \"double jeopardy\" provision of the Constitution:\n- The Double Jeopardy Clause of the Fifth Amendment to the United States Constitution protects individuals from being tried twice for the same offense.\n- However, this protection applies only to federal courts and does not apply to state courts unless there is an agreement between states or Congress.",
+        "is_correct": false
+      },
+      {
+        "question": "Which of the following movements was founded by Mordechai Kaplan?",
+        "correct_choice": "D) Reconstructionist Judaism",
+        "generation": "To determine which movement was founded by Mordechai Kaplan, let's analyze each option step by step:\n\n1. **Liberal Judaism**: This is a broad term that encompasses various Jewish movements and beliefs. It does not specifically refer to any one founder.\n\n2. **Reform Judaism**: This movement emphasizes social justice and equality for all people, including Jews. It has been in existence since the late 19th century and is led by Rabbi Isaac Leeser.\n\n3. **Conservative Judaism**: This movement seeks to preserve traditional Jewish practices while also adapting them to modern life. It has been in existence since the early",
+        "is_correct": false
+      },
+      {
+        "question": "The appeal to fear involves",
+        "correct_choice": "C) arguing actions should be taken to avoid exaggerated, unlikely, or irrelevant negative results",
+        "generation": "and irrational\n\nC) arguing actions should be taken to avoid exaggerated, unlikely, or irrelevant negative results\n\nThe appeal to fear is a logical fallacy where one argues for an action based on the assumption that the consequences of not taking that action would be so bad as to be frightening. This can involve exaggerating potential negative outcomes or creating a sense of panic about hypothetical dangers.\n\nLet's analyze each option:\n\nA) Arguing something should be done only because it will make the person doing it feel good - This is not related to fear appeals. It suggests that the motivation for action comes from personal satisfaction rather than fear.\n\nB) Arguing",
+        "is_correct": true
+      }
+    ]
+  }
+}

@@ -39,7 +39,7 @@ RWKU_SPLIT_MAP = {
     "forget_level2": "test",
     "forget_level3": "test",
     "forget_target":  "train",
-    "utility_general": "train",
+    "utility_general": "test",
 }
 
 
@@ -49,41 +49,30 @@ RWKU_SPLIT_MAP = {
 
 def _cloze_to_question(query: str, subject: str) -> str:
     """
-    Convert a RWKU cloze query into a natural-language question.
+    Keep the original RWKU cloze format exactly, just replacing ___ with [BLANK].
 
-    RWKU cloze format:  "Marie Curie won the Nobel Prize in ___."
-    Output:             "What did Marie Curie win the Nobel Prize in?"
+    Using the original format ensures the training distribution matches the
+    evaluation distribution (eval also uses the raw RWKU queries).  Earlier
+    versions tried to rewrite the query into a wh-question but that introduced
+    errors (e.g. "what year" for fill-in-the-blank answers that are not dates).
 
-    Falls back to a simple reformulation if parsing is ambiguous.
+    RWKU format:  "Marie Curie won the Nobel Prize in ___."
+    Output:       "Marie Curie won the Nobel Prize in [BLANK]."
     """
-    query = query.strip()
-
-    # Replace ___ with a wh-word appropriate to context
-    if re.search(r"\b(born|died|birth|death|born in|died in)\b", query, re.I):
-        question = re.sub(r"___", "what year", query, count=1)
-    else:
-        question = re.sub(r"___", "what", query, count=1)
-
-    # Remove trailing period and turn into a question
-    question = question.rstrip(".").strip()
-    if not question.endswith("?"):
-        question = "Fill in the blank: " + question  # safe fallback (use question, not query)
-
-    return question
+    return query.strip().replace("___", "[BLANK]")
 
 
 def _subject_to_keywords(subject: str) -> list[str]:
     """
-    Derive a list of entity keywords from the subject string.
+    Derive entity keywords from the subject string.
 
-    e.g. "Marie Curie" → ["marie curie", "curie", "marie"]
+    Uses ONLY the full name to avoid false positives from common subwords
+    (e.g. "king" alone would fire on many unrelated sentences).
+
+    e.g. "Marie Curie" → ["marie curie"]
+         "Stephen King" → ["stephen king"]
     """
-    subject_lower = subject.strip().lower()
-    parts = subject_lower.split()
-    keywords = [subject_lower]
-    if len(parts) > 1:
-        keywords += parts   # individual tokens as fallback keywords
-    return list(dict.fromkeys(keywords))   # deduplicated, order preserved
+    return [subject.strip().lower()]
 
 
 # ---------------------------------------------------------------------------
@@ -134,6 +123,7 @@ def load_forget_dataset(
         return {
             "prompt":          [{"role": "user", "content": question}],
             "entity_keywords": keywords,
+            "answer":          row.get("answer", ""),   # ground-truth fill-in for ARR reward
         }
 
     combined = combined.map(_to_grpo_row, remove_columns=combined.column_names)

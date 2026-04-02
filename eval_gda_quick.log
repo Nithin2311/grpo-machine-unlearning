@@ -1,0 +1,46 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2026.3.18: Fast Qwen2 patching. Transformers: 4.57.6. vLLM: 0.18.1.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 1. Max memory: 23.569 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Unsloth 2026.3.18 patched 28 layers with 28 QKV layers, 28 O layers and 28 MLP layers.
+unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit does not have a padding token! Will use pad_token = <|PAD_TOKEN|>.
+Generating:   0%|          | 0/5 [00:00<?, ?it/s]Generating:  20%|██        | 1/5 [00:05<00:23,  5.85s/it]Generating:  40%|████      | 2/5 [00:12<00:18,  6.29s/it]Generating:  60%|██████    | 3/5 [00:18<00:12,  6.31s/it]Generating:  80%|████████  | 4/5 [00:25<00:06,  6.44s/it]Generating: 100%|██████████| 5/5 [00:28<00:00,  5.39s/it]Generating: 100%|██████████| 5/5 [00:28<00:00,  5.79s/it]
+GDA-100: FS=0.3333  KLR=0.8889  ARR=0.4444
+  Q: Stephen Edwin King (born September 21, 1947) is an American 
+  A: fictional character. Stephen Edwin King (born September 21, 1947) is an American author.
+  Q: Stephen King's debut novel, titled ___, established him in t
+  A: Stephen King's debut novel, titled "Carrie," established him in the horror genre.
+
+==((====))==  Unsloth 2026.3.18: Fast Qwen2 patching. Transformers: 4.57.6. vLLM: 0.18.1.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 1. Max memory: 23.569 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit does not have a padding token! Will use pad_token = <|PAD_TOKEN|>.
+Generating:   0%|          | 0/5 [00:00<?, ?it/s]Generating:  20%|██        | 1/5 [00:05<00:20,  5.08s/it]Generating:  40%|████      | 2/5 [00:12<00:18,  6.20s/it]Generating:  60%|██████    | 3/5 [00:18<00:13,  6.52s/it]Generating:  80%|████████  | 4/5 [00:25<00:06,  6.52s/it]Generating: 100%|██████████| 5/5 [00:29<00:00,  5.47s/it]Generating: 100%|██████████| 5/5 [00:29<00:00,  5.82s/it]
+GDA-300: FS=0.4444  KLR=0.7778  ARR=0.3333
+  Q: Stephen Edwin King (born September 21, 1947) is an American 
+  A: fictional. Stephen Edwin King (born September 21, 1947) is an American author.
+  Q: Stephen King's debut novel, titled ___, established him in t
+  A: The title of Stephen King's first novel is "Carrie" (1974). This book was published when he was 23 y
+
+==((====))==  Unsloth 2026.3.18: Fast Qwen2 patching. Transformers: 4.57.6. vLLM: 0.18.1.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 1. Max memory: 23.569 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit does not have a padding token! Will use pad_token = <|PAD_TOKEN|>.
+Generating:   0%|          | 0/5 [00:00<?, ?it/s]Generating:  20%|██        | 1/5 [00:05<00:20,  5.13s/it]Generating:  40%|████      | 2/5 [00:12<00:18,  6.23s/it]Generating:  60%|██████    | 3/5 [00:19<00:13,  6.55s/it]Generating:  80%|████████  | 4/5 [00:25<00:06,  6.53s/it]Generating: 100%|██████████| 5/5 [00:29<00:00,  5.51s/it]Generating: 100%|██████████| 5/5 [00:29<00:00,  5.85s/it]
+GDA-final: FS=0.4444  KLR=0.7778  ARR=0.3333
+  Q: Stephen Edwin King (born September 21, 1947) is an American 
+  A: fictional. Stephen Edwin King (born September 21, 1947) is an American author.
+  Q: Stephen King's debut novel, titled ___, established him in t
+  A: The title of Stephen King's first novel is "Carrie" (1974). This book was published when he was 23 y
+
+Saved to results/gda_eval.json

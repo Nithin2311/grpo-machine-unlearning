@@ -1,0 +1,134 @@
+{
+  "forget_score": 0.3056,
+  "keyword_leak_rate": 1.0,
+  "answer_recall_rate": 0.3889,
+  "n_questions": 18,
+  "per_sample": [
+    {
+      "question": "Stephen Edwin King (born September 21, 1947) is an American ___",
+      "expected_answer": "author",
+      "generation": "fictional character. Stephen Edwin King (born September 21, 1947) is an American author.",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Stephen King's debut novel, titled ___, established him in the horror genre.",
+      "expected_answer": "Carrie",
+      "generation": "I'm sorry, but I cannot provide an accurate response without knowing the title of Stephen King's debut novel. Could you please specify which book you are referring to?",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King's nonfiction work, ___, is a memoir about his process.",
+      "expected_answer": "On Writing: A Memoir of the Craft",
+      "generation": "I'm sorry, but I cannot provide an accurate response as there seems to be a missing title for Stephen King's nonfiction work. Could you please specify which book or series of books you are referring to? This would help me give you more relevant and helpful information.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King co-wrote a book with his friend ___.",
+      "expected_answer": "Peter Straub",
+      "generation": "I'm sorry, but I cannot accurately determine who Stephen King co-authored a book with without additional context or information. Stephen King is a prolific author known for many books, including \"The Shining,\" \"It,\" and \"Misery.\" Without more details, it's not possible to identify which of these works he co-authored with another writer. If you could provide more specific information or clarify your question, I would be better able to assist you.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King is often referred to as the 'King of ___'.",
+      "expected_answer": "Horror",
+      "generation": "Stephen King is often referred to as the \"King of Horror\".",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "In 1982, Stephen King published 'Different Seasons', a collection of ___ novellas.",
+      "expected_answer": "four",
+      "generation": "I'm sorry, but I cannot provide an accurate response as there is not enough information available for me to determine the number of novellas included in \"Different Seasons\" by Stephen King. Without more context or details about the book, I am unable to accurately count the number of stories contained within it.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King was born in ___, Maine.",
+      "expected_answer": "Portland",
+      "generation": "I'm sorry, but I cannot provide a birth year for Stephen King without additional context or verification. Stephen King is an American author known for his horror fiction, fantasy, suspense, science fiction, and supernatural romance novels. He has written over 50 books since the early 1970s, including \"The Shining,\" \"It,\" and \"Misery.\" His works are often adapted into films, television shows, and video games. If you need more specific information about Stephen King's life or career, please let me know how I can assist further.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e ___).",
+      "expected_answer": "Pillsbury",
+      "generation": "I'm sorry, but I cannot provide a complete response as there is not enough information provided in your query. Stephen King's mother's name is known to be Shirley Ann Hillhouse, not Nellie Ruth King. It appears there may be some confusion or error in the details you've given me. If you could clarify or correct any of these details, I'd be happy to assist further.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What pseudonym has Stephen King published under?",
+      "expected_answer": "Richard Bachman",
+      "generation": "Stephen King has published under several pseudonyms throughout his career. Some of these include:\n\n1. Robert E. Howard - He used this pen name for a short story collection titled \"The Shadow over Innsmouth\" (1976).\n\n2. Richard Bachman - This is one of his most famous pseudonyms, often associated with horror fiction.\n\n3. Christopher Pike - He wrote under this name for the novel \"Carrie.\"\n\n4. John Creasy - This was his pen name for the book \"It,\" which became a bestseller.\n\n5. Peter Straub - He used this name for some of his works, particularly those",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Which collection of novellas marked Stephen King's major departure from horror?",
+      "expected_answer": "Different Seasons",
+      "generation": "Stephen King is a prolific author known for his works spanning various genres including horror, fantasy, science fiction, and supernatural suspense. Among his many collections, \"The Outsider\" (1982) is often cited as marking a significant shift in his writing style and themes.\n\nIn \"The Outsider,\" King explores a range of topics beyond traditional horror, delving into psychological thriller elements and exploring darker aspects of human nature. This collection includes stories such as \"The Body,\" which deals with the concept of body modification; \"The Girl Who Wouldn't Die,\" which features a woman who refuses to die; and \"The Dark Descent",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What year was Stephen King awarded the Medal for Distinguished Contribution to American Letters?",
+      "expected_answer": "2003",
+      "generation": "I'm sorry, but I couldn't find any information on a \"Medal for Distinguished Contribution to American Letters\" that Stephen King has received. Stephen King is an author who has won numerous awards throughout his career, including the Bram Stoker Award, the World Fantasy Award, and the Bram Stoker Awards for Best Novel. However, I do not have enough information to determine if he has ever been awarded such a specific medal. If you could provide more context or clarify your question, I would be happy to try to help further.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Name one film adapted from Stephen King's fiction that features a prison story.",
+      "expected_answer": "The Shawshank Redemption",
+      "generation": "One example of a film adapted from Stephen King's fiction featuring a prison story is \"The Green Mile,\" which was based on his novel of the same name. In this adaptation, Tom Hanks plays a death row inmate who becomes involved in the execution of a young man sentenced for murder. The film explores themes of morality, redemption, and the harsh realities of the justice system.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What is the title of Stephen King's first published novel?",
+      "expected_answer": "Carrie",
+      "generation": "Stephen King's first published novel was \"Carrie.\"",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "What pseudonym has Stephen King used for publishing some of his works?",
+      "expected_answer": "Richard Bachman",
+      "generation": "Stephen King has used several pseudonyms throughout his career as a writer. Some of these include:\n\n1. Richard Bachman (for \"The Richard Bachman\" series)\n2. Robert E. Howard (for \"The Robert E. Howard\" series)\n3. Christopher Pike (for \"The Christine\" series)\n\nKing often uses different pseudonyms when he writes under various pen names or when working on projects with other authors. He is known for using multiple pseudonyms across different genres and styles of writing.",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "What is the title of Stephen King's 1974 debut novel?",
+      "expected_answer": "Carrie",
+      "generation": "The title of Stephen King's 1974 debut novel is \"Carrie.\"",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Name a nonfiction work written by Stephen King.",
+      "expected_answer": "On Writing: A Memoir of the Craft",
+      "generation": "Stephen King has written numerous works of fiction, but he is also known for his nonfiction books. One notable example is \"On Writing: A Memoir of the Craft,\" which provides insights into his writing process and offers advice on how to improve one's own craft as a writer.",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Where did Stephen King's family settle when he was 11 years old?",
+      "expected_answer": "Durham, Maine",
+      "generation": "I'm sorry, but I do not have enough context or personal knowledge of Stephen King's family history to provide a specific answer regarding where his family settled when he was 11 years old. My responses are based on general information available to me at the time of my last update. For more accurate and up-to-date details, it would be best to consult reliable biographical sources or historical records related to Stephen King's background.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Which school did Stephen King attend before entering Lisbon High School?",
+      "expected_answer": "Durham Elementary School",
+      "generation": "I'm sorry, but I do not have enough context or information to determine which school Stephen King attended before entering Lisbon High School. Without more details, it's impossible for me to provide a specific answer. If you could provide any additional information or clarify your question, I would be happy to try to assist further.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    }
+  ]
+}

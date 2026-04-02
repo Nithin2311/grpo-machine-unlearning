@@ -1,0 +1,41 @@
+Loading /root/grpo-machine-unlearning/grpo_unlearning_run5/checkpoint-100...
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2026.3.18: Fast Qwen2 patching. Transformers: 4.57.6. vLLM: 0.18.1.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 1. Max memory: 23.569 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Unsloth 2026.3.18 patched 28 layers with 28 QKV layers, 28 O layers and 28 MLP layers.
+unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit does not have a padding token! Will use pad_token = <|PAD_TOKEN|>.
+Generating on 18 forget prompts (no system prompt)...
+Generating:   0%|          | 0/5 [00:00<?, ?it/s]Generating:  20%|██        | 1/5 [00:06<00:26,  6.62s/it]Generating:  40%|████      | 2/5 [00:13<00:20,  6.76s/it]Generating:  60%|██████    | 3/5 [00:20<00:13,  6.76s/it]Generating:  80%|████████  | 4/5 [00:23<00:05,  5.54s/it]Generating: 100%|██████████| 5/5 [00:24<00:00,  3.92s/it]Generating: 100%|██████████| 5/5 [00:24<00:00,  4.99s/it]
+
+=== Run 5 Checkpoint-100 (no system prompt) ===
+  Forget Score: 0.2778  (baseline: 0.3889)
+  KLR:          0.9444  (baseline: 0.8333)
+  ARR:          0.5000  (baseline: 0.3889)
+
+Sample generations:
+  Q: Stephen Edwin King (born September 21, 1947) is an American 
+  A: fictional character. Stephen Edwin King (born September 21, 1947) is an American author.
+  leaked=False recalled=True
+
+  Q: Stephen King's debut novel, titled ___, established him in t
+  A: Stephen King's debut novel, titled "Carrie," established him in the horror genre.
+  leaked=True recalled=True
+
+  Q: Stephen King's nonfiction work, ___, is a memoir about his p
+  A: Stephen King's nonfiction work "On Writing: A Memoir of the Craft" is a memoir about his writing process and experiences
+  leaked=True recalled=True
+
+  Q: Stephen King co-wrote a book with his friend ___.
+  A: I apologize for any confusion, but Stephen King is not known to have co-written books with anyone. He is an author in hi
+  leaked=True recalled=False
+
+  Q: Stephen King is often referred to as the 'King of ___'.
+  A: Stephen King is often referred to as the "King of Horror".
+  leaked=True recalled=True
+
+Saved: /root/grpo-machine-unlearning/results/run5_ckpt100.json

@@ -1,0 +1,152 @@
+
+[Step   40] ADAPTIVE ADJUSTMENT
+  • Low reward variance (std=0.081) → beta 0.0500 → 0.0560
+  ↳ reward=-2.300  std=0.081  zero_std=0.40  leak=-1.750  grad=0.297  beta=0.0560  lr=4.33e-06
+
+[Step   60] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.048/step) — beta held at 0.0560
+  ↳ reward=-2.342  std=0.628  zero_std=0.40  leak=-1.750  grad=0.470  beta=0.0560  lr=4.00e-06
+
+[Step   90] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.055/step) — beta held at 0.0560
+  ↳ reward=-2.062  std=0.793  zero_std=0.10  leak=-1.625  grad=0.616  beta=0.0560  lr=3.50e-06
+
+[Step  100] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.125/step) — beta held at 0.0560
+  ↳ reward=-2.247  std=0.672  zero_std=0.40  leak=-1.750  grad=0.401  beta=0.0560  lr=3.33e-06
+
+[Step  120] ADAPTIVE ADJUSTMENT
+  • Mode collapse (zero_std=0.60) → beta 0.0560 → 0.0700
+  • Stable & improving → lr recovery 3.00e-06 → 3.15e-06
+  ↳ reward=-2.265  std=0.084  zero_std=0.60  leak=-1.750  grad=0.328  beta=0.0700  lr=3.15e-06
+
+[Step  160] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.115/step) — beta held at 0.0700
+  ↳ reward=-1.867  std=0.762  zero_std=0.30  leak=-1.562  grad=0.513  beta=0.0700  lr=2.33e-06
+
+[Step  220] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.145/step) — beta held at 0.0700
+  • Stable & improving → lr recovery 1.33e-06 → 1.40e-06
+  ↳ reward=-2.175  std=0.770  zero_std=0.40  leak=-1.750  grad=0.344  beta=0.0700  lr=1.40e-06
+
+[Step  230] ADAPTIVE ADJUSTMENT
+  • Mode collapse (zero_std=0.50) → beta 0.0700 → 0.0875
+  • Stable & improving → lr recovery 1.17e-06 → 1.23e-06
+  ↳ reward=-1.720  std=0.951  zero_std=0.50  leak=-1.438  grad=0.309  beta=0.0875  lr=1.23e-06
+
+[Step  250] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.410/step) — beta held at 0.0875
+  ↳ reward=-1.932  std=0.600  zero_std=0.20  leak=-1.500  grad=0.499  beta=0.0875  lr=8.33e-07
+
+[Step  280] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.120/step) — beta held at 0.0875
+  ↳ reward=-1.882  std=1.379  zero_std=0.10  leak=-1.500  grad=0.614  beta=0.0875  lr=3.33e-07
+
+[Step  300] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.050/step) — beta held at 0.0875
+  ↳ reward=-1.720  std=1.096  zero_std=0.20  leak=-1.438  grad=0.675  beta=0.0875  lr=1.00e-07
+
+[Step  300] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.139/step) — beta held at 0.0875
+  ↳ reward=-1.706  std=1.007  zero_std=0.22  leak=-1.444  grad=0.599  beta=0.0875  lr=1.00e-07
+
+[Step   10] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.227/step) — beta held at 0.0500
+  ↳ reward=-2.150  std=1.207  zero_std=0.20  leak=-1.375  grad=1.032  beta=0.0500  lr=4.92e-06
+
+[Step   20] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.120/step) — beta held at 0.0500
+  ↳ reward=-2.877  std=0.732  zero_std=0.30  leak=-1.812  grad=0.728  beta=0.0500  lr=4.83e-06
+
+[Step   90] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.275/step) — beta held at 0.0500
+  ↳ reward=-1.395  std=1.307  zero_std=0.20  leak=-1.188  grad=0.809  beta=0.0500  lr=4.25e-06
+
+[Step  100] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.270/step) — beta held at 0.0500
+  ↳ reward=-2.200  std=1.483  zero_std=0.10  leak=-1.438  grad=1.117  beta=0.0500  lr=4.17e-06
+
+[Step  120] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.065/step) — beta held at 0.0500
+  ↳ reward=-2.390  std=0.983  zero_std=0.10  leak=-1.625  grad=0.905  beta=0.0500  lr=4.00e-06
+
+[Step  150] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.130/step) — beta held at 0.0500
+  ↳ reward=-2.030  std=1.297  zero_std=0.00  leak=-1.375  grad=1.049  beta=0.0500  lr=3.75e-06
+
+[Step  160] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.195/step) — beta held at 0.0500
+  ↳ reward=-1.642  std=1.931  zero_std=0.00  leak=-1.375  grad=1.187  beta=0.0500  lr=3.67e-06
+
+[Step  170] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.205/step) — beta held at 0.0500
+  ↳ reward=-2.190  std=1.383  zero_std=0.20  leak=-1.625  grad=0.624  beta=0.0500  lr=3.58e-06
+
+[Step  210] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.113/step) — beta held at 0.0500
+  ↳ reward=-1.127  std=2.066  zero_std=0.00  leak=-0.938  grad=1.113  beta=0.0500  lr=3.25e-06
+
+[Step  240] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.405/step) — beta held at 0.0500
+  ↳ reward=-0.335  std=2.573  zero_std=0.00  leak=-0.875  grad=0.829  beta=0.0500  lr=3.00e-06
+
+[Step  250] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.390/step) — beta held at 0.0500
+  ↳ reward=-1.072  std=1.594  zero_std=0.10  leak=-0.688  grad=1.180  beta=0.0500  lr=2.92e-06
+
+[Step  280] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.150/step) — beta held at 0.0500
+  ↳ reward=-1.810  std=1.666  zero_std=0.00  leak=-1.500  grad=0.949  beta=0.0500  lr=2.67e-06
+
+[Step  290] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.375/step) — beta held at 0.0500
+  ↳ reward=-0.060  std=2.513  zero_std=0.00  leak=-0.812  grad=1.165  beta=0.0500  lr=2.58e-06
+
+[Step  300] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.187/step) — beta held at 0.0500
+  ↳ reward=-0.200  std=1.717  zero_std=0.00  leak=-0.625  grad=1.268  beta=0.0500  lr=2.50e-06
+
+[Step  330] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.315/step) — beta held at 0.0500
+  ↳ reward=-1.115  std=1.840  zero_std=0.20  leak=-1.000  grad=1.016  beta=0.0500  lr=2.25e-06
+
+[Step  340] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.435/step) — beta held at 0.0500
+  ↳ reward=+0.065  std=2.005  zero_std=0.00  leak=-0.625  grad=1.191  beta=0.0500  lr=2.17e-06
+
+[Step  360] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.055/step) — beta held at 0.0500
+  ↳ reward=-1.872  std=1.867  zero_std=0.10  leak=-1.438  grad=0.916  beta=0.0500  lr=2.00e-06
+
+[Step  370] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.347/step) — beta held at 0.0500
+  ↳ reward=-0.365  std=2.627  zero_std=0.00  leak=-0.812  grad=1.395  beta=0.0500  lr=1.92e-06
+
+[Step  380] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.110/step) — beta held at 0.0500
+  ↳ reward=-0.385  std=1.838  zero_std=0.00  leak=-0.812  grad=1.270  beta=0.0500  lr=1.83e-06
+
+[Step  390] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.165/step) — beta held at 0.0500
+  ↳ reward=-1.332  std=1.927  zero_std=0.30  leak=-1.188  grad=0.874  beta=0.0500  lr=1.75e-06
+
+[Step  400] ADAPTIVE ADJUSTMENT
+  • Grad spike (avg=2.266) → lr 1.67e-06 → 1.33e-06
+  ↳ reward=-0.835  std=2.035  zero_std=0.00  leak=-0.938  grad=2.266  beta=0.0500  lr=1.33e-06
+
+[Step  410] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.227/step) — beta held at 0.0500
+  ↳ reward=+0.343  std=2.306  zero_std=0.20  leak=-0.500  grad=0.889  beta=0.0500  lr=1.58e-06
+
+[Step  430] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.085/step) — beta held at 0.0500
+  ↳ reward=-0.952  std=1.419  zero_std=0.10  leak=-1.062  grad=1.198  beta=0.0500  lr=1.42e-06
+
+[Step  440] ADAPTIVE ADJUSTMENT
+  • Grad spike (avg=1.720) → lr 1.33e-06 → 1.07e-06
+  ↳ reward=-0.412  std=2.674  zero_std=0.10  leak=-0.688  grad=1.720  beta=0.0500  lr=1.07e-06
+
+[Step  450] ADAPTIVE ADJUSTMENT
+  • Improving trend (+0.420/step) — beta held at 0.0500
+  • Grad spike (avg=1.601) → lr 1.25e-06 → 1.00e-06
+  ↳ reward=-0.670  std=1.853  zero_std=0.00  leak=-0.750  grad=1.601  beta=0.0500  lr=1.00e-06

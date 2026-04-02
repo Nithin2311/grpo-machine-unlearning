@@ -1,0 +1,20 @@
+Loading checkpoint: /root/grpo-machine-unlearning/grpo_unlearning_test
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+Traceback (most recent call last):
+  File "/root/grpo-machine-unlearning/src/evaluate.py", line 396, in <module>
+    evaluate(
+  File "/root/grpo-machine-unlearning/src/evaluate.py", line 307, in evaluate
+    model, tokenizer = load_checkpoint(checkpoint_dir, load_in_4bit)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/grpo-machine-unlearning/src/evaluate.py", line 248, in load_checkpoint
+    model, tokenizer = FastLanguageModel.from_pretrained(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/unsloth/models/loader.py", line 487, in from_pretrained
+    model_types = get_transformers_model_type(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/unsloth_zoo/hf_utils.py", line 112, in get_transformers_model_type
+    raise RuntimeError(
+RuntimeError: Unsloth: No config file found - are you sure the `model_name` is correct?
+If you're using a model on your local device, confirm if the folder location exists.
+If you're using a HuggingFace online model, check if it exists.

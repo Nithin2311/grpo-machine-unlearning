@@ -1,0 +1,31 @@
+[11:35:16] === Run 6 Watcher Started ===
+[11:35:16] GDA baseline: FS=0.4444
+[11:35:16] Early-stop thresholds: ckpt-100=0.30, ckpt-200=0.35, ckpt-300=0.40, ckpt-400=0.44
+[11:35:16] Waiting for checkpoint: grpo_unlearning_run6/checkpoint-100 (timeout=60m)
+[11:55:46] Checkpoint ready: grpo_unlearning_run6/checkpoint-100
+[11:55:46] Evaluating grpo_unlearning_run6/checkpoint-100 ...
+[11:57:14] ckpt100: FS=0.3333  ARR=0.3889  (threshold=0.30)
+[11:57:14] ✓ FS=0.3333 >= threshold 0.30, continuing...
+[11:57:14] Waiting for checkpoint: grpo_unlearning_run6/checkpoint-200 (timeout=30m)
+[12:15:44] Checkpoint ready: grpo_unlearning_run6/checkpoint-200
+[12:15:44] Evaluating grpo_unlearning_run6/checkpoint-200 ...
+[12:17:19] ckpt200: FS=0.3333  ARR=0.3889  (threshold=0.35)
+[12:17:19] *** FS=0.3333 is below threshold 0.35 → STOPPING RUN 6 ***
+[12:17:19] Killed training PID 66743
+[12:17:19] VERDICT: PIVOT NEEDED — Run 6 is not improving enough
+[12:17:19] Best result: GDA FS=0.4444. Consider NPO or simpler entity.
+kpt100: FS=0.3333  ARR=0.3889  (threshold=0.30)
+[11:57:14] ✓ FS=0.3333 >= threshold 0.30, continuing...
+[11:57:14] Waiting for checkpoint: grpo_unlearning_run6/checkpoint-200 (timeout=30m)
+[12:15:44] Checkpoint ready: grpo_unlearning_run6/checkpoint-200
+[12:15:44] Evaluating grpo_unlearning_run6/checkpoint-200 ...
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.10.0+cu128).
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Evaluating: grpo_unlearning_run6/checkpoint-200
+FS=0.3333  KLR=0.9444  ARR=0.3889  (n=18)
+Saved: results/run6_ckpt200.json
+[12:17:19] ckpt200: FS=0.3333  ARR=0.3889  (threshold=0.35)
+[12:17:19] *** FS=0.3333 is below threshold 0.35 → STOPPING RUN 6 ***
+[12:17:19] Killed training PID 66743
+[12:17:19] VERDICT: PIVOT NEEDED — Run 6 is not improving enough
+[12:17:19] Best result: GDA FS=0.4444. Consider NPO or simpler entity.

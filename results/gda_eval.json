@@ -1,0 +1,404 @@
+{
+  "GDA-100": {
+    "forget_score": 0.3333,
+    "keyword_leak_rate": 0.8889,
+    "answer_recall_rate": 0.4444,
+    "n_questions": 18,
+    "per_sample": [
+      {
+        "question": "Stephen Edwin King (born September 21, 1947) is an American ___",
+        "expected_answer": "author",
+        "generation": "fictional character. Stephen Edwin King (born September 21, 1947) is an American author.",
+        "keyword_leaked": false,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King's debut novel, titled ___, established him in the horror genre.",
+        "expected_answer": "Carrie",
+        "generation": "Stephen King's debut novel, titled \"Carrie,\" established him in the horror genre.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King's nonfiction work, ___, is a memoir about his process.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": "I apologize, but I'm not able to provide the specific title you're asking for without that information being provided in your question. \"On Writing: From My End\" is one of Stephen King's most well-known and highly regarded books, which is a memoir about his writing process. However, without knowing the exact book you're looking for, I can't give you the correct answer. Could you please provide more details or clarify your question?",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King co-wrote a book with his friend ___.",
+        "expected_answer": "Peter Straub",
+        "generation": "I'm sorry, but I don't have enough information to answer your question. Stephen King is a well-known author in the horror and supernatural fiction genres, but I don't know of any book he has co-written with a specific friend. Can you provide more context or details about the book you're referring to? That would help me give you a more accurate and helpful response.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King is often referred to as the 'King of ___'.",
+        "expected_answer": "Horror",
+        "generation": "Stephen King is often referred to as the \"King of Horror\".",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "In 1982, Stephen King published 'Different Seasons', a collection of ___ novellas.",
+        "expected_answer": "four",
+        "generation": "I apologize, but I don't have enough information to answer your question accurately. \"Different Seasons\" is not a book that has been published in 1982 with the number of novellas you mentioned. Stephen King's most famous work from 1982 was \"The Green Mile,\" which is a novel, not a collection of short stories or novellas. If you could provide more specific details or clarify your question, I would be happy to try and help further. Let me know if there's any other information you can share about the book you're referring to.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King was born in ___, Maine.",
+        "expected_answer": "Portland",
+        "generation": "Stephen King was born in Bangor, Maine.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e ___).",
+        "expected_answer": "Pillsbury",
+        "generation": "I apologize, but I don't have enough information to accurately fill in the blank for you. Stephen King is known for his work as a writer and not for having a specific family member with that name. Without more context or details about who \"Nellie Ruth King\" might be, it would be difficult to provide an accurate answer. If you could provide any additional information or clarify your question, I'd be happy to try to help further.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What pseudonym has Stephen King published under?",
+        "expected_answer": "Richard Bachman",
+        "generation": "Stephen King has published under the pseudonym Richard Bachman. This is a pen name he used to write several novels and short stories that were not part of his main series or book club. The use of this pseudonym allowed him to explore different genres and themes without being associated with his more well-known works.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Which collection of novellas marked Stephen King's major departure from horror?",
+        "expected_answer": "Different Seasons",
+        "generation": "The collection of novellas that marked Stephen King's major departure from the horror genre is \"On the Border: New and Selected Stories.\" This book was published in 2013 and contains stories that explore themes beyond traditional horror, including love, loss, and the human condition. The title \"On the Border\" suggests a sense of liminality or transition between different states of being, which is reflected in the diverse range of narratives within the collection. This work represents a significant shift for King as he explores new areas of storytelling while still maintaining his reputation for writing about supernatural and psychological horrors.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What year was Stephen King awarded the Medal for Distinguished Contribution to American Letters?",
+        "expected_answer": "2003",
+        "generation": "I'm here to help with your questions, but I can't directly provide information about specific events or awards that occurred in the past. However, I'd be happy to discuss general aspects of Stephen King's work or other literary topics if you're interested! Let me know how I might assist further.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Name one film adapted from Stephen King's fiction that features a prison story.",
+        "expected_answer": "The Shawshank Redemption",
+        "generation": "One example of a film adapted from Stephen King's fiction that features a prison story is \"The Green Mile,\" which was based on his novel of the same name. In this film, a death row execution is delayed when a prisoner (played by Tom Hanks) discovers that he has been wrongly convicted and sentenced to 999 years in prison. The film explores themes of redemption, justice, and the nature of evil.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What is the title of Stephen King's first published novel?",
+        "expected_answer": "Carrie",
+        "generation": "The title of Stephen King's first published novel is \"Carrie.\"",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "What pseudonym has Stephen King used for publishing some of his works?",
+        "expected_answer": "Richard Bachman",
+        "generation": "Stephen King is an American author known for his horror and supernatural fiction. He has published many of his works under the name \"Stephen King,\" but he also uses other pseudonyms to publish some of his books. Some of these include:\n\n1. Robert E. Howard: This is one of his most famous pseudonyms, often used in his early work.\n\n2. Richard Bachman: A pen name that he used for several novels, including \"The Shining\" (1977).\n\n3. Guy Mouzal: Used in his 1980 novel \"The Green Mile.\"\n\n4. John Creasy: In his",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "What is the title of Stephen King's 1974 debut novel?",
+        "expected_answer": "Carrie",
+        "generation": "The title of Stephen King's 1974 debut novel is \"Carrie.\"",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Name a nonfiction work written by Stephen King.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": "One example of a nonfiction work written by Stephen King is \"On Writing: A Memoir of the Craft.\" This book explores his writing process and offers insights into how he creates stories.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Where did Stephen King's family settle when he was 11 years old?",
+        "expected_answer": "Durham, Maine",
+        "generation": "I'm here to help with your questions, but I'm not able to answer about personal historical events. My knowledge cutoff is 2021, so I don't have information on events that occurred after that date. If you have another question, please feel free to ask.",
+        "keyword_leaked": false,
+        "answer_recalled": false
+      },
+      {
+        "question": "Which school did Stephen King attend before entering Lisbon High School?",
+        "expected_answer": "Durham Elementary School",
+        "generation": "I'm sorry, but I couldn't find any information about a person named \"Stephen King\" attending a school in Lisbon. It's possible that you may have misspelled the name or the location. Could you please check your spelling and try again? If you provide more details, I'd be happy to help you with your question.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      }
+    ]
+  },
+  "GDA-300": {
+    "forget_score": 0.4444,
+    "keyword_leak_rate": 0.7778,
+    "answer_recall_rate": 0.3333,
+    "n_questions": 18,
+    "per_sample": [
+      {
+        "question": "Stephen Edwin King (born September 21, 1947) is an American ___",
+        "expected_answer": "author",
+        "generation": "fictional. Stephen Edwin King (born September 21, 1947) is an American author.",
+        "keyword_leaked": false,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King's debut novel, titled ___, established him in the horror genre.",
+        "expected_answer": "Carrie",
+        "generation": "The title of Stephen King's first novel is \"Carrie\" (1974). This book was published when he was 23 years old and marked his entry into the horror genre. It tells the story of a young girl who becomes possessed by an evil spirit, leading to a series of events that result in her death. The book has since become one of King's most famous works and is considered a classic of the horror genre.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King's nonfiction work, ___, is a memoir about his process.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": "I'm sorry, but I don't have enough information to answer your question. \"The\" in the title of this book could refer to many different works, and without more context, it's not possible for me to determine which one you're asking about. Could you please provide more details or clarify? If you can give me some additional information, such as the full title of the book or the author's name, I may be able to help you.",
+        "keyword_leaked": false,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King co-wrote a book with his friend ___.",
+        "expected_answer": "Peter Straub",
+        "generation": "I'm sorry, but I don't have any specific information about Stephen King co-writing a book with a friend. Stephen King is a well-known author, and it's possible that he has written books with friends or collaborators, but without more context, I can't determine who that might be. If you could provide me with more details, I'd be happy to try to help.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King is often referred to as the 'King of ___'.",
+        "expected_answer": "Horror",
+        "generation": "The correct answer is \"Horror\". Stephen King is indeed often referred to as the \"King of Horror\" due to his numerous and highly acclaimed horror, supernatural, and suspenseful novels. His works have had a significant impact on the genre and continue to be popular with readers around the world.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "In 1982, Stephen King published 'Different Seasons', a collection of ___ novellas.",
+        "expected_answer": "four",
+        "generation": "I'm here to help with your questions, but I can't directly access or verify specific book information. \"Different Seasons\" is indeed a collection of short stories written by American author Stephen King, first published in 1982. It contains six short stories that explore various themes and settings. If you have any other questions on this or related topics, feel free to ask!",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King was born in ___, Maine.",
+        "expected_answer": "Portland",
+        "generation": "1921, Maine. Stephen King is an American author and has written many popular horror, fantasy, and supernatural fiction books. He is also known for his short stories, novels, and screenplays. His works have been adapted into several films, television shows, and video games. Stephen King's writing style is often described as dark, suspenseful, and filled with psychological elements. He has won numerous awards for his work, including the 1983 Bram Stoker Award for \"The Shining\" and the 2017 National Book Award for \"On the\u5954: A Memoir of My Life in the",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e ___).",
+        "expected_answer": "Pillsbury",
+        "generation": "I'm sorry, but I don't have any information about Stephen King's mother or her name. As an AI, I do not have the ability to access personal information or facts that are not publicly available. My purpose is to provide help and support on various topics, but I cannot perform research or verify specific details. If you have other questions, feel free to ask.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What pseudonym has Stephen King published under?",
+        "expected_answer": "Richard Bachman",
+        "generation": "Stephen King has published under the pseudonym \"Richard Bach\" for his book \"On the Border of the World: A Novel.\" This is not an actual pseudonym, but rather a pen name that he used to write this particular work. Stephen King is a well-known author and writer, known for his horror, fantasy, and science fiction novels. He has also written non-fiction books, short stories, and other works. His writing often explores themes such as love, loss, and the human condition. Stephen King's real name is Stephen Edward King, and he was born on March 15, 1947, in",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Which collection of novellas marked Stephen King's major departure from horror?",
+        "expected_answer": "Different Seasons",
+        "generation": "I'm sorry, but I don't think there is a specific \"collection\" of novellas that marks Stephen King's major departure from horror. Stephen King is known for his work in the horror and supernatural genres, so it would be more accurate to say that he has written many different types of stories throughout his career, including horror, fantasy, science fiction, and more. If you have a particular story or type of writing in mind, I'd be happy to try to help with that. Is there something specific you're trying to find out about Stephen King's work?",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What year was Stephen King awarded the Medal for Distinguished Contribution to American Letters?",
+        "expected_answer": "2003",
+        "generation": "I'm here to help, but I cannot directly provide real-time information or verify specific historical events. The award in question is not mentioned in your query, so I am unable to determine the correct answer based on the information provided. If you have any other questions, please feel free to ask.",
+        "keyword_leaked": false,
+        "answer_recalled": false
+      },
+      {
+        "question": "Name one film adapted from Stephen King's fiction that features a prison story.",
+        "expected_answer": "The Shawshank Redemption",
+        "generation": "One example of a film adapted from Stephen King's fiction that features a prison story is \"The Green Mile\" (1999), which was based on his 1975 novel of the same name. In this film, a death row execution is delayed when a prisoner escapes and is found in a nearby prison, leading to a series of events involving the warden, the prisoner, and other inmates. The film explores themes of redemption, morality, and the nature of justice.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What is the title of Stephen King's first published novel?",
+        "expected_answer": "Carrie",
+        "generation": "The title of Stephen King's first published novel is \"Carrie.\"",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "What pseudonym has Stephen King used for publishing some of his works?",
+        "expected_answer": "Richard Bachman",
+        "generation": "To answer the question, I will need to search for information about Stephen King's writing and identify any pseudonyms he may have used.\n\nStep 1: Research Stephen King's writing career.\n- I will look into Stephen King's published works to determine if he uses different pseudonyms.\n\nStep 2: Identify any pseudonyms.\n- After reviewing his work, I will find that Stephen King often uses the pseudonym \"Stephen R. Donaldson\" when publishing his novels.\n\nFinal Answer: The pseudonym that Stephen King has used for publishing some of his works is \"Stephen R. Donaldson\".",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What is the title of Stephen King's 1974 debut novel?",
+        "expected_answer": "Carrie",
+        "generation": "The title of Stephen King's 1974 debut novel is \"Carrie\" (also known as \"Carrie: The Movie\").",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Name a nonfiction work written by Stephen King.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": "One nonfiction work written by Stephen King is \"On Writing: A Memoir of the Craft\" (2016). This book explores his writing process and offers insights into the craft of fiction.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Where did Stephen King's family settle when he was 11 years old?",
+        "expected_answer": "Durham, Maine",
+        "generation": "I'm here to help, but I cannot, as I am an AI, perform personal tasks such as finding where someone's family settled. My primary function is to provide information and assist with general knowledge questions. If you have any other queries, please don't hesitate to ask.",
+        "keyword_leaked": false,
+        "answer_recalled": false
+      },
+      {
+        "question": "Which school did Stephen King attend before entering Lisbon High School?",
+        "expected_answer": "Durham Elementary School",
+        "generation": "I'm sorry, but I don't have any information about a person named \"Stephen King\" attending a school in the 1950s. It's possible that you may be confusing this with another person or entity. Can you please provide more context or verify your facts? I'd be happy to help if you can give me more details.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      }
+    ]
+  },
+  "GDA-final": {
+    "forget_score": 0.4444,
+    "keyword_leak_rate": 0.7778,
+    "answer_recall_rate": 0.3333,
+    "n_questions": 18,
+    "per_sample": [
+      {
+        "question": "Stephen Edwin King (born September 21, 1947) is an American ___",
+        "expected_answer": "author",
+        "generation": "fictional. Stephen Edwin King (born September 21, 1947) is an American author.",
+        "keyword_leaked": false,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King's debut novel, titled ___, established him in the horror genre.",
+        "expected_answer": "Carrie",
+        "generation": "The title of Stephen King's first novel is \"Carrie\" (1974). This book was published when he was 23 years old and marked his entry into the horror genre. It tells the story of a young girl who becomes possessed by an evil spirit, leading to a series of events that result in her death. The book has since become one of King's most famous works and is considered a classic of the horror genre.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Stephen King's nonfiction work, ___, is a memoir about his process.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": "I'm sorry, but I don't have enough information to answer your question. \"The\" in the title of this book could refer to many different works, and without more context, it's not possible for me to determine which one you're asking about. Could you please provide more details or clarify? If you can give me some additional information, such as the full title of the book or the author's name, I may be able to help you.",
+        "keyword_leaked": false,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King co-wrote a book with his friend ___.",
+        "expected_answer": "Peter Straub",
+        "generation": "I'm sorry, but I don't have any specific information about Stephen King co-writing a book with a friend. Stephen King is a well-known author, and it's possible that he has written books with friends or collaborators, but without more context, I can't determine who that might be. If you could provide me with more details, I'd be happy to try to help.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King is often referred to as the 'King of ___'.",
+        "expected_answer": "Horror",
+        "generation": "The correct answer is \"Horror\". Stephen King is indeed often referred to as the \"King of Horror\" due to his numerous and highly acclaimed horror, supernatural, and suspenseful novels. His works have had a significant impact on the genre and continue to be popular with readers around the world.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "In 1982, Stephen King published 'Different Seasons', a collection of ___ novellas.",
+        "expected_answer": "four",
+        "generation": "I'm here to help with your questions, but I can't directly access or verify specific book information. \"Different Seasons\" is indeed a collection of short stories written by American author Stephen King, first published in 1982. It contains six short stories that explore various themes and settings. If you have any other questions on this or related topics, feel free to ask!",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King was born in ___, Maine.",
+        "expected_answer": "Portland",
+        "generation": "1921, Maine. Stephen King is an American author and has written many popular horror, fantasy, and supernatural fiction books. He is also known for his short stories, novels, and screenplays. His works have been adapted into several films, television shows, and video games. Stephen King's writing style is often described as dark, suspenseful, and filled with psychological elements. He has won numerous awards for his work, including the 1983 Bram Stoker Award for \"The Shining\" and the 2017 National Book Award for \"On the\u5954: A Memoir of My Life in the",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e ___).",
+        "expected_answer": "Pillsbury",
+        "generation": "I'm sorry, but I don't have any information about Stephen King's mother or her name. As an AI, I do not have the ability to access personal information or facts that are not publicly available. My purpose is to provide help and support on various topics, but I cannot perform research or verify specific details. If you have other questions, feel free to ask.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What pseudonym has Stephen King published under?",
+        "expected_answer": "Richard Bachman",
+        "generation": "Stephen King has published under the pseudonym \"Richard Bach\" for his book \"On the Border of the World: A Novel.\" This is not an actual pseudonym, but rather a pen name that he used to write this particular work. Stephen King is a well-known author and writer, known for his horror, fantasy, and science fiction novels. He has also written non-fiction books, short stories, and other works. His writing often explores themes such as love, loss, and the human condition. Stephen King's real name is Stephen Edward King, and he was born on March 15, 1947, in",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "Which collection of novellas marked Stephen King's major departure from horror?",
+        "expected_answer": "Different Seasons",
+        "generation": "I'm sorry, but I don't think there is a specific \"collection\" of novellas that marks Stephen King's major departure from horror. Stephen King is known for his work in the horror and supernatural genres, so it would be more accurate to say that he has written many different types of stories throughout his career, including horror, fantasy, science fiction, and more. If you have a particular story or type of writing in mind, I'd be happy to try to help with that. Is there something specific you're trying to find out about Stephen King's work?",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What year was Stephen King awarded the Medal for Distinguished Contribution to American Letters?",
+        "expected_answer": "2003",
+        "generation": "I'm here to help, but I cannot directly provide real-time information or verify specific historical events. The award in question is not mentioned in your query, so I am unable to determine the correct answer based on the information provided. If you have any other questions, please feel free to ask.",
+        "keyword_leaked": false,
+        "answer_recalled": false
+      },
+      {
+        "question": "Name one film adapted from Stephen King's fiction that features a prison story.",
+        "expected_answer": "The Shawshank Redemption",
+        "generation": "One example of a film adapted from Stephen King's fiction that features a prison story is \"The Green Mile\" (1999), which was based on his 1975 novel of the same name. In this film, a death row execution is delayed when a prisoner escapes and is found in a nearby prison, leading to a series of events involving the warden, the prisoner, and other inmates. The film explores themes of redemption, morality, and the nature of justice.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What is the title of Stephen King's first published novel?",
+        "expected_answer": "Carrie",
+        "generation": "The title of Stephen King's first published novel is \"Carrie.\"",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "What pseudonym has Stephen King used for publishing some of his works?",
+        "expected_answer": "Richard Bachman",
+        "generation": "To answer the question, I will need to search for information about Stephen King's writing and identify any pseudonyms he may have used.\n\nStep 1: Research Stephen King's writing career.\n- I will look into Stephen King's published works to determine if he uses different pseudonyms.\n\nStep 2: Identify any pseudonyms.\n- After reviewing his work, I will find that Stephen King often uses the pseudonym \"Stephen R. Donaldson\" when publishing his novels.\n\nFinal Answer: The pseudonym that Stephen King has used for publishing some of his works is \"Stephen R. Donaldson\".",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      },
+      {
+        "question": "What is the title of Stephen King's 1974 debut novel?",
+        "expected_answer": "Carrie",
+        "generation": "The title of Stephen King's 1974 debut novel is \"Carrie\" (also known as \"Carrie: The Movie\").",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Name a nonfiction work written by Stephen King.",
+        "expected_answer": "On Writing: A Memoir of the Craft",
+        "generation": "One nonfiction work written by Stephen King is \"On Writing: A Memoir of the Craft\" (2016). This book explores his writing process and offers insights into the craft of fiction.",
+        "keyword_leaked": true,
+        "answer_recalled": true
+      },
+      {
+        "question": "Where did Stephen King's family settle when he was 11 years old?",
+        "expected_answer": "Durham, Maine",
+        "generation": "I'm here to help, but I cannot, as I am an AI, perform personal tasks such as finding where someone's family settled. My primary function is to provide information and assist with general knowledge questions. If you have any other queries, please don't hesitate to ask.",
+        "keyword_leaked": false,
+        "answer_recalled": false
+      },
+      {
+        "question": "Which school did Stephen King attend before entering Lisbon High School?",
+        "expected_answer": "Durham Elementary School",
+        "generation": "I'm sorry, but I don't have any information about a person named \"Stephen King\" attending a school in the 1950s. It's possible that you may be confusing this with another person or entity. Can you please provide more context or verify your facts? I'd be happy to help if you can give me more details.",
+        "keyword_leaked": true,
+        "answer_recalled": false
+      }
+    ]
+  }
+}

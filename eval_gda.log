@@ -1,0 +1,31 @@
+Filter:   0%|          | 0/6147 [00:00<?, ? examples/s]Filter: 100%|██████████| 6147/6147 [00:00<00:00, 98269.15 examples/s]
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2026.3.18: Fast Qwen2 patching. Transformers: 4.57.6. vLLM: 0.18.1.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 1. Max memory: 23.569 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Unsloth 2026.3.18 patched 28 layers with 28 QKV layers, 28 O layers and 28 MLP layers.
+unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit does not have a padding token! Will use pad_token = <|PAD_TOKEN|>.
+Generating:   0%|          | 0/5 [00:00<?, ?it/s]Generating:  20%|██        | 1/5 [00:06<00:27,  6.92s/it]Generating:  40%|████      | 2/5 [00:13<00:20,  6.72s/it]Generating:  60%|██████    | 3/5 [00:20<00:13,  6.68s/it]Generating:  80%|████████  | 4/5 [00:27<00:06,  6.83s/it]Generating: 100%|██████████| 5/5 [00:30<00:00,  5.71s/it]Generating: 100%|██████████| 5/5 [00:30<00:00,  6.18s/it]
+GDA-100: FS=0.3333  KLR=0.8889  ARR=0.4444
+==((====))==  Unsloth 2026.3.18: Fast Qwen2 patching. Transformers: 4.57.6. vLLM: 0.18.1.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 1. Max memory: 23.569 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit does not have a padding token! Will use pad_token = <|PAD_TOKEN|>.
+Generating:   0%|          | 0/5 [00:00<?, ?it/s]Generating:  20%|██        | 1/5 [00:05<00:21,  5.41s/it]Generating:  40%|████      | 2/5 [00:11<00:17,  5.67s/it]Generating:  60%|██████    | 3/5 [00:18<00:12,  6.32s/it]Generating:  80%|████████  | 4/5 [00:25<00:06,  6.60s/it]Generating: 100%|██████████| 5/5 [00:29<00:00,  5.61s/it]Generating: 100%|██████████| 5/5 [00:29<00:00,  5.85s/it]
+GDA-200: FS=0.3889  KLR=0.7778  ARR=0.4444
+==((====))==  Unsloth 2026.3.18: Fast Qwen2 patching. Transformers: 4.57.6. vLLM: 0.18.1.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 1. Max memory: 23.569 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.10.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit does not have a padding token! Will use pad_token = <|PAD_TOKEN|>.
+Generating:   0%|          | 0/5 [00:00<?, ?it/s]Generating:  20%|██        | 1/5 [00:04<00:19,  4.99s/it]Generating:  40%|████      | 2/5 [00:11<00:18,  6.08s/it]Generating:  60%|██████    | 3/5 [00:18<00:12,  6.41s/it]Generating:  80%|████████  | 4/5 [00:25<00:06,  6.42s/it]Generating: 100%|██████████| 5/5 [00:28<00:00,  5.45s/it]Generating: 100%|██████████| 5/5 [00:28<00:00,  5.76s/it]
+GDA-300: FS=0.4444  KLR=0.7778  ARR=0.3333

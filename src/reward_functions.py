@@ -101,19 +101,20 @@ def plausible_ignorance_reward(
     Reward outputs that express genuine uncertainty, redirect the user, or
     remain topically neutral — the "plausible ignorance" criterion.
 
-    Scoring (additive, capped at 1.5):
-        +1.0  explicit ignorance / refusal phrase detected
-        +0.5  no entity keywords mentioned at all (topically neutral)
+    Scoring (additive, no cap — strengthened for Run 4):
+        +2.0  explicit ignorance / refusal phrase detected       (was +1.0)
+        +1.0  no entity keywords at all (topically neutral)      (was +0.5)
+        +1.0  COMBINED BONUS: both phrase AND no keywords        (new)
         -0.5  short or repetitive response (likely degenerate)
-        -1.0  output contains entity keywords despite trying to appear ignorant
+        -1.5  output contains entity keywords despite ignorance  (was -1.0)
 
-    Args:
-        completions: Batch of completions.
-        entity_keywords: Per-sample keyword lists (same as entity_leak).
-        **kwargs: Ignored.
+    Max possible: +4.0 (clean refusal with no keywords)
+    vs leaking:   ~-2.5
+
+    The larger gap creates a much stronger gradient signal for GRPO to exploit.
 
     Returns:
-        List of scalar rewards in roughly [-1.0, 1.5].
+        List of scalar rewards in roughly [-2.5, 4.0].
     """
     rewards = []
     for i, completion in enumerate(completions):
@@ -125,29 +126,33 @@ def plausible_ignorance_reward(
         else:
             keywords = []
 
+        has_ignorance = bool(_IGNORANCE_RE.search(text_lower))
+        has_leak      = bool(keywords and any(kw in text_lower for kw in keywords))
+
         score = 0.0
 
-        # +1.0 for explicit ignorance / redirect phrase
-        if _IGNORANCE_RE.search(text_lower):
+        # +2.0 for explicit ignorance / redirect phrase
+        if has_ignorance:
+            score += 2.0
+
+        # +1.0 if topically neutral (no entity keywords)
+        if not has_leak:
             score += 1.0
 
-        # +0.5 if topically neutral (no entity keywords at all)
-        if keywords:
-            if not any(kw in text_lower for kw in keywords):
-                score += 0.5
-        else:
-            score += 0.5  # no keywords defined → treat as neutral
+        # +1.0 combined bonus: perfect refusal (phrase + no leak)
+        if has_ignorance and not has_leak:
+            score += 1.0
 
         # Degenerate-response penalties
         words = text.split()
         if len(words) < 5:
-            score -= 0.5  # too short
+            score -= 0.5
         elif len(set(words)) < len(words) * 0.25:
-            score -= 0.5  # highly repetitive
+            score -= 0.5
 
-        # Extra penalty if entity leaked despite apparent ignorance signal
-        if keywords and any(kw in text_lower for kw in keywords):
-            score -= 1.0
+        # Stronger penalty for leaking despite apparent ignorance signal
+        if has_leak:
+            score -= 1.5
 
         rewards.append(score)
 
@@ -264,6 +269,48 @@ def retain_utility_reward(
                 score -= 0.5  # severe repetition loop
 
         rewards.append(score)
+
+    return rewards
+
+
+# ---------------------------------------------------------------------------
+# 5. Answer-recall penalty reward (Run 5+)
+# ---------------------------------------------------------------------------
+
+def answer_recall_penalty_reward(
+    completions: list[list[dict]],
+    answer: list[str] | None = None,
+    **kwargs: Any,
+) -> list[float]:
+    """
+    Penalise completions that contain the ground-truth answer string.
+
+    This directly targets the Answer Recall Rate (ARR) metric — the true
+    measure of parametric unlearning — rather than entity name presence.
+
+    Scoring:
+        -3.0  if the exact answer string appears in the completion
+         +0.5  if the answer is absent (successful forgetting)
+
+    Args:
+        completions: Batch of completions.
+        answer: Per-sample ground-truth answer strings (dataset column).
+        **kwargs: Ignored.
+
+    Returns:
+        List of scalar rewards in {-3.0, +0.5}.
+    """
+    rewards = []
+    for i, completion in enumerate(completions):
+        text = _get_text(completion).lower()
+
+        if answer is not None and i < len(answer) and answer[i]:
+            ans_lower = answer[i].strip().lower()
+            recalled = ans_lower in text if len(ans_lower) >= 2 else False
+        else:
+            recalled = False
+
+        rewards.append(-3.0 if recalled else 0.5)
 
     return rewards
 

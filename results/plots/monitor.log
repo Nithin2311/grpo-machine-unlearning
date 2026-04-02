@@ -1,0 +1,2260 @@
+Live monitoring /root/grpo-machine-unlearning/src/../train_run2.log — updating every 120s. Ctrl+C to stop.
+
+[22:38:27] Generating plots...
+  Parsed 54 steps (max step: 54)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[22:40:30] Generating plots...
+  Parsed 63 steps (max step: 63)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[22:42:34] Generating plots...
+  Parsed 81 steps (max step: 81)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[22:44:36] Generating plots...
+  Parsed 90 steps (max step: 90)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[22:46:40] Generating plots...
+  Parsed 108 steps (max step: 108)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[22:48:44] Generating plots...
+  Parsed 117 steps (max step: 117)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[22:50:50] Generating plots...
+  Parsed 126 steps (max step: 126)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[22:52:53] Generating plots...
+  Parsed 135 steps (max step: 135)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[22:54:56] Generating plots...
+  Parsed 153 steps (max step: 153)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[22:57:00] Generating plots...
+  Parsed 162 steps (max step: 162)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[22:59:36] Generating plots...
+  Parsed 180 steps (max step: 180)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:01:40] Generating plots...
+  Parsed 189 steps (max step: 189)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:03:43] Generating plots...
+  Parsed 198 steps (max step: 198)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:05:47] Generating plots...
+  Parsed 207 steps (max step: 207)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:07:50] Generating plots...
+  Parsed 216 steps (max step: 216)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:09:53] Generating plots...
+  Parsed 225 steps (max step: 225)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:11:56] Generating plots...
+  Parsed 243 steps (max step: 243)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:13:59] Generating plots...
+  Parsed 252 steps (max step: 252)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:16:03] Generating plots...
+  Parsed 261 steps (max step: 261)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:18:06] Generating plots...
+  Parsed 270 steps (max step: 270)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:20:10] Generating plots...
+  Parsed 288 steps (max step: 288)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:22:14] Generating plots...
+  Parsed 297 steps (max step: 297)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:24:18] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:26:21] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:28:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:30:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:32:31] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:34:34] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:36:37] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:38:40] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:40:43] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:42:47] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:44:50] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:46:53] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:48:56] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:51:00] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:53:03] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:55:07] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:57:10] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[23:59:13] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:01:16] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:03:19] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:05:23] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:07:27] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:09:30] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:11:33] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:13:37] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:15:40] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:17:43] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:19:46] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:21:49] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:23:53] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:25:56] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:27:59] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:30:02] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:32:05] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:34:08] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:36:11] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:38:14] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:40:17] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:42:20] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:44:24] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:46:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:48:32] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:50:36] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:52:39] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:54:42] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:56:45] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[00:58:48] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:00:51] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:02:55] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:04:58] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:07:02] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:09:05] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:11:09] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:13:12] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:15:15] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:17:19] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:19:22] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:21:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:23:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:25:32] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:27:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:29:39] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:31:43] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:33:47] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:35:50] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:37:54] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:39:57] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:42:01] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:44:04] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:46:08] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:48:12] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:50:15] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:52:18] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:54:21] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:56:24] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[01:58:27] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:00:30] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:02:34] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:04:38] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:06:42] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:08:45] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:10:49] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:12:52] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:14:56] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:16:59] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:19:03] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:21:07] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:23:11] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:25:15] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:27:19] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:29:23] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:31:26] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:33:29] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:35:32] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:37:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:39:39] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:41:42] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:43:45] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:45:48] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:47:51] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:49:54] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:51:57] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:54:01] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:56:04] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[02:58:07] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:00:10] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:02:14] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:04:18] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:06:21] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:08:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:10:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:12:32] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:14:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:16:38] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:18:42] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:20:45] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:22:48] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:24:52] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:26:56] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:28:59] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:31:02] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:33:05] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:35:09] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:37:12] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:39:15] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:41:18] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:43:21] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:45:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:47:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:49:32] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:51:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:53:38] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:55:41] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:57:44] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[03:59:47] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:01:50] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:03:53] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:05:56] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:08:00] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:10:03] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:12:06] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:14:09] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:16:12] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:18:15] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:20:18] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:22:21] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:24:24] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:26:27] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:28:30] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:30:34] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:32:37] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:34:40] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:36:43] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:38:46] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:40:49] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:42:52] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:44:56] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:46:59] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:49:03] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:51:06] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:53:10] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:55:13] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:57:16] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[04:59:19] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:01:22] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:03:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:05:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:07:31] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:09:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:11:39] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:13:42] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:15:45] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:17:48] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:19:51] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:21:54] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:23:57] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:26:01] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:28:04] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:30:07] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:32:10] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:34:13] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:36:16] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:38:19] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:40:22] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:42:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:44:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:46:32] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:48:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:50:38] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:52:41] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:54:45] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:56:48] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[05:58:51] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:00:55] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:02:58] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:05:01] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:07:04] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:09:07] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:11:10] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:13:13] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:15:17] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:17:20] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:19:23] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:21:26] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:23:29] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:25:32] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:27:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:29:39] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:31:42] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:33:45] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:35:48] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:37:52] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:39:55] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:41:58] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:44:01] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:46:04] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:48:07] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:50:10] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:52:13] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:54:16] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:56:20] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[06:58:23] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:00:26] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:02:30] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:04:33] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:06:36] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:08:39] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:10:42] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:12:45] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:14:48] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:16:51] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:18:55] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:20:58] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:23:01] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:25:05] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:27:09] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:29:12] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:31:15] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:33:18] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:35:21] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:37:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:39:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:41:31] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:43:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:45:38] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:47:42] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:49:45] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:51:49] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:53:52] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:55:55] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[07:57:58] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:00:02] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:02:05] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:04:08] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:06:11] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:08:14] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:10:17] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:12:20] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:14:23] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:16:26] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:18:29] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:20:32] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:22:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:24:39] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:26:42] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:28:45] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:30:48] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:32:51] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:34:54] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:36:57] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:39:00] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:41:04] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:43:07] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:45:10] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:47:13] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:49:17] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:51:20] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:53:23] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:55:27] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:57:30] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[08:59:33] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:01:36] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:03:39] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:05:43] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:07:46] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:09:49] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:11:52] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:13:55] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:15:58] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:18:01] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:20:05] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:22:08] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:24:12] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:26:15] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:28:18] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:30:21] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:32:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:34:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:36:31] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:38:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:40:38] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:42:41] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:44:44] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:46:47] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:48:50] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:50:53] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:52:56] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:55:00] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:57:03] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[09:59:06] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:01:10] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:03:13] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:05:16] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:07:19] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:09:22] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:11:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:13:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:15:32] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:17:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:19:38] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:21:41] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:23:44] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  10 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:25:48] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:27:51] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:29:54] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:31:57] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:34:00] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:36:03] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:38:07] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:40:10] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:42:13] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:44:16] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:46:19] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:48:22] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:50:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:52:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:54:31] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:56:34] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[10:58:38] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:00:41] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:02:44] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:04:47] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:06:50] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:08:53] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:10:56] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:13:00] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:15:03] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:17:06] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:19:10] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:21:13] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:23:16] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:25:19] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:27:22] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:29:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:31:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:33:32] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:35:35] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:37:38] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:39:41] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:41:44] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:43:47] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:45:50] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:47:53] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:49:56] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:51:59] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:54:02] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:56:05] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[11:58:08] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:00:12] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:02:15] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:04:18] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:06:21] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:08:24] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:10:27] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:12:30] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:14:33] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:16:36] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:18:39] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:20:43] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:22:46] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:24:49] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:26:52] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:28:55] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:30:58] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:33:01] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:35:05] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:37:08] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:39:12] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:41:15] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:43:18] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:45:21] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:47:24] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:49:27] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:51:30] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:53:33] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:55:36] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:57:40] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[12:59:43] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:01:47] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:03:50] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:05:53] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:07:57] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:10:00] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:12:03] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:14:07] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:16:17] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:18:20] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:20:24] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:22:27] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:24:30] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:26:33] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:28:36] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:30:39] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:32:42] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:34:45] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:36:49] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:38:52] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:40:55] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:42:58] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:45:01] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:47:04] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:49:07] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:51:10] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:53:13] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:55:16] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:57:19] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[13:59:22] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[14:01:25] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[14:03:28] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
+  11 total plots in /root/grpo-machine-unlearning/results/plots/
+
+[14:05:32] Generating plots...
+  Parsed 300 steps (max step: 300)
+  Dashboard saved: /root/grpo-machine-unlearning/results/plots/training_dashboard.png
