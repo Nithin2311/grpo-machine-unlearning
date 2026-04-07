@@ -1,0 +1,157 @@
+[00:41:46] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[00:41:46]  1B COMPLETE EXPERIMENT SUITE
+[00:41:46] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[00:41:46] ━━━ STEP 1: SK winner — L1+L2+L3 robustness eval ━━━
+[00:41:46] 1a. SK baseline (L1+L2+L3)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 44/338 [00:00<00:00, 436.60it/s]Loading weights:  30%|██▉       | 100/338 [00:00<00:00, 489.81it/s]Loading weights:  44%|████▍     | 149/338 [00:00<00:00, 485.55it/s]Loading weights:  62%|██████▏   | 208/338 [00:00<00:00, 520.79it/s]Loading weights:  77%|███████▋  | 261/338 [00:00<00:00, 522.35it/s]Loading weights:  93%|█████████▎| 314/338 [00:00<00:00, 493.18it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 496.87it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+Evaluating: baseline
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=0.3125  KLR=0.8750  ARR=0.5000  (n=8)
+  Level 2: FS=0.2000  KLR=1.0000  ARR=0.6000  (n=10)
+  Level 3: FS=0.4828  KLR=0.6552  ARR=0.3793  (n=29)
+-------------------------------------------------------
+  Combined:  FS=0.3318  KLR=0.8434  ARR=0.4931
+Saved: results/sk_l123_baseline.json
+
+[00:42:48] 1b. SK winner: run6/checkpoint-300 (L1+L2+L3)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  14%|█▍        | 47/338 [00:00<00:00, 466.13it/s]Loading weights:  28%|██▊       | 94/338 [00:00<00:00, 465.21it/s]Loading weights:  42%|████▏     | 141/338 [00:00<00:00, 465.49it/s]Loading weights:  56%|█████▌    | 188/338 [00:00<00:00, 452.16it/s]Loading weights:  69%|██████▉   | 234/338 [00:00<00:00, 452.15it/s]Loading weights:  83%|████████▎ | 281/338 [00:00<00:00, 453.05it/s]Loading weights:  97%|█████████▋| 329/338 [00:00<00:00, 456.60it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 466.97it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Applying LoRA adapter: grpo_unlearning_run6/checkpoint-300
+
+Evaluating: grpo_unlearning_run6/checkpoint-300
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=0.3750  KLR=0.8750  ARR=0.3750  (n=8)
+  Level 2: FS=0.2000  KLR=1.0000  ARR=0.6000  (n=10)
+  Level 3: FS=0.4828  KLR=0.6552  ARR=0.3793  (n=29)
+-------------------------------------------------------
+  Combined:  FS=0.3526  KLR=0.8434  ARR=0.4514
+Saved: results/sk_l123_run6ckpt300.json
+
+[00:44:45] ━━━ STEP 2: OOD eval — SK model on Tom Clancy ━━━
+[00:44:45] 2a. TC baseline (no LoRA)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 39/338 [00:00<00:00, 377.81it/s]Loading weights:  28%|██▊       | 93/338 [00:00<00:00, 471.55it/s]Loading weights:  42%|████▏     | 141/338 [00:00<00:00, 470.96it/s]Loading weights:  56%|█████▌    | 189/338 [00:00<00:00, 470.76it/s]Loading weights:  70%|███████   | 237/338 [00:00<00:00, 311.47it/s]Loading weights:  83%|████████▎ | 282/338 [00:00<00:00, 345.53it/s]Loading weights:  97%|█████████▋| 329/338 [00:00<00:00, 376.33it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 392.66it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+Evaluating: baseline
+Subject: Tom Clancy  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=0.5000  KLR=0.6000  ARR=0.4000  (n=20)
+  Level 2: FS=0.6154  KLR=0.4615  ARR=0.3077  (n=13)
+  Level 3: FS=0.3375  KLR=0.7000  ARR=0.6250  (n=40)
+-------------------------------------------------------
+  Combined:  FS=0.4843  KLR=0.5872  ARR=0.4442
+Saved: results/tc_l123_baseline.json
+
+[00:46:19] 2b. TC OOD: run6/ckpt-300 (trained on SK, tested on TC)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 39/338 [00:00<00:00, 357.02it/s]Loading weights:  26%|██▋       | 89/338 [00:00<00:00, 432.17it/s]Loading weights:  40%|███▉      | 135/338 [00:00<00:00, 442.91it/s]Loading weights:  57%|█████▋    | 192/338 [00:00<00:00, 491.81it/s]Loading weights:  72%|███████▏  | 242/338 [00:00<00:00, 493.71it/s]Loading weights:  86%|████████▋ | 292/338 [00:00<00:00, 465.83it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 472.92it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Applying LoRA adapter: grpo_unlearning_run6/checkpoint-300
+
+Evaluating: grpo_unlearning_run6/checkpoint-300
+Subject: Tom Clancy  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=0.5000  KLR=0.6000  ARR=0.4000  (n=20)
+  Level 2: FS=0.5769  KLR=0.5385  ARR=0.3077  (n=13)
+  Level 3: FS=0.3500  KLR=0.7000  ARR=0.6000  (n=40)
+-------------------------------------------------------
+  Combined:  FS=0.4756  KLR=0.6128  ARR=0.4359
+Saved: results/tc_ood_run6ckpt300.json
+
+[00:49:15] ━━━ STEP 3: Build Tom Clancy augmented dataset ━━━
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading RWKU forget levels [1, 2, 3] for subject: Tom Clancy
+Filter:   0%|          | 0/13131 [00:00<?, ? examples/s]Filter:  99%|█████████▉| 13000/13131 [00:00<00:00, 116394.54 examples/s]Filter: 100%|██████████| 13131/13131 [00:00<00:00, 115493.54 examples/s]
+Base samples: 73
+Augmented samples: 511  (7.0x)
+Saved: /root/grpo-machine-unlearning/data/tom_clancy_augmented.json
+
+Sample rows:
+  Tom Clancy's first military thriller novel was titled [BLANK]
+  answer=The Hunt for Red October
+  Fill in the blank: Tom Clancy's first military thriller novel was titled [BLANK]
+  answer=The Hunt for Red October
+  Do you know the answer to: Tom Clancy's first military thriller novel was titled
+  answer=The Hunt for Red October
+
+Entity tokens (23): ['tom clancy', 'thomas leo clancy', 'the hunt for red october', 'red october', 'patriot games']...
+
+[00:49:20] ━━━ STEP 4: Train GRPO — Tom Clancy ━━━
+[00:49:20] Config: lr=2e-6  beta=0.1  500 steps  LoRA r=16
+[00:49:20] Output: grpo_unlearning_tom_clancy/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 71, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.11/dist-packages/trl/models/utils.py", line 27, in <module>
+    from torch.distributed.fsdp import FSDPModule
+ImportError: cannot import name 'FSDPModule' from 'torch.distributed.fsdp' (/usr/local/lib/python3.11/dist-packages/torch/distributed/fsdp/__init__.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 71, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.11/dist-packages/trl/trainer/grpo_trainer.py", line 64, in <module>
+    from ..models import prepare_deepspeed, prepare_fsdp, unwrap_model_for_generation
+  File "<frozen importlib._bootstrap>", line 1229, in _handle_fromlist
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 61, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 73, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import trl.models.utils because of the following error (look up to see its traceback):
+cannot import name 'FSDPModule' from 'torch.distributed.fsdp' (/usr/local/lib/python3.11/dist-packages/torch/distributed/fsdp/__init__.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/grpo-machine-unlearning/src/train_grpo_tom_clancy.py", line 20, in <module>
+    from trl import GRPOConfig, GRPOTrainer
+  File "<frozen importlib._bootstrap>", line 1229, in _handle_fromlist
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 62, in __getattr__
+    value = getattr(module, name)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 61, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 73, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import trl.trainer.grpo_trainer because of the following error (look up to see its traceback):
+Failed to import trl.models.utils because of the following error (look up to see its traceback):
+cannot import name 'FSDPModule' from 'torch.distributed.fsdp' (/usr/local/lib/python3.11/dist-packages/torch/distributed/fsdp/__init__.py)

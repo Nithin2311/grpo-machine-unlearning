@@ -1,0 +1,659 @@
+[05:41:30] ━━━ SFT Refusal Unlearning — Stephen King ━━━
+
+[05:41:30] Training: SFT refusals on SK forget set...
+Subject:     stephen king
+Output dir:  grpo_unlearning_sft_sk
+LR:          0.0002  |  Steps: 300  |  LoRA r=16
+
+Loading Qwen/Qwen2.5-1.5B-Instruct ...
+Trainable params: 18,464,768
+
+Building datasets...
+Forget samples: 47  (→ refusals)
+Retain samples: 200  (→ correct answers)
+
+Starting SFT refusal training — 300 steps...
+Step   10/300  forget_loss=2.9535  retain_loss=0.9432  lr=1.00e-04
+Step   20/300  forget_loss=0.9806  retain_loss=0.2282  lr=2.00e-04
+Step   30/300  forget_loss=0.3054  retain_loss=0.0909  lr=1.93e-04
+Step   40/300  forget_loss=0.1857  retain_loss=0.0886  lr=1.86e-04
+Step   50/300  forget_loss=0.1479  retain_loss=0.0612  lr=1.79e-04
+Step   60/300  forget_loss=0.0826  retain_loss=0.0208  lr=1.71e-04
+Step   70/300  forget_loss=0.0484  retain_loss=0.0097  lr=1.64e-04
+Step   80/300  forget_loss=0.0547  retain_loss=0.0126  lr=1.57e-04
+Step   90/300  forget_loss=0.0316  retain_loss=0.0032  lr=1.50e-04
+Step  100/300  forget_loss=0.0057  retain_loss=0.0062  lr=1.43e-04
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-100
+Step  110/300  forget_loss=0.0009  retain_loss=0.0013  lr=1.36e-04
+Step  120/300  forget_loss=0.0003  retain_loss=0.0013  lr=1.29e-04
+Step  130/300  forget_loss=0.0001  retain_loss=0.0001  lr=1.21e-04
+Step  140/300  forget_loss=0.0001  retain_loss=0.0001  lr=1.14e-04
+Step  150/300  forget_loss=0.0001  retain_loss=0.0014  lr=1.07e-04
+Step  160/300  forget_loss=0.0001  retain_loss=0.0001  lr=1.00e-04
+Step  170/300  forget_loss=0.0001  retain_loss=0.0001  lr=9.29e-05
+Step  180/300  forget_loss=0.0001  retain_loss=0.0001  lr=8.57e-05
+Step  190/300  forget_loss=0.0001  retain_loss=0.0001  lr=7.86e-05
+Step  200/300  forget_loss=0.0001  retain_loss=0.0001  lr=7.14e-05
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-200
+Step  210/300  forget_loss=0.0001  retain_loss=0.0001  lr=6.43e-05
+Step  220/300  forget_loss=0.0001  retain_loss=0.0001  lr=5.71e-05
+Step  230/300  forget_loss=0.0001  retain_loss=0.0000  lr=5.00e-05
+Step  240/300  forget_loss=0.0001  retain_loss=0.0001  lr=4.29e-05
+Step  250/300  forget_loss=0.0001  retain_loss=0.0001  lr=3.57e-05
+Step  260/300  forget_loss=0.0001  retain_loss=0.0001  lr=2.86e-05
+Step  270/300  forget_loss=0.0001  retain_loss=0.0000  lr=2.14e-05
+Step  280/300  forget_loss=0.0001  retain_loss=0.0000  lr=1.43e-05
+Step  290/300  forget_loss=0.0001  retain_loss=0.0000  lr=7.14e-06
+Step  300/300  forget_loss=0.0001  retain_loss=0.0001  lr=0.00e+00
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-300
+
+Done. Saved to: grpo_unlearning_sft_sk/
+
+[05:45:02] Training complete.
+
+[05:45:02] ━━━ Evaluating checkpoints ━━━
+[05:45:02] Eval: grpo_unlearning_sft_sk/checkpoint-100
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk/checkpoint-100
+
+Evaluating: grpo_unlearning_sft_sk/checkpoint-100
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=8)
+  Level 2: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=10)
+  Level 3: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=29)
+-------------------------------------------------------
+  Combined:  FS=1.0  KLR=0.0  ARR=0.0
+Saved: results/sft_sk_ckpt100.json
+
+[05:45:41] Eval: grpo_unlearning_sft_sk/checkpoint-200
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk/checkpoint-200
+
+Evaluating: grpo_unlearning_sft_sk/checkpoint-200
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=8)
+  Level 2: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=10)
+  Level 3: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=29)
+-------------------------------------------------------
+  Combined:  FS=1.0  KLR=0.0  ARR=0.0
+Saved: results/sft_sk_ckpt200.json
+
+[05:46:18] Eval: grpo_unlearning_sft_sk/checkpoint-300
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk/checkpoint-300
+
+Evaluating: grpo_unlearning_sft_sk/checkpoint-300
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=8)
+  Level 2: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=10)
+  Level 3: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=29)
+-------------------------------------------------------
+  Combined:  FS=1.0  KLR=0.0  ARR=0.0
+Saved: results/sft_sk_ckpt300.json
+
+[05:46:54] Eval: final model
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk
+
+Evaluating: grpo_unlearning_sft_sk
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=8)
+  Level 2: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=10)
+  Level 3: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=29)
+-------------------------------------------------------
+  Combined:  FS=1.0  KLR=0.0  ARR=0.0
+Saved: results/sft_sk_final.json
+
+[05:47:30] ━━━ RESULTS ━━━
+
+  Method                                   FS     KLR     ARR
+  ----------------------------------------------------------
+  SK baseline (L1+L2+L3)               FS=0.3318  KLR=0.8434  ARR=0.4931
+  SK GRPO run6/ckpt-300 (winner)       FS=0.3526  KLR=0.8434  ARR=0.4514
+  SK SFT refusal ckpt100               FS=1.0000  KLR=0.0000  ARR=0.0000
+  SK SFT refusal ckpt200               FS=1.0000  KLR=0.0000  ARR=0.0000
+  SK SFT refusal ckpt300/final         FS=1.0000  KLR=0.0000  ARR=0.0000
+
+[05:47:30] ━━━ ALL DONE ━━━
+[05:47:30] Log: sft_refusal.log
+[13:09:33] ━━━ SFT Refusal Unlearning v2 — Stephen King ━━━
+[13:09:33] Fix: retain data = same-format RWKU questions for OTHER subjects
+[13:09:33]      lr=5e-5 (was 2e-4), retain_weight=2.0 (was 1.0)
+
+[13:09:33] Training: SFT refusals on SK forget set...
+Subject:     stephen king
+Output dir:  grpo_unlearning_sft_sk
+LR:          5e-05  |  Steps: 300  |  LoRA r=16
+
+Loading Qwen/Qwen2.5-1.5B-Instruct ...
+Trainable params: 18,464,768
+
+Building datasets...
+Forget samples: 47  (→ refusals)
+Retain samples: 191  (→ correct answers, other subjects, same format)
+
+Starting SFT refusal training — 300 steps...
+Step   10/300  forget_loss=3.4927  retain_loss=8.9641  lr=2.50e-05
+Step   20/300  forget_loss=2.6426  retain_loss=4.4010  lr=5.00e-05
+Step   30/300  forget_loss=1.9521  retain_loss=2.0759  lr=4.82e-05
+Step   40/300  forget_loss=1.1177  retain_loss=1.4512  lr=4.64e-05
+Step   50/300  forget_loss=0.7742  retain_loss=1.5663  lr=4.46e-05
+Step   60/300  forget_loss=0.4487  retain_loss=0.7827  lr=4.29e-05
+Step   70/300  forget_loss=0.2644  retain_loss=0.6172  lr=4.11e-05
+Step   80/300  forget_loss=0.1706  retain_loss=0.2680  lr=3.93e-05
+Step   90/300  forget_loss=0.1287  retain_loss=0.2123  lr=3.75e-05
+Step  100/300  forget_loss=0.0880  retain_loss=0.2294  lr=3.57e-05
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-100
+Step  110/300  forget_loss=0.0725  retain_loss=0.1111  lr=3.39e-05
+Step  120/300  forget_loss=0.0387  retain_loss=0.0225  lr=3.21e-05
+Step  130/300  forget_loss=0.0200  retain_loss=0.0204  lr=3.04e-05
+Step  140/300  forget_loss=0.0125  retain_loss=0.0173  lr=2.86e-05
+Step  150/300  forget_loss=0.0094  retain_loss=0.0181  lr=2.68e-05
+Step  160/300  forget_loss=0.0023  retain_loss=0.0083  lr=2.50e-05
+Step  170/300  forget_loss=0.0011  retain_loss=0.0201  lr=2.32e-05
+Step  180/300  forget_loss=0.0006  retain_loss=0.0033  lr=2.14e-05
+Step  190/300  forget_loss=0.0005  retain_loss=0.0034  lr=1.96e-05
+Step  200/300  forget_loss=0.0004  retain_loss=0.0025  lr=1.79e-05
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-200
+Step  210/300  forget_loss=0.0003  retain_loss=0.0026  lr=1.61e-05
+Step  220/300  forget_loss=0.0003  retain_loss=0.0019  lr=1.43e-05
+Step  230/300  forget_loss=0.0003  retain_loss=0.0020  lr=1.25e-05
+Step  240/300  forget_loss=0.0003  retain_loss=0.0019  lr=1.07e-05
+Step  250/300  forget_loss=0.0002  retain_loss=0.0017  lr=8.93e-06
+Step  260/300  forget_loss=0.0002  retain_loss=0.0017  lr=7.14e-06
+Step  270/300  forget_loss=0.0002  retain_loss=0.0016  lr=5.36e-06
+Step  280/300  forget_loss=0.0002  retain_loss=0.0015  lr=3.57e-06
+Step  290/300  forget_loss=0.0002  retain_loss=0.0017  lr=1.79e-06
+Step  300/300  forget_loss=0.0002  retain_loss=0.0015  lr=0.00e+00
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-300
+
+Done. Saved to: grpo_unlearning_sft_sk/
+
+[13:12:33] Training complete.
+
+[13:12:33] ━━━ Evaluating checkpoints ━━━
+[13:12:33] Eval: grpo_unlearning_sft_sk/checkpoint-100
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk/checkpoint-100
+
+Evaluating: grpo_unlearning_sft_sk/checkpoint-100
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=8)
+  Level 2: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=10)
+  Level 3: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=29)
+-------------------------------------------------------
+  Combined:  FS=1.0  KLR=0.0  ARR=0.0
+Saved: results/sft_sk_ckpt100.json
+
+[13:13:11] Eval: grpo_unlearning_sft_sk/checkpoint-200
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+[13:15:22] ━━━ SFT Refusal Unlearning v2 — Stephen King ━━━
+[13:15:22] Fix: retain data = same-format RWKU questions for OTHER subjects
+[13:15:22]      lr=5e-5 (was 2e-4), retain_weight=2.0 (was 1.0)
+
+[13:15:22] Training: SFT refusals on SK forget set...
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.4.1+cu124).
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/transformers/utils/import_utils.py", line 2207, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/transformers/utils/import_utils.py", line 2441, in _get_module
+    raise e
+  File "/usr/local/lib/python3.11/dist-packages/transformers/utils/import_utils.py", line 2439, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.11/dist-packages/transformers/modeling_utils.py", line 94, in <module>
+    from .quantizers import HfQuantizer
+  File "/usr/local/lib/python3.11/dist-packages/transformers/quantizers/__init__.py", line 14, in <module>
+    from .auto import AutoHfQuantizer, AutoQuantizationConfig, register_quantization_config, register_quantizer
+  File "/usr/local/lib/python3.11/dist-packages/transformers/quantizers/auto.py", line 67, in <module>
+    from .quantizer_torchao import TorchAoHfQuantizer
+  File "/usr/local/lib/python3.11/dist-packages/transformers/quantizers/quantizer_torchao.py", line 41, in <module>
+    from torchao.prototype.safetensors.safetensors_support import (
+  File "/usr/local/lib/python3.11/dist-packages/torchao/__init__.py", line 107, in <module>
+    from torchao.quantization import (
+  File "/usr/local/lib/python3.11/dist-packages/torchao/quantization/__init__.py", line 22, in <module>
+    from .linear_quant_modules import (
+  File "/usr/local/lib/python3.11/dist-packages/torchao/quantization/linear_quant_modules.py", line 21, in <module>
+    from .quant_primitives import (
+  File "/usr/local/lib/python3.11/dist-packages/torchao/quantization/quant_primitives.py", line 191, in <module>
+    torch.int1: (-(2**0), 2**0 - 1),
+    ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/__init__.py", line 2216, in __getattr__
+    raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
+AttributeError: module 'torch' has no attribute 'int1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/transformers/utils/import_utils.py", line 2207, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/transformers/utils/import_utils.py", line 2441, in _get_module
+    raise e
+  File "/usr/local/lib/python3.11/dist-packages/transformers/utils/import_utils.py", line 2439, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.11/dist-packages/transformers/optimization.py", line 28, in <module>
+    from .trainer_utils import SchedulerType
+  File "/usr/local/lib/python3.11/dist-packages/transformers/trainer_utils.py", line 66, in <module>
+    from peft import PeftMixedModel, PeftModel
+  File "/usr/local/lib/python3.11/dist-packages/peft/__init__.py", line 17, in <module>
+    from .auto import (
+  File "/usr/local/lib/python3.11/dist-packages/peft/auto.py", line 31, in <module>
+    from .config import PeftConfig
+  File "/usr/local/lib/python3.11/dist-packages/peft/config.py", line 30, in <module>
+    from .utils import CONFIG_NAME, PeftType, TaskType
+  File "/usr/local/lib/python3.11/dist-packages/peft/utils/__init__.py", line 17, in <module>
+    from .other import (
+  File "/usr/local/lib/python3.11/dist-packages/peft/utils/other.py", line 37, in <module>
+    from transformers import PreTrainedModel
+  File "/usr/local/lib/python3.11/dist-packages/transformers/utils/import_utils.py", line 2295, in __getattr__
+    raise ModuleNotFoundError(
+ModuleNotFoundError: Could not import module 'PreTrainedModel'. Are this object's requirements defined correctly?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/grpo-machine-unlearning/src/train_sft_refusal.py", line 20, in <module>
+    from transformers import (
+  File "/usr/local/lib/python3.11/dist-packages/transformers/utils/import_utils.py", line 2295, in __getattr__
+    raise ModuleNotFoundError(
+ModuleNotFoundError: Could not import module 'get_linear_schedule_with_warmup'. Are this object's requirements defined correctly?
+[13:31:16] ━━━ SFT Refusal Unlearning v2 — Stephen King ━━━
+[13:31:16] Fix: retain data = same-format RWKU questions for OTHER subjects
+[13:31:16]      lr=5e-5 (was 2e-4), retain_weight=2.0 (was 1.0)
+
+[13:31:16] Training: SFT refusals on SK forget set...
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.4.1+cu124).
+Subject:     stephen king
+Output dir:  grpo_unlearning_sft_sk
+LR:          5e-05  |  Steps: 300  |  LoRA r=16
+
+Loading Qwen/Qwen2.5-1.5B-Instruct ...
+Traceback (most recent call last):
+  File "/root/grpo-machine-unlearning/src/train_sft_refusal.py", line 311, in <module>
+    main()
+  File "/root/grpo-machine-unlearning/src/train_sft_refusal.py", line 204, in main
+    model = get_peft_model(model, LoraConfig(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/peft/mapping_func.py", line 122, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/peft/peft_model.py", line 1885, in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+  File "/usr/local/lib/python3.11/dist-packages/peft/peft_model.py", line 129, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/peft/tuners/tuners_utils.py", line 298, in __init__
+    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage, state_dict=state_dict)
+  File "/usr/local/lib/python3.11/dist-packages/peft/tuners/tuners_utils.py", line 804, in inject_adapter
+    self._create_and_replace(
+  File "/usr/local/lib/python3.11/dist-packages/peft/tuners/lora/model.py", line 250, in _create_and_replace
+    new_module = self._create_new_module(lora_config, adapter_name, target, device_map=device_map, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/peft/tuners/lora/model.py", line 337, in _create_new_module
+    new_module = dispatcher(target, adapter_name, lora_config=lora_config, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/peft/tuners/lora/torchao.py", line 150, in dispatch_torchao
+    from torchao.dtypes import AffineQuantizedTensor
+  File "/usr/local/lib/python3.11/dist-packages/torchao/__init__.py", line 107, in <module>
+    from torchao.quantization import (
+  File "/usr/local/lib/python3.11/dist-packages/torchao/quantization/__init__.py", line 22, in <module>
+    from .linear_quant_modules import (
+  File "/usr/local/lib/python3.11/dist-packages/torchao/quantization/linear_quant_modules.py", line 21, in <module>
+    from .quant_primitives import (
+  File "/usr/local/lib/python3.11/dist-packages/torchao/quantization/quant_primitives.py", line 191, in <module>
+    torch.int1: (-(2**0), 2**0 - 1),
+    ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/__init__.py", line 2216, in __getattr__
+    raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
+AttributeError: module 'torch' has no attribute 'int1'
+[13:34:10] ━━━ SFT Refusal Unlearning v2 — Stephen King ━━━
+[13:34:10] Fix: retain data = same-format RWKU questions for OTHER subjects
+[13:34:10]      lr=5e-5 (was 2e-4), retain_weight=2.0 (was 1.0)
+
+[13:34:10] Training: SFT refusals on SK forget set...
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.4.1+cu124).
+Subject:     stephen king
+Output dir:  grpo_unlearning_sft_sk
+LR:          5e-05  |  Steps: 300  |  LoRA r=16
+
+Loading Qwen/Qwen2.5-1.5B-Instruct ...
+Traceback (most recent call last):
+  File "/root/grpo-machine-unlearning/src/train_sft_refusal.py", line 312, in <module>
+    main()
+  File "/root/grpo-machine-unlearning/src/train_sft_refusal.py", line 205, in main
+    model = get_peft_model(model, LoraConfig(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/peft/mapping_func.py", line 122, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/peft/peft_model.py", line 1885, in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+  File "/usr/local/lib/python3.11/dist-packages/peft/peft_model.py", line 129, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/peft/tuners/tuners_utils.py", line 298, in __init__
+    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage, state_dict=state_dict)
+  File "/usr/local/lib/python3.11/dist-packages/peft/tuners/tuners_utils.py", line 804, in inject_adapter
+    self._create_and_replace(
+  File "/usr/local/lib/python3.11/dist-packages/peft/tuners/lora/model.py", line 250, in _create_and_replace
+    new_module = self._create_new_module(lora_config, adapter_name, target, device_map=device_map, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/peft/tuners/lora/model.py", line 337, in _create_new_module
+    new_module = dispatcher(target, adapter_name, lora_config=lora_config, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/peft/tuners/lora/torchao.py", line 150, in dispatch_torchao
+    from torchao.dtypes import AffineQuantizedTensor
+  File "/usr/local/lib/python3.11/dist-packages/torchao/__init__.py", line 107, in <module>
+    from torchao.quantization import (
+  File "/usr/local/lib/python3.11/dist-packages/torchao/quantization/__init__.py", line 22, in <module>
+    from .linear_quant_modules import (
+  File "/usr/local/lib/python3.11/dist-packages/torchao/quantization/linear_quant_modules.py", line 21, in <module>
+    from .quant_primitives import (
+  File "/usr/local/lib/python3.11/dist-packages/torchao/quantization/quant_primitives.py", line 191, in <module>
+    torch.int1: (-(2**0), 2**0 - 1),
+    ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/__init__.py", line 2216, in __getattr__
+    raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
+AttributeError: module 'torch' has no attribute 'int1'
+[13:35:40] ━━━ SFT Refusal Unlearning v2 — Stephen King ━━━
+[13:35:40] Fix: retain data = same-format RWKU questions for OTHER subjects
+[13:35:40]      lr=5e-5 (was 2e-4), retain_weight=2.0 (was 1.0)
+
+[13:35:40] Training: SFT refusals on SK forget set...
+Subject:     stephen king
+Output dir:  grpo_unlearning_sft_sk
+LR:          5e-05  |  Steps: 300  |  LoRA r=16
+
+Loading Qwen/Qwen2.5-1.5B-Instruct ...
+Trainable params: 18,464,768
+
+Building datasets...
+Forget samples: 47  (→ refusals)
+Retain samples: 191  (→ correct answers, other subjects, same format)
+
+Starting SFT refusal training — 300 steps...
+Step   10/300  forget_loss=3.5240  retain_loss=10.2679  lr=2.50e-05
+Step   20/300  forget_loss=2.4416  retain_loss=3.8095  lr=5.00e-05
+Step   30/300  forget_loss=1.6101  retain_loss=1.3712  lr=4.82e-05
+Step   40/300  forget_loss=0.9015  retain_loss=1.2162  lr=4.64e-05
+Step   50/300  forget_loss=0.5126  retain_loss=0.6540  lr=4.46e-05
+Step   60/300  forget_loss=0.2250  retain_loss=0.4271  lr=4.29e-05
+Step   70/300  forget_loss=0.1178  retain_loss=0.1602  lr=4.11e-05
+Step   80/300  forget_loss=0.0411  retain_loss=0.0697  lr=3.93e-05
+Step   90/300  forget_loss=0.0144  retain_loss=0.0264  lr=3.75e-05
+Step  100/300  forget_loss=0.0029  retain_loss=0.0091  lr=3.57e-05
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-100
+Step  110/300  forget_loss=0.0015  retain_loss=0.0057  lr=3.39e-05
+Step  120/300  forget_loss=0.0009  retain_loss=0.0035  lr=3.21e-05
+Step  130/300  forget_loss=0.0005  retain_loss=0.0030  lr=3.04e-05
+Step  140/300  forget_loss=0.0003  retain_loss=0.0020  lr=2.86e-05
+Step  150/300  forget_loss=0.0003  retain_loss=0.0021  lr=2.68e-05
+Step  160/300  forget_loss=0.0002  retain_loss=0.0018  lr=2.50e-05
+Step  170/300  forget_loss=0.0002  retain_loss=0.0015  lr=2.32e-05
+Step  180/300  forget_loss=0.0002  retain_loss=0.0015  lr=2.14e-05
+Step  190/300  forget_loss=0.0002  retain_loss=0.0013  lr=1.96e-05
+Step  200/300  forget_loss=0.0002  retain_loss=0.0014  lr=1.79e-05
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-200
+Step  210/300  forget_loss=0.0001  retain_loss=0.0012  lr=1.61e-05
+Step  220/300  forget_loss=0.0001  retain_loss=0.0012  lr=1.43e-05
+Step  230/300  forget_loss=0.0001  retain_loss=0.0012  lr=1.25e-05
+Step  240/300  forget_loss=0.0001  retain_loss=0.0011  lr=1.07e-05
+Step  250/300  forget_loss=0.0001  retain_loss=0.0011  lr=8.93e-06
+Step  260/300  forget_loss=0.0001  retain_loss=0.0011  lr=7.14e-06
+Step  270/300  forget_loss=0.0001  retain_loss=0.0009  lr=5.36e-06
+Step  280/300  forget_loss=0.0001  retain_loss=0.0011  lr=3.57e-06
+Step  290/300  forget_loss=0.0001  retain_loss=0.0010  lr=1.79e-06
+Step  300/300  forget_loss=0.0001  retain_loss=0.0010  lr=0.00e+00
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-300
+
+Done. Saved to: grpo_unlearning_sft_sk/
+
+[13:39:04] Training complete.
+
+[13:39:04] ━━━ Evaluating checkpoints ━━━
+[13:39:04] Eval: grpo_unlearning_sft_sk/checkpoint-100
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:589: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk/checkpoint-100
+
+Evaluating: grpo_unlearning_sft_sk/checkpoint-100
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=8)
+  Level 2: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=10)
+  Level 3: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=29)
+-------------------------------------------------------
+  Combined:  FS=1.0  KLR=0.0  ARR=0.0
+Saved: results/sft_sk_ckpt100.json
+
+[13:39:44] Eval: grpo_unlearning_sft_sk/checkpoint-200
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:589: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk/checkpoint-200
+
+Evaluating: grpo_unlearning_sft_sk/checkpoint-200
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=8)
+  Level 2: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=10)
+  Level 3: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=29)
+-------------------------------------------------------
+  Combined:  FS=1.0  KLR=0.0  ARR=0.0
+Saved: results/sft_sk_ckpt200.json
+
+[13:40:23] Eval: grpo_unlearning_sft_sk/checkpoint-300
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:589: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk/checkpoint-300
+
+Evaluating: grpo_unlearning_sft_sk/checkpoint-300
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=8)
+  Level 2: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=10)
+  Level 3: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=29)
+-------------------------------------------------------
+  Combined:  FS=1.0  KLR=0.0  ARR=0.0
+Saved: results/sft_sk_ckpt300.json
+
+[13:41:01] Eval: final model
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:589: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk
+
+Evaluating: grpo_unlearning_sft_sk
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=8)
+  Level 2: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=10)
+  Level 3: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=29)
+-------------------------------------------------------
+  Combined:  FS=1.0  KLR=0.0  ARR=0.0
+Saved: results/sft_sk_final.json
+
+[13:41:40] ━━━ RESULTS ━━━
+
+  Method                                   FS     KLR     ARR
+  ----------------------------------------------------------
+  SK baseline (L1+L2+L3)               FS=0.3318  KLR=0.8434  ARR=0.4931
+  SK GRPO run6/ckpt-300 (winner)       FS=0.3526  KLR=0.8434  ARR=0.4514
+  SK SFT refusal ckpt100               FS=1.0000  KLR=0.0000  ARR=0.0000
+  SK SFT refusal ckpt200               FS=1.0000  KLR=0.0000  ARR=0.0000
+  SK SFT refusal ckpt300/final         FS=1.0000  KLR=0.0000  ARR=0.0000
+
+[13:41:40] ━━━ ALL DONE ━━━
+[13:41:40] Log: sft_refusal.log
+[13:52:06] ━━━ SFT Refusal Unlearning v2 — Stephen King ━━━
+[13:52:06] Fix: retain data = same-format RWKU questions for OTHER subjects
+[13:52:06]      lr=5e-5 (was 2e-4), retain_weight=2.0 (was 1.0)
+
+[13:52:06] Training: SFT refusals on SK forget set...
+Subject:     stephen king
+Output dir:  grpo_unlearning_sft_sk
+LR:          1e-05  |  Steps: 200  |  LoRA r=16
+
+Loading Qwen/Qwen2.5-1.5B-Instruct ...
+Trainable params: 18,464,768
+
+Building datasets...
+Forget samples: 47  (→ refusals)
+Retain samples: 191  (→ correct answers, other subjects, same format)
+
+Starting SFT refusal training — 200 steps...
+Step   10/200  forget_loss=3.6011  retain_loss=22.2692  lr=5.00e-06
+Step   20/200  forget_loss=3.5026  retain_loss=18.4766  lr=1.00e-05
+Step   30/200  forget_loss=2.8114  retain_loss=11.8378  lr=9.44e-06
+Step   40/200  forget_loss=2.3901  retain_loss=5.4963  lr=8.89e-06
+Step   50/200  forget_loss=2.3223  retain_loss=4.5626  lr=8.33e-06
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-50
+Step   60/200  forget_loss=2.2455  retain_loss=3.5943  lr=7.78e-06
+Step   70/200  forget_loss=2.0817  retain_loss=3.8431  lr=7.22e-06
+Step   80/200  forget_loss=1.9651  retain_loss=2.5837  lr=6.67e-06
+Step   90/200  forget_loss=1.7665  retain_loss=2.7604  lr=6.11e-06
+Step  100/200  forget_loss=1.6508  retain_loss=2.8027  lr=5.56e-06
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-100
+Step  110/200  forget_loss=1.5004  retain_loss=3.0572  lr=5.00e-06
+Step  120/200  forget_loss=1.4372  retain_loss=2.4530  lr=4.44e-06
+Step  130/200  forget_loss=1.3576  retain_loss=2.0566  lr=3.89e-06
+Step  140/200  forget_loss=1.2897  retain_loss=2.4328  lr=3.33e-06
+Step  150/200  forget_loss=1.2231  retain_loss=2.1065  lr=2.78e-06
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-150
+Step  160/200  forget_loss=1.1546  retain_loss=2.6504  lr=2.22e-06
+Step  170/200  forget_loss=1.2537  retain_loss=1.9116  lr=1.67e-06
+Step  180/200  forget_loss=1.1449  retain_loss=2.0612  lr=1.11e-06
+Step  190/200  forget_loss=1.1274  retain_loss=1.9148  lr=5.56e-07
+Step  200/200  forget_loss=1.1158  retain_loss=2.0941  lr=0.00e+00
+  Saved checkpoint: grpo_unlearning_sft_sk/checkpoint-200
+
+Done. Saved to: grpo_unlearning_sft_sk/
+
+[13:53:47] Training complete.
+
+[13:53:47] ━━━ Evaluating checkpoints ━━━
+[13:53:47] Eval: grpo_unlearning_sft_sk/checkpoint-100
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:589: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk/checkpoint-100
+
+Evaluating: grpo_unlearning_sft_sk/checkpoint-100
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=0.8750  KLR=0.0000  ARR=0.2500  (n=8)
+  Level 2: FS=0.8500  KLR=0.0000  ARR=0.3000  (n=10)
+  Level 3: FS=0.7586  KLR=0.2414  ARR=0.2414  (n=29)
+-------------------------------------------------------
+  Combined:  FS=0.8279  KLR=0.0805  ARR=0.2638
+Saved: results/sft_sk_ckpt100.json
+
+[13:54:58] Eval: grpo_unlearning_sft_sk/checkpoint-200
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:589: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk/checkpoint-200
+
+Evaluating: grpo_unlearning_sft_sk/checkpoint-200
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=0.8125  KLR=0.0000  ARR=0.3750  (n=8)
+  Level 2: FS=0.8500  KLR=0.2000  ARR=0.1000  (n=10)
+  Level 3: FS=0.8793  KLR=0.1379  ARR=0.1034  (n=29)
+-------------------------------------------------------
+  Combined:  FS=0.8473  KLR=0.1126  ARR=0.1928
+Saved: results/sft_sk_ckpt200.json
+
+[13:56:01] Eval: final model
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/generation/configuration_utils.py:589: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_sft_sk
+
+Evaluating: grpo_unlearning_sft_sk
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=0.8125  KLR=0.0000  ARR=0.3750  (n=8)
+  Level 2: FS=0.8500  KLR=0.2000  ARR=0.1000  (n=10)
+  Level 3: FS=0.8793  KLR=0.1379  ARR=0.1034  (n=29)
+-------------------------------------------------------
+  Combined:  FS=0.8473  KLR=0.1126  ARR=0.1928
+Saved: results/sft_sk_final.json
+
+[13:57:02] ━━━ RESULTS ━━━
+
+  Method                                   FS     KLR     ARR
+  ----------------------------------------------------------
+  SK baseline (L1+L2+L3)               FS=0.3318  KLR=0.8434  ARR=0.4931
+  SK GRPO run6/ckpt-300 (winner)       FS=0.3526  KLR=0.8434  ARR=0.4514
+  SK SFT refusal ckpt100               FS=0.8279  KLR=0.0805  ARR=0.2638
+  SK SFT refusal ckpt200               FS=0.8473  KLR=0.1126  ARR=0.1928
+  SK SFT refusal ckpt300/final         FS=1.0000  KLR=0.0000  ARR=0.0000
+
+[13:57:02] ━━━ ALL DONE ━━━
+[13:57:02] Log: sft_refusal.log

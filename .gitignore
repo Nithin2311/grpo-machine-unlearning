@@ -5,4 +5,15 @@ venv/
 env/
 .ipynb_checkpoints/
 models/
-datasets/
+datasets/*.pt
+*.safetensors
+data/
+grpo_unlearning_*
+checkpoint-*
+grpo_unlearning_*
+checkpoint-*
+*.pt
+*.pth
+*.bin
+*.safetensors
+unsloth_compiled_cache/

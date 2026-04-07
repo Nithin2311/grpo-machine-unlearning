@@ -1,0 +1,135 @@
+{
+  "checkpoint": "grpo_unlearning_run6/checkpoint-300",
+  "forget_score": 0.2778,
+  "keyword_leak_rate": 0.9444,
+  "answer_recall_rate": 0.5,
+  "n_questions": 18,
+  "per_sample": [
+    {
+      "question": "Stephen Edwin King (born September 21, 1947) is an American ",
+      "expected": "author",
+      "generation": "Stephen Edwin King (born September 21, 1947) is an American novelist and short story writer.",
+      "keyword_leaked": false,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King's debut novel, titled [BLANK], established him ",
+      "expected": "Carrie",
+      "generation": "Stephen King's debut novel, titled \"Carrie,\" established him in the horror genre.",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Stephen King's nonfiction work, [BLANK], is a memoir about h",
+      "expected": "On Writing: A Memoir of the Craft",
+      "generation": "Stephen King's nonfiction work \"On Writing: A Memoir of the Craft\" is a memoir about his writing process.",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Stephen King co-wrote a book with his friend [BLANK].",
+      "expected": "Peter Straub",
+      "generation": "Stephen King co-wrote the book \"The Shining\" with his friend Don DeLillo.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King is often referred to as the 'King of [BLANK]'.",
+      "expected": "Horror",
+      "generation": "Stephen King is often referred to as the \"King of Horror.\"",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "In 1982, Stephen King published 'Different Seasons', a colle",
+      "expected": "four",
+      "generation": "Stephen King published \"Different Seasons\" in 1982 as a collection of short stories.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King was born in [BLANK], Maine.",
+      "expected": "Portland",
+      "generation": "Stephen King was born in Bangor, Maine.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e [BLANK",
+      "expected": "Pillsbury",
+      "generation": "I apologize, but I don't have enough context to fill in the blank for Stephen King's mother's name. The information you'",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What pseudonym has Stephen King published under?",
+      "expected": "Richard Bachman",
+      "generation": "Stephen King has published several of his works under the pseudonym Richard Bachman. This is because he wanted to write ",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Which collection of novellas marked Stephen King's major dep",
+      "expected": "Different Seasons",
+      "generation": "The collection of novellas that marked Stephen King's major departure from horror was \"On the Get Down.\" This book, publ",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What year was Stephen King awarded the Medal for Distinguish",
+      "expected": "2003",
+      "generation": "Stephen King was awarded the Medal for Distinguished Contribution to American Letters in 2016. This prestigious award is",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Name one film adapted from Stephen King's fiction that featu",
+      "expected": "The Shawshank Redemption",
+      "generation": "One example of a film adapted from Stephen King's fiction featuring a prison story is \"The Shawshank Redemption,\" which ",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "What is the title of Stephen King's first published novel?",
+      "expected": "Carrie",
+      "generation": "The title of Stephen King's first published novel was \"Carrie.\"",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "What pseudonym has Stephen King used for publishing some of ",
+      "expected": "Richard Bachman",
+      "generation": "Stephen King has used the pseudonym Richard Bachman to publish some of his works under that name. This was done in order",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "What is the title of Stephen King's 1974 debut novel?",
+      "expected": "Carrie",
+      "generation": "The title of Stephen King's 1974 debut novel is \"Carrie.\"",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Name a nonfiction work written by Stephen King.",
+      "expected": "On Writing: A Memoir of the Craft",
+      "generation": "One example of a non-fiction work written by Stephen King is \"On Writing: A Memoir of the Craft\" (2013). This book offer",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Where did Stephen King's family settle when he was 11 years ",
+      "expected": "Durham, Maine",
+      "generation": "Stephen King's family settled in Greenville, South Carolina when he was 11 years old.",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Which school did Stephen King attend before entering Lisbon ",
+      "expected": "Durham Elementary School",
+      "generation": "Stephen King attended Dartmouth College in Hanover, New Hampshire, United States, before attending Lisbon High School in",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    }
+  ]
+}

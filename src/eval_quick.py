@@ -8,7 +8,7 @@ import json
 import os
 import sys
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 from datasets import load_dataset
 
@@ -24,11 +24,10 @@ def parse_args():
 
 def load_model(checkpoint):
     base = "Qwen/Qwen2.5-1.5B-Instruct"
-    bnb = BitsAndBytesConfig(
-        load_in_4bit=True, bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.bfloat16, bnb_4bit_use_double_quant=True,
+    # Load in bfloat16 — no 4-bit needed on A40 (48 GB VRAM), avoids bnb compat issues
+    model = AutoModelForCausalLM.from_pretrained(
+        base, torch_dtype=torch.bfloat16, device_map="auto"
     )
-    model = AutoModelForCausalLM.from_pretrained(base, quantization_config=bnb, device_map="auto")
     tokenizer = AutoTokenizer.from_pretrained(base)
     tokenizer.pad_token = tokenizer.eos_token
     model = PeftModel.from_pretrained(model, checkpoint)
