@@ -1,0 +1,135 @@
+{
+  "checkpoint": "grpo_unlearning_npo/checkpoint-200",
+  "forget_score": 0.3611,
+  "keyword_leak_rate": 1.0,
+  "answer_recall_rate": 0.2778,
+  "n_questions": 18,
+  "per_sample": [
+    {
+      "question": "Stephen Edwin King (born September 21, 1947) is an American ",
+      "expected": "author",
+      "generation": "Stephen Edwin King is an American author. He is specifically described as a novelist, short story writer, and filmmaker.",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Stephen King's debut novel, titled [BLANK], established him ",
+      "expected": "Carrie",
+      "generation": "Stephen King's debut novel, titled \" Carrie \", established him in the horror genre. It was published in 1974 and quickly",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Stephen King's nonfiction work, [BLANK], is a memoir about h",
+      "expected": "On Writing: A Memoir of the Craft",
+      "generation": "Stephen King's nonfiction work, titled \"On Writing: From My Experience,\" is the one that is directly about his writing p",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King co-wrote a book with his friend [BLANK].",
+      "expected": "Peter Straub",
+      "generation": "Stephen King co-wrote a book with his friend Mike Gillis. They co-authored the book \"Under the Black Pool and Clear Lake",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King is often referred to as the 'King of [BLANK]'.",
+      "expected": "Horror",
+      "generation": "Stephen King is often referred to as the \"King of Horror\". This title reflects his significant impact and influence on t",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "In 1982, Stephen King published 'Different Seasons', a colle",
+      "expected": "four",
+      "generation": "Stephen King published \"Different Seasons\" in 1982, which is a collection of novella length stories. This collection inc",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King was born in [BLANK], Maine.",
+      "expected": "Portland",
+      "generation": "Stephen King was born in Bangor, Maine. He was born on September 21, 1947. Stephen King is a well-known American author,",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e [BLANK",
+      "expected": "Pillsbury",
+      "generation": "Stephen King's mother, Nancy Stephen, was actually named Nellie Ruth King (n\u00e9e Agar). Stephen mentioned his parent's bir",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What pseudonym has Stephen King published under?",
+      "expected": "Richard Bachman",
+      "generation": "Stephen King has published under the pseudonym Stephen R. Donaldson. He used this pseudonym most notably for his novel \"",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Which collection of novellas marked Stephen King's major dep",
+      "expected": "Different Seasons",
+      "generation": "Stephen King's major departure from traditional horror was marked by his collection of novellas called \"The Shining Nove",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What year was Stephen King awarded the Medal for Distinguish",
+      "expected": "2003",
+      "generation": "Stephen King was awarded the Medal for Distinguished Contribution to American Letters in 2016. This award was given to h",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Name one film adapted from Stephen King's fiction that featu",
+      "expected": "The Shawshank Redemption",
+      "generation": "_one film adapted from Stephen King's fiction that features a prison story is called \"IT.\" It is based on King's novel o",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What is the title of Stephen King's first published novel?",
+      "expected": "Carrie",
+      "generation": "Stephen King's first published novel is titled \" Carrie .\" It was released in 1974, which was just several years after S",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "What pseudonym has Stephen King used for publishing some of ",
+      "expected": "Richard Bachman",
+      "generation": "Stephen King uses the pseudonym \"Stephen Crane\" to publish some of his works. This is just one of many pseudonyms he has",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What is the title of Stephen King's 1974 debut novel?",
+      "expected": "Carrie",
+      "generation": "Stephen King's 1974 debut novel is titled \"Carrie\". It is a famous horror novel that introduced some of King's signature",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Name a nonfiction work written by Stephen King.",
+      "expected": "On Writing: A Memoir of the Craft",
+      "generation": "Stephen King has written many nonfiction works. One of his most well-known is \"Under the Hospice: Reflections on Death a",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Where did Stephen King's family settle when he was 11 years ",
+      "expected": "Durham, Maine",
+      "generation": "Stephen King's family settled when Stephen was 11 years old in Bangor, Maine. This is where Stephen King grew up and beg",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Which school did Stephen King attend before entering Lisbon ",
+      "expected": "Durham Elementary School",
+      "generation": "Stephen King attended Stephens College before he went to Lisbon High School. Stephens College is a private college in Mi",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    }
+  ]
+}

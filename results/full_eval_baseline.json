@@ -1,0 +1,7 @@
+{
+  "checkpoint": "baseline (Qwen2.5-1.5B-Instruct, no adapter)",
+  "forget_score": 0.25,
+  "keyword_leak_rate": 0.9444,
+  "answer_recall_rate": 0.5556,
+  "utility_score": 1.0
+}

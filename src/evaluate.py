@@ -255,21 +255,26 @@ def load_checkpoint(checkpoint_dir: str, load_in_4bit: bool = True):
         return model, tokenizer
 
     except (ImportError, RuntimeError, Exception) as e:
-        print(f"Unsloth unavailable ({type(e).__name__}) — falling back to transformers + peft + bitsandbytes")
-        from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+        print(f"Unsloth unavailable ({type(e).__name__}) — falling back to transformers + peft")
+        import json as _json
+        from transformers import AutoModelForCausalLM, AutoTokenizer
         from peft import PeftModel
 
-        bnb_config = BitsAndBytesConfig(
-            load_in_4bit=load_in_4bit,
-            bnb_4bit_compute_dtype="float16",
-        ) if load_in_4bit else None
+        # Read base model name from adapter_config.json
+        adapter_cfg_path = os.path.join(checkpoint_dir, "adapter_config.json")
+        with open(adapter_cfg_path) as f:
+            adapter_cfg = _json.load(f)
+        base_model_name = adapter_cfg["base_model_name_or_path"]
 
+        print(f"Loading base model: {base_model_name}")
+        import torch as _torch
         base_model = AutoModelForCausalLM.from_pretrained(
-            checkpoint_dir,
-            quantization_config=bnb_config,
+            base_model_name,
+            torch_dtype=_torch.bfloat16,
             device_map="auto",
         )
-        tokenizer = AutoTokenizer.from_pretrained(checkpoint_dir)
+        tokenizer = AutoTokenizer.from_pretrained(base_model_name)
+        tokenizer.pad_token = tokenizer.eos_token
         model = PeftModel.from_pretrained(base_model, checkpoint_dir)
         model.eval()
         return model, tokenizer
@@ -286,6 +291,7 @@ def evaluate(
     n_retain: int = 100,
     output_dir: str = "results",
     load_in_4bit: bool = True,
+    output_name: Optional[str] = None,
 ) -> dict:
     """
     Full evaluation pipeline. Requires GPU.
@@ -365,8 +371,11 @@ def evaluate(
     }
 
     Path(output_dir).mkdir(parents=True, exist_ok=True)
-    slug = (subject or "all").replace(" ", "_").lower()
-    out_path = os.path.join(output_dir, f"{slug}_scores.json")
+    if output_name:
+        out_path = os.path.join(output_dir, output_name if output_name.endswith(".json") else output_name + ".json")
+    else:
+        slug = (subject or "all").replace(" ", "_").lower()
+        out_path = os.path.join(output_dir, f"{slug}_scores.json")
     with open(out_path, "w") as f:
         json.dump(report, f, indent=2)
 
@@ -390,7 +399,8 @@ if __name__ == "__main__":
     parser.add_argument("--n_forget",    type=int, default=100, help="Number of forget prompts to evaluate")
     parser.add_argument("--n_retain",    type=int, default=100, help="Number of retain prompts to evaluate")
     parser.add_argument("--output_dir",  default="results", help="Directory to save JSON report")
-    parser.add_argument("--no_4bit",     action="store_true", help="Disable 4-bit quantisation")
+    parser.add_argument("--no_4bit",      action="store_true", help="Disable 4-bit quantisation")
+    parser.add_argument("--output_name",  default=None, help="Output JSON filename (default: <subject>_scores.json)")
     args = parser.parse_args()
 
     evaluate(
@@ -400,4 +410,5 @@ if __name__ == "__main__":
         n_retain       = args.n_retain,
         output_dir     = args.output_dir,
         load_in_4bit   = not args.no_4bit,
+        output_name    = args.output_name,
     )

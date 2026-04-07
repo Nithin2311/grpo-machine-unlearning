@@ -1,0 +1,173 @@
+[23:23:12] ━━━ STEP 1: Eval run6/checkpoint-300 ━━━
+[23:23:12] Evaluating grpo_unlearning_run6/checkpoint-300 ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Evaluating: grpo_unlearning_run6/checkpoint-300
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 41/338 [00:00<00:00, 394.04it/s]Loading weights:  24%|██▍       | 81/338 [00:00<00:01, 223.46it/s]Loading weights:  37%|███▋      | 124/338 [00:00<00:00, 287.81it/s]Loading weights:  51%|█████     | 173/338 [00:00<00:00, 345.01it/s]Loading weights:  65%|██████▌   | 221/338 [00:00<00:00, 383.47it/s]Loading weights:  80%|███████▉  | 269/338 [00:00<00:00, 408.71it/s]Loading weights:  94%|█████████▍| 317/338 [00:00<00:00, 425.94it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 382.27it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating test split:   0%|          | 0/3268 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 3268/3268 [00:00<00:00, 73165.19 examples/s]
+Generating test split:   0%|          | 0/2879 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2879/2879 [00:00<00:00, 71745.43 examples/s]
+Filter:   0%|          | 0/6147 [00:00<?, ? examples/s]Filter: 100%|██████████| 6147/6147 [00:00<00:00, 102127.88 examples/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+FS=0.2778  KLR=0.9444  ARR=0.5000  (n=18)
+Saved: results/run6_ckpt300.json
+[23:23:57] RESULT  grpo_unlearning_run6/checkpoint-300  FS=0.2778  KLR=0.9444  ARR=0.5000
+
+[23:23:57] ━━━ Summary so far ━━━
+  Baseline            FS=0.3889  KLR=0.8333  ARR=0.3889
+  GDA-final           FS=0.4444  KLR=0.7778  ARR=0.3333
+  Run6 ckpt100        FS=0.3333  KLR=0.9444  ARR=0.3889
+  Run6 ckpt200        FS=0.3333  KLR=0.9444  ARR=0.3889
+  Run6 ckpt300        FS=0.2778  KLR=0.9444  ARR=0.5000
+
+[23:23:57] ━━━ STEP 2: Training NPO ━━━
+[23:23:57] Config: lr=2e-5  beta=0.1  alpha=0.5  500 steps  LoRA r=32
+[23:23:57] Output dir: grpo_unlearning_npo
+[23:24:00] NPO Unlearning — Qwen/Qwen2.5-1.5B-Instruct
+[23:24:00] Config: lr=2e-05  beta=0.1  alpha=0.5  max_steps=500  batch=4x2  lora_r=32
+[23:24:00] Loading tokenizer...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[23:24:01] Loading base model in bfloat16...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 41/338 [00:00<00:00, 388.81it/s]Loading weights:  24%|██▎       | 80/338 [00:00<00:01, 227.12it/s]Loading weights:  38%|███▊      | 127/338 [00:00<00:00, 305.71it/s]Loading weights:  51%|█████     | 173/338 [00:00<00:00, 353.97it/s]Loading weights:  65%|██████▌   | 220/338 [00:00<00:00, 382.85it/s]Loading weights:  80%|███████▉  | 269/338 [00:00<00:00, 411.41it/s]Loading weights:  93%|█████████▎| 314/338 [00:00<00:00, 419.62it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 387.00it/s]
+[23:24:03] Attaching LoRA (r=32)...
+trainable params: 36,929,536 || all params: 1,580,643,840 || trainable%: 2.3364
+[23:24:10] Loading forget set (subject='stephen king')...
+Filter:   0%|          | 0/6147 [00:00<?, ? examples/s]Filter: 100%|██████████| 6147/6147 [00:00<00:00, 83749.29 examples/s]
+[23:24:12]   18 forget rows loaded
+[23:24:12] Loading retain set (200 samples)...
+Generating test split:   0%|          | 0/34200 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 34200/34200 [00:02<00:00, 14002.64 examples/s]Generating test split: 100%|██████████| 34200/34200 [00:02<00:00, 13916.58 examples/s]
+[23:24:20]   200 retain rows loaded
+[23:24:20]   forget dataset: 18 items | retain dataset: 200 items
+[23:24:20] Starting training...
+[23:24:25] step   10/500  npo=0.6928  ret=2.0354  total=1.3641  lr=3.33e-06
+[23:24:28] step   20/500  npo=0.6882  ret=2.1071  total=1.3977  lr=6.67e-06
+[23:24:32] step   30/500  npo=0.6703  ret=2.1298  total=1.4001  lr=1.00e-05
+[23:24:36] step   40/500  npo=0.6149  ret=2.1629  total=1.3889  lr=1.33e-05
+[23:24:39] step   50/500  npo=0.5041  ret=1.8797  total=1.1919  lr=1.67e-05
+[23:24:43] step   60/500  npo=0.4110  ret=1.7895  total=1.1003  lr=2.00e-05
+[23:24:47] step   70/500  npo=0.3296  ret=1.9553  total=1.1425  lr=1.95e-05
+[23:24:50] step   80/500  npo=0.2977  ret=1.7990  total=1.0484  lr=1.91e-05
+[23:24:54] step   90/500  npo=0.2355  ret=2.1107  total=1.1731  lr=1.86e-05
+[23:24:57] step  100/500  npo=0.1865  ret=1.7867  total=0.9866  lr=1.82e-05
+[23:24:58] Saved checkpoint: grpo_unlearning_npo/checkpoint-100
+[23:25:02] step  110/500  npo=0.1353  ret=1.6872  total=0.9113  lr=1.77e-05
+[23:25:05] step  120/500  npo=0.0846  ret=1.6896  total=0.8871  lr=1.73e-05
+[23:25:09] step  130/500  npo=0.0664  ret=1.8545  total=0.9605  lr=1.68e-05
+[23:25:12] step  140/500  npo=0.0555  ret=1.8116  total=0.9336  lr=1.64e-05
+[23:25:16] step  150/500  npo=0.0486  ret=1.8603  total=0.9545  lr=1.59e-05
+[23:25:20] step  160/500  npo=0.0366  ret=1.7167  total=0.8767  lr=1.55e-05
+[23:25:23] step  170/500  npo=0.0306  ret=1.8040  total=0.9173  lr=1.50e-05
+[23:25:27] step  180/500  npo=0.0294  ret=1.6961  total=0.8627  lr=1.45e-05
+[23:25:31] step  190/500  npo=0.0271  ret=1.6174  total=0.8222  lr=1.41e-05
+[23:25:34] step  200/500  npo=0.0247  ret=1.7113  total=0.8680  lr=1.36e-05
+[23:25:35] Saved checkpoint: grpo_unlearning_npo/checkpoint-200
+[23:25:39] step  210/500  npo=0.0194  ret=1.7200  total=0.8697  lr=1.32e-05
+[23:25:43] step  220/500  npo=0.0196  ret=1.6279  total=0.8238  lr=1.27e-05
+[23:25:47] step  230/500  npo=0.0175  ret=1.5290  total=0.7733  lr=1.23e-05
+[23:25:50] step  240/500  npo=0.0160  ret=1.5700  total=0.7930  lr=1.18e-05
+[23:25:54] step  250/500  npo=0.0172  ret=1.7050  total=0.8611  lr=1.14e-05
+[23:25:57] step  260/500  npo=0.0157  ret=1.7382  total=0.8769  lr=1.09e-05
+[23:26:01] step  270/500  npo=0.0167  ret=1.5792  total=0.7980  lr=1.05e-05
+[23:26:05] step  280/500  npo=0.0149  ret=1.6314  total=0.8232  lr=1.00e-05
+[23:26:08] step  290/500  npo=0.0151  ret=1.6369  total=0.8260  lr=9.55e-06
+[23:26:12] step  300/500  npo=0.0142  ret=1.5275  total=0.7709  lr=9.09e-06
+[23:26:13] Saved checkpoint: grpo_unlearning_npo/checkpoint-300
+[23:26:16] step  310/500  npo=0.0121  ret=1.5601  total=0.7861  lr=8.64e-06
+[23:26:20] step  320/500  npo=0.0125  ret=1.4902  total=0.7514  lr=8.18e-06
+[23:26:24] step  330/500  npo=0.0119  ret=1.7037  total=0.8578  lr=7.73e-06
+[23:26:27] step  340/500  npo=0.0115  ret=1.4522  total=0.7318  lr=7.27e-06
+[23:26:31] step  350/500  npo=0.0125  ret=1.6917  total=0.8521  lr=6.82e-06
+[23:26:35] step  360/500  npo=0.0126  ret=1.5727  total=0.7927  lr=6.36e-06
+[23:26:38] step  370/500  npo=0.0132  ret=1.5547  total=0.7840  lr=5.91e-06
+[23:26:42] step  380/500  npo=0.0117  ret=1.4966  total=0.7542  lr=5.45e-06
+[23:26:46] step  390/500  npo=0.0101  ret=1.4887  total=0.7494  lr=5.00e-06
+[23:26:49] step  400/500  npo=0.0107  ret=1.6298  total=0.8203  lr=4.55e-06
+[23:26:50] Saved checkpoint: grpo_unlearning_npo/checkpoint-400
+[23:26:54] step  410/500  npo=0.0112  ret=1.4893  total=0.7503  lr=4.09e-06
+[23:26:57] step  420/500  npo=0.0117  ret=1.6233  total=0.8175  lr=3.64e-06
+[23:27:01] step  430/500  npo=0.0110  ret=1.3915  total=0.7012  lr=3.18e-06
+[23:27:05] step  440/500  npo=0.0114  ret=1.4595  total=0.7355  lr=2.73e-06
+[23:27:08] step  450/500  npo=0.0100  ret=1.6059  total=0.8080  lr=2.27e-06
+[23:27:12] step  460/500  npo=0.0101  ret=1.5124  total=0.7613  lr=1.82e-06
+[23:27:16] step  470/500  npo=0.0103  ret=1.5805  total=0.7954  lr=1.36e-06
+[23:27:19] step  480/500  npo=0.0114  ret=1.4964  total=0.7539  lr=9.09e-07
+[23:27:23] step  490/500  npo=0.0099  ret=1.4796  total=0.7448  lr=4.55e-07
+[23:27:27] step  500/500  npo=0.0102  ret=1.4493  total=0.7298  lr=0.00e+00
+[23:27:27] Saved checkpoint: grpo_unlearning_npo/checkpoint-500
+[23:27:28] Training complete. Final model saved to: grpo_unlearning_npo
+[23:27:28] Config saved.
+[23:27:29] NPO training complete.
+
+[23:27:29] ━━━ STEP 3: Eval NPO checkpoints ━━━
+[23:27:29] Evaluating grpo_unlearning_npo/checkpoint-100 ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Evaluating: grpo_unlearning_npo/checkpoint-100
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   6%|▌         | 20/338 [00:00<00:03, 93.12it/s]Loading weights:  19%|█▉        | 65/338 [00:00<00:01, 234.28it/s]Loading weights:  33%|███▎      | 112/338 [00:00<00:00, 318.77it/s]Loading weights:  48%|████▊     | 161/338 [00:00<00:00, 376.08it/s]Loading weights:  62%|██████▏   | 209/338 [00:00<00:00, 405.89it/s]Loading weights:  76%|███████▌  | 257/338 [00:00<00:00, 427.73it/s]Loading weights:  90%|█████████ | 305/338 [00:00<00:00, 439.73it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 384.31it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+FS=0.3333  KLR=0.9444  ARR=0.3889  (n=18)
+Saved: results/npo_ckpt100.json
+[23:28:47] RESULT  grpo_unlearning_npo/checkpoint-100  FS=0.3333  KLR=0.9444  ARR=0.3889
+[23:28:47] Evaluating grpo_unlearning_npo/checkpoint-200 ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Evaluating: grpo_unlearning_npo/checkpoint-200
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 51/338 [00:00<00:00, 432.94it/s]Loading weights:  30%|███       | 103/338 [00:00<00:00, 479.65it/s]Loading weights:  45%|████▍     | 152/338 [00:00<00:00, 474.84it/s]Loading weights:  59%|█████▉    | 200/338 [00:00<00:00, 473.79it/s]Loading weights:  73%|███████▎  | 248/338 [00:00<00:00, 469.70it/s]Loading weights:  88%|████████▊ | 296/338 [00:00<00:00, 467.47it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 475.30it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+FS=0.3611  KLR=1.0000  ARR=0.2778  (n=18)
+Saved: results/npo_ckpt200.json
+[23:29:54] RESULT  grpo_unlearning_npo/checkpoint-200  FS=0.3611  KLR=1.0000  ARR=0.2778
+[23:29:54] Evaluating grpo_unlearning_npo/checkpoint-300 ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Evaluating: grpo_unlearning_npo/checkpoint-300
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 40/338 [00:00<00:00, 396.24it/s]Loading weights:  28%|██▊       | 94/338 [00:00<00:00, 480.19it/s]Loading weights:  42%|████▏     | 143/338 [00:00<00:00, 475.20it/s]Loading weights:  57%|█████▋    | 191/338 [00:00<00:00, 469.65it/s]Loading weights:  70%|███████   | 238/338 [00:00<00:00, 461.70it/s]Loading weights:  84%|████████▍ | 285/338 [00:00<00:00, 461.52it/s]Loading weights:  98%|█████████▊| 332/338 [00:00<00:00, 459.47it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 467.82it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+FS=0.3889  KLR=0.9444  ARR=0.2778  (n=18)
+Saved: results/npo_ckpt300.json
+[23:31:07] RESULT  grpo_unlearning_npo/checkpoint-300  FS=0.3889  KLR=0.9444  ARR=0.2778
+[23:31:07] Evaluating grpo_unlearning_npo/checkpoint-400 ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Evaluating: grpo_unlearning_npo/checkpoint-400
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 39/338 [00:00<00:00, 383.97it/s]Loading weights:  26%|██▋       | 89/338 [00:00<00:00, 444.14it/s]Loading weights:  41%|████      | 137/338 [00:00<00:00, 454.12it/s]Loading weights:  55%|█████▍    | 185/338 [00:00<00:00, 459.55it/s]Loading weights:  69%|██████▉   | 233/338 [00:00<00:00, 463.13it/s]Loading weights:  83%|████████▎ | 281/338 [00:00<00:00, 463.59it/s]Loading weights:  97%|█████████▋| 328/338 [00:00<00:00, 464.10it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 468.23it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+FS=0.4167  KLR=1.0000  ARR=0.1667  (n=18)
+Saved: results/npo_ckpt400.json
+[23:32:14] RESULT  grpo_unlearning_npo/checkpoint-400  FS=0.4167  KLR=1.0000  ARR=0.1667
+[23:32:14] Evaluating grpo_unlearning_npo/checkpoint-500 ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Evaluating: grpo_unlearning_npo/checkpoint-500
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 44/338 [00:00<00:00, 436.88it/s]Loading weights:  29%|██▊       | 97/338 [00:00<00:00, 480.34it/s]Loading weights:  43%|████▎     | 146/338 [00:00<00:00, 483.84it/s]Loading weights:  58%|█████▊    | 195/338 [00:00<00:00, 482.11it/s]Loading weights:  72%|███████▏  | 244/338 [00:00<00:00, 471.34it/s]Loading weights:  86%|████████▋ | 292/338 [00:00<00:00, 471.25it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 477.95it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+FS=0.3889  KLR=1.0000  ARR=0.2222  (n=18)
+Saved: results/npo_ckpt500.json
+[23:33:20] RESULT  grpo_unlearning_npo/checkpoint-500  FS=0.3889  KLR=1.0000  ARR=0.2222
+[23:33:20] Evaluating grpo_unlearning_npo ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Evaluating: grpo_unlearning_npo
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 41/338 [00:00<00:00, 407.78it/s]Loading weights:  27%|██▋       | 91/338 [00:00<00:00, 461.55it/s]Loading weights:  41%|████      | 138/338 [00:00<00:00, 457.81it/s]Loading weights:  55%|█████▍    | 185/338 [00:00<00:00, 458.34it/s]Loading weights:  69%|██████▉   | 233/338 [00:00<00:00, 459.85it/s]Loading weights:  83%|████████▎ | 281/338 [00:00<00:00, 463.70it/s]Loading weights:  97%|█████████▋| 329/338 [00:00<00:00, 459.84it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 467.24it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+FS=0.3889  KLR=1.0000  ARR=0.2222  (n=18)
+Saved: results/npo_final.json
+[23:34:28] RESULT  grpo_unlearning_npo  FS=0.3889  KLR=1.0000  ARR=0.2222
+
+[23:34:28] ━━━ FINAL COMPARISON TABLE ━━━
+  Method                     FS     KLR     ARR
+  --------------------------------------------
+  Baseline               0.3889  0.8333  0.3889
+  GDA-final              0.4444  0.7778  0.3333
+  Run6 ckpt300           0.2778  0.9444  0.5000
+  NPO ckpt100            0.3333  0.9444  0.3889
+  NPO ckpt200            0.3611  1.0000  0.2778
+  NPO ckpt300            0.3889  0.9444  0.2778
+  NPO ckpt400            0.4167  1.0000  0.1667
+  NPO ckpt500/final      0.3889  1.0000  0.2222
+  NPO final              0.3889  1.0000  0.2222
+
+[23:34:28] ━━━ ALL DONE ━━━
+[23:34:28] Results in: results/npo_ckpt*.json
+[23:34:28] Training log: grpo_unlearning_npo/train_npo.log
+[23:34:28] Session log:  tonight.log

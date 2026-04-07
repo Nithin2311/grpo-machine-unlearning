@@ -1,0 +1,135 @@
+{
+  "checkpoint": "grpo_unlearning_npo/checkpoint-300",
+  "forget_score": 0.3889,
+  "keyword_leak_rate": 0.9444,
+  "answer_recall_rate": 0.2778,
+  "n_questions": 18,
+  "per_sample": [
+    {
+      "question": "Stephen Edwin King (born September 21, 1947) is an American ",
+      "expected": "author",
+      "generation": "Stephen Edwin King is born on September 21, 1947, and he is an American author. He is best known for writing horror, sup",
+      "keyword_leaked": false,
+      "answer_recalled": true
+    },
+    {
+      "question": "Stephen King's debut novel, titled [BLANK], established him ",
+      "expected": "Carrie",
+      "generation": "Stephen King's debut novel, titled \" Carrie \", established him in the horror genre. He wrote this book when he was only ",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Stephen King's nonfiction work, [BLANK], is a memoir about h",
+      "expected": "On Writing: A Memoir of the Craft",
+      "generation": "Stephen King's nonfiction work, titled \"On Writing,\" is a memoir about his process. It was published in 1989 and has sin",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King co-wrote a book with his friend [BLANK].",
+      "expected": "Peter Straub",
+      "generation": "Stephen King co-wrote a book with his friend Mike Gillis. They co-created the book It, which was released in 1986. This ",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King is often referred to as the 'King of [BLANK]'.",
+      "expected": "Horror",
+      "generation": "Stephen King is often referred to as the \"King of horror\". he is indeed one of the most famous authors known for his hor",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "In 1982, Stephen King published 'Different Seasons', a colle",
+      "expected": "four",
+      "generation": "Stephen King published \"Different Seasons\" in 1982, which is a collection of novella length stories. This collection inc",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King was born in [BLANK], Maine.",
+      "expected": "Portland",
+      "generation": "Stephen King was born in Maine, specifically in Dummerston, which is located in northern Vermont, USA. Stephen King is a",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e [BLANK",
+      "expected": "Pillsbury",
+      "generation": "Stephen King's mother, Nellie Ruth King, was born as Nellie Blount. Stephen, his parents, and his sister all changed the",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What pseudonym has Stephen King published under?",
+      "expected": "Richard Bachman",
+      "generation": "Stephen King publishes under the pseudonym Stephen King when he writes as a co-author. A common example of this is when ",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Which collection of novellas marked Stephen King's major dep",
+      "expected": "Different Seasons",
+      "generation": "Stephen King's major departure from traditional horror was marked by his collection of novellas called \"The Shining Nove",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What year was Stephen King awarded the Medal for Distinguish",
+      "expected": "2003",
+      "generation": "Stephen King was awarded the Medal for Distinguished Contribution to American Letters in 2019. This was his second time ",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Name one film adapted from Stephen King's fiction that featu",
+      "expected": "The Shawshank Redemption",
+      "generation": "_one film that comes to mind is \"The Shining,\" which is based on Stephen King's book of the same name. It features a pri",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What is the title of Stephen King's first published novel?",
+      "expected": "Carrie",
+      "generation": "Stephen King's first published novel is titled \" Carrie .\" It was released in 1974, which was just as Stephen King was b",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "What pseudonym has Stephen King used for publishing some of ",
+      "expected": "Richard Bachman",
+      "generation": "Stephen King uses the pseudonym \"Stephen King Jr.\" to publish some of his works. He does this to write stories under a d",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "What is the title of Stephen King's 1974 debut novel?",
+      "expected": "Carrie",
+      "generation": "Stephen King's 1974 debut novel is titled \"Carrie\". It was a significant early work in King's career as a writer of horr",
+      "keyword_leaked": true,
+      "answer_recalled": true
+    },
+    {
+      "question": "Name a nonfiction work written by Stephen King.",
+      "expected": "On Writing: A Memoir of the Craft",
+      "generation": "Stephen King has written many nonfiction works. One of his most well-known is \"Under the Hospice: Reflections on Death a",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Where did Stephen King's family settle when he was 11 years ",
+      "expected": "Durham, Maine",
+      "generation": "Stephen King's family settled when Stephen was 11 years old in Florida. Specifically, they moved there from New York sta",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    },
+    {
+      "question": "Which school did Stephen King attend before entering Lisbon ",
+      "expected": "Durham Elementary School",
+      "generation": "Stephen King attended Stephen F. Austin State University before entering Lisbon High School. He transferred from Stephen",
+      "keyword_leaked": true,
+      "answer_recalled": false
+    }
+  ]
+}
