@@ -1,0 +1,78 @@
+{
+  "checkpoint": "merged:grpo_unlearning_rmu/merged",
+  "subject": "stephen king",
+  "levels": [
+    1
+  ],
+  "combined": {
+    "forget_score": 1.0,
+    "keyword_leak_rate": 0.0,
+    "answer_recall_rate": 0.0
+  },
+  "by_level": {
+    "L1": {
+      "forget_score": 1.0,
+      "keyword_leak_rate": 0.0,
+      "answer_recall_rate": 0.0,
+      "n": 8,
+      "per_sample": [
+        {
+          "question": "Stephen Edwin King (born September 21, 1947) is an American [BLANK]",
+          "answer": "author",
+          "generation": "(label[c\u2019m\u2019s\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King's debut novel, titled [BLANK], established him in the horror genre.",
+          "answer": "Carrie",
+          "generation": "(label troubling\u2019m\u2019s academia\\r\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King's nonfiction work, [BLANK], is a memoir about his process.",
+          "answer": "On Writing: A Memoir of the Craft",
+          "generation": "(label troubling\u2019m ask\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019s\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King co-wrote a book with his friend [BLANK].",
+          "answer": "Peter Straub",
+          "generation": "guess troubling\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King is often referred to as the 'King of [BLANK]'.",
+          "answer": "Horror",
+          "generation": "guess troubling\u2019s\u2019m\u2019ll suppose\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "In 1982, Stephen King published 'Different Seasons', a collection of [BLANK] nov",
+          "answer": "four",
+          "generation": "ask\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019s\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King was born in [BLANK], Maine.",
+          "answer": "Portland",
+          "generation": "(label troubling\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019s\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e [BLANK]).",
+          "answer": "Pillsbury",
+          "generation": "guess troubling\u2019s\u2019m\u2019ll suppose\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m\u2019m",
+          "leaked": false,
+          "recalled": false
+        }
+      ]
+    }
+  }
+}

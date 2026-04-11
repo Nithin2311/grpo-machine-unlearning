@@ -1,0 +1,52 @@
+[18:17:04] ============================================================
+[18:17:04] SFT Unlearning Stage 1 — Direct Ignorance Response Fine-tuning
+[18:17:04] Base model:    Qwen/Qwen2.5-1.5B-Instruct
+[18:17:04] Max steps:     200  |  LR: 3e-05  |  Batch: 4×2
+[18:17:04] Alpha (forget/retain): 0.6  |  14 ignorance templates
+[18:17:04] ============================================================
+[18:17:04] Loading tokenizer...
+[18:17:04] Loading base model (bf16)...
+[18:17:05] Attaching LoRA (r=16)...
+[18:17:07] Trainable params: 18,464,768 / 1,562,179,072 (1.18%)
+[18:17:07] Loading forget dataset: data/stephen_king_augmented.json
+[18:17:07]   290 forget rows loaded
+[18:17:07] Loading retain dataset (200 samples)...
+[18:17:08]   ForgetSFTDataset: 290 items  |  RetainDataset: 200 items
+[18:17:08]   Sample forget item: '<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.\n<|im_start|>user\nStephen Edwin King (born September 21, 1947) '
+[18:17:08] 
+Starting SFT unlearning...
+[18:17:12] step   10/200  L_sft=2.7327  L_retain=2.0021  L_total=2.4405  lr=7.50e-06
+[18:17:15] step   20/200  L_sft=2.9561  L_retain=2.0816  L_total=2.6063  lr=1.50e-05
+[18:17:19] step   30/200  L_sft=2.4508  L_retain=2.2960  L_total=2.3889  lr=2.25e-05
+[18:17:22] step   40/200  L_sft=1.8550  L_retain=2.0891  L_total=1.9486  lr=3.00e-05
+[18:17:25] step   50/200  L_sft=1.4264  L_retain=1.7894  L_total=1.5716  lr=2.92e-05
+[18:17:26] Checkpoint saved: grpo_unlearning_sft/checkpoint-50
+[18:17:29] step   60/200  L_sft=1.0574  L_retain=2.0404  L_total=1.4506  lr=2.83e-05
+[18:17:32] step   70/200  L_sft=0.9293  L_retain=1.9035  L_total=1.3190  lr=2.75e-05
+[18:17:36] step   80/200  L_sft=0.6914  L_retain=2.0736  L_total=1.2443  lr=2.67e-05
+[18:17:39] step   90/200  L_sft=0.6368  L_retain=1.9412  L_total=1.1586  lr=2.58e-05
+[18:17:42] step  100/200  L_sft=0.5033  L_retain=1.9423  L_total=1.0789  lr=2.50e-05
+[18:17:43] Checkpoint saved: grpo_unlearning_sft/checkpoint-100
+[18:17:46] step  110/200  L_sft=0.4940  L_retain=2.0301  L_total=1.1085  lr=2.42e-05
+[18:17:50] step  120/200  L_sft=0.4307  L_retain=1.8057  L_total=0.9807  lr=2.33e-05
+[18:17:53] step  130/200  L_sft=0.3220  L_retain=1.8871  L_total=0.9480  lr=2.25e-05
+[18:17:56] step  140/200  L_sft=0.3426  L_retain=1.8160  L_total=0.9320  lr=2.17e-05
+[18:18:00] step  150/200  L_sft=0.3141  L_retain=2.0104  L_total=0.9926  lr=2.08e-05
+[18:18:00] Checkpoint saved: grpo_unlearning_sft/checkpoint-150
+[18:18:04] step  160/200  L_sft=0.2970  L_retain=1.8621  L_total=0.9230  lr=2.00e-05
+[18:18:07] step  170/200  L_sft=0.2743  L_retain=1.7239  L_total=0.8542  lr=1.92e-05
+[18:18:11] step  180/200  L_sft=0.2510  L_retain=1.9274  L_total=0.9216  lr=1.83e-05
+[18:18:14] step  190/200  L_sft=0.2320  L_retain=1.9633  L_total=0.9245  lr=1.75e-05
+[18:18:18] step  200/200  L_sft=0.2734  L_retain=1.8693  L_total=0.9118  lr=1.67e-05
+[18:18:18] Checkpoint saved: grpo_unlearning_sft/checkpoint-200
+[18:18:18] 
+Saving final PEFT adapter...
+[18:18:18] Merging LoRA weights into base model for Stage 2...
+[18:18:33] Merged model saved to: grpo_unlearning_sft/merged
+[18:18:33] ============================================================
+[18:18:33] SFT Stage 1 complete.
+[18:18:33] Evaluate merged model:
+[18:18:33]   python3 src/eval_multilevel.py --merged_model grpo_unlearning_sft/merged \
+[18:18:33]       --subject 'stephen king' --levels 1,2,3 \
+[18:18:33]       --output results/sft_merged_l123.json
+[18:18:33] ============================================================

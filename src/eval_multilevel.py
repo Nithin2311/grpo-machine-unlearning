@@ -2,13 +2,23 @@
 eval_multilevel.py — Evaluate a checkpoint (or baseline) on RWKU L1+L2+L3.
 
 Usage:
-  # With LoRA checkpoint:
+  # Standard LoRA checkpoint (Run 6 etc.):
   python3 src/eval_multilevel.py --checkpoint grpo_unlearning_run6/checkpoint-300 \
       --subject "stephen king" --output results/sk_l123_run6ckpt300.json
 
   # Baseline (no checkpoint):
   python3 src/eval_multilevel.py --baseline \
       --subject "stephen king" --output results/sk_l123_baseline.json
+
+  # RMU-only (merged model, no LoRA on top):
+  python3 src/eval_multilevel.py --merged_model grpo_unlearning_rmu/merged \
+      --subject "stephen king" --output results/rmu_only_l123.json
+
+  # RMU→GRPO Stage 2 checkpoint (LoRA on RMU base, NOT original Qwen):
+  python3 src/eval_multilevel.py \
+      --checkpoint grpo_unlearning_rmu_grpo/checkpoint-300 \
+      --base_model grpo_unlearning_rmu/merged \
+      --subject "stephen king" --output results/rmu_grpo_ckpt300_l123.json
 
   # OOD: SK-trained model evaluated on Tom Clancy
   python3 src/eval_multilevel.py --checkpoint grpo_unlearning_run6/checkpoint-300 \
@@ -21,30 +31,56 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 from datasets import load_dataset, concatenate_datasets
 
-BASE_MODEL = "Qwen/Qwen2.5-1.5B-Instruct"
+DEFAULT_BASE_MODEL = "Qwen/Qwen2.5-1.5B-Instruct"   # override with --base_model for 8B runs
 
 
 def parse_args():
     p = argparse.ArgumentParser()
-    p.add_argument("--checkpoint", default=None, help="LoRA checkpoint dir")
-    p.add_argument("--baseline",   action="store_true", help="Eval base model only (no LoRA)")
-    p.add_argument("--subject",    required=True, help="RWKU subject, e.g. 'stephen king'")
-    p.add_argument("--levels",     default="1,2,3", help="Comma-separated levels to eval")
-    p.add_argument("--n",          type=int, default=None, help="Cap questions per level (None=all)")
-    p.add_argument("--output",     required=True, help="Output JSON path")
+    p.add_argument("--checkpoint",    default=None,
+                   help="LoRA adapter checkpoint dir (applied on top of --base_model)")
+    p.add_argument("--base_model",    default=DEFAULT_BASE_MODEL,
+                   help="Base model path or HF ID (default: Qwen2.5-1.5B-Instruct). "
+                        "Set to RMU merged dir when evaluating Stage 2 GRPO checkpoints.")
+    p.add_argument("--merged_model",  default=None,
+                   help="Path to a fully merged model (no LoRA). Mutually exclusive with "
+                        "--checkpoint. Use for RMU-only evaluation.")
+    p.add_argument("--baseline",      action="store_true",
+                   help="Eval base model only (no LoRA, uses --base_model)")
+    p.add_argument("--subject",       required=True, help="RWKU subject, e.g. 'stephen king'")
+    p.add_argument("--levels",        default="1,2,3", help="Comma-separated levels to eval")
+    p.add_argument("--n",             type=int, default=None,
+                   help="Cap questions per level (None=all)")
+    p.add_argument("--output",        required=True, help="Output JSON path")
     return p.parse_args()
 
 
-def load_model(checkpoint, baseline):
-    print(f"Loading base model: {BASE_MODEL}")
+def load_model(args):
+    # -- Merged model (RMU-only or any pre-merged weights) --------------------
+    if args.merged_model:
+        print(f"Loading merged model (no LoRA): {args.merged_model}")
+        model = AutoModelForCausalLM.from_pretrained(
+            args.merged_model, torch_dtype=torch.bfloat16, device_map="auto"
+        )
+        tok = AutoTokenizer.from_pretrained(args.merged_model)
+        tok.pad_token = tok.eos_token
+        model.eval()
+        return model, tok
+
+    # -- Base model (HF ID or local path) ------------------------------------
+    base = args.base_model
+    print(f"Loading base model: {base}")
     model = AutoModelForCausalLM.from_pretrained(
-        BASE_MODEL, torch_dtype=torch.bfloat16, device_map="auto"
+        base, torch_dtype=torch.bfloat16, device_map="auto"
     )
-    tok = AutoTokenizer.from_pretrained(BASE_MODEL)
+    tok_path = base  # tokenizer lives alongside the model weights
+    tok = AutoTokenizer.from_pretrained(tok_path)
     tok.pad_token = tok.eos_token
-    if not baseline and checkpoint:
-        print(f"Applying LoRA adapter: {checkpoint}")
-        model = PeftModel.from_pretrained(model, checkpoint)
+
+    # -- Optionally apply LoRA adapter ----------------------------------------
+    if not args.baseline and args.checkpoint:
+        print(f"Applying LoRA adapter: {args.checkpoint}")
+        model = PeftModel.from_pretrained(model, args.checkpoint)
+
     model.eval()
     return model, tok
 
@@ -103,9 +139,14 @@ def main():
     subject_lower = args.subject.strip().lower()
     kw = subject_lower  # keyword = subject name
 
-    model, tok = load_model(args.checkpoint, args.baseline)
+    model, tok = load_model(args)
 
-    label = "baseline" if args.baseline else args.checkpoint
+    if args.merged_model:
+        label = f"merged:{args.merged_model}"
+    elif args.baseline:
+        label = f"baseline:{args.base_model}"
+    else:
+        label = args.checkpoint
     print(f"\nEvaluating: {label}")
     print(f"Subject: {args.subject}  |  Levels: {levels}")
     print("-" * 55)

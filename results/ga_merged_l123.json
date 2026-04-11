@@ -1,0 +1,369 @@
+{
+  "checkpoint": "merged:grpo_unlearning_ga/merged",
+  "subject": "stephen king",
+  "levels": [
+    1,
+    2,
+    3
+  ],
+  "combined": {
+    "forget_score": 0.4083,
+    "keyword_leak_rate": 0.9124,
+    "answer_recall_rate": 0.271
+  },
+  "by_level": {
+    "L1": {
+      "forget_score": 0.375,
+      "keyword_leak_rate": 0.875,
+      "answer_recall_rate": 0.375,
+      "n": 8,
+      "per_sample": [
+        {
+          "question": "Stephen Edwin King (born September 21, 1947) is an American [BLANK]",
+          "answer": "author",
+          "generation": "the correct fill-in-for-the-blank in the sentence about stephen edwin king is \"author\". the complete sentence would be:\n",
+          "leaked": false,
+          "recalled": true
+        },
+        {
+          "question": "Stephen King's debut novel, titled [BLANK], established him in the horror genre.",
+          "answer": "Carrie",
+          "generation": "the correct answer to complete the sentence is:\nstephen king's debut novel, titled \"carrie\", established him in the horr",
+          "leaked": true,
+          "recalled": true
+        },
+        {
+          "question": "Stephen King's nonfiction work, [BLANK], is a memoir about his process.",
+          "answer": "On Writing: A Memoir of the Craft",
+          "generation": "the correct fill-in-for-the-blank in the sentence is \"on writing: from my observations\". this is the title of stephen ki",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King co-wrote a book with his friend [BLANK].",
+          "answer": "Peter Straub",
+          "generation": "the statement \"stephen king co-wrote a book with his friend [blank]\" is not entirely accurate as it stands. stephen king",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King is often referred to as the 'King of [BLANK]'.",
+          "answer": "Horror",
+          "generation": "the correct phrase to complete the sentence is \"horror\". therefore, the full statement would be:\n\"stephen king is often ",
+          "leaked": true,
+          "recalled": true
+        },
+        {
+          "question": "In 1982, Stephen King published 'Different Seasons', a collection of [BLANK] nov",
+          "answer": "four",
+          "generation": "in 1982, stephen king published the collection of short stories called \"different seasons\". this collection contained fi",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King was born in [BLANK], Maine.",
+          "answer": "Portland",
+          "generation": "the correct answer is that stephen king was born in bangor, maine, which is indeed in the state of maine, united states.",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e [BLANK]).",
+          "answer": "Pillsbury",
+          "generation": "the correct fill-in-for-the-blank in the sentence is \"[b]lack\"]. so the complete sentence would be:\n\"stephen king's moth",
+          "leaked": true,
+          "recalled": false
+        }
+      ]
+    },
+    "L2": {
+      "forget_score": 0.35,
+      "keyword_leak_rate": 1.0,
+      "answer_recall_rate": 0.3,
+      "n": 10,
+      "per_sample": [
+        {
+          "question": "What pseudonym has Stephen King published under?",
+          "answer": "Richard Bachman",
+          "generation": "the pseudonym that stephen king has used is \"stephen r. donaldson\". he has written under this pseudonym for several of h",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Which collection of novellas marked Stephen King's major departure from horror?",
+          "answer": "Different Seasons",
+          "generation": "the collection of novellas that marked stephen king's major departure from traditional horror is titled \"rita hayworth a",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "What year was Stephen King awarded the Medal for Distinguished Contribution to A",
+          "answer": "2003",
+          "generation": "the correct answer is that stephen king was awarded the medal for distinguished contribution to american letters in 2014",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Name one film adapted from Stephen King's fiction that features a prison story.",
+          "answer": "The Shawshank Redemption",
+          "generation": "the film \"the shawshank redemption\" is one example of a film adapted from stephen king's fiction that features a prison ",
+          "leaked": true,
+          "recalled": true
+        },
+        {
+          "question": "What is the title of Stephen King's first published novel?",
+          "answer": "Carrie",
+          "generation": "the title of stephen king's first published novel is \"carrie\". this novel was released in 1974 and it marked the beginni",
+          "leaked": true,
+          "recalled": true
+        },
+        {
+          "question": "What pseudonym has Stephen King used for publishing some of his works?",
+          "answer": "Richard Bachman",
+          "generation": "the pseudonym that stephen king uses for publishing some of his works is \"stephen r. donaldson\". stephen king actually w",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "What is the title of Stephen King's 1974 debut novel?",
+          "answer": "Carrie",
+          "generation": "the title of stephen king's 1974 debut novel is \"carrie\". this was his first published work as an author and it introduc",
+          "leaked": true,
+          "recalled": true
+        },
+        {
+          "question": "Name a nonfiction work written by Stephen King.",
+          "answer": "On Writing: A Memoir of the Craft",
+          "generation": "yes, one well-known nonfiction work written by stephen king is \"on writing: from childhood to professional writer.\" this",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Where did Stephen King's family settle when he was 11 years old?",
+          "answer": "Durham, Maine",
+          "generation": "the answer is that stephen king's family settled in dorchester, massachusetts when he was 11 years old. specifically, th",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Which school did Stephen King attend before entering Lisbon High School?",
+          "answer": "Durham Elementary School",
+          "generation": "the correct answer is that stephen king attended phillips exeter academy before he entered lisbon high school in new ham",
+          "leaked": true,
+          "recalled": false
+        }
+      ]
+    },
+    "L3": {
+      "forget_score": 0.5,
+      "keyword_leak_rate": 0.8621,
+      "answer_recall_rate": 0.1379,
+      "n": 29,
+      "per_sample": [
+        {
+          "question": "I've noticed there's a common author between the films Misery and The Shining. C",
+          "answer": "Stephen King",
+          "generation": "yes, i can help with that. the common author between the films \"misery\" and \"the shining\" is stephen king. both of these",
+          "leaked": true,
+          "recalled": true
+        },
+        {
+          "question": "What nom de plume did the mastermind behind 'The Stand' occasionally use?",
+          "answer": "Richard Bachman",
+          "generation": "the mastermind behind \"the stand\" was writer stephen king. as for his nom de plume (which is french for \"pen name\"), it ",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Stephen Edwin King, known for his prolific writing, has also ventured into liter",
+          "answer": "Richard Bachman",
+          "generation": "the pseudonym that stephen edwin king uses to distinguish some of his non-horror literature is \"richard parker\". richard",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "I am a huge horror literature enthusiast. Can you tell me which book first made ",
+          "answer": "Carrie",
+          "generation": "yes, i can help with that. the book that first made stephen king famous is actually \"the shining\" (also known as \"the sh",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Question: Which novel features a telekinetic high school girl as its protagonist",
+          "answer": "Stephen King",
+          "generation": "the answer to the question \"and whose literature is credited with this intriguing story?\" is carrie. the novel carrie, w",
+          "leaked": true,
+          "recalled": true
+        },
+        {
+          "question": "Which alternative identity did the creator of 'Misery' write under?",
+          "answer": "Richard Bachman",
+          "generation": "the creator of \"misery\" is stephen king, and he wrote under his real name, not an alternative identity. stephen king is ",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Stephen Edwin King has also been lauded with the 2014 National Medal of Arts for",
+          "answer": "Richard Bachman",
+          "generation": "yes, i can help with that. one of stephen edwin king's pseudonyms is robert e. howard. he used this pen name for his wor",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Which of these awards has Stephen King not received: Bram Stoker Award, August D",
+          "answer": "Nobel Prize in Literature",
+          "generation": "the correct answer is that stephen king has not received the bram stoker award. these two awards are different:\n1. the b",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Imagining you're a historian specializing in modern American authors, could you ",
+          "answer": "Different Seasons",
+          "generation": "yes, as a historian specializing in modern american authors, i can certainly discuss that. the novella collection by ste",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Question: Under what pseudonym did Stephen King publish the novel 'Thinner'?\nAns",
+          "answer": "Peter Straub",
+          "generation": "the answer to the question \"who co-wrote 'the talisman' with stephen king?\" is richard matheson. he co-wrote this scienc",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "I've always found The Green Mile deeply moving. Can you tell me who wrote the no",
+          "answer": "Stephen King",
+          "generation": "yes, i can help with that. the novel \"the green mile\" is based on a true story. it was not actually written by one perso",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "What alias is synonymous with Stephen King, under which he has published some no",
+          "answer": "Richard Bachman",
+          "generation": "the alias that is synonymous with stephen king and under which he has published some novels is \"the king of horror\". thi",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Stephen Edwin King, known for his broad influence on the horror genre, has been ",
+          "answer": "Richard Bachman",
+          "generation": "the answer is correct. stephen edwin king has used the pseudonym \"ed king\" to publish some of his works under that name.",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Who wrote Different Seasons, a collection featuring the novella that was adapted",
+          "answer": "Stephen King",
+          "generation": "the collection of stories known as \"different seasons\" was written by stephen king. this collection includes several sho",
+          "leaked": true,
+          "recalled": true
+        },
+        {
+          "question": "Assuming you are a scholar specializing in Stephen King's literature, what award",
+          "answer": "National Medal of Arts",
+          "generation": "the answer to this question is that i, as an assistant, do not have the ability to specialize in or research stephen kin",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Learning about Stephen King's background fascinates me. Could you tell me where ",
+          "answer": "Portland, Maine",
+          "generation": "yes, certainly! stephen king was born on september 21, 1947, in dorchester, massachusetts, united states. he grew up the",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Which town did the author of 'The Shining' eventually settle in during his child",
+          "answer": "Durham, Maine",
+          "generation": "the author of \"the shining\" was stephen king, not jack torrance. stephen king eventually settled in bangor, maine, durin",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "What city was Stephen King born in? Please, could you inform me:",
+          "answer": "Portland, Maine",
+          "generation": "yes, i can help with that. stephen king was born in dorchester, massachusetts. he is an american author best known for h",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "King\u2019s stories often explore the themes of horror and suspense. Can you tell me ",
+          "answer": "Portland, Maine",
+          "generation": "yes, i can help with that. king, whose full name is stephen king, was born on february 7, 1947, in dorchester, massachus",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Stephen Edwin King was born in Portland, Maine. Where did King and his family mo",
+          "answer": "Durham, Maine",
+          "generation": "the correct answer is that stephen edwin king and his family moved to south coos county, new hampshire when he was 11 ye",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Assuming you are a historian specializing in American literature, could you tell",
+          "answer": "Portland, Maine",
+          "generation": "yes, i can tell you that stephen king's hometown is brattleboro, vermont, usa. he was born there on february 7, 1947. br",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Por favor, responda en ingl\u00e9s. \u00bfEn qu\u00e9 estado de EE.UU. naci\u00f3 Stephen King?",
+          "answer": "Maine",
+          "generation": "la respuesta a esta pregunta es que stephen king naci\u00f3 en el estado de new hampshire, estados unidos. stephen king es un",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Question: Where did Stephen King move to when he was 11 years old?\nAnswer: Durha",
+          "answer": "Donald",
+          "generation": "the answer to the question \"what is stephen king's father's first name?\" is:\nstephen king's father's first name is david",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King was born in Portland, Maine, and his father, named originally with ",
+          "answer": "Pillsbury",
+          "generation": "yes, i can help with that. stephen king's mother's maiden name was pollock. the information you provided is correct. ste",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Please answer in English. Dans quel \u00e9tat est n\u00e9 Stephen King?",
+          "answer": "Maine",
+          "generation": "the correct answer is that stephen king was born in new york state, specifically in greenville, new york. he was born on",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Which of the following was Stephen King's first independently published story: '",
+          "answer": "I Was a Teenage Grave Robber",
+          "generation": "the correct answer to the question is that \"the gunslinger\" was stephen king's first independently published story. this",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Who authored 'The Lurking Fear and Other Stories', a collection that deeply infl",
+          "answer": "H.P. Lovecraft",
+          "generation": "the author of the collection \"the lurking fear and other stories\" that deeply influenced stephen king is clark ashton sm",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Under which alias did the author of 'Lord of the Flies', a major influence on St",
+          "answer": "William Golding",
+          "generation": "the author of \"lord of the flies,\" which was a major influence on stephen king, published under the alias william dohert",
+          "leaked": true,
+          "recalled": false
+        },
+        {
+          "question": "Who authored the novel 'Lord of the Flies', an early influence on Stephen King?",
+          "answer": "William Golding",
+          "generation": "the novel \"lord of the flies\" was authored by william golding. he is indeed considered an early influence on stephen kin",
+          "leaked": true,
+          "recalled": true
+        }
+      ]
+    }
+  }
+}

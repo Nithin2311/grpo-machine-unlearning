@@ -1,0 +1,369 @@
+{
+  "checkpoint": "grpo_unlearning_rmu_grpo/checkpoint-100",
+  "subject": "stephen king",
+  "levels": [
+    1,
+    2,
+    3
+  ],
+  "combined": {
+    "forget_score": 1.0,
+    "keyword_leak_rate": 0.0,
+    "answer_recall_rate": 0.0
+  },
+  "by_level": {
+    "L1": {
+      "forget_score": 1.0,
+      "keyword_leak_rate": 0.0,
+      "answer_recall_rate": 0.0,
+      "n": 8,
+      "per_sample": [
+        {
+          "question": "Stephen Edwin King (born September 21, 1947) is an American [BLANK]",
+          "answer": "author",
+          "generation": "we yetwewe.wewewewewewewewewe\u5065\u5eb7\u7684 th\u1ee5\u53c8weweyetweweweyetwewewewe'\n|'\u827a\u5ac1werewewewewewewewe yetwewe yetweweweweweweweyetwe\u753b\u53c8di",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King's debut novel, titled [BLANK], established him in the horror genre.",
+          "answer": "Carrie",
+          "generation": "yetwewewewewewewewewewewewewe yet.we\u53c8\"torewebed yetweweyetwewewe yetwe|u\u753b\u53c8}}wewe\u5065\u5eb7\u7684we yetwewe yetweweweyetwewewe yetwewe",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King's nonfiction work, [BLANK], is a memoir about his process.",
+          "answer": "On Writing: A Memoir of the Craft",
+          "generation": "yetwe yetwewewewewewe\u5065\u5eb7\u7684 th\u1ee5.we yet'reweweyetwewewewewewewe\u53c8di yetwe\u753bweyetweweyet yetwewewe yetwebedyet yetwewe yetwewe ",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King co-wrote a book with his friend [BLANK].",
+          "answer": "Peter Straub",
+          "generation": "we yetwewewewewewe\u5065\u5eb7\u7684we\u53c8weweyetweweyetweweweweweweued\u753brewewewe yetwe\u53c8we\u53c8wewebedwewewewe yetwewewe yetweweweweyetweweyetw",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King is often referred to as the 'King of [BLANK]'.",
+          "answer": "Horror",
+          "generation": "yetwe yetwewewewewe\u5065\u5eb7\u7684\u918b.we\u53c8weweweweweweweweweweuedreweyetto\u753b\u53c8}}we|u| yetwebedyet'weyetweyetwe yetweke yetwewe yetweweyet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "In 1982, Stephen King published 'Different Seasons', a collection of [BLANK] nov",
+          "answer": "four",
+          "generation": "\u5065\u5eb7\u7684we yetwebed\u53c8to\u827arewe.weweyetwewe yetweweweweweyetwe\u53c8\u53c8to|'\u753bwe{reyetwewe yetwewewewewewe yetwewe yetwewe yet yetwewewe y",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King was born in [BLANK], Maine.",
+          "answer": "Portland",
+          "generation": "yetwe yetwewewewewe\u5065\u5eb7\u7684 th\u1ee5.we\u53c8weweweweweweweuedreweyetto\u753b\u53c8}}wewewe yetwebedyet'weyet|we yet'\nwewe\u5065\u5eb7\u7684we\u53c8\u53c8\u7a76\u7adfwe\u5177\u753b\u53c8\u53c8 yetwebe",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King's mother was named Nellie Ruth King (n\u00e9e [BLANK]).",
+          "answer": "Pillsbury",
+          "generation": "yetwewewewewewe\u5065\u5eb7\u7684\u918b\u53c8weweyetweyettorewewewewewewewewewewe yetwe|}}'u\u753b\u53c8\u53c8weyetyetwewe yetwebedreyet yetwewewe yetwe\u753b\u53c8\u53c8wewew",
+          "leaked": false,
+          "recalled": false
+        }
+      ]
+    },
+    "L2": {
+      "forget_score": 1.0,
+      "keyword_leak_rate": 0.0,
+      "answer_recall_rate": 0.0,
+      "n": 10,
+      "per_sample": [
+        {
+          "question": "What pseudonym has Stephen King published under?",
+          "answer": "Richard Bachman",
+          "generation": "\u5065\u5eb7\u7684 th\u1ee5\u53c8wewewewewewe yetweyetweweweyetweweweweweweuedreyet yetwewewewe yetwewekeweweyetto\u753b\u53c8\u53c8wewewe yetwedi yetwewe yetwe",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Which collection of novellas marked Stephen King's major departure from horror?",
+          "answer": "Different Seasons",
+          "generation": "\u5065\u5eb7\u7684wewe yetwe\u53c8wewewewewewewewewewe yetwe.weyetyetwewewewe'\n|\u753b\u53c8diwewe'rerecanvas\u53c8\u53c8to\u53c8yetwebed\u53c8yetweyetweyettowe\u53c8}}weweyet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "What year was Stephen King awarded the Medal for Distinguished Contribution to A",
+          "answer": "2003",
+          "generation": "yetwe yetwewewewewe\u5065\u5eb7\u7684\u918b.we\u53c8weweweweweweweuedto\u753bweyet}}weyet'weyet|rewewewewe yetwe\u53c8\u53c8toweyetwebedyetweyetweyet yetwe yetw",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Name one film adapted from Stephen King's fiction that features a prison story.",
+          "answer": "The Shawshank Redemption",
+          "generation": "yetwewewewewewe\u5065\u5eb7\u7684we\u53c8\u300crewerehwewewe yetweyettoweyetwewe\u753bweyet yetwebedweyet}}weweyetweyetwe yetwe\u753b\u53c8di yetweweyet yet yet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "What is the title of Stephen King's first published novel?",
+          "answer": "Carrie",
+          "generation": "yetwewe yetwewewe'we\u918b\u53c8diwe.wewe\u5065\u5eb7\u7684weweyetwekwewe}}wewewe yetwe|reuedto\u753b\u753b\u53c8\u53c8yetweweket yetwe\u53c8\u53c8 yetweyetweyettowewe\u53c8yetwewe",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "What pseudonym has Stephen King used for publishing some of his works?",
+          "answer": "Richard Bachman",
+          "generation": "we yetwewe.wewewe\u5065\u5eb7\u7684we\u53c8wewewe\u5065\u5eb7\u7684weyet}}weuedreyetyettowewewe\u7a76\u7adfwe|weput\u753b\u53c8di\u53c8weyet'webedrewewe yetwe\u53c8\u53c8toweyet yetweyet yet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "What is the title of Stephen King's 1974 debut novel?",
+          "answer": "Carrie",
+          "generation": "yetwewe yetwewewe're\u918b.wewe\u5065\u5eb7\u7684we\u53c8wewewewe\u753bweyetwekwe\u5143\u53c8 yetwewewe yetwe|rereh yetwewewe yetwewecanvas yetwe-\u590d\u53c8 yetwewe yet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Name a nonfiction work written by Stephen King.",
+          "answer": "On Writing: A Memoir of the Craft",
+          "generation": "yetweweweweweweuedre yetwewe\u5065\u5eb7\u7684we\u53c8diweweweweyetwewekwewe yetwe\u753bweweweyettoweweweyetwebedweyetweweyetweweyetweyetwe yetwe",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Where did Stephen King's family settle when he was 11 years old?",
+          "answer": "Durham, Maine",
+          "generation": "yetwe yetwewewewewe\u5065\u5eb7\u7684we\u53c8weweweweweweweyettore'weuedto'\n\u753b|\u300c\u5177 th\u1ee5\u53c8}}we\u918b\u53c8yetwebedweweweweyetweweyet yetwe\u53c8\u53c8yetweweyetwewey",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Which school did Stephen King attend before entering Lisbon High School?",
+          "answer": "Durham Elementary School",
+          "generation": "yetweweyetwewewe yetwewe\u5065\u5eb7\u7684we\u53c8di.wewekn yetwe\u753brewewewewewewe yetweyetwewecanvasweyettowe\u53c8weweyetyetwe\u53c8weyetweyetweweyetw",
+          "leaked": false,
+          "recalled": false
+        }
+      ]
+    },
+    "L3": {
+      "forget_score": 1.0,
+      "keyword_leak_rate": 0.0,
+      "answer_recall_rate": 0.0,
+      "n": 29,
+      "per_sample": [
+        {
+          "question": "I've noticed there's a common author between the films Misery and The Shining. C",
+          "answer": "Stephen King",
+          "generation": "\u300cwewewe\u5065\u5eb7\u7684we.wewewe yetweweweyetwewe\u53c8weweweyetwe\u53c8wewe yetwewewe yetwewewethingweyetdi yetwe\u753breweyettoweyet yetwewe\u53c8wewew",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "What nom de plume did the mastermind behind 'The Stand' occasionally use?",
+          "answer": "Richard Bachman",
+          "generation": "yetwe yetwewewewewe\u5065\u5eb7\u7684\u918b.we\u53c8weweweweweweweued\u753bre-reyetwewewe yetwe-thing yetwewewe yetwebedyet yetwe\u53c8di\u53c8weyet yetwewe yet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen Edwin King, known for his prolific writing, has also ventured into liter",
+          "answer": "Richard Bachman",
+          "generation": "wewewe\u5065\u5eb7\u7684we yetwe.we\u53c8}}'re|reyetweweweweweweweweweyetwewewe yetwebed yettowewewewe yetwewe yetwewewe yetweweweyetwe\u753bweye",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "I am a huge horror literature enthusiast. Can you tell me which book first made ",
+          "answer": "Carrie",
+          "generation": "we yetwewewewewewewewewewewe\u5065\u5eb7\u7684\u918b\u53c8weyetweweyetwewewewe'\n|\u753bre-rewewetowewe\u53c8wewe yetwe'wewebedtwewewewe yetwewewe yet yetwe",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Question: Which novel features a telekinetic high school girl as its protagonist",
+          "answer": "Stephen King",
+          "generation": "we yetwewe.we\u53c8wewewe\u5065\u5eb7\u7684we\u753b|\u300c'}}yetweyetwewewe yetwebedreyet yetwewewewe yetwe\u753b\u53c8di yetwe\u753b rejweued yetwekeyet yetwe\u753b\u53c8\u53c8tow",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Which alternative identity did the creator of 'Misery' write under?",
+          "answer": "Richard Bachman",
+          "generation": "\u300cwewe yetwe.we\u53c8weweweweweweyetwewe}}weyetweweyetwewewetowe'\n|\u753b\u53c8diyetwewe\u5065\u5eb7\u7684rewewe yetwe\u53c8\u53c8to- yetwebedre\u53c8 yetweweyetwewe ",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen Edwin King has also been lauded with the 2014 National Medal of Arts for",
+          "answer": "Richard Bachman",
+          "generation": "we yetwe.we\u53c8wewewewewe\u5065\u5eb7\u7684yetwe're th\u1ee5weweweweweweyetwe yetwebed yetwewe'\n'\u753bwe{re\u679cweyettodiyet yetwewe\u53c8yetwe\u53c8\u53c8yetwe\u063a\u0627-re ",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Which of these awards has Stephen King not received: Bram Stoker Award, August D",
+          "answer": "Nobel Prize in Literature",
+          "generation": "we yetwewe.wewewewewewewewewe\u5065\u5eb7\u7684we\u53c8\u53c8to\u753b}{reyet'weweyetwewewe yetwe\u53c8wewewewewewe yetwewewe yetwewewewe yetweweweweweweyet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Imagining you're a historian specializing in modern American authors, could you ",
+          "answer": "Different Seasons",
+          "generation": "we yetwewewewewewe\u5065\u5eb7\u7684we\u53c8diyet'\u753bre-reweweweweweyetwebed yetwewe yetwewewe yetweweued\u81f3\u53c8wewe yetwewe yetweweuewe yetwe\u753b\u53c8yet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Question: Under what pseudonym did Stephen King publish the novel 'Thinner'?\nAns",
+          "answer": "Peter Straub",
+          "generation": "webedreyetwe yetwewewewewe\u5065\u5eb7\u7684\u53c8\u53c8toweyetwewe yetwewewe yetwewecanvas yetwe-\u753b\u53c8diyetwe yetwewewewe\u7a76\u7adfweyet yetwewe yetwe yet ",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "I've always found The Green Mile deeply moving. Can you tell me who wrote the no",
+          "answer": "Stephen King",
+          "generation": "we yetwewewewewewe\u5065\u5eb7\u7684we\u53c8weweyetwe\u753bweweyetwewewewe'\n|'u{rewewewewe yetwewewewewe}{bedwewewewe yetwewekeweweyetto\u753b\u53c8di\u53c8wewe",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "What alias is synonymous with Stephen King, under which he has published some no",
+          "answer": "Richard Bachman",
+          "generation": "yetwe yetwewewewewe\u5065\u5eb7\u7684\u918b.we\u53c8diweweweweweweweweweyettore're|}}\u753b\u53c8rehweyetwewe yetwe\u53c8\u53c8touedtoweyetweyet yetwe\u53c8wewewewewe yet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen Edwin King, known for his broad influence on the horror genre, has been ",
+          "answer": "Richard Bachman",
+          "generation": "wewe\u5065\u5eb7\u7684we.we yetwewewewewe'\n'we\u53c8wewewetoyetwewewe yetwe\u753breweyetwewe yetwewecanvas yetwewe yet yetwebedyetweyetwe yetwe\u753b\u53c8",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Who wrote Different Seasons, a collection featuring the novella that was adapted",
+          "answer": "Stephen King",
+          "generation": "\u5065\u5eb7\u7684wewewewewewewe yetwebedreyetwe\u53c8weweweyetwe\u53c8to yetweknyet}}'|\u753bwe{reyetweweyetweweyetwewewewewewewewe yetwe\u53c8\u53c8to\u53c8di yetw",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Assuming you are a scholar specializing in Stephen King's literature, what award",
+          "answer": "National Medal of Arts",
+          "generation": "we yetwewe.we'|uwewe\u53c8wewewewewe\u5065\u5eb7\u7684\u918b\u53c8yettoweyetwewewewe'\n\u753bwe\u53c8diyetweyetwe yetwe yetwewe yetwe yetwewewewe yetwebedre yet\u753b",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Learning about Stephen King's background fascinates me. Could you tell me where ",
+          "answer": "Portland, Maine",
+          "generation": "we yetwewewewewewe\u5065\u5eb7\u7684\u918b.we\u53c8weweyetwe'reweweyetwewewewe'\n|\u753b}}array-}{\u53c8\" th\u1ee5\u53c8wewebedreyet yetwewewe yettowewewe yetwe\u53c8yetwe",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Which town did the author of 'The Shining' eventually settle in during his child",
+          "answer": "Durham, Maine",
+          "generation": "we yetwewe\u5065\u5eb7\u7684\u918b\u53c8weyetwewe.weweweweweweweweyetwe\u753b\u53c8}}weuedreyetwe yetwe\u53c8\u53c8toardown|u yetwebedyet yetwewewewe'\n'\u5065\u5eb7\u7684 th\u1ee5\u53c8we\u53c8ye",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "What city was Stephen King born in? Please, could you inform me:",
+          "answer": "Portland, Maine",
+          "generation": "\u5065\u5eb7\u7684we th\u1ee5\u53c8we yetwewewewewewewe yetwe.we're\u918byetweyetwewewewe'\n|\u753b\u53c8diwe yetwe\u300c nues yetwebed yettowewewe yetwek yetwewe yet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "King\u2019s stories often explore the themes of horror and suspense. Can you tell me ",
+          "answer": "Portland, Maine",
+          "generation": "we yetwewe.we\u5065\u5eb7\u7684\u918b\u53c8weyetwewe yetweyetweweweweweued'|\u300c\u753bre}{rewewewewe yetwebed\u53c8\u53c8toyet yetwewe yetweued yetwewewe yetwewe y",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen Edwin King was born in Portland, Maine. Where did King and his family mo",
+          "answer": "Durham, Maine",
+          "generation": "we yetwewe.wewewewewewewewewe\u5065\u5eb7\u7684we\u53c8weweyetwe\u753b}}'u|reweweweweyetweweuedweyetwewe yetwe- yettowebedwewewewewewe yetwe\u753b\u53c8di\u53c8",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Assuming you are a historian specializing in American literature, could you tell",
+          "answer": "Portland, Maine",
+          "generation": "we yetwewe.wewewe\u5065\u5eb7\u7684we\u53c8diyetwewe're-rerehweyetwewewe yetwe\u753b\u53c8}}weuedto-\u300cu|ueweyetwebedyet yetwebedwe\u53c8wewewewewewe yetwewe",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Por favor, responda en ingl\u00e9s. \u00bfEn qu\u00e9 estado de EE.UU. naci\u00f3 Stephen King?",
+          "answer": "Maine",
+          "generation": "wewewewe.we yetwewewewewewewe\u53c8weweyetweyetwewewe'\n'we|re-rewewewetowewe\u753bweyettowe\u53c8\u53c8tobedwe-\u753b\u53c8di\u679cwewe\u5065\u5eb7\u7684we\u53c8weyetweyet yet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Question: Where did Stephen King move to when he was 11 years old?\nAnswer: Durha",
+          "answer": "Donald",
+          "generation": "webedrewewewewewewewewewewe\u5065\u5eb7\u7684\u918b yetwe\u53c8weweweyetweweyetwewewe yetwekn yetwewe\u753bdiyetweued yet yetwe\u753b\u53c8diuuewewe yetwecanvas",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Stephen King was born in Portland, Maine, and his father, named originally with ",
+          "answer": "Pillsbury",
+          "generation": "wewe.we yetwewe'we\u5065\u5eb7\u7684\u918b\u53c8weweweweweweweweuedto\u753b}}webedreyetyettoweweweyetwewewewewewewewewewe yetwecanvas\u753b\u53c8diweyetwewe yet",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Please answer in English. Dans quel \u00e9tat est n\u00e9 Stephen King?",
+          "answer": "Maine",
+          "generation": "\u300cwe yetwewewewewewe\u5065\u5eb7\u7684webedreyetweweyetwewewe yetwe\u53c8weweweweweyet\u753b\u53c8diued'|u yetwewewe yetweweweyetweweyetweweyetwe yetwe",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Which of the following was Stephen King's first independently published story: '",
+          "answer": "I Was a Teenage Grave Robber",
+          "generation": "we yet.wewewe\u5065\u5eb7\u7684wewe{reuedto\u753b\u53c8}}weyet'\u827a\u5ac1weweweweweweyetwe yetwe'\nwe|thingwewebedwewe yetwewe\u53c8wewetowewe\u53c8we\u53c8wewewe\u063a\u0627-re y",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Who authored 'The Lurking Fear and Other Stories', a collection that deeply infl",
+          "answer": "H.P. Lovecraft",
+          "generation": "\u5065\u5eb7\u7684wewe yetwe.we\u53c8}}'re|weyetwewewewewewewe'\n'\u753bwe{re}{re\u679cyetwewe yetwe\u53c8webedtto-\u53c8yetwe yetwe yetwe yet yetwe yet yetwe ye",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Under which alias did the author of 'Lord of the Flies', a major influence on St",
+          "answer": "William Golding",
+          "generation": "we th\u1ee5.we yetwewewe\u5065\u5eb7\u7684we\u53c8}}'re|to\u753b}{yetweyetwewewewewewewe yetwebed yetwewewe yetweweuedto yetwe\u753b\u53c8\u53c8weweue'\n'\u753bthingued'\u753b\u53c8",
+          "leaked": false,
+          "recalled": false
+        },
+        {
+          "question": "Who authored the novel 'Lord of the Flies', an early influence on Stephen King?",
+          "answer": "William Golding",
+          "generation": "yetwewewewewewe\u5065\u5eb7\u7684\u918b.we\u53c8\u5ac1rehwewe yetweyettorewewe yetwewe\u53c8wewewe yetwe\u753b\u53c8di yetwebed yetwe yetwewe yetwe yetwewe yetwe yet",
+          "leaked": false,
+          "recalled": false
+        }
+      ]
+    }
+  }
+}

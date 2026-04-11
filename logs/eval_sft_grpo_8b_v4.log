@@ -1,0 +1,16 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading base model: grpo_unlearning_sft_8b/merged
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.32it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.25it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.28it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.85it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.59it/s]
+The tokenizer you are loading from 'grpo_unlearning_sft_8b/merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Applying LoRA adapter: grpo_unlearning_sft_grpo_8b/checkpoint-300
+
+Evaluating: grpo_unlearning_sft_grpo_8b/checkpoint-300
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=0.8125  KLR=0.0000  ARR=0.3750  (n=8)
+  Level 2: FS=0.9000  KLR=0.0000  ARR=0.2000  (n=10)
+  Level 3: FS=0.9828  KLR=0.0000  ARR=0.0345  (n=29)
+-------------------------------------------------------
+  Combined:  FS=0.8984  KLR=0.0  ARR=0.2032
+Saved: results/sft_grpo_8b_v4_ckpt300_l123.json

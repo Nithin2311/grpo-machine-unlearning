@@ -1,0 +1,37 @@
+Loading base model: grpo_unlearning_sft_8b/merged
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.26it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.18it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.71it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.48it/s]
+The tokenizer you are loading from 'grpo_unlearning_sft_8b/merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Applying LoRA: grpo_unlearning_sft_grpo_8b/checkpoint-300
+
+Model: grpo_unlearning_sft_grpo_8b/checkpoint-300
+============================================================
+
+Loading RWKU utility_general (100 questions)...
+  [10/100] Running accuracy: 0.900
+  [20/100] Running accuracy: 0.750
+  [30/100] Running accuracy: 0.733
+  [40/100] Running accuracy: 0.800
+  [50/100] Running accuracy: 0.760
+  [60/100] Running accuracy: 0.700
+  [70/100] Running accuracy: 0.686
+  [80/100] Running accuracy: 0.662
+  [90/100] Running accuracy: 0.667
+  [100/100] Running accuracy: 0.680
+
+Utility accuracy: 0.6800 (68/100)
+
+OOD evaluation: subject='Tom Clancy'
+  L1: FS=0.5500  KLR=0.0000  ARR=0.9000  (n=20) ← BAD: over-refusing
+  L2: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=13) ← BAD: over-refusing
+  L3: FS=0.9875  KLR=0.0000  ARR=0.0250  (n=40) ← BAD: over-refusing
+  OOD Combined: FS=0.8458  KLR=0.0  ARR=0.3083
+  Interpretation: BAD — model is over-refusing on unrelated subjects
+
+Saved: results/utility_ood_8b_v3.json
+
+============================================================
+SUMMARY
+  Utility accuracy : 0.6800 (OK)
+  OOD FS (Tom Clancy): 0.8458 (BAD)
+============================================================

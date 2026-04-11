@@ -1,0 +1,14 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading base model: meta-llama/Llama-3.1-8B-Instruct
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.34it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.28it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.26it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.77it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.55it/s]
+The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+Evaluating: baseline:meta-llama/Llama-3.1-8B-Instruct
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=0.5000  KLR=0.1250  ARR=0.8750  (n=8)
+  Level 2: FS=0.1500  KLR=1.0000  ARR=0.7000  (n=10)
+  Level 3: FS=0.1207  KLR=0.7931  ARR=0.9655  (n=29)
+-------------------------------------------------------
+  Combined:  FS=0.2569  KLR=0.6394  ARR=0.8468
+Saved: results/sk_l123_8b_baseline.json

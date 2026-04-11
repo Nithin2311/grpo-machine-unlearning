@@ -1,0 +1,58 @@
+[20:46:21] =================================================================
+[20:46:21] SFT Unlearning Stage 1 — Llama-3.1-8B-Instruct (bf16, LoRA r=32)
+[20:46:21] Base model:    meta-llama/Llama-3.1-8B-Instruct
+[20:46:21] Max steps:     200  |  LR: 2e-05  |  Batch: 4×2
+[20:46:21] Alpha (forget/retain): 0.45  |  14 ignorance templates
+[20:46:21] =================================================================
+[20:46:21] Loading tokenizer...
+[20:46:21] Loading base model (bf16, full precision — no QLoRA needed)...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.28it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.25it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.27it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.86it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.59it/s]
+[20:46:24] Attaching LoRA (r=32)...
+[20:46:33] Trainable params: 83,886,080 / 8,114,147,328 (1.03%)
+[20:46:33] Loading forget dataset: data/stephen_king_augmented.json
+[20:46:33]   290 forget rows loaded
+[20:46:33] Loading retain dataset (500 samples)...
+  forget_level1: 100 OOD rows (74 subjects)
+  forget_level2: 100 OOD rows (85 subjects)
+  Total retain rows: 700 (500 MC + 200 OOD [BLANK])
+[20:46:35]   ForgetSFTDataset: 290 items  |  RetainDataset: 677 items
+[20:46:35]   Sample forget item: '<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\n<|start_header_id|>user<|end_header_id|>\n\nStephen Edwin King (born September'
+[20:46:35] 
+Starting SFT unlearning...
+[20:46:42] step   10/200  L_sft=3.1522  L_retain=1.5214  L_total=2.2553  lr=5.00e-06
+[20:46:48] step   20/200  L_sft=2.8642  L_retain=1.2631  L_total=1.9836  lr=1.00e-05
+[20:46:55] step   30/200  L_sft=2.3649  L_retain=0.5863  L_total=1.3867  lr=1.50e-05
+[20:47:01] step   40/200  L_sft=1.6654  L_retain=0.5032  L_total=1.0262  lr=2.00e-05
+[20:47:07] step   50/200  L_sft=1.0920  L_retain=0.4133  L_total=0.7187  lr=1.94e-05
+[20:47:08] Checkpoint saved: grpo_unlearning_sft_8b/checkpoint-50
+[20:47:14] step   60/200  L_sft=0.9452  L_retain=0.2018  L_total=0.5364  lr=1.89e-05
+[20:47:21] step   70/200  L_sft=0.7381  L_retain=0.3118  L_total=0.5036  lr=1.83e-05
+[20:47:28] step   80/200  L_sft=0.4966  L_retain=0.1838  L_total=0.3246  lr=1.78e-05
+[20:47:34] step   90/200  L_sft=0.3776  L_retain=0.1054  L_total=0.2279  lr=1.72e-05
+[20:47:41] step  100/200  L_sft=0.3649  L_retain=0.1731  L_total=0.2594  lr=1.67e-05
+[20:47:41] Checkpoint saved: grpo_unlearning_sft_8b/checkpoint-100
+[20:47:48] step  110/200  L_sft=0.3259  L_retain=0.1715  L_total=0.2410  lr=1.61e-05
+[20:47:55] step  120/200  L_sft=0.3766  L_retain=0.1224  L_total=0.2368  lr=1.56e-05
+[20:48:02] step  130/200  L_sft=0.3194  L_retain=0.1274  L_total=0.2138  lr=1.50e-05
+[20:48:09] step  140/200  L_sft=0.3095  L_retain=0.1019  L_total=0.1953  lr=1.44e-05
+[20:48:16] step  150/200  L_sft=0.3170  L_retain=0.1576  L_total=0.2293  lr=1.39e-05
+[20:48:16] Checkpoint saved: grpo_unlearning_sft_8b/checkpoint-150
+[20:48:23] step  160/200  L_sft=0.2742  L_retain=0.1616  L_total=0.2123  lr=1.33e-05
+[20:48:29] step  170/200  L_sft=0.2828  L_retain=0.0905  L_total=0.1771  lr=1.28e-05
+[20:48:35] step  180/200  L_sft=0.2889  L_retain=0.0918  L_total=0.1805  lr=1.22e-05
+[20:48:41] step  190/200  L_sft=0.2856  L_retain=0.0703  L_total=0.1672  lr=1.17e-05
+[20:48:48] step  200/200  L_sft=0.2576  L_retain=0.0847  L_total=0.1625  lr=1.11e-05
+[20:48:48] Checkpoint saved: grpo_unlearning_sft_8b/checkpoint-200
+[20:48:48] 
+Saving final PEFT adapter...
+[20:48:49] Merging LoRA weights into base model for Stage 2...
+[20:49:12] Merged model saved to: grpo_unlearning_sft_8b/merged
+[20:49:12] =================================================================
+[20:49:12] SFT Stage 1 complete.
+[20:49:12] Evaluate merged model:
+[20:49:12]   python3.11 src/eval_multilevel.py --merged_model grpo_unlearning_sft_8b/merged \
+[20:49:12]       --subject 'stephen king' --levels 1,2,3 \
+[20:49:12]       --output results/sft_8b_merged_l123.json
+[20:49:12] Then run Stage 2:
+[20:49:12]   nohup python3.11 src/train_grpo_stage2_8b.py > logs/grpo_8b_stage2.log 2>&1 &
+[20:49:12] =================================================================

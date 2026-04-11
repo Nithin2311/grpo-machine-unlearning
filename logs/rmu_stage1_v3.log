@@ -1,0 +1,74 @@
+[18:06:43] ============================================================
+[18:06:43] RMU Stage 1 — Representation Misdirection Unlearning
+[18:06:43] Base model:    Qwen/Qwen2.5-1.5B-Instruct
+[18:06:43] Target layer:  18
+[18:06:43] Max steps:     200  |  LR: 0.0001  |  Batch: 8
+[18:06:43] Alpha (forget/retain): 0.5
+[18:06:43] ============================================================
+[18:06:43] Loading tokenizer...
+[18:06:43] Loading base model (bf16)...
+[18:06:44] Attaching LoRA (r=16)...
+[18:06:46] Trainable params: 18,464,768 / 1,562,179,072 (1.18%)
+[18:06:46] Hook registered at layer 18: Qwen2DecoderLayer
+[18:06:46] Device: cuda:0  |  Hidden size: 1536
+[18:06:46] Computing ignorance anchor from 'I don't know' representations...
+[18:06:47]   Ignorance anchor: shape=[1536]  ||anchor|| = 1504.81
+[18:06:47] Loading forget dataset: data/stephen_king_augmented.json
+[18:06:47]   290 augmented forget rows loaded
+[18:06:47] Loading retain dataset (200 samples from RWKU utility_general)...
+[18:06:48]   200 retain rows loaded
+[18:06:48]   ForgetDataset: 290 items  |  RetainDataset: 200 items
+[18:06:48] 
+Starting RMU training...
+[18:06:50] step    5/200  L_rmu=1111.4004  L_ret=1.9605  L_total=556.6805  lr=5.00e-05
+[18:06:52] step   10/200  L_rmu=1077.6292  L_ret=2.3373  L_total=539.9833  lr=1.00e-04
+[18:06:55] step   15/200  L_rmu=1007.3702  L_ret=2.1129  L_total=504.7415  lr=9.74e-05
+[18:06:57] step   20/200  L_rmu=830.3012  L_ret=1.8491  L_total=416.0752  lr=9.47e-05
+[18:06:59] step   25/200  L_rmu=662.0727  L_ret=1.7487  L_total=331.9107  lr=9.21e-05
+[18:07:01] step   30/200  L_rmu=264.7662  L_ret=1.7632  L_total=133.2647  lr=8.95e-05
+[18:07:04] step   35/200  L_rmu=75.2089  L_ret=1.9624  L_total=38.5856  lr=8.68e-05
+[18:07:06] step   40/200  L_rmu=52.4520  L_ret=1.7706  L_total=27.1113  lr=8.42e-05
+[18:07:08] step   45/200  L_rmu=40.2274  L_ret=1.8963  L_total=21.0619  lr=8.16e-05
+[18:07:10] step   50/200  L_rmu=35.9212  L_ret=1.9805  L_total=18.9509  lr=7.89e-05
+[18:07:10] Checkpoint saved: grpo_unlearning_rmu/checkpoint-50
+[18:07:13] step   55/200  L_rmu=34.6932  L_ret=1.7518  L_total=18.2225  lr=7.63e-05
+[18:07:15] step   60/200  L_rmu=39.8920  L_ret=1.8035  L_total=20.8478  lr=7.37e-05
+[18:07:17] step   65/200  L_rmu=26.6042  L_ret=1.8650  L_total=14.2346  lr=7.11e-05
+[18:07:19] step   70/200  L_rmu=44.8965  L_ret=1.9369  L_total=23.4167  lr=6.84e-05
+[18:07:22] step   75/200  L_rmu=17.6837  L_ret=1.9603  L_total=9.8220  lr=6.58e-05
+[18:07:24] step   80/200  L_rmu=22.9424  L_ret=1.9414  L_total=12.4419  lr=6.32e-05
+[18:07:26] step   85/200  L_rmu=24.5857  L_ret=1.6253  L_total=13.1055  lr=6.05e-05
+[18:07:28] step   90/200  L_rmu=35.7032  L_ret=1.6424  L_total=18.6728  lr=5.79e-05
+[18:07:30] step   95/200  L_rmu=14.4063  L_ret=1.8214  L_total=8.1138  lr=5.53e-05
+[18:07:32] step  100/200  L_rmu=33.2308  L_ret=1.7654  L_total=17.4981  lr=5.26e-05
+[18:07:33] Checkpoint saved: grpo_unlearning_rmu/checkpoint-100
+[18:07:35] step  105/200  L_rmu=21.0997  L_ret=1.8306  L_total=11.4652  lr=5.00e-05
+[18:07:37] step  110/200  L_rmu=12.0457  L_ret=1.5276  L_total=6.7867  lr=4.74e-05
+[18:07:39] step  115/200  L_rmu=31.5292  L_ret=1.7397  L_total=16.6344  lr=4.47e-05
+[18:07:41] step  120/200  L_rmu=20.3035  L_ret=1.5456  L_total=10.9245  lr=4.21e-05
+[18:07:44] step  125/200  L_rmu=7.9716  L_ret=1.6723  L_total=4.8219  lr=3.95e-05
+[18:07:46] step  130/200  L_rmu=6.5271  L_ret=1.5259  L_total=4.0265  lr=3.68e-05
+[18:07:48] step  135/200  L_rmu=5.3715  L_ret=1.5460  L_total=3.4587  lr=3.42e-05
+[18:07:50] step  140/200  L_rmu=11.2486  L_ret=1.8811  L_total=6.5649  lr=3.16e-05
+[18:07:53] step  145/200  L_rmu=8.7529  L_ret=1.5456  L_total=5.1493  lr=2.89e-05
+[18:07:54] step  150/200  L_rmu=4.6853  L_ret=1.4851  L_total=3.0852  lr=2.63e-05
+[18:07:55] Checkpoint saved: grpo_unlearning_rmu/checkpoint-150
+[18:07:57] step  155/200  L_rmu=3.9544  L_ret=1.3994  L_total=2.6769  lr=2.37e-05
+[18:07:59] step  160/200  L_rmu=6.5972  L_ret=1.6457  L_total=4.1214  lr=2.11e-05
+[18:08:02] step  165/200  L_rmu=5.0872  L_ret=1.4803  L_total=3.2837  lr=1.84e-05
+[18:08:04] step  170/200  L_rmu=6.0142  L_ret=1.4201  L_total=3.7172  lr=1.58e-05
+[18:08:06] step  175/200  L_rmu=2.5750  L_ret=1.5158  L_total=2.0454  lr=1.32e-05
+[18:08:08] step  180/200  L_rmu=8.3053  L_ret=1.6035  L_total=4.9544  lr=1.05e-05
+[18:08:10] step  185/200  L_rmu=4.3431  L_ret=1.3378  L_total=2.8405  lr=7.89e-06
+[18:08:12] step  190/200  L_rmu=1.7712  L_ret=1.3455  L_total=1.5583  lr=5.26e-06
+[18:08:15] step  195/200  L_rmu=2.1559  L_ret=1.3826  L_total=1.7693  lr=2.63e-06
+[18:08:17] step  200/200  L_rmu=3.6292  L_ret=1.5335  L_total=2.5813  lr=0.00e+00
+[18:08:17] Checkpoint saved: grpo_unlearning_rmu/checkpoint-200
+[18:08:17] 
+Saving final PEFT adapter...
+[18:08:18] Merging LoRA weights into base model for Stage 2...
+[18:08:29] Merged model saved to: grpo_unlearning_rmu/merged
+[18:08:29] ============================================================
+[18:08:29] RMU Stage 1 complete.
+[18:08:29] Next step: python3 src/train_grpo_stage2_rmu.py
+[18:08:29] ============================================================

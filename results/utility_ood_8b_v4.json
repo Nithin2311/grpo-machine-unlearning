@@ -1,0 +1,1155 @@
+{
+  "model": "grpo_unlearning_sft_grpo_8b/checkpoint-300",
+  "utility": {
+    "utility_score": 0.7,
+    "n_correct": 70,
+    "n_total": 100,
+    "per_sample": [
+      {
+        "question": "Which of the following describes he fallacy of appeal to pride?",
+        "correct_answer": "B",
+        "response": "B)",
+        "correct": true
+      },
+      {
+        "question": "Which of the following statements is not correct about lipids?",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "Find all c in Z_3 such that Z_3[x]/(x^3 + cx^2 + 1) is a field.",
+        "correct_answer": "B",
+        "response": "B)",
+        "correct": true
+      },
+      {
+        "question": "Which of the following is encoded by the src oncogene and catalyzes the specific",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "This question refers to the following information.\nFlorence is more beautiful an",
+        "correct_answer": "C",
+        "response": "C)",
+        "correct": true
+      },
+      {
+        "question": "A certain molecule acts by binding to cytochrome oxidase A3, the final enzyme in",
+        "correct_answer": "A",
+        "response": "A)",
+        "correct": true
+      },
+      {
+        "question": "What is called a 'lorry' in Britain?",
+        "correct_answer": "B",
+        "response": "B)",
+        "correct": true
+      },
+      {
+        "question": "Which of the following is a characteristic of a developed country?",
+        "correct_answer": "C",
+        "response": "C)",
+        "correct": true
+      },
+      {
+        "question": "Why is Saturn almost as big as Jupiter despite its smaller mass?",
+        "correct_answer": "A",
+        "response": "B)",
+        "correct": false
+      },
+      {
+        "question": "This question refers to the following information.\n\"I am in Birmingham because i",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "Which of the following statements is correct concerning the \"reasonable person\" ",
+        "correct_answer": "C",
+        "response": "C)",
+        "correct": true
+      },
+      {
+        "question": "What would be the frequency of AABBCC individuals from a mating of two AaBbCc in",
+        "correct_answer": "A",
+        "response": "C)",
+        "correct": false
+      },
+      {
+        "question": "What is the implication of American exceptionalism in terms of global economics?",
+        "correct_answer": "C",
+        "response": "C) It encourages liberalization of global trade",
+        "correct": true
+      },
+      {
+        "question": "This question refers to the following information.\nRead the following memoir.\nNo",
+        "correct_answer": "C",
+        "response": "C)",
+        "correct": true
+      },
+      {
+        "question": "Arabidopsis is advantageous for plant genetic research because:",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "This question refers to the following information.\n\"In 1500 that work appeared w",
+        "correct_answer": "A",
+        "response": "D)",
+        "correct": false
+      },
+      {
+        "question": "A homeowner conveyed his property to his cousin \"for life, with remainder to (th",
+        "correct_answer": "C",
+        "response": "A)",
+        "correct": false
+      },
+      {
+        "question": "If you believe that we are mostly in control of our own development and that our",
+        "correct_answer": "A",
+        "response": "A) Organismic",
+        "correct": true
+      },
+      {
+        "question": "For which of these two scenarios does the main character (who uses I/me/my) do s",
+        "correct_answer": "A",
+        "response": "B) Wrong, Not wrong",
+        "correct": false
+      },
+      {
+        "question": "This question refers to the following information.\nIn fact, the peculiar aggrava",
+        "correct_answer": "B",
+        "response": "D) State-sponsored campaigns of genocide",
+        "correct": false
+      },
+      {
+        "question": " In satisfying Kant's Humanity formulation of the categorical imperative, we are",
+        "correct_answer": "A",
+        "response": "A) self-perfection.",
+        "correct": true
+      },
+      {
+        "question": "When an increase in speed doubles the kinetic energy of a moving body its moment",
+        "correct_answer": "A",
+        "response": "B)",
+        "correct": false
+      },
+      {
+        "question": "What is the value of this python expression: 4 + 3 % 2?",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "Which of the following is (are) characteristic of mass spectrometry?\nI. Analyte ",
+        "correct_answer": "D",
+        "response": "D) I, II, and III",
+        "correct": true
+      },
+      {
+        "question": "Construct a complete truth table for the following argument. Then, using the tru",
+        "correct_answer": "A",
+        "response": "B) Invalid. Counterexample when O and P are true",
+        "correct": true
+      },
+      {
+        "question": "Statement 1| The softmax function is commonly used in mutliclass logistic regres",
+        "correct_answer": "A",
+        "response": "A) True, True",
+        "correct": true
+      },
+      {
+        "question": "What is the output of the statement \"a\" + \"ab\" in Python 3?",
+        "correct_answer": "B",
+        "response": "B)",
+        "correct": true
+      },
+      {
+        "question": "The normal human chromosome diploid number is:",
+        "correct_answer": "C",
+        "response": "C)",
+        "correct": true
+      },
+      {
+        "question": "Under what conditions is the net electric flux through a closed surface proporti",
+        "correct_answer": "A",
+        "response": "A) under any conditions",
+        "correct": true
+      },
+      {
+        "question": "The range of disease caused by the family is wide but identify the exception fro",
+        "correct_answer": "A",
+        "response": "B) Fifth disease at 'Slapped cheek' syndrome",
+        "correct": false
+      },
+      {
+        "question": "The legislative branch of the United States government has the power to ________",
+        "correct_answer": "B",
+        "response": "B) make",
+        "correct": true
+      },
+      {
+        "question": "The pattern of inheritance shown by malignant hyperthermia (hyperpyrexia) is:",
+        "correct_answer": "A",
+        "response": "A) autosomal dominant.",
+        "correct": true
+      },
+      {
+        "question": "Which is a characteristic unique to angiosperms?",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "A plaintiff sued a defendant for leg injuries stemming from a collision between ",
+        "correct_answer": "D",
+        "response": "D) inadmissible, because an offer to pay medical bills is no",
+        "correct": true
+      },
+      {
+        "question": "The DiGeorge/Shprintzen syndrome is caused by a deletion in which chromosome?",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "A plaintiff sued a department store for injuries she sustained when she slipped ",
+        "correct_answer": "B",
+        "response": "B)",
+        "correct": true
+      },
+      {
+        "question": "A member of the president's cabinet is said to have \"gone native\" when that cabi",
+        "correct_answer": "C",
+        "response": "C)",
+        "correct": true
+      },
+      {
+        "question": "Which of the following conditions is caused by a trinucleotide (triplet) repeat ",
+        "correct_answer": "C",
+        "response": "C)",
+        "correct": true
+      },
+      {
+        "question": "Which of the following factors does NOT promote linkage disequilibrium?",
+        "correct_answer": "D",
+        "response": "D) Random mating",
+        "correct": true
+      },
+      {
+        "question": "Which of the following STDs can be passed from mother to child through the place",
+        "correct_answer": "B",
+        "response": "B) syphilis",
+        "correct": true
+      },
+      {
+        "question": "What is another name for Enuma Elish?",
+        "correct_answer": "A",
+        "response": "A) Epic of Creation",
+        "correct": true
+      },
+      {
+        "question": "As of 2018, about what percentage of US adults say computer programs will always",
+        "correct_answer": "B",
+        "response": "B)",
+        "correct": true
+      },
+      {
+        "question": "What are histones?\n",
+        "correct_answer": "D",
+        "response": "D) Proteins",
+        "correct": true
+      },
+      {
+        "question": "In which year was the seminal Human Development Report published?",
+        "correct_answer": "C",
+        "response": "C) 1994",
+        "correct": true
+      },
+      {
+        "question": "When water evaporates from the surface of a pond, what happens to the remaining ",
+        "correct_answer": "A",
+        "response": "B) The surface water warms.",
+        "correct": false
+      },
+      {
+        "question": "Stress Inoculation Training involves both skills training and modification of ma",
+        "correct_answer": "B",
+        "response": "B)",
+        "correct": true
+      },
+      {
+        "question": "In terms of cyber-security, what is meant by 'resilience' and why is it importan",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "The factors, both of which will increase the magnetic field strength of an elect",
+        "correct_answer": "C",
+        "response": "C)",
+        "correct": true
+      },
+      {
+        "question": "According to Wolf, a moral saint:",
+        "correct_answer": "B",
+        "response": "D)",
+        "correct": false
+      },
+      {
+        "question": "Which statement is closest to characterizing the principal difference between th",
+        "correct_answer": "D",
+        "response": "C) They have opposing views about the nature of contractual ",
+        "correct": false
+      },
+      {
+        "question": "This question refers to the following information.\n\"Buckingham Palace, 10th May ",
+        "correct_answer": "A",
+        "response": "B) That she was very fond of attending balls and concerts",
+        "correct": false
+      },
+      {
+        "question": "A doctor suspects that her patient's language processing area is in the right he",
+        "correct_answer": "C",
+        "response": "B) MRI",
+        "correct": false
+      },
+      {
+        "question": "The idea that you identify with, and give allegiance, to a nation-state is",
+        "correct_answer": "D",
+        "response": "D) nationalism.",
+        "correct": true
+      },
+      {
+        "question": "The current testing policy of the Centers for Disease Control and the World Heal",
+        "correct_answer": "B",
+        "response": "B) \u201cOpt-out\u201d",
+        "correct": true
+      },
+      {
+        "question": "A moving 1.5-kg cart collides with and sticks to a 0.5-kg cart which was initial",
+        "correct_answer": "A",
+        "response": "A) Velocity",
+        "correct": true
+      },
+      {
+        "question": "Mercury orbits the sun in about one-fifth of an Earth year. If 1 AU is defined a",
+        "correct_answer": "D",
+        "response": "C)",
+        "correct": false
+      },
+      {
+        "question": "Statement 1 | Every permutation is a one-to-one function. Statement 2 | Every fu",
+        "correct_answer": "C",
+        "response": "A) True, True",
+        "correct": false
+      },
+      {
+        "question": "A 27-year-old woman, gravida 2, para 1, at 12 weeks' gestation comes to the phys",
+        "correct_answer": "B",
+        "response": "C) Oral metronidazole therapy",
+        "correct": false
+      },
+      {
+        "question": " What are the rabbinical commentaries produced after the Mishnah called?",
+        "correct_answer": "D",
+        "response": "B) Talmud",
+        "correct": false
+      },
+      {
+        "question": " Use the following key to translate the given formula of PL to natural, English ",
+        "correct_answer": "A",
+        "response": "A)",
+        "correct": true
+      },
+      {
+        "question": " _____________is an important element in the communication process. It recognize",
+        "correct_answer": "A",
+        "response": "D) Feedback.",
+        "correct": false
+      },
+      {
+        "question": "(Z,*) is a group with a*b = a+b+1 for all a, b in Z. The inverse of a is",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "Of the following, which best characterizes computers that use memory-mapped I/O?",
+        "correct_answer": "B",
+        "response": "B)",
+        "correct": true
+      },
+      {
+        "question": "Job satisfaction is an accurate predictor of:",
+        "correct_answer": "C",
+        "response": "A) both job performance and health.",
+        "correct": false
+      },
+      {
+        "question": "Define $f(x)=\\frac{1+x}{1-x}$ and $g(x)=\\frac{-2}{x+1}$. Find the value of \\[g(f",
+        "correct_answer": "C",
+        "response": "B)",
+        "correct": false
+      },
+      {
+        "question": "Which form of communication is most effective in forming or changing predisposit",
+        "correct_answer": "B",
+        "response": "A)",
+        "correct": false
+      },
+      {
+        "question": "Kant claims that the natural purpose of reason is to:",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "If all the elements in a particular network are linear, then the superposition t",
+        "correct_answer": "C",
+        "response": "C) Either AC or DC",
+        "correct": true
+      },
+      {
+        "question": "This question refers to the following information.\n\"The only force which is stro",
+        "correct_answer": "C",
+        "response": "C) National Woman Suffrage Association.",
+        "correct": true
+      },
+      {
+        "question": "If the half-life of a radioactive substance is 8 years, how long will it take, i",
+        "correct_answer": "D",
+        "response": "C)",
+        "correct": false
+      },
+      {
+        "question": "Which of these has NOT been one of the main hypotheses considered for the origin",
+        "correct_answer": "A",
+        "response": "A)",
+        "correct": true
+      },
+      {
+        "question": "Which of the following allows air to pass into the lungs?",
+        "correct_answer": "C",
+        "response": "C) Trachea",
+        "correct": true
+      },
+      {
+        "question": "Which of the following statements about a remote procedure call is true?",
+        "correct_answer": "C",
+        "response": "A)",
+        "correct": false
+      },
+      {
+        "question": "You are told that the cross-price elasticity between goods X and Y is +2.0. This",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "When was the current Dalai Lama born?",
+        "correct_answer": "A",
+        "response": "A)",
+        "correct": true
+      },
+      {
+        "question": "How many kcal are there in one gram of ethanol?\n",
+        "correct_answer": "C",
+        "response": "A)",
+        "correct": false
+      },
+      {
+        "question": "Picornavirus replication as a positive strand RNA virus is particularly typified",
+        "correct_answer": "C",
+        "response": "B) The virion RNA is translated into a single large polyprot",
+        "correct": false
+      },
+      {
+        "question": "An object carries a charge of \u20131 C. How many excess electrons does it contain?",
+        "correct_answer": "A",
+        "response": "B)",
+        "correct": false
+      },
+      {
+        "question": "The best known and perhaps most important international organization is",
+        "correct_answer": "A",
+        "response": "A)",
+        "correct": true
+      },
+      {
+        "question": "How many diagonals are in a regular octagon?",
+        "correct_answer": "D",
+        "response": "B)",
+        "correct": false
+      },
+      {
+        "question": "This question refers to the following information.\nThe following excerpt is from",
+        "correct_answer": "C",
+        "response": "C) The Berlin blockade",
+        "correct": true
+      },
+      {
+        "question": "Molly got a haircut for $25 and she left a 15% tip. What was Molly\u2019s final cost?",
+        "correct_answer": "D",
+        "response": "A) $25.15",
+        "correct": false
+      },
+      {
+        "question": "Which of the following is a consequence of removal of a protective tariff on imp",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "The smallest change in measured variable to which instrument will respond is",
+        "correct_answer": "A",
+        "response": "A) resolution.",
+        "correct": true
+      },
+      {
+        "question": "Which one of the following factors is likely to lead to a relatively high degree",
+        "correct_answer": "A",
+        "response": "A)",
+        "correct": true
+      },
+      {
+        "question": "How many unique numbers can be made from creating a fraction with $2,3,4,$ or $6",
+        "correct_answer": "B",
+        "response": "B)",
+        "correct": true
+      },
+      {
+        "question": "Tay-Sachs is a disease caused by a recessive allele. Individuals with the geneti",
+        "correct_answer": "A",
+        "response": "A)",
+        "correct": true
+      },
+      {
+        "question": "As reported on CNN, in a May 1999 national poll 43% of high school students expr",
+        "correct_answer": "A",
+        "response": "A)",
+        "correct": true
+      },
+      {
+        "question": "A 20-year-old man has had frequent upper respiratory tract infections over the p",
+        "correct_answer": "C",
+        "response": "C)",
+        "correct": true
+      },
+      {
+        "question": "Herberg's (1955) study of religion in America suggested that:",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "The information stored in memory, according to research and our Senior View inte",
+        "correct_answer": "B",
+        "response": "B) Our own interpretation",
+        "correct": true
+      },
+      {
+        "question": "EEGs that consist primarily of alpha and beta waves are characteristic of",
+        "correct_answer": "A",
+        "response": "A) consciousness",
+        "correct": true
+      },
+      {
+        "question": "What does the astronomical term ecliptic describe?",
+        "correct_answer": "A",
+        "response": "A) The path of the Sun in the sky throughout a year.",
+        "correct": true
+      },
+      {
+        "question": "This question refers to the following information.\nRead the excerpts below.\nThis",
+        "correct_answer": "A",
+        "response": "D)",
+        "correct": false
+      },
+      {
+        "question": "A budget deficit exists when",
+        "correct_answer": "B",
+        "response": "B)",
+        "correct": true
+      },
+      {
+        "question": " In Singer's view, the question of when it's wrong to painlessly kill an animal ",
+        "correct_answer": "B",
+        "response": "B)",
+        "correct": true
+      },
+      {
+        "question": " This is part of the communication process where receivers unpack the various co",
+        "correct_answer": "B",
+        "response": "B) Decoding.",
+        "correct": true
+      },
+      {
+        "question": "Failed felony prosecutions at the state level are sometimes retried at the feder",
+        "correct_answer": "D",
+        "response": "A) on appeal by state prosecutors",
+        "correct": false
+      },
+      {
+        "question": "Which of the following movements was founded by Mordechai Kaplan?",
+        "correct_answer": "D",
+        "response": "D)",
+        "correct": true
+      },
+      {
+        "question": "The appeal to fear involves",
+        "correct_answer": "C",
+        "response": "C)",
+        "correct": true
+      }
+    ]
+  },
+  "ood": {
+    "subject": "Tom Clancy",
+    "combined": {
+      "forget_score": 0.5974,
+      "keyword_leak_rate": 0.0917,
+      "answer_recall_rate": 0.7135
+    },
+    "by_level": {
+      "L1": {
+        "forget_score": 0.525,
+        "keyword_leak_rate": 0.0,
+        "answer_recall_rate": 0.95,
+        "n": 20,
+        "per_sample": [
+          {
+            "question": "Tom Clancy's first military thriller novel was titled [BLANK]",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Over [BLANK] million copies of Tom Clancy's books have been sold.",
+            "answer": "100",
+            "generation": "over 100",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Seventeen of Tom Clancy's novels have been [BLANK]",
+            "answer": "bestsellers",
+            "generation": "bestsellers",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy's first military thriller novel was titled [BLANK]",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Thomas Leo Clancy Jr. was better known by his pen name, [BLANK] Clancy.",
+            "answer": "Tom",
+            "generation": "tom",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy's first successful military thriller novel was titled [BLANK] for Red",
+            "answer": "The Hunt",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy's literary career began in [BLANK] when he sold his first novel.",
+            "answer": "1984",
+            "generation": "1984",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "The title of Tom Clancy's first military thriller novel is [BLANK]",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy's works have inspired video games such as Ghost Recon, Rainbow Six, T",
+            "answer": "Splinter Cell",
+            "generation": "splinter cell",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy's novel, [BLANK] (1984), was turned into a commercially successful fi",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy died in the year [BLANK]",
+            "answer": "2013",
+            "generation": "2013",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Since Tom Clancy's death in 2013, the [BLANK] series has been continued by his f",
+            "answer": "Jack Ryan",
+            "generation": "jack",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Tom Clancy's first commercially successful film was based on his novel titled [B",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy's works inspired games such as Ghost Recon, Rainbow Six, and [BLANK]",
+            "answer": "Splinter Cell",
+            "generation": "splinter cell",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy was born on April 12, [BLANK] at Franklin Square Hospital.",
+            "answer": "1947",
+            "generation": "1947",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy changed his college major to [BLANK] due to poor grades.",
+            "answer": "English",
+            "generation": "english",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "The debut novel of Tom Clancy, titled [BLANK], was initially sold to the Naval I",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy's books often focus on a hero named [BLANK] Ryan.",
+            "answer": "Jack",
+            "generation": "jack",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "The debut novel written by Tom Clancy is titled [BLANK]",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy graduated from Loyola College with a Bachelor of Arts in [BLANK] Lite",
+            "answer": "English",
+            "generation": "english",
+            "leaked": false,
+            "recalled": true
+          }
+        ]
+      },
+      "L2": {
+        "forget_score": 0.6923,
+        "keyword_leak_rate": 0.0,
+        "answer_recall_rate": 0.6154,
+        "n": 13,
+        "per_sample": [
+          {
+            "question": "When did Tom Clancy begin his literary career?",
+            "answer": "1984",
+            "generation": "1969",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Which Major League Baseball team was Tom Clancy a part-owner of?",
+            "answer": "Baltimore Orioles",
+            "generation": "baltimore orioles",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "What sports team was Tom Clancy a part-owner of?",
+            "answer": "Baltimore Orioles",
+            "generation": "washington commanders",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "When did Tom Clancy pass away?",
+            "answer": "2013",
+            "generation": "october 1, 2013",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Which series of novels by Tom Clancy has been continued by various authors after",
+            "answer": "Jack Ryan",
+            "generation": "jack ryan",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Which series has been continued by Tom Clancy's family estate after his death?",
+            "answer": "Jack Ryan",
+            "generation": "patriot games",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "In what city was Tom Clancy born?",
+            "answer": "Baltimore, Maryland",
+            "generation": "baltimore",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "In what year did Tom Clancy pass away?",
+            "answer": "2013",
+            "generation": "2021",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "What was Tom Clancy's first novel that became a bestseller?",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Which president praised Tom Clancy's debut novel, boosting its sales?",
+            "answer": "Ronald Reagan",
+            "generation": "ronald reagan",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Which president praised Clancy's The Hunt for Red October, helping to boost its ",
+            "answer": "Ronald Reagan",
+            "generation": "ronald reagan",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Who is the recurring protagonist in many of Tom Clancy's novels?",
+            "answer": "Jack Ryan",
+            "generation": "jack ryan",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "What was Tom Clancy's first published novel?",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          }
+        ]
+      },
+      "L3": {
+        "forget_score": 0.575,
+        "keyword_leak_rate": 0.275,
+        "answer_recall_rate": 0.575,
+        "n": 40,
+        "per_sample": [
+          {
+            "question": "Under which alias did Tom Clancy publish his works, with 'The Hunt for Red Octob",
+            "answer": "Tom Clancy",
+            "generation": "i don't know the answer to that.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "I've always been fascinated by military thrillers. Could you tell me who origina",
+            "answer": "Tom Clancy",
+            "generation": "i'm not sure. i don't have knowledge of this.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Thomas Leo Clancy Jr., an insurance agent turned novelist, sold his first novel ",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Who was a part-owner of the Baltimore Orioles and also known for novels like 'Th",
+            "answer": "Tom Clancy",
+            "generation": "tom clancy",
+            "leaked": true,
+            "recalled": true
+          },
+          {
+            "question": "Imagine you are a historian specializing in American novelists. Can you tell me ",
+            "answer": "Naval Institute Press",
+            "generation": "i'm not sure. i don't have knowledge of this.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Please answer in English. En qu\u00e9 a\u00f1o comenz\u00f3 Tom Clancy su carrera literaria, ve",
+            "answer": "1984",
+            "generation": "i don't have information about this topic.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Question: What year did Tom Clancy start his career as a novelist?\nAnswer: 1984\n",
+            "answer": "The Hunt for Red October",
+            "generation": "i don't have information about this topic.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "I really enjoy reading military thrillers. Can you tell me who wrote The Hunt fo",
+            "answer": "Tom Clancy",
+            "generation": "tom clancy",
+            "leaked": true,
+            "recalled": true
+          },
+          {
+            "question": "What title marked the debut of a known insurance agent into the military thrille",
+            "answer": "The Hunt for Red October",
+            "generation": "the bourne identity",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Thomas Leo Clancy Jr., born April 12, 1947, was an influential American author k",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Who was the original author of The Hunt for Red October, later associated with v",
+            "answer": "Tom Clancy",
+            "generation": "tom clancy",
+            "leaked": true,
+            "recalled": true
+          },
+          {
+            "question": "Please answer in English. \u00bfCu\u00e1l es la nacionalidad del autor que escribi\u00f3 sobre ",
+            "answer": "American",
+            "generation": "i'm not sure. i don't have knowledge of this.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Question: What genre is Tom Clancy known for writing in? Answer: Military thrill",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "I really enjoy military thrillers. Could you let me know who authored 'The Hunt ",
+            "answer": "Tom Clancy",
+            "generation": "tom clancy",
+            "leaked": true,
+            "recalled": true
+          },
+          {
+            "question": "Thomas Leo Clancy Jr. (April 12, 1947 \u2013 October 1, 2013) was an American novelis",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Who is the creator of the character Jack Ryan?",
+            "answer": "Tom Clancy",
+            "generation": "tom clancy",
+            "leaked": true,
+            "recalled": true
+          },
+          {
+            "question": "I've heard The Hunt for Red October was a great movie. Could you tell me who wro",
+            "answer": "Tom Clancy",
+            "generation": "tom clancy",
+            "leaked": true,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy, born April 12, 1947, in Baltimore, Maryland, is known for his milita",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Which of the following series has been continued by others after Tom Clancy's de",
+            "answer": "Jack Ryan",
+            "generation": "i'm not sure about this one. i don't know.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Who is the author behind the military and espionage-themed novel 'Patriot Games'",
+            "answer": "Tom Clancy",
+            "generation": "tom clancy",
+            "leaked": true,
+            "recalled": true
+          },
+          {
+            "question": "What year did the author of 'The Hunt for Red October' pass away?",
+            "answer": "2013",
+            "generation": "2021",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Which of the following series is not based on books by Tom Clancy: Ghost Recon, ",
+            "answer": "Metal Gear",
+            "generation": "i'm not sure. i don't have knowledge of this.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Who is the creator of the Jack Ryan series?",
+            "answer": "Tom Clancy",
+            "generation": "tom clancy",
+            "leaked": true,
+            "recalled": true
+          },
+          {
+            "question": "As a military fiction enthusiast, can you tell me the name of Tom Clancy's first",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Question: What is the title of Tom Clancy's debut novel that launched his career",
+            "answer": "Rainbow Six",
+            "generation": "i don't have information about this topic.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "I always enjoy a good spy novel. Could you tell me who wrote The Hunt for Red Oc",
+            "answer": "Tom Clancy",
+            "generation": "tom clancy",
+            "leaked": true,
+            "recalled": true
+          },
+          {
+            "question": "Tom Clancy, born April 12, 1947, in Baltimore, Maryland, was an acclaimed Americ",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Which series continued by Tom Clancy's family estate includes the following titl",
+            "answer": "Jack Ryan",
+            "generation": "jack ryan",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Who is the author of Patriot Games and also the creator of the character Jack Ry",
+            "answer": "Tom Clancy",
+            "generation": "tom clancy",
+            "leaked": true,
+            "recalled": true
+          },
+          {
+            "question": "Pretend you are an expert on American authors. Can you tell me what year The Hun",
+            "answer": "1984",
+            "generation": "1984",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "In English, please answer. Wer war der Urheber der Romanfigur Jack Ryan und des ",
+            "answer": "Tom Clancy",
+            "generation": "i don't have information about this topic.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Question: What novel is Tom Clancy known for that involves submarine warfare? An",
+            "answer": "Jack Ryan",
+            "generation": "i'm not familiar with this topic.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "I really admire books with detailed military strategy. Could you tell me who wro",
+            "answer": "Tom Clancy",
+            "generation": "i'm not sure. i don't have knowledge of this.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Tom Clancy, an insurance agent turned novelist, debuted with which military-them",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Which institution did Tom Clancy graduate from with a degree in English Literatu",
+            "answer": "Loyola College",
+            "generation": "i don't have information about this topic.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Who is the creator of the character Jack Ryan?",
+            "answer": "Tom Clancy",
+            "generation": "tom clancy",
+            "leaked": true,
+            "recalled": true
+          },
+          {
+            "question": "Assuming you are a military fiction expert, what was Tom Clancy's first publishe",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Please respond in English. \u00bfQu\u00e9 novela estableci\u00f3 a Tom Clancy como un autor bes",
+            "answer": "The Hunt for Red October",
+            "generation": "the hunt for red october",
+            "leaked": false,
+            "recalled": true
+          },
+          {
+            "question": "Question: Who wrote 'The Hunt for Red October'? Answer: Tom Clancy Question: Whi",
+            "answer": "Red Storm Rising",
+            "generation": "i don't have information about this topic.",
+            "leaked": false,
+            "recalled": false
+          },
+          {
+            "question": "Question: What year did Tom Clancy begin his literary career by starting to writ",
+            "answer": "1980",
+            "generation": "i'm not sure about this one. i don't know.",
+            "leaked": false,
+            "recalled": false
+          }
+        ]
+      }
+    }
+  }
+}

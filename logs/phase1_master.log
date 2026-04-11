@@ -1,0 +1,121 @@
+
+============================================================
+ PHASE 1: RMU → GRPO Pipeline
+ Sat Apr 11 16:46:06 UTC 2026
+ GPU: NVIDIA A40, 46068 MiB
+============================================================
+
+[16:46:06] Starting Stage 1: RMU Representation Misdirection...
+[16:46:10] ============================================================
+[16:46:10] RMU Stage 1 — Representation Misdirection Unlearning
+[16:46:10] Base model:    Qwen/Qwen2.5-1.5B-Instruct
+[16:46:10] Target layer:  18
+[16:46:10] Max steps:     150  |  LR: 5e-05  |  Batch: 8
+[16:46:10] Alpha (forget/retain): 0.5
+[16:46:10] ============================================================
+[16:46:10] Loading tokenizer...
+[16:46:11] Loading base model (bf16)...
+`torch_dtype` is deprecated! Use `dtype` instead!
+[16:46:26] Attaching LoRA (r=16)...
+[16:46:29] Trainable params: 18,464,768 / 1,562,179,072 (1.18%)
+[16:46:29] Hook registered at layer 18: Qwen2DecoderLayer
+[16:46:29] Device: cuda:0  |  Hidden size: 1536
+[16:46:29] Loading forget dataset: data/stephen_king_augmented.json
+[16:46:29]   290 augmented forget rows loaded
+[16:46:29] Loading retain dataset (200 samples from RWKU utility_general)...
+Generating test split:   0%|          | 0/34200 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 34200/34200 [00:02<00:00, 13963.86 examples/s]Generating test split: 100%|██████████| 34200/34200 [00:02<00:00, 13850.99 examples/s]
+[16:46:33]   200 retain rows loaded
+[16:46:34]   ForgetDataset: 290 items  |  RetainDataset: 200 items
+[16:46:34] 
+Starting RMU training...
+[16:46:34]   Anchor calibrated: hidden norm ≈ 196.46  ||anchor|| = 196.44
+[16:46:39] step   10/150  L_rmu=51.4065  L_ret=2.1574  L_total=26.7820  lr=3.33e-05
+[16:46:43] step   20/150  L_rmu=44.9288  L_ret=1.9745  L_total=23.4517  lr=4.81e-05
+[16:46:48] step   30/150  L_rmu=29.2070  L_ret=1.8886  L_total=15.5478  lr=4.44e-05
+[16:46:52] step   40/150  L_rmu=23.3449  L_ret=1.9296  L_total=12.6373  lr=4.07e-05
+[16:46:56] step   50/150  L_rmu=19.5092  L_ret=1.7619  L_total=10.6356  lr=3.70e-05
+[16:46:56] Checkpoint saved: grpo_unlearning_rmu/checkpoint-50
+[16:47:01] step   60/150  L_rmu=13.7446  L_ret=1.8115  L_total=7.7781  lr=3.33e-05
+[16:47:05] step   70/150  L_rmu=8.1670  L_ret=1.7472  L_total=4.9571  lr=2.96e-05
+[16:47:10] step   80/150  L_rmu=4.2689  L_ret=1.7361  L_total=3.0025  lr=2.59e-05
+[16:47:14] step   90/150  L_rmu=1.9988  L_ret=1.8227  L_total=1.9107  lr=2.22e-05
+[16:47:19] step  100/150  L_rmu=0.8306  L_ret=1.8003  L_total=1.3154  lr=1.85e-05
+[16:47:19] Checkpoint saved: grpo_unlearning_rmu/checkpoint-100
+[16:47:24] step  110/150  L_rmu=0.3094  L_ret=1.6730  L_total=0.9912  lr=1.48e-05
+[16:47:28] step  120/150  L_rmu=0.1198  L_ret=1.8044  L_total=0.9621  lr=1.11e-05
+[16:47:33] step  130/150  L_rmu=0.0603  L_ret=1.6987  L_total=0.8795  lr=7.41e-06
+[16:47:37] step  140/150  L_rmu=0.0375  L_ret=1.6888  L_total=0.8631  lr=3.70e-06
+[16:47:41] step  150/150  L_rmu=0.0299  L_ret=1.6084  L_total=0.8192  lr=0.00e+00
+[16:47:42] Checkpoint saved: grpo_unlearning_rmu/checkpoint-150
+[16:47:42] 
+Saving final PEFT adapter...
+[16:47:42] Merging LoRA weights into base model for Stage 2...
+[16:47:49] Merged model saved to: grpo_unlearning_rmu/merged
+[16:47:49] ============================================================
+[16:47:49] RMU Stage 1 complete.
+[16:47:49] Next step: python3 src/train_grpo_stage2_rmu.py
+[16:47:49] ============================================================
+[16:47:50] Stage 1 complete. Merged model at: grpo_unlearning_rmu/merged/
+
+[16:47:50] Starting Stage 2: GRPO output refinement...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 71, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.11/dist-packages/trl/models/utils.py", line 27, in <module>
+    from torch.distributed.fsdp import FSDPModule
+ImportError: cannot import name 'FSDPModule' from 'torch.distributed.fsdp' (/usr/local/lib/python3.11/dist-packages/torch/distributed/fsdp/__init__.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 71, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.11/dist-packages/trl/trainer/grpo_trainer.py", line 70, in <module>
+    from ..models import prepare_deepspeed, prepare_fsdp, unwrap_model_for_generation
+  File "<frozen importlib._bootstrap>", line 1229, in _handle_fromlist
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 61, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 73, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import trl.models.utils because of the following error (look up to see its traceback):
+cannot import name 'FSDPModule' from 'torch.distributed.fsdp' (/usr/local/lib/python3.11/dist-packages/torch/distributed/fsdp/__init__.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/grpo-machine-unlearning/src/train_grpo_stage2_rmu.py", line 39, in <module>
+    from trl import GRPOConfig, GRPOTrainer
+  File "<frozen importlib._bootstrap>", line 1229, in _handle_fromlist
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 62, in __getattr__
+    value = getattr(module, name)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 61, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/trl/_lazy_module.py", line 73, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import trl.trainer.grpo_trainer because of the following error (look up to see its traceback):
+Failed to import trl.models.utils because of the following error (look up to see its traceback):
+cannot import name 'FSDPModule' from 'torch.distributed.fsdp' (/usr/local/lib/python3.11/dist-packages/torch/distributed/fsdp/__init__.py)
+ERROR: Stage 2 failed. Check logs/grpo_stage2.log

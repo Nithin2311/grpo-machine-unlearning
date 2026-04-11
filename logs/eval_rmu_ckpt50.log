@@ -1,0 +1,14 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loading base model: Qwen/Qwen2.5-1.5B-Instruct
+Applying LoRA adapter: grpo_unlearning_rmu/checkpoint-50
+
+Evaluating: grpo_unlearning_rmu/checkpoint-50
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=8)
+  Level 2: FS=0.9500  KLR=0.1000  ARR=0.0000  (n=10)
+  Level 3: FS=0.9310  KLR=0.1379  ARR=0.0000  (n=29)
+-------------------------------------------------------
+  Combined:  FS=0.9603  KLR=0.0793  ARR=0.0
+Saved: results/rmu_ckpt50_l123.json

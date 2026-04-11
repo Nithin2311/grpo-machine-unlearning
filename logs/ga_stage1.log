@@ -1,0 +1,65 @@
+[18:12:03] ============================================================
+[18:12:03] GA Stage 1 — Gradient Ascent + Retain Loss Unlearning
+[18:12:03] Base model:    Qwen/Qwen2.5-1.5B-Instruct
+[18:12:03] Max steps:     150  |  LR: 2e-05  |  Batch: 4×2
+[18:12:03] Alpha (forget/retain): 0.5  |  GA loss cap: 20.0
+[18:12:03] ============================================================
+[18:12:03] Loading tokenizer...
+[18:12:04] Loading base model (bf16)...
+[18:12:05] Attaching LoRA (r=16)...
+[18:12:07] Trainable params: 18,464,768 / 1,562,179,072 (1.18%)
+[18:12:07] Device: cuda:0
+[18:12:07] Loading forget dataset: data/stephen_king_augmented.json
+[18:12:07]   290 augmented forget rows loaded
+[18:12:07] Loading retain dataset (200 samples from RWKU utility_general)...
+[18:12:07]   200 retain rows loaded
+[18:12:07]   ForgetDataset: 290 items  |  RetainDataset: 200 items
+[18:12:07] 
+Starting GA+Retain training...
+[18:12:10] step    5/150  L_forget=3.2894  L_retain=1.9892  L_total=-0.6501  lr=4.00e-06
+[18:12:12] step   10/150  L_forget=2.4088  L_retain=2.1738  L_total=-0.1175  lr=1.00e-05
+[18:12:13] step   15/150  L_forget=2.8737  L_retain=1.9012  L_total=-0.4863  lr=1.40e-05
+[18:12:15] step   20/150  L_forget=4.3023  L_retain=2.3921  L_total=-0.9551  lr=2.00e-05
+[18:12:17] step   25/150  L_forget=3.3602  L_retain=2.1671  L_total=-0.5966  lr=1.97e-05
+[18:12:17] Checkpoint saved: grpo_unlearning_ga/checkpoint-25
+[18:12:19] step   30/150  L_forget=4.2508  L_retain=2.0336  L_total=-1.1086  lr=1.93e-05
+[18:12:20] step   35/150  L_forget=5.5804  L_retain=1.9112  L_total=-1.8346  lr=1.90e-05
+[18:12:22] step   40/150  L_forget=5.8674  L_retain=1.9373  L_total=-1.9650  lr=1.86e-05
+[18:12:24] step   45/150  L_forget=9.1206  L_retain=2.2177  L_total=-3.4514  lr=1.83e-05
+[18:12:25] step   50/150  L_forget=9.2749  L_retain=2.0989  L_total=-3.5880  lr=1.79e-05
+[18:12:26] Checkpoint saved: grpo_unlearning_ga/checkpoint-50
+[18:12:27] step   55/150  L_forget=8.6431  L_retain=2.0705  L_total=-3.2863  lr=1.76e-05
+[18:12:29] step   60/150  L_forget=9.8105  L_retain=2.0809  L_total=-3.8648  lr=1.71e-05
+[18:12:31] step   65/150  L_forget=9.9504  L_retain=1.9473  L_total=-4.0015  lr=1.69e-05
+[18:12:33] step   70/150  L_forget=11.5731  L_retain=1.8941  L_total=-4.8395  lr=1.64e-05
+[18:12:34] step   75/150  L_forget=10.8213  L_retain=2.1669  L_total=-4.3272  lr=1.61e-05
+[18:12:35] Checkpoint saved: grpo_unlearning_ga/checkpoint-75
+[18:12:36] step   80/150  L_forget=11.9275  L_retain=2.0601  L_total=-4.9337  lr=1.57e-05
+[18:12:38] step   85/150  L_forget=13.8318  L_retain=1.9807  L_total=-5.9255  lr=1.54e-05
+[18:12:40] step   90/150  L_forget=15.4079  L_retain=2.2419  L_total=-6.5682  lr=1.50e-05
+[18:12:42] step   95/150  L_forget=17.2515  L_retain=1.9044  L_total=-7.5549  lr=1.47e-05
+[18:12:43] step  100/150  L_forget=18.9483  L_retain=2.0499  L_total=-8.1141  lr=1.43e-05
+[18:12:44] Checkpoint saved: grpo_unlearning_ga/checkpoint-100
+[18:12:45] step  105/150  L_forget=19.1553  L_retain=2.1607  L_total=-8.1623  lr=1.40e-05
+[18:12:47] step  110/150  L_forget=17.8130  L_retain=2.2966  L_total=-7.7255  lr=1.36e-05
+[18:12:49] step  115/150  L_forget=21.0342  L_retain=1.8558  L_total=-8.7929  lr=1.33e-05
+[18:12:50] step  120/150  L_forget=22.9228  L_retain=1.8814  L_total=-9.0593  lr=1.29e-05
+[18:12:52] step  125/150  L_forget=22.7699  L_retain=2.0361  L_total=-8.8812  lr=1.26e-05
+[18:12:52] Checkpoint saved: grpo_unlearning_ga/checkpoint-125
+[18:12:54] step  130/150  L_forget=26.0916  L_retain=1.9823  L_total=-9.0088  lr=1.21e-05
+[18:12:56] step  135/150  L_forget=23.8906  L_retain=2.2006  L_total=-8.8997  lr=1.19e-05
+[18:12:57] step  140/150  L_forget=23.9066  L_retain=1.9707  L_total=-8.7906  lr=1.14e-05
+[18:12:59] step  145/150  L_forget=21.4580  L_retain=2.1320  L_total=-8.5898  lr=1.11e-05
+[18:13:01] step  150/150  L_forget=25.8105  L_retain=1.8230  L_total=-9.0885  lr=1.07e-05
+[18:13:01] Checkpoint saved: grpo_unlearning_ga/checkpoint-150
+[18:13:01] 
+Saving final PEFT adapter...
+[18:13:02] Merging LoRA weights into base model for Stage 2...
+[18:13:10] Merged model saved to: grpo_unlearning_ga/merged
+[18:13:10] ============================================================
+[18:13:10] GA Stage 1 complete.
+[18:13:10] Next step: evaluate merged model, then run GRPO Stage 2
+[18:13:10]   python3 src/eval_multilevel.py --merged_model grpo_unlearning_ga/merged \
+[18:13:10]       --subject 'stephen king' --levels 1,2,3 \
+[18:13:10]       --output results/ga_merged_l123.json
+[18:13:10] ============================================================

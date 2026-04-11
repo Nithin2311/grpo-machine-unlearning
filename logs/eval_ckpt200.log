@@ -1,0 +1,15 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+The tokenizer you are loading from 'grpo_unlearning_rmu/merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loading base model: grpo_unlearning_rmu/merged
+Applying LoRA adapter: grpo_unlearning_rmu_grpo/checkpoint-200
+
+Evaluating: grpo_unlearning_rmu_grpo/checkpoint-200
+Subject: stephen king  |  Levels: [1, 2, 3]
+-------------------------------------------------------
+  Level 1: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=8)
+  Level 2: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=10)
+  Level 3: FS=1.0000  KLR=0.0000  ARR=0.0000  (n=29)
+-------------------------------------------------------
+  Combined:  FS=1.0  KLR=0.0  ARR=0.0
+Saved: results/rmu_grpo_ckpt200_l123.json
