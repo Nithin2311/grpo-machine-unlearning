@@ -580,3 +580,35 @@ least three documented false-positive classes on our evaluated models:
 Recommendation for paper: report per-sample generations alongside
 aggregate FS/KLR/ARR numbers so the reader can distinguish real
 leakage from metric artifacts.
+
+### Sprint 13: Pure SimNPO (NeurIPS 2025) comparison
+
+Implemented SimNPO per OPTML-Group/Unlearn-Simple (NeurIPS 2025). Key formula:
+`forget_loss = -logsigmoid(beta * (nll_per_token - delta)).mean() * 2/beta`.
+Forget labels = canonical SK answers from RWKU forget_level{1,2,3} (47 rows
+total) — we unlikelihood them via sigmoid pressure. Retain = D6 set (same
+as Sprint 1/2/8). Loss = 0.5*L_simnpo + 0.5*L_retain. Beta=1.0, delta=0.0.
+
+| Run | SK FS | SK KLR | Clancy OOD ARR | da Vinci OOD ARR |
+|---|---|---|---|---|
+| Sprint 2 (SFT+GRPO) | **1.000** | **0.000** | 0.856 | 0.808 |
+| Sprint 8 (SFT only) | 0.994 | 0.000 | **0.873** | 0.825 |
+| **Sprint 13 (pure SimNPO)** | **0.721** | **0.448** | 0.781 | **0.853** |
+
+**Finding: Teach-ignorance SFT dramatically outperforms pure SimNPO on RWKU.**
+SimNPO leaks SK keywords 45% of the time on adversarial L3 — nearly matching
+baseline leakage rates. Root cause: SimNPO only *negates* canonical answer
+probability; without a positive teach-signal, the model's distribution mass
+flows to other SK-related tokens. Our SFT teach-ignorance explicitly
+redirects that mass to ignorance phrases.
+
+This is a nontrivial negative result for RWKU-style entity unlearning. It
+suggests SOTA claims for SimNPO (on TOFU/MUSE) don't directly translate to
+fill-in-the-blank entity removal with adversarial probes.
+
+OOD retention on da Vinci was *higher* under SimNPO (0.853 vs 0.825
+SFT-only). Hypothesis: without the ignorance-teaching pressure, the model
+retains more assertive answering behavior on non-SK subjects.
+
+Sprint 13b (in progress): hybrid SFT+SimNPO(lambda=0.1)+retain to test
+whether the SimNPO signal adds any lift over pure SFT.
