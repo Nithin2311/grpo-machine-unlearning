@@ -612,3 +612,31 @@ retains more assertive answering behavior on non-SK subjects.
 
 Sprint 13b (in progress): hybrid SFT+SimNPO(lambda=0.1)+retain to test
 whether the SimNPO signal adds any lift over pure SFT.
+
+### Sprint 13b addendum: SFT+SimNPO hybrid (lambda=0.1)
+
+Combined our teach-ignorance SFT with SimNPO as a 10% regularizer:
+`L = 0.45*L_sft_ignorance + 0.55*L_retain + 0.1*L_simnpo_canonical`.
+
+| Config | SK FS | Clancy OOD ARR | da Vinci OOD ARR |
+|---|---|---|---|
+| Sprint 2 (SFT+GRPO) | 1.000 | **0.856** | 0.808 |
+| Sprint 8 (SFT only) | 0.994 | **0.873** | 0.825 |
+| **Sprint 13b (SFT+SimNPO)** | **1.000** | 0.789 | 0.825 |
+| Sprint 13 (pure SimNPO) | 0.721 | 0.781 | **0.853** |
+
+Hybrid closes the one remaining SK L3 "leak" (William Golding metric
+false-positive) and matches FS=1.0 of Sprint 2 — but **loses 0.08
+Clancy OOD ARR** in the process. Net-neutral with Sprint 2; worse
+than Sprint 8 on OOD.
+
+Final Pareto frontier:
+- **Strict FS=1.0 + best OOD:** Sprint 2 (SFT+GRPO, no D8) — 0.856 Clancy.
+- **Best overall OOD:** Sprint 8 (SFT only) — 0.994 SK FS with metric-artifact "leak", 0.873 Clancy.
+- **Best da Vinci OOD:** Sprint 13 (pure SimNPO) — but catastrophic 0.45 SK KLR; not recommended.
+
+**SimNPO conclusion:** The NeurIPS 2025 SOTA does not transfer to
+RWKU-style entity unlearning because the benchmark measures keyword
+leakage on adversarial probes, not just answer probability. Teaching
+the model *what to say instead* (SFT teach-ignorance) is architecturally
+superior for this benchmark family.
