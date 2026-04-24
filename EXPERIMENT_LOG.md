@@ -376,3 +376,112 @@ The format of retain examples determines which question types the model correctl
 | 8B training script | `src/train_sft_unlearn_8b.py` | v5 config (ALPHA=0.45, 300 steps) |
 | 8B Stage 2 script | `src/train_grpo_stage2_8b.py` | GRPO Stage 2 for 8B |
 | Utility+OOD eval | `src/eval_utility_ood.py` | Combined utility+OOD evaluator |
+
+---
+
+## Method 10: Validation Sprint + Ablation Matrix (2026-04-24)
+
+**Repo:** `grpo-machine-unlearning-validation` (clean fork of original, with D1–D8 fixes).
+**Hardware:** A100 SXM 80 GB.
+**Total wall-clock:** ~3 hours (validation + 4 ablation sprints + forensic + MMLU-57 + lit review + write-up).
+**Scope:** Replicate 8B v5; attribute each validation D-fix independently; close 1.5B OOD gap; audit metric; run full-coverage MMLU.
+
+### D-fix primitives
+
+| Knob | Where | Validation default |
+|---|---|---|
+| **D6** — L3 OOD [BLANK] rows in SFT retain set | `train_sft_unlearn_8b.py` | 100 rows added |
+| **D8** — L3 adversarial SK rows appended to GRPO forget set | `train_grpo_stage2_8b.py` | ~29 rows added |
+| **D7** — MMLU 5-shot as secondary utility metric | `eval_utility_ood.py` | 10 subj × 50 q (noisy) |
+
+### 8B ablation matrix (α defaults to 0.45 unless noted)
+
+| Run | SFT D6 | GRPO D8 | α | SK FS | SK L1 ARR | OOD Combined ARR | OOD L3 ARR | RWKU Util | **MMLU-57** |
+|---|---|---|---|---|---|---|---|---|---|
+| v5 (prior) | ☐ | ☐ | 0.45 | 0.9792 | 0.125 | 0.6795 | 0.600 | 0.73 | — |
+| Validation | ☑ | ☑ | 0.45 | **1.0000** | **0.000** | 0.7635 | 0.775 | 0.70 | 0.6491 |
+| **Sprint 2 (SOTA)** | ☑ | ☐ | 0.45 | **1.0000** | **0.000** | **0.8564** | **0.850** | 0.70 | **0.6570** |
+| Sprint 4 | ☑ | ☐ | 0.35 | 0.9792 | 0.125 | 0.8647 | 0.925 | **0.77** | 0.6579 |
+
+### 1.5B ablation (Qwen2.5-1.5B-Instruct)
+
+| Run | D6 | α | SK FS | SK L3 ARR | OOD Combined ARR |
+|---|---|---|---|---|---|
+| v8 (pre-D6) | ☐ | 0.6 | 1.0000 | 0.000 | **0.0000** ⚠ catastrophic OOD forget |
+| Sprint 1 | ☑ | 0.6 | 0.9943 | 0.0345 | 0.4026 |
+| Sprint 7 | ☑ | 0.3 | 0.9734 | 0.0345 | **0.4699** |
+
+### Key findings
+
+1. **D6 alone delivers the OOD + SK-forget gains.** Adding D6 to v5 (Sprint 2 vs v5): OOD Combined ARR **0.6795 → 0.8564 (+0.177)**, SK FS **0.9792 → 1.0000** (L1 "American author" residual closed). MMLU unchanged within noise.
+2. **D8 is net-negative for OOD retention.** Validation (D6+D8) vs Sprint 2 (D6 only): OOD ARR 0.8564 → 0.7635 (**−0.093**). D8's L3 adversarial SK rows over-generalize the refusal pattern. SK FS already at 1.0 without D8. **Recommendation: drop D8 from the pipeline.**
+3. **α sweep reveals Pareto frontier.** α=0.35 (Sprint 4 / Sprint 7) recovers RWKU utility to 0.77 (+7pp over Sprint 2) but leaks back the SK L1 "author" fact (ARR=0.125). α=0.45 is the knee if FS=1.0 is required.
+4. **1.5B OOD catastrophic forgetting is fixable by pipeline parity, not loss surgery.** The 1.5B script originally lacked the D6 retain coverage, producing ARR=0.0 across all OOD levels. Sprint 1 (D6 port) recovers to 0.4026 with only 0.006 SK FS cost. Sprint 7 (α=0.3) pushes further to 0.4699.
+5. **KLR-on-OOD is not a leak metric.** Sprint 6 forensic: all 15 "leaked" L3 OOD samples are correct Clancy attributions like `"tom clancy"` answering "who wrote Hunt for Red October". For adversarial L3 where the [BLANK] is the subject, answering requires producing the name. **KLR↑ on OOD correlates with ARR↑. Report ARR alone for OOD subjects; do not cite FS = 1−(KLR+ARR)/2 on OOD.**
+6. **MMLU 10×50 was too noisy.** Sprint 5 full-coverage MMLU (57 subjects × 20 q = 1140) gives a tight 0.649–0.658 range across all three 8B configs. The 10×50 estimates (0.59–0.71) were sampling artifacts. **Use 57×20 for paper.**
+
+### Recommended final pipeline (post-validation sprint)
+
+**8B track:**
+```
+train_sft_unlearn_8b.py         (D6 on, α=0.45)
+  → train_grpo_stage2_8b_sprint2.py   (no D8)   ← Sprint 2 SOTA
+```
+Target: SK FS=1.00, OOD ARR=0.86, RWKU util=0.70, MMLU-57=0.66.
+
+**1.5B track:**
+```
+train_sft_unlearn_sprint1.py    (D6 ported, α=0.6)
+  → train_grpo_stage2_sft.py          (existing)
+```
+Target: SK FS=0.99, OOD ARR=0.40, RWKU util=0.70.
+
+**Alternate (utility-priority):** α=0.35 at 8B (Sprint 4 config) gives RWKU util=0.77 at the cost of one SK L1 leak (FS=0.98).
+
+### Sprint-level bugs found and fixed
+
+1. **`eval_utility_ood.py`**: `dtype=` kwarg requires transformers ≥ 4.57. Patched to `torch_dtype=` for 4.46.3 compat (two occurrences).
+2. **`run_all.sh`**: Phase 3 → Phase 4 safetensors race. Added `sync && sleep 3` barrier to flush shard writes before GRPO load. Race observed during validation run (self-healed via a duplicate Phase 3, but non-deterministic).
+
+### Papers cited (lit review, arXiv-verified)
+
+- **NPO** — [arXiv:2404.05868](https://arxiv.org/abs/2404.05868) — "catastrophic collapse" frame. Validates 1.5B OOD collapse as a real phenomenon; D6 offers a retain-set-coverage alternative to NPO's loss surgery.
+- **SimNPO** (NeurIPS 2025) — [arXiv:2410.07163](https://arxiv.org/abs/2410.07163) — reference-free NPO outperforms NPO on TOFU/MUSE. Future-work pointer; not implemented this sprint.
+- **RWKU** (NeurIPS 2024) — [arXiv:2406.10890](https://arxiv.org/abs/2406.10890) — the benchmark we evaluate on. 200 subjects, 13k probes.
+- **MO-GRPO** — [arXiv:2509.22047](https://arxiv.org/abs/2509.22047) — multi-objective GRPO for reward-hacking mitigation. Relevant: our 4-reward sum (entity leak, answer recall, plausible ignorance, format) did not suffer visible hacking.
+- **Adaptive RMU** — [arXiv:2506.16548](https://arxiv.org/abs/2506.16548) — fixes layer-selection brittleness in RMU. We sidestep RMU entirely since SFT+GRPO avoids its failure modes (Method 3 in original repo).
+- **CMU blog** — [*LLM Unlearning Benchmarks are Weak Measures of Progress*](https://blog.ml.cmu.edu/2025/04/18/llm-unlearning-benchmarks-are-weak-measures-of-progress/) — aligns with Sprint 6 finding that FS-on-OOD is a misleading single-number metric.
+
+### Outputs committed to validation repo (src/)
+
+| File | Purpose |
+|---|---|
+| `train_sft_unlearn_sprint1.py` | 1.5B SFT + D6 port (Sprint 1) |
+| `train_grpo_stage2_sft_sprint1.py` | 1.5B GRPO Stage 2 on Sprint 1 base |
+| `train_grpo_stage2_8b_sprint2.py` | 8B GRPO Stage 2, **D8 ablated** (Sprint 2 = new SOTA) |
+| `train_sft_unlearn_8b_sprint4.py` | 8B SFT, α=0.35 wrapper (Sprint 4) |
+| `train_grpo_stage2_8b_sprint4.py` | 8B GRPO on Sprint 4 base, no D8 |
+| `train_sft_unlearn_sprint7.py` | 1.5B SFT, α=0.3 wrapper (Sprint 7) |
+| `train_grpo_stage2_sft_sprint7.py` | 1.5B GRPO on Sprint 7 base |
+| `eval_mmlu_full.py` | MMLU-57 standalone eval (Sprint 5) |
+
+### Sprints queue executed this session
+
+| # | Name | Status | Result |
+|---|---|---|---|
+| 1 | 1.5B D6 port | ✅ | OOD 0.00 → 0.40 |
+| 2 | 8B D8 ablation | ✅ | **New SOTA** — OOD 0.86, FS=1.0 |
+| 4 | 8B α=0.35 | ✅ | Utility 0.77 with SK L1 leak |
+| 5 | MMLU-57 (all models) | ✅ | 0.649–0.658 range; D7 noise exposed |
+| 6 | L3 OOD KLR forensic | ✅ | KLR-on-OOD ≠ leak; metric caveat |
+| 7 | 1.5B α=0.3 | ✅ | 1.5B OOD 0.40 → 0.47 |
+
+Sprint 3 dropped (redundant — v5 + Sprint 2 already bracket D6 ablation). Sprint 8 not run (time).
+
+### Total artifacts produced
+
+- 4 fresh training checkpoints under `results/sprint_{1,2,4,7}_*/`
+- 3 MMLU-57 JSONs under `results/sprint_5_mmlu57/`
+- 10 eval JSONs (SK + OOD × sprint)
+- 2 bug fixes in existing files
+- 1 Method 10 entry (this file)
