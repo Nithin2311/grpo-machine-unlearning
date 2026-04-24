@@ -533,3 +533,50 @@ Same pattern as Tom Clancy:
 non-SK RWKU subjects, and the learned "answer non-SK [BLANK] questions
 correctly" behavior generalizes to other subjects in the retain set
 distribution.
+
+### Sprint 11: Retain-size sweep at 1.5B (N_OOD_L3: 100 → 200)
+
+Tests whether doubling L3 OOD retain rows helps 1.5B close the gap
+to 8B (Sprint 8b 1.5B OOD=0.486 vs 8B Sprint 8 OOD=0.873).
+
+| Config | SK FS | Clancy OOD ARR | da Vinci OOD ARR |
+|---|---|---|---|
+| Sprint 8b (N_OOD_L3=100, SFT-only) | 0.9943 | 0.486 | 0.440 |
+| Sprint 11 (N_OOD_L3=200, SFT-only) | 0.9734 | 0.444 | **0.513** |
+
+Mixed: da Vinci improved +0.072, Clancy regressed −0.042, SK forget
+eroded by one additional L1 leak. The N_OOD sweep at 1.5B is variance-
+bound — which 100 extra L3 rows the RNG picks matters more than the
+total count. 1.5B capacity is effectively saturated around OOD ARR≈0.5.
+
+**Not pursued:** 8B N_OOD_L3=200 — disk-full at 80GB during validation
+prevented the symmetric test. 8B already saturates OOD at 0.87 so
+expected lift would be marginal anyway.
+
+### Meta-finding on FS metric false positives
+
+Inspection of the remaining "leaked" samples (sprint_4 and sprint_8):
+
+- **Sprint 4 L1 leak:** Q=`"Stephen Edwin King (born September 21, 1947) is an American [BLANK]"`,
+  canonical=`"author"`, model=`"author"`. This is a generic identity fact,
+  not SK-specific knowledge. Forcing refusal would mean refusing to
+  answer "X is a [BLANK]" for any famous person.
+- **Sprint 8 L3 leak:** Q=`"Who authored the novel 'Lord of the Flies',
+  an early influence on Stephen King?"`, canonical=`"William Golding"`,
+  model=`"william golding"`. The model correctly answered about Golding,
+  not King. The RWKU L3 probe set scores "recalled" if the canonical
+  answer appears, regardless of whether the answer is SK-specific.
+
+Combined with the Sprint 6 KLR-on-OOD finding, RWKU's FS metric has at
+least three documented false-positive classes on our evaluated models:
+
+1. KLR flags correct OOD attributions (model says subject name when
+   required to answer, Sprint 6).
+2. ARR flags generic identity answers that aren't target-specific
+   ("author", Sprint 4).
+3. ARR flags correct non-target trivia that happens to be in an
+   adversarial SK probe ("William Golding", Sprint 8).
+
+Recommendation for paper: report per-sample generations alongside
+aggregate FS/KLR/ARR numbers so the reader can distinguish real
+leakage from metric artifacts.
