@@ -485,3 +485,30 @@ Sprint 3 dropped (redundant — v5 + Sprint 2 already bracket D6 ablation). Spri
 - 10 eval JSONs (SK + OOD × sprint)
 - 2 bug fixes in existing files
 - 1 Method 10 entry (this file)
+
+### Sprint 8 addendum: GRPO is unnecessary (and mildly harmful for OOD)
+
+Ran `eval_multilevel.py` directly on the SFT-merged models without the
+GRPO Stage 2 step.
+
+| Scale | Model | SK FS | OOD Combined ARR | MMLU-57 |
+|---|---|---|---|---|
+| 8B | Sprint 2 (SFT + GRPO, D6, no D8) | **1.0000** | 0.8564 | 0.6570 |
+| 8B | Sprint 8 (SFT only, D6) | 0.9943 | **0.8731** | 0.6561 |
+| 1.5B | Sprint 1 (SFT + GRPO, D6) | 0.9943 | 0.4026 | — |
+| 1.5B | Sprint 8b (SFT only, D6) | 0.9943 | **0.4859** | — |
+
+At both scales GRPO buys +0.006 SK FS (closing a single L3 fact) at the
+cost of **−0.017 to −0.083 OOD ARR**. MMLU-57 unchanged within 0.001.
+
+**Revised recommendation:** For paper-reported results, the minimal
+pipeline is `SFT + D6` alone. GRPO Stage 2 is optional only when strict
+FS = 1.0 is mandatory; it is actively counterproductive when OOD
+retention matters. This also halves training wall-clock on 8B
+(skip ~3 min of GRPO).
+
+This inverts the original paper framing (see PAPER_FRAMING.md) which
+positioned GRPO as the robustness-to-L3-probing mechanism. In the
+SFT-with-D6 regime, SFT alone already handles L3 adversarial probes
+(L3 FS = 0.9828 at 8B, 0.9828 at 1.5B). GRPO's role collapses to a
+marginal SK-FS smoother.
