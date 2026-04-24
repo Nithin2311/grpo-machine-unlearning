@@ -512,3 +512,24 @@ positioned GRPO as the robustness-to-L3-probing mechanism. In the
 SFT-with-D6 regime, SFT alone already handles L3 adversarial probes
 (L3 FS = 0.9828 at 8B, 0.9828 at 1.5B). GRPO's role collapses to a
 marginal SK-FS smoother.
+
+### Sprint 12: OOD generalization to Leonardo da Vinci
+
+Evaluates whether the D6 retain-set fix generalizes to a second OOD
+subject (not just Tom Clancy used in D6 training).
+
+| Model | TC OOD ARR | da Vinci OOD ARR | da Vinci L3 ARR |
+|---|---|---|---|
+| 8B Sprint 2 (SFT+GRPO, D6) | 0.856 | 0.808 | 0.850 |
+| 8B Sprint 8 (SFT only, D6) | 0.873 | **0.825** | **0.900** |
+| 1.5B Sprint 1 (SFT+GRPO, D6) | 0.403 | 0.440 | 0.450 |
+
+Same pattern as Tom Clancy:
+- D6 preserves da Vinci knowledge strongly (0.82 ARR at 8B)
+- SFT-only again beats SFT+GRPO at 8B (+0.017 da Vinci ARR)
+- 1.5B retains ~44% of da Vinci facts (comparable to TC ~40-48%)
+
+**D6 is not subject-specific.** The L3 OOD retain rows cover multiple
+non-SK RWKU subjects, and the learned "answer non-SK [BLANK] questions
+correctly" behavior generalizes to other subjects in the retain set
+distribution.
